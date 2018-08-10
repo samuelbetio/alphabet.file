@@ -1,0 +1,103 @@
+html, body {
+    background-color: #309acc;
+}
+body {
+    
+    width: 900px;
+    margin: 0 auto;
+    border: 10px #2D80AA solid;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+h1 {
+    color: white;
+}
+ul {
+    color: white;
+    border: 5 solid white;
+    padding: 0;
+    font-size: 0;
+}
+
+ul li {
+    list-style-type: none;
+    border: 3px white solid;
+    display: inline-block;
+    padding: 30px;
+    border-collapse: collapse;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+footer {
+   color: white;
+} 
+
+ul li:nth-child(1) {
+    background-color: #2D80AA;
+    width: 50%;
+    font-size: 25px;    
+}
+
+ul li:nth-child(2){
+    background-color: #31cac5;
+    width: 25%;
+    font-size: 25px;
+}
+
+ul li:nth-child(3){
+    background-color: #976896;
+    font-size: 25px;
+    width: 25%;
+}
+
+ul li:nth-child(4){
+    background-color: #c34546;
+    font-size: 25px;
+    width: 25%;
+}
+
+ul li:nth-child(5){
+    background-color: #e36849;
+    font-size: 25px;
+    width: 25%;
+}
+
+ul li:nth-child(6){
+    background-color: #ffcc66;
+    font-size: 25px;
+    width: 25%;
+}
+
+ul li:nth-child(7){
+    background-color: #9bcd9a;
+    width: 25%;
+    font-size: 25px;
+}
+
+ul li:nth-child(8){
+    background-color: #66999a;
+    width: 25%;
+    font-size: 25px;
+}
+
+ul li:nth-child(9){
+    background-color: #cd669b;
+    font-size: 25px;
+    width: 50%;
+}
+
+ul li:nth-child(10){
+    background-color: #319966;
+    font-size: 25px;
+    width: 25%;
+}
+
+ul li:nth-child(11){
+    background-color: #66669a;
+    font-size: 25px;
+    width: 100%;
+}
+ul li:hover {
+    background-color: #f2f2f580;
+}
