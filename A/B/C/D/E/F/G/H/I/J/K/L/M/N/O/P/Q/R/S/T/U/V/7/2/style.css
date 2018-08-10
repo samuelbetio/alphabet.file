@@ -1,0 +1,32 @@
+body {
+    font-size: 18px;
+    color: #7a7a7a;
+    font-family: 'Lato', sans-serif;
+    padding: 100px;
+}
+span {
+    font-size: 110px;
+    float: left;
+    line-height: 50px;
+    color: black;
+}
+blockquote {
+    font-style: italic;
+    font-size: 24px;
+}
+
+button {
+    background-color: white;
+    border: #eaa258 2px solid;
+    color: #eaa258;
+    width: 260px;
+    height: 55px;
+}
+p {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+h1 {
+    color: black;
+    padding-bottom: 20px;
+}

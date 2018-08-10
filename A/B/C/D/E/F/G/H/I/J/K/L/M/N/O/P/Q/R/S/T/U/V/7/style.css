@@ -1,0 +1,72 @@
+@font-face {
+    font-family: FuturaPT;
+    src: url(smashing5/FuturaPT.otf);
+}
+@font-face {
+    font-family: ProximaNova;
+    src: url(smashing5/ProximaNovaCond-RegularIt.woff);
+}
+
+
+body {
+    background-color: #464f54;
+    width: 700px;
+    margin: 0 auto;
+}
+div.title {
+    display: inline-block;
+    background-color: #181818;
+    color: #bdbcbc;
+    width: 75%;
+    height: 90px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 25%;
+    text-align: left;
+    padding: 20px 20px 60px 40px;
+    position: fixed;
+    
+   } 
+    
+  div h2 {
+       font-size: 40px;
+       font-family: 'Playfair Display', serif;
+       color: #ffffff;
+       margin-bottom: 40px;
+       
+}
+
+
+ .color-bar {
+     width: 50%;
+     height: 50px;
+     margin-left: 35%;
+     margin-top: 190px;
+     position: fixed;
+}
+main {
+    background-color: #ffffff;
+    display: inline-block;
+    width: 100%;
+    margin-top: 100px;
+    padding: 60px 60px;
+    padding-top: 150px;
+    
+}
+p {
+    font-family: ProximaNova, Verdana, Tahoma;
+    font-size: 20px;
+}
+h1 {
+    font-family: FuturaPT;
+    text-transform: uppercase;
+    color: #2a2a2a;
+    
+}
+main h2 {
+    color: #b5b5b5;
+}
+blockquote {
+    font-style: italic;
+    color: #c9c9c9;
+}
