@@ -7,7 +7,10 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-- ## **S 1** - [SVG for Everybody](https://samuelbetio.github.io/alphabetfile/A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/1/)
+
+- ## **D** - [DownGit](A/B/C/D/)
+- ## **S 1** - [SVG for Everybody](A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/1/)
+- ## **S 1** - [SVG for Everybody](A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/1/)
 ```markdown
 Syntax highlighted code block
 
