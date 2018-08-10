@@ -1,0 +1,175 @@
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.cf:before, .cf:after {
+	content: " ";
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}
+
+.ba-container,.ba-container-center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+html {
+	height: 100%;
+}
+body, html {
+	min-height: 100%;
+}
+/* Text align */
+
+.ba-text-left {
+	text-align: left;
+}
+
+.ba-text-right {
+	text-align: right;
+}
+
+.ba-text-center {
+	text-align: center;
+}
+
+/* Floats */
+
+.ba-float-left {
+	float: left;
+}
+
+.ba-float-right {
+	float: right;
+}
+
+.ba-float-none {
+	float: none;
+}
+
+/* Vertical align */
+
+.ba-vertical-align:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+[class*="ba-vertical-align-"] {
+	display: inline-block;
+}
+
+.ba-vertical-align-top {
+	vertical-align: top;
+}
+
+.ba-vertical-align-middle {
+	vertical-align: middle;
+}
+
+.ba-vertical-align-bottom {
+	vertical-align: bottom;
+}
+
+
+/* Absolute centering */
+
+.ba-relative {
+	position: relative;
+}
+
+.ba-absolute-center {
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+
+/* Circle element */
+
+.ba-circle {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+
+
+.ba-row:before, .ba-row:after {
+	content: "";
+	display: table;
+}
+.ba-row:after {
+	clear: both;
+}
+.ba-row + .ba-row{
+	margin-top: 30px;
+}
+.ba-row{
+	margin-left: -30px;
+}
+
+.ba-row--collapse {
+    margin-left: 0;
+}
+.ba-row--collapse + .ba-row--collapse {
+    margin-top: 0;
+}
+.ba-row--collapse > [class*="ba-width-"] {
+    padding-left: 0;
+}
+
+.ba-row > [class*="ba-col-"]{
+	float: left;
+	padding-left: 30px;
+}
+.ba-col-12{
+	width: 100%;
+}
+.ba-col-11{
+	width: 91.63%;
+}
+.ba-col-10{
+	width: 83.3334%;
+}
+.ba-col-9{
+	width: 74.97%;
+}
+.ba-col-8{
+	width: 66.633334%;
+}
+.ba-col-7{
+	width: 58.31%;
+}
+.ba-col-6{
+	width: 50%;
+}
+.ba-col-5{
+	width: 41.65%;
+}
+.ba-col-4{
+	width: 33.333%;
+}
+.ba-col-3{
+	width: 25%;
+}
+.ba-col-2{
+	width: 16.66667%;
+}
+.ba-col-1{
+	width: 8.3334%;
+}
