@@ -11,7 +11,7 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ```markdown
 - 4
 - 3
-1. AlphabetHearts.gif  ![AlphabetHearts](A/4/3/AlphabetHearts.gif)
+1. AlphabetHearts.gif  [AlphabetHearts](A/4/3/AlphabetHearts.gif)
 ```
 - ## **D** - [DownGit](A/B/C/D/)
 - ## **S 1** - [SVG for Everybody](A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/1/)
