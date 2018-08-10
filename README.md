@@ -22,7 +22,7 @@ Syntax highlighted code block
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](A/4/3/AlphabetHearts.gif) and ![Image](src)
+[Link](A/4/3/AlphabetHearts.gif) and ![Image](A/4/3/AlphabetHearts.gif)
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
