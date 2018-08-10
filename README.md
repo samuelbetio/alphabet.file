@@ -25,7 +25,7 @@ Syntax highlighted code block
 
 **Alphabet File** and _A-Z index folders help you organize your files.._ and `8e50995` text
 
-[Link](A/4/3/AlphabetHearts.gif) and ![Image](A/4/3/AlphabetHearts.gif)
+[Home](https://samuelbetio.github.io/alphabetfile/) and ![Image](A/4/3/AlphabetHearts.gif)
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
