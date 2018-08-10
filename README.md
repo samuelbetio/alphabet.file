@@ -8,8 +8,8 @@ Whenever you commit to this repository, GitHub Pages will run [Home](https://sam
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 - ## **A**
-- /4/3/ 
 ```markdown
+- 4/3/ 
 1. AlphabetHearts.gif  ![AlphabetHearts](A/4/3/AlphabetHearts.gif)
 ```
 - ## **D** - [DownGit](A/B/C/D/)
