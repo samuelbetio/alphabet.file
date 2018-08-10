@@ -20,7 +20,7 @@ Syntax highlighted code block
 1. Numbered
 2. List
 
-**Bold** and _Italic_ and `Code` text
+**Bold** and _Italic_ and `8e50995` text
 
 [Link](A/4/3/AlphabetHearts.gif) and ![Image](A/4/3/AlphabetHearts.gif)
 ```
