@@ -9,12 +9,14 @@ Whenever you commit to this repository, GitHub Pages will run [Home](https://sam
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 - ## **D** - [DownGit](A/B/C/D/)
-- ## **S 1** - [SVG for Everybody](A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/1/)
-- ## **S 1** - [SVG for Everybody](A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/1/)
 - ## **C 4** - [CSS Dinner Shopping List](A/B/C/4/)
 - ## **C 5** - [CSS Weaher Forecast](A/B/C/5/)
+- ## **S 1** - [SVG for Everybody](A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/1/)
+- ## **S 1** - [SVG for Everybody](A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/1/)
+- ## **S 8** - [Start](A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/8/)
 - ## **V 7/1** - [Victoria Neborak](A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/T/U/V/7/1/)
 - ## **V 7/2** - [Day 25](A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/T/U/V/7/2/)
+
 ```markdown
 Syntax highlighted code block
 
