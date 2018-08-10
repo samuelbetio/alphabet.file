@@ -7,7 +7,8 @@ Whenever you commit to this repository, GitHub Pages will run [Home](https://sam
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-- ## **A** - /4/3/ 1. AlphabetHearts.gif - [AlphabetHearts](A/4/3/AlphabetHearts.gif)
+- ## **A** - /4/3/ 
+1. AlphabetHearts.gif - [AlphabetHearts](A/4/3/AlphabetHearts.gif)
 - ## **D** - [DownGit](A/B/C/D/)
 - ## **S 1** - [SVG for Everybody](A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/1/)
 - ## **S 1** - [SVG for Everybody](A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/1/)
