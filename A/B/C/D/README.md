@@ -6,7 +6,7 @@ With this tool you can directly download or create download link to any GitHub p
 
 ### Website
 
-[dGitFile ↑](\)
+[dGitFile ↑](index.html)
 
 ### How to Use?
 
