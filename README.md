@@ -2,7 +2,7 @@
 
 You can use the [editor on GitHub](https://github.com/samuelbetio/alphabetfile/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [![Home](A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/8/17/478e20cdf5-design-lab-assets/logo.svg)](https://samuelbetio.github.io/alphabet.file/) to rebuild the pages in your site, from the content in your Markdown files.
+Whenever you commit to this repository, GitHub Pages will run [![Home](A/B/C/D/E/F/G/H/I/J/K/L/3/8554441.png)](https://samuelbetio.github.io/alphabet.file/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### Markdown
 
