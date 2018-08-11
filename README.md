@@ -38,9 +38,9 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 ```markdown
 A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/T/U/V/W/X/Y/Z/
-```
 
-```alphabet file code
+
+
 1. A B C
 2. D E F
 3. G H I
