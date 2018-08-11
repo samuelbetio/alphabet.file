@@ -1,4 +1,4 @@
-- ## **H** - [HOME Task](../../../../../../../../)
+- ## **H** - [HOME Task](../../../../../../../../README.md)
 ```markdown
 A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/T/U/V/W/X/Y/Z/
 
