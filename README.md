@@ -18,6 +18,7 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 - ## **S** - [Alphabet File Working Group](A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/)
 - ## **S 1** - [SVG for Everybody](A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/1/)
 - ## **S 8** - [Start](A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/8/)
+- ## **S 8/1** - [SVG](A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/8/1/)
 - ## **S 9** - [Swift 4 Cheatsheet](A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/9/)
 - ## **V 7/1** - [Victoria Neborak](A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/T/U/V/7/1/)
 - ## **V 7/2** - [Day 25](A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/T/U/V/7/2/)
