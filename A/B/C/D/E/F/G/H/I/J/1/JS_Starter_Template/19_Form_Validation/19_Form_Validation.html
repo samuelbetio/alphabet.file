@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Form Validation</title>
+    <link rel="stylesheet" href="19_styles.css">
+</head>
+<body>
+
+<div id="form-div">
+    <h3>Register Here</h3>
+    <form onsubmit="return validate()" action="" name="vform">
+        <div id="username_div">
+           <input type="text" id="username" name="username" class="textInput" placeholder="User Name">
+            <div id="name_error"></div>
+        </div>
+        <div id="email_div">
+            <input type="email" id="email" name="email" class="textInput" placeholder="Email">
+            <div id="email_error"></div>
+        </div>
+        <div id="password_div">
+            <input type="password" id="password" name="password" class="textInput" placeholder="Password">
+        </div>
+        <div id="pass_confirm_div">
+            <input type="password" id="password_confirm" name="password_confirm" class="textInput" placeholder="Confirm Password">
+            <div id="password_error"></div>
+        </div>
+        <div>
+            <input type="submit" name="register" value="Register" class="btn">
+        </div>
+    </form>
+</div>
+
+<script src="19_script.js"></script>
+</body>
+</html>

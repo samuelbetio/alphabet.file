@@ -1,0 +1,70 @@
+body{
+    font-family: "Comic Sans MS", sans-serif;
+    margin: 0;
+}
+header , footer{
+    background: white url("img/image4.jpeg") no-repeat fixed center;
+    background-size: cover;
+    padding: 10px;
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    text-shadow: 2px 2px white;
+}
+
+footer{
+    background: white url("img/image4.jpeg") no-repeat fixed center;
+    background-size: cover;
+    padding: 10px;
+    font-size: 20px;
+    color: #0E0C0A;
+    text-align: center;
+    line-height: 12px;
+    /* to fix in the bottom */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.main-section{
+   text-align: center;
+    padding: 50px;
+}
+.heading-div{
+   background-color: #504644;
+    padding: 20px;
+    width: 500px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #93857b;
+}
+input[type='number']{
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid black;
+    color: white;
+}
+::placeholder{
+    color: lightgray;
+}
+.display-div{
+    padding: 3em;
+    background-color: #93857b;
+    margin-top: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #504644;
+}
+.display-div h1{
+    font-size: 50px;
+    padding: 0;
+    margin: 0;
+    color: #423b35;
+}
+
+
+
+
+

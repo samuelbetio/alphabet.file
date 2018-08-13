@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    font-family: "Comic Sans MS",sans-serif;
+}
+h2{
+    background-color: lightsalmon;
+    text-align: center;
+    padding: 10px;
+}
+#text-div{
+    background-color: orange;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+#image-div{
+    background-color: orange;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+#green-p{
+    font-size: 25px;
+}
+
+img{
+    border: 2px solid gray;
+    border-radius: 15px;
+}
+
+#blue , #facebook{
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+}
+#red,#youtube{
+    background-color: #ff110a;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+}
+#blue:hover , #red:hover , #facebook:hover , #youtube:hover{
+    opacity: 0.8;
+}

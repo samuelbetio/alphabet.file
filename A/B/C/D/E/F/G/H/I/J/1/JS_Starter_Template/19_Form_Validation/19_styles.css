@@ -1,0 +1,43 @@
+body{
+    font-family: Arial, sans-serif;
+}
+h3{
+    font-family: Arial,sans-serif;
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    color: #5B5349;
+}
+
+#form-div {
+    width: 25%;
+    margin: 50px auto;
+    padding: 25px;
+    background: lightgrey;
+    border-radius: 15px;
+}
+form {
+    margin: 30px auto;
+}
+.textInput {
+    height: 28px;
+    margin-bottom: 10px;
+    border: 1px solid #6B7363;
+    font-size: 1.2em;
+    padding: 5px;
+    width: 95%;
+    border-radius: 10px;
+}
+.textInput:focus {
+    outline: none;
+}
+.btn {
+    width: 98.6%;
+    border: none;
+    margin-top: 5px;
+    color: white;
+    background-color: #3b5998;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 15px;
+}

@@ -1,0 +1,21 @@
+body{
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+h2{
+    background-color: lightsalmon;
+    text-align: center;
+    padding: 5px;
+}
+div{
+    padding: 10px;
+    text-align: center;
+    color: white;
+    margin: 10px;
+}
+.green{
+    background-color: orange;
+}
+.blue{
+    background-color: orangered;
+}
