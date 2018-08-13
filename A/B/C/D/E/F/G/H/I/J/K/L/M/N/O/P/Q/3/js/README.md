@@ -1,6 +1,8 @@
 QR Code Generator
 ===
 
+You can use the [editor on GitHub](https://github.com/samuelbetio/alphabet.file/edit/master/A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/3/js/README.md) to maintain and preview the content for your website in Markdown files.
+
 ## Getting Started
 
 1. Include qrcode.js in your html.
