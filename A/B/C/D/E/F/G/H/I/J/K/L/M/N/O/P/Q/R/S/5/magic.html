@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./img/favicon.png">
+
+    <title>Magic Square Generator</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap_magic.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./css/narrow-jumbotron.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills float-right">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">3x3 Grid<span class="sr-only">(current)</span></a>
+            </li>
+            <!--<li class="nav-item">
+              <a class="nav-link" href="#">4x4 Grid</a>
+            </li>-->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Back</a>
+            </li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">MSG</h3>
+      </div>
+
+      <div class="jumbotron">
+        <h1 class="display-3">3x3 Magic Square</h1>
+	<p></p>
+	<div class="form-group">
+  <!--<label for="usr">Pick a number to generate:</label>
+  <input type="text" class="form-control" id="usr" placeholder="Type it here">
+</div>-->
+	 <button class="btn btn-lg btn-success" type="button" id="submitButton">Generate!</button>
+	 <table class="table">
+    <tbody>
+      <tr>
+        <td id="tda">#</td>
+        <td id="tdb">#</td>
+        <td id="tdc">#</td>
+      </tr>
+      <tr>
+        <td id="tdd">#</td>
+        <td id="tde">#</td>
+        <td id="tdf">#</td>
+      </tr>
+      <tr>
+        <td id="tdg">#</td>
+        <td id="tdh">#</td>
+        <td id="tdi">#</td>
+      </tr>
+    </tbody>
+  </table>
+	 </div>
+ <!--        <table class="table-condensed">
+    <tbody>
+      <tr>
+        <td id="">1</td>
+        <td id="">Anna</td>
+        <td id="">Anna</td>
+      </tr>
+      <tr>
+        <td id="">2</td>
+        <td id="">Debbie</td>
+        <td id="">Debbie</td>
+      </tr>
+      <tr>
+        <td id="">3</td>
+        <td id="">John</td>
+        <td id="">John</td>
+      </tr>
+    </tbody>
+  </table>-->
+
+      <!--<div class="row marketing">
+        <div class="col-lg-6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+
+        <div class="col-lg-6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+      </div>-->
+
+      <footer class="footer">
+        <p>Magic Square Generator (MSG) &middot Coded by sqr</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./js/ie10-viewport-bug-workaround.js"></script>
+    <script src="./js/magic_square.js"></script>
+  </body>
+</html>
