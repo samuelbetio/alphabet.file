@@ -1,0 +1,66 @@
+ _    _          _______      ________  _____ _______
+| |  | |   /\   |  __ \ \    / /  ____|/ ____|__   __|
+| |__| |  /  \  | |__) \ \  / /| |__  | (___    | |
+|  __  | / /\ \ |  _  / \ \/ / |  __|  \___ \   | |
+| |  | |/ ____ \| | \ \  \  /  | |____ ____) |  | |
+|_|  |_/_/    \_\_|  \_\  \/   |______|_____/   |_|
+
+======================================================
+
+Harvest is made by a dedicated team that spends every day trying to make Harvest the best it can be. This is who we are:
+
+- Danny Wen - Co-founder
+- Shawn Liu - Co-founder
+- Alanna Feinsod - Harvest Experts Lead
+- Albert Llop - Developer
+- Andrea Marincil - Harvest Expert
+- Andrew Dunkman - Developer
+- Arun Srinivasan - Developer
+- Barry Hess - Web Engineering Lead
+- BethAnne Freund - Harvest Expert
+- Brad Dunbar - Developer
+- Cade Truitt - Developer
+- Calina Madden - Product Manager
+- Coral Edwards - Marketing Lead
+- Courtney Kennedy - Harvest Expert
+- Curran Boomer - Marketing Manager
+- Daniel Marino - Product Designer
+- Doug Fales - Apps Lead
+- Doug Martin - Quality Assurance
+- Eike Herzbach - DevOps
+- Evan Walsh - Developer
+- Hudson Maul - Developer
+- Israel Alonso - Product Designer
+- Ivo Mavrodinov - Quality Assurance
+- Jae Kim - Operations Manager
+- Jamie Fisher - Harvest Expert
+- Jason Dew - Developer
+- Jeff Gilfelt - Developer
+- Jennifer Nystrom - Harvest Expert
+- Jeremy Israelsen - Developer
+- Jonathan Lane - Quality Assurance Lead
+- Jorge Lería - Application Security
+- Joschka Kintscher - Developer
+- Julia López - Developer
+- Kaela Glenn - Harvest Expert
+- Karla Pozzi - Quality Assurance
+- Lee Jones - DevOps
+- Lorenzo Planas - Developer
+- Matthew Lettini - Product Designer
+- Meghan Purvis - Harvest Expert
+- Patrick Filler - HR Lead
+- Pez Cuckow - Developer
+- Phyllis Zimmerman - Office Manager
+- Piotr Usewicz - Developer
+- Sergey Stankevich - DevOps
+- T.J. Schuck - Developer
+- Tayler Heuston - Harvest Expert
+- Tiffany Saricks - Harvest Expert
+- Trey Jackson - Harvest Expert
+- Vladimir Andrijevik - Developer
+- Warwick Poole - DevOps Lead
+- Zach Moazeni - Developer
+
+Read some more about us here: http://www.getharvest.com/about/meet-the-team
+
+If you’d like to join us to do work that is meaningful, challenging and fun, you’re in luck! We’re hiring: http://www.getharvest.com/careers
