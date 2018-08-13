@@ -7,7 +7,7 @@ You can use the [editor on GitHub](https://github.com/samuelbetio/alphabet.file/
 
 1. Include qrcode.js in your html.
 2. Prepare a place holder.
-3. [Generate QR](../1/) and render it.
+3. [Generate QR](../../1/) and render it.
 
 ```html
 <script type="text/javascript" src="qrcode.js"></script>
