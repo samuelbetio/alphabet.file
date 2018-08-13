@@ -1,0 +1,59 @@
+body{
+	text-align: center;
+	margin-top: 100px;
+}
+
+h1{
+	font-size: 500%;
+	font-family: "Dosis", sans-serif;
+}
+
+h2{
+	font-size: 300%;
+	font-family: "Dosis", sans-serif;
+}
+
+h3{
+	font-size: 200%;
+	font-family: "Dosis", sans-serif;
+}
+
+#toggle{
+	width: 100px;
+	height: 60px;
+	font-size: 200%;
+	font-family: "Dosis", sans-serif;
+}
+
+#reset{
+	width: 100px;
+	height: 60px;
+	font-size: 200%;
+	font-family: "Dosis", sans-serif;
+}
+
+#save{
+	width: 100px;
+	height: 60px;
+	font-size: 150%;
+	font-family: "Dosis", sans-serif;
+}
+
+#delete{
+	width: 100px;
+	height: 60px;
+	font-size: 100%;
+	font-family: "Dosis", sans-serif;
+}
+
+#show{
+	height: 60px;
+	width: 100px;
+	font-size: 90%;
+	font-family: "Dosis", sans-serif;
+	text-align: center;
+}
+
+#scrambleOutput{
+	display: none;
+}
