@@ -1,0 +1,21 @@
+@charset "utf-8";
+/*
+Template Name: PhotoFolio
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+File: Portfolio CSS
+*/
+
+#portfolio{display:block; width:100%; line-height:1.6em;}
+#portfolio .portfoliocontainer{display:block; width:100%; margin-bottom:20px; padding:0; border-bottom:1px solid #DFDFDF;}
+#portfolio .fl_left{width:220px; line-height:1.6em;}
+#portfolio .fl_right{width:700px;}
+#portfolio ul, #portfolio h2, #portfolio p, #portfolio img{margin:0; padding:0; list-style:none;}
+#portfolio .fl_left p{margin:12px 0 0 0;}
+#portfolio .fl_right li{float:left; margin:0 20px 20px 0;}
+#portfolio .fl_right li.last{margin-right:0;}
+#portfolio .fl_right li img{border:5px solid #DFDFDF;}
+#portfolio .fl_right p.name{font-weight:bold;}
+#portfolio .fl_right p.readmore{text-transform:uppercase;}

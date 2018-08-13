@@ -1,0 +1,43 @@
+@charset "utf-8";
+/*
+Template Name: PhotoFolio
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+File: Homepage CSS
+*/
+
+#tabcontainer .tabcontainer{padding:20px 0 0 0;}
+.tabcontainer h2.title{font-size:42px; font-weight:normal; color:#ACACAC; background-color:#F9F9F9;}
+
+/* ----------------------------------------------Services------------------------------------- */
+
+#hpage_services .block{display:inline; float:left; width:300px; margin:0 30px 0 0; padding:0;}
+#hpage_services .last{margin-right:0;}
+#hpage_services img{display:inline; float:left;}
+#hpage_services strong{float:left; margin:8px 0 0 10px; padding:0; font-size:22px; font-weight:normal; color:#ACACAC; background-color:#F9F9F9;}
+#hpage_services p{display:block; margin:0; padding:10px 0 0 0; clear:both; line-height:1.6em;}
+#hpage_services .spacer{clear:both; padding:8px 0; line-height:normal;}
+#container .tabcontainer ul.line p.readmore a, #container .tabcontainer .fl_right p.readmore a{display:inline-block; line-height:normal; height:28px; padding:12px 15px 0 15px; text-transform:uppercase; color:#F9F9F9; border:1px solid #000000; background:url("images/bar_gradient.png") center center no-repeat #666666;}
+
+/* ----------------------------------------------Latest Projects------------------------------------- */
+
+.tabcontainer ul.line{display:block; margin:0; padding:0; list-style:none;}
+.tabcontainer ul.line li{display:block; float:left; width:300px; margin:0 30px 0 0; padding:0;}
+.tabcontainer ul.line li.last{margin-right:0;}
+.tabcontainer ul.line .imgholder, .tabcontainer ul.line img, .tabcontainer ul.line p{margin:0; padding:0;}
+.tabcontainer ul.line .imgholder{margin:0 0 5px 0; padding:0 0 12px 0; background:url("images/small_shadow.gif") bottom center no-repeat;}
+#tabcontainer .tabcontainer ul.line li img{display:block; width:280px; height:160px; margin:0; padding:9px; border:1px solid #DFDFDF; color:#ACACAC; background-color:#F9F9F9;}
+.tabcontainer ul.line p.name{margin-bottom:15px; font-size:20px;}
+
+/* ----------------------------------------------Homepage Portfolio------------------------------------- */
+
+#hpage_portfolio{display:block; width:100%; line-height:1.6em;}
+#hpage_portfolio .fl_left{width:480px; padding:9px; border:1px solid #DFDFDF;}
+#hpage_portfolio .fl_right{width:420px;}
+#hpage_portfolio p, #hpage_portfolio img{margin:0; padding:0; list-style:none;}
+#portfolioslider{position:relative;}
+#portfolioslider ul{margin:0; padding:0; list-style:none;}
+#portfolioslider li{display:inline-block;}
+#container .tabcontainer .fl_right p.readmore{margin-top:15px; text-align:right;}
