@@ -1,0 +1,65 @@
+'atom-text-editor:not([mini])':
+  'ctrl-e': 'StoryOfMyLife:expand-abbreviation'
+  'ctrl-shift-e': 'StoryOfMyLife:balance-outward'
+  'ctrl-shift-0': 'StoryOfMyLife:balance-inward'
+  'ctrl-alt-j': 'StoryOfMyLife:matching-pair'
+  'ctrl-alt-right': 'StoryOfMyLife:next-edit-point'
+  'ctrl-alt-left': 'StoryOfMyLife:prev-edit-point'
+  'ctrl-shift-`': 'StoryOfMyLife:split-join-tag'
+  'ctrl-shift-;': 'StoryOfMyLife:remove-tag'
+  'ctrl-shift-y': 'StoryOfMyLife:evaluate-math-expression'
+  'alt-up': 'StoryOfMyLife:increment-number-by-01'
+  'alt-down': 'StoryOfMyLife:decrement-number-by-01'
+  'ctrl-up': 'StoryOfMyLife:increment-number-by-1'
+  'ctrl-down': 'StoryOfMyLife:decrement-number-by-1'
+  'alt-shift-up': 'StoryOfMyLife:increment-number-by-10'
+  'alt-shift-down': 'StoryOfMyLife:decrement-number-by-10'
+  'ctrl-shift-.': 'StoryOfMyLife:select-next-item'
+  'ctrl-shift-,': 'StoryOfMyLife:select-previous-item'
+  'ctrl-shift-r': 'StoryOfMyLife:reflect-css-value'
+  'ctrl-u': 'StoryOfMyLife:update-image-size'
+  "ctrl-'": 'StoryOfMyLife:encode-decode-data-url'
+  "ctrl-shift-'": 'StoryOfMyLife:update-tag'
+  'ctrl-shift-m': 'StoryOfMyLife:merge-lines'
+  'ctrl-alt-w': 'StoryOfMyLife:wrap-with-abbreviation'
+  'ctrl-alt-enter': 'StoryOfMyLife:interactive-expand-abbreviation'
+
+'atom-pane atom-text-editor:not([mini])':
+  'ctrl-shift-/': 'StoryOfMyLife:toggle-comment'
+
+# Override Enter key for specific syntaxes only
+'atom-pane atom-text-editor[data-grammar~="html"]:not([mini]):not(.autocomplete-active), atom-pane atom-text-editor[data-grammar~="xml"]:not([mini]):not(.autocomplete-active)':
+  'enter': 'StoryOfMyLife:insert-formatted-line-break-only'
+
+# language-specific Tab triggers
+# you can add more triggers by changing `grammar` attribute values
+'atom-text-editor[data-grammar="text html basic"]:not([mini]), atom-text-editor[data-grammar~="angular"]:not([mini]), atom-text-editor[data-grammar~="erb"]:not([mini]), atom-text-editor[data-grammar~="jade"]:not([mini]), atom-text-editor[data-grammar~="css"]:not([mini]), atom-text-editor[data-grammar~="stylus"]:not([mini]), atom-text-editor[data-grammar~="sass"]:not([mini]), atom-text-editor[data-grammar~="scss"]:not([mini])':
+  'tab': 'StoryOfMyLife:expand-abbreviation-with-tab'
+
+'.platform-darwin atom-text-editor:not([mini])':
+  'cmd-shift-e': 'StoryOfMyLife:expand-abbreviation'
+  'ctrl-d': 'StoryOfMyLife:balance-outward'
+  'alt-d': 'StoryOfMyLife:balance-inward'
+  'ctrl-right': 'StoryOfMyLife:next-edit-point'
+  'ctrl-left': 'StoryOfMyLife:prev-edit-point'
+  "cmd-shift-j": 'StoryOfMyLife:split-join-tag'
+  "cmd-'": 'StoryOfMyLife:remove-tag'
+  'cmd-shift-y': 'StoryOfMyLife:evaluate-math-expression'
+  'ctrl-alt-up': 'StoryOfMyLife:increment-number-by-01'
+  'ctrl-alt-down': 'StoryOfMyLife:decrement-number-by-01'
+  'ctrl-alt-cmd-up': 'StoryOfMyLife:increment-number-by-1'
+  'ctrl-alt-cmd-down': 'StoryOfMyLife:decrement-number-by-1'
+  'ctrl-alt-cmd-shift-up': 'StoryOfMyLife:increment-number-by-10'
+  'ctrl-alt-cmd-shift-down': 'StoryOfMyLife:decrement-number-by-10'
+  'ctrl-shift-right': 'StoryOfMyLife:select-next-item'
+  'ctrl-shift-left': 'StoryOfMyLife:select-previous-item'
+  'cmd-shift-r': 'StoryOfMyLife:reflect-css-value'
+  'ctrl-i': 'StoryOfMyLife:update-image-size'
+  "ctrl-shift-i": 'StoryOfMyLife:encode-decode-data-url'
+  'ctrl-shift-u': 'StoryOfMyLife:update-tag'
+  'cmd-shift-m': 'StoryOfMyLife:merge-lines'
+  'ctrl-w': 'StoryOfMyLife:wrap-with-abbreviation'
+  'alt-cmd-enter': 'StoryOfMyLife:interactive-expand-abbreviation'
+
+'.platform-darwin atom-pane atom-text-editor:not([mini])':
+  'cmd-/': 'StoryOfMyLife:toggle-comment'
