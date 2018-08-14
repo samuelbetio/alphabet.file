@@ -11,8 +11,6 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 
 - ## **B** - [B](A/B/)
 
-- ## **C** - [C](A/B/C/)
-
 - ## **D** - [DownGit](A/B/C/D/)
 
 - ## **C 4** - [CSS Dinner Shopping List](A/B/C/4/)
