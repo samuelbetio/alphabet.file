@@ -4,4 +4,4 @@ You can use the [editor on GitHub](https://github.com/samuelbetio/alphabet.file/
 
 - ## **A** - [A](../../../../../../../../../../../../../../../../../../../../../../../../../../README.md)
 
-- ## **Y** - [Y](../README.md)
+- ## **Y** - [Back](../README.md)
