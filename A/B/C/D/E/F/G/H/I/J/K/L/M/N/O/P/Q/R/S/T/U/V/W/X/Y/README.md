@@ -4,5 +4,5 @@ You can use the [editor on GitHub](https://github.com/samuelbetio/alphabet.file/
 
 [HOME](../../../../../../../../../../../../../../../../../../../../../../../../../README.md)
 
-- ## **X** - [X](/X/)
+- ## **X** - [X](../X/README.md)
 - ## **Z** - [Z](Z/)
