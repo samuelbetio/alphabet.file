@@ -30,7 +30,7 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 - ## **V 7/1** - [Victoria Neborak](A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/T/U/V/7/1/)
 - ## **V 7/2** - [Day 25](A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/T/U/V/7/2/)
 - ## **W 18/1** - [WORKING  WITH DESIGN LAB](A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/T/U/V/W/18/1/)
-
+- ## **Z** - [Z](A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/T/U/V/W/X/Y/Z/)
 
 ```markdown
 Syntax highlighted code block
