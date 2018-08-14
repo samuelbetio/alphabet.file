@@ -6,7 +6,7 @@ You can use the [editor on GitHub](https://github.com/samuelbetio/alphabet.file/
 
 - ## **Back** to file [A](../../../../README.md)
 
-- ## **Back** to file [C](../README.md)
+- ## **Back** to file [C](../)
 - ## **Next** to file [E](E/)
 
 
