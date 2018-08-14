@@ -1,5 +1,15 @@
 <h1> <img src="res/images/downgit.png" width="20" height=auto /> dGitFile </h1>
 
+## Welcome to GitHub Pages
+
+You can use the [editor on GitHub](https://github.com/samuelbetio/alphabet.file/edit/master/A/B/C/D/README.md) to maintain and preview the content for your website in Markdown files.
+
+- ## **Back** to file [A](../../../../README.md)
+
+- ## **Back** to file [C](../README.md)
+- ## **Next** to file [E](E/)
+
+
 #### Create GitHub Directory Download Link
 
 With this tool you can directly download or create download link to any GitHub public directory.
