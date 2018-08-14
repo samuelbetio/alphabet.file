@@ -4,7 +4,7 @@ You can use the [editor on GitHub](https://github.com/samuelbetio/alphabet.file/
 
 - ## **Back** to file [A](../../../../../../../../../../../../../../../../../../../README.md)
 
-- ## **Back** to file [R](../README.md)
+- ## **Back** to file [R](../)
 - ## **Next** to file [T](T/)
 
 
