@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0;" />
+		<meta name="author" content="Armin Pfäffle" />
+		<meta name="robots" content="index, follow" />
+
+		<title>ap-flip-gallery</title>
+		<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/ap-flip-gallery.css" type="text/css" media="screen" />
+
+		 <script src="js/jquery.min.js"></script>
+		 <script src="js/ap-flip-gallery.js"></script>
+		<!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	</head>
+
+	<body>
+		<div class="gallery">
+			<input type="button" id="init" value="Init" />
+			<ul class="images clearfix">
+				<li><img src="images/pride-w'14-1.jpg" width="300" height="393" alt="dirndl" /></li>
+				<li><img src="images/pride-w'14-2.jpg" width="300" height="393" alt="dirndl" /></li>
+				<li><img src="images/pride-w'14-3.jpg" width="300" height="393" alt="dirndl" /></li>
+				<li><img src="images/pride-w'14-4.jpg" width="300" height="393" alt="dirndl" /></li>
+				<li><img src="images/pride-w'14-5.jpg" width="300" height="393" alt="dirndl" /></li>
+				<li><img src="images/pride-w'14-6.jpg" width="300" height="393" alt="dirndl" /></li>
+				<li><img src="images/pride-w'14-7.jpg" width="300" height="393" alt="dirndl" /></li>
+				<li><img src="images/pride-w'14-8.jpg" width="300" height="393" alt="dirndl" /></li>
+				<li><img src="images/pride-w'14-9.jpg" width="300" height="393" alt="dirndl" /></li>
+				<li><img src="images/pride-w'14-10.jpg" width="300" height="393" alt="dirndl" /></li>
+			</ul>
+		</div>
+
+
+		<script type="text/javascript">
+
+			function init() {
+				$('.images')
+					.apFlipGallery({
+						tileCount: 5,
+						customTiles: [0],
+						onInitTile: function(isCustomTile) {
+							if (isCustomTile) {
+								$(this).addClass('my-custom-tile');
+								$(this).html(
+									'<img src="images/purple-angels-logo.png" width="260" height="138" alt="Purple Angels" id="logo" />'
+									+ '<p>This is a custom tile where you can add any content you want to! It will never flip, so this is a perfect place for a logo, text, or even controls for the gallery:</p>'
+									+ '<input type="button" id="destroy" value="Destroy" />'
+									+ '<input type="button" id="start" value="Start" />'
+									+ '<input type="button" id="stop" value="Stop" />'
+									+ '<input type="button" id="next" value="Next" />'
+									+ '<input type="button" id="add" value="Add" />'
+									+ '<input type="button" id="remove" value="Remove" />'
+								);
+							}
+						}
+					})
+					;
+
+
+				$('#destroy').on('click', function() {
+					$('.images').apFlipGallery('destroy');
+				});
+
+				$('#start').on('click', function() {
+					$('.images').apFlipGallery('start');
+				});
+
+				$('#stop').on('click', function() {
+					$('.images').apFlipGallery('stop');
+				});
+
+				$('#next').on('click', function() {
+					$('.images').apFlipGallery('next');
+				});
+
+				$('#add').on('click', function() {
+					var $image = $('<img src="images/purple-angels-logo.png" width="260" height="138" alt="Purple Angels" id="logo" />');
+					$('.images').apFlipGallery('add', $image);
+				});
+
+				$('#remove').on('click', function() {
+					var $image = $('<img src="images/pride-w\'14-1.jpg" />');
+					$('.images').apFlipGallery('remove', $image);
+				});
+			}
+
+			init();
+
+			$('#init').on('click', function() {
+				init();
+			});
+
+		</script>
+	</body>
+</html>
