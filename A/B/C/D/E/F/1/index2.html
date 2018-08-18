@@ -58,147 +58,116 @@
 	<!--************************************
 			Header Start
 	*************************************-->
-	<header id="header" class="tg-header tg-haslayout">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<strong class="logo">
-						<a href="index.html"> <img src="images/logo1.png" alt="image description"></a>
-					</strong>
-					<div class="tg-rightarea">
-						<nav id="tg-nav" class="tg-nav">
-							<div class="navbar-header">
-								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-							</div>
-							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-								<ul class="navbar-right">
-									<li class="active"><a href="index.html">Home</a>
-										<ul>
-											<li><a href="index.html">Home1</a></li>
-											<li><a href="index2.html">Home2</a></li>
-										</ul>
-									</li>
-									<li><a href="aboutus.html">about</a></li>
-									<li><a href="projects.html">projects</a></li>
-									<li> <a href="shop-grid.html">shop</a>
-										<ul>
-											<li><a href="shop-grid.html">shop grid</a></li>
-											<li><a href="shop-detail.html">shop detail</a></li>
-										</ul>
-									</li>
-									<li> <a href="blog-grid.html">blog</a>
-										<ul>
-										<li><a href="blog-grid.html">blog grid</a></li>
-										<li><a href="blog-detail.html">blog detail</a></li>
-									</ul>
-									</li>
-									
-									<li>
-										<a href="#"><span>pages</span><i class="fa fa-navicon"></i></a>
-										<ul>
-											<li><a href="team.html">team</a></li>
-											<li><a href="contactus.html">contact us</a></li>
-											<li><a href="page404.html">404</a></li>
-										</ul>
-									</li>
-
-								</ul>
-							</div>
-						</nav>
-						<nav id="tg-addnav" class="tg-addnav tg-search-cart">
-							<ul>
-								<li class="search-area">
-									<div class="tg-search dropdown">
-										<a href="#" id="tg-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-search"></i></a>
-										<div class="dropdown-menu" aria-labelledby="tg-search">
-											<form class="form-search">
-												<fieldset>
-													<input type="search" class="form-control" placeholder="Search">
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</li>
-								<li class="cart-area">
-									<div class="tg-cart dropdown">
-										<a href="#" id="tg-cart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											<i class="fa fa-shopping-cart"></i>
-										</a>
-										<div class="dropdown-menu tg-mini-cart" aria-labelledby="tg-cart">
-											<ul>
-												<li>
-													<figure class="tg-product-img">
-														<img src="images/thumbs/thumb-01.jpg" alt="image description">
-													</figure>
-													<div class="tg-product-data">
-														<a class="tg-trash fa fa-trash-o" href="#"></a>
-														<div class="tg-product-info">
-															<h4>2 × Product title</h4>
-															<span class="tg-product-price">$ 16.37</span>
-															<em class="tg-stock">in stock</em>
-														</div>
-													</div>
-												</li>
-												<li>
-													<figure class="tg-product-img">
-														<img src="images/thumbs/thumb-02.jpg" alt="image description">
-													</figure>
-													<div class="tg-product-data">
-														<a class="tg-trash fa fa-trash-o" href="#"></a>
-														<div class="tg-product-info">
-															<h4>2 × Product title</h4>
-															<span class="tg-product-price">$ 16.37</span>
-															<em class="tg-stock">in stock</em>
-														</div>
-													</div>
-												</li>
-												<li>
-													<figure class="tg-product-img">
-														<img src="images/thumbs/thumb-03.jpg" alt="image description">
-													</figure>
-													<div class="tg-product-data">
-														<a class="tg-trash fa fa-trash-o" href="#"></a>
-														<div class="tg-product-info">
-															<h4>2 × Product title</h4>
-															<span class="tg-product-price">$ 16.37</span>
-															<em class="tg-stock">in stock</em>
-														</div>
-													</div>
-												</li>
-											</ul>
-											<div class="tg-cart-total">
-												<a class="tg-emptycart pull-left" href="#">
-													<i class="tg-trash fa fa-trash-o"></i>
-													<em>Clear Your Cart</em>
-												</a>
-												<strong class="tg-total pull-right">Subtotal: $ 130.49</strong>
-											</div>
-											<div class="tg-btns shopping">
-												<a class="tg-btn" href="#">view cart</a>
-												<a class="tg-btn" href="#">checkout</a>
-											</div>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</nav>
-					</div>
+	<header id="header" class="tg-header tg-version tg-haslayout">
+		<button type="button" class="side-bar-btn"><i class="fa fa-bars"></i></button>
+		<nav class="navigation">
+			<div class="logo-area">
+				<div class="close-btn">
+					<a class="side-bar-btn pull-right flaticon-delete8" href="#">
+						<i class="fa fa-times"></i>
+					</a>
 				</div>
+				<a href="#"><img class="slide-logo" src="images/logo1.png" alt="slide-logo"></a>
 			</div>
+					<div class="tg-search-cart pull-right">
+		  <div class="tg-search dropdown">
+			<button class="tg-btn" id="tg-search" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-search"></i></button>
+			<div class="dropdown-menu" aria-labelledby="tg-search">
+			  <form class="form-search">
+				<fieldset>
+				  <input type="search" class="form-control" placeholder="Search">
+				</fieldset>
+			  </form>
+			</div>
+		  </div>
+		  <div class="tg-cart dropdown">
+			<button class="tg-btn" id="tg-cart" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="tg-item-count"> <span>Items in Cart: 03</span> <i class="fa fa-angle-down"></i> </span> <i class="fa fa-shopping-cart"></i> </button>
+			<div class="dropdown-menu tg-mini-cart" aria-labelledby="tg-cart">
+			  <ul>
+				<li>
+				  <figure class="tg-product-img"> <img src="images/thumbs/thumb-01.jpg" alt="image description"> </figure>
+				  <div class="tg-product-data"> <a class="tg-trash fa fa-trash-o" href="#"></a>
+					<div class="tg-product-info">
+					  <h4>2 × Product title</h4>
+					  <span class="tg-product-price">$ 16.37</span> <em class="tg-stock">in stock</em> </div>
+				  </div>
+				</li>
+				<li>
+				  <figure class="tg-product-img"> <img src="images/thumbs/thumb-02.jpg" alt="image description"> </figure>
+				  <div class="tg-product-data"> <a class="tg-trash fa fa-trash-o" href="#"></a>
+					<div class="tg-product-info">
+					  <h4>2 × Product title</h4>
+					  <span class="tg-product-price">$ 16.37</span> <em class="tg-stock">in stock</em> </div>
+				  </div>
+				</li>
+				<li>
+				  <figure class="tg-product-img"> <img src="images/thumbs/thumb-03.jpg" alt="image description"> </figure>
+				  <div class="tg-product-data"> <a class="tg-trash fa fa-trash-o" href="#"></a>
+					<div class="tg-product-info">
+					  <h4>2 × Product title</h4>
+					  <span class="tg-product-price">$ 16.37</span> <em class="tg-stock">in stock</em> </div>
+				  </div>
+				</li>
+			  </ul>
+			  <div class="tg-cart-total"> <a class="tg-emptycart pull-left" href="#"> <i class="tg-trash fa fa-trash-o"></i> <em>Clear Your Cart</em> </a> <strong class="tg-total pull-right">Subtotal: $ 130.49</strong> </div>
+			  <div class="tg-btns shopping"> <a class="tg-btn" href="#">view cart</a> <a class="tg-btn" href="#">checkout</a> </div>
+			</div>
+		  </div>
 		</div>
+		<ul class="navigation-list">
+			<li>
+				<a href="#list-1" data-toggle="collapse">HOME<i class="fa fa-caret-down"></i></a>
+				<ul class="collapse sub-list" id="list-1">
+					<li><a href="index.html">HOME1</a></li>
+					<li><a href="index2.html">HOME2</a></li>
+				</ul>
+			</li>
+			<li><a href="aboutus.html">about</a></li>
+			<li><a href="projects.html">projects</a></li>
+			<li>
+				<a href="#list-2" data-toggle="collapse">shop<i class="fa fa-caret-down"></i></a>
+				<ul class="collapse sub-list" id="list-2">
+					<li><a href="shop-grid.html">shop grid</a></li>
+					<li><a href="shop-detail.html">shop detail</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#list-3" data-toggle="collapse">blog<i class="fa fa-caret-down"></i></a>
+				<ul class="collapse sub-list" id="list-3">
+					<li><a href="blog-grid.html">blog grid</a></li>
+					<li><a href="blog-detail">blog detail</a></li>
+				</ul>
+			</li>
+			
+			<li>
+				<a href="#list-4" data-toggle="collapse">pages<i class="fa fa-caret-down"></i></a>
+				<ul class="collapse sub-list" id="list-4">
+					<li><a href="storelocator.html">store locator</a></li>
+					<li><a href="team.html">team</a></li>
+					<li><a href="contactus.html">contact us</a></li>
+					<li><a href="page404.html">404</a></li>
+				</ul>
+			</li>
+		</ul>
+		<div class="tg-heading-border">
+			<h3>follow us</h3>
+		</div>
+		<ul class="tg-socialicon">
+			<li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+			<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+			<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+			<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+		</ul>
+	</nav>
 	</header>
-	<!--************************************
+<!--************************************
 			Header End
 	*************************************-->
 	<!--************************************
 			Home Slider Start
 	*************************************-->
-	<div id="tg-home-slider" class="tg-home-slider tg-haslayout">
+	<div id="tg-home-slider" class="tg-home-slider tg-color tg-haslayout">
 			<div class="item">
 				<div class="container">
 					<div class="row">
@@ -1119,6 +1088,8 @@
 	<script src="js/swiper.min.js"></script>
 	<script src="js/nicescroll.js"></script>
 	<script src="js/handlebars.min.js"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script src="js/jquery.storelocator.min.js"></script>
 	<script src="js/gmap3.js"></script>
 	<script src="js/main.js"></script>
 </body>
