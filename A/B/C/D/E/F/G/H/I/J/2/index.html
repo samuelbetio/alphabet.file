@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
 <head>
@@ -5,26 +6,26 @@
 	<title>jQuery Flipping Gallery by Pete R. | The Pete Design</title>
 	<meta name="title" content="jQuery Flipping Gallery by Pete R. | The Pete Design" />
 	<meta name="description" content="Create a Flipping Awesome 3D Gallery with One Function Call" />
-	<link rel="image_src" href="images/flipping_gallery_image.png" />
+	<link rel="image_src" href="/images/flipping_gallery_image.png" />
 
-	<meta content="https://samuelbetio.github.io/alphabet.file/A/B/C/D/E/F/G/H/I/J/2/" property="og:url" />
-	<meta content="https://github.com/samuelbetio.png" property="og:image" />
-	<link rel="shortcut icon" id="favicon" href="favicon.png"> 
+	<meta content="http://www.thepetedesign.com/demos/flipping_gallery_demo.html" property="og:url" />
+	<meta content="http://www.thepetedesign.com/images/flipping_gallery_image.png" property="og:image" />
+	<link rel="shortcut icon" id="favicon" href="favicon.png">
 	<meta name="author" content="Pete R.">
-	<link rel="canonical" href="https://samuelbetio.github.io/alphabet.file/A/B/C/D/E/F/G/H/I/J/2/" />
+	<link rel="canonical" href="http://www.thepetedesign.com/demos/flipping_gallery_demo.html" />
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-	<link href='flipping_gallery.css' rel='stylesheet' type='text/css'>
-	
+	<link href='flipping_gallery/flipping_gallery.css' rel='stylesheet' type='text/css'>
+
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <script type="text/javascript" src="jquery.flipping_gallery.js"></script>
+  <script type="text/javascript" src="flipping_gallery/jquery.flipping_gallery.js"></script>
   <style>
     html {
       height: 100%;
     }
     body {
-      background: url(img/background.png);
+      background: url(flipping_gallery/background.png);
       padding: 0;
       text-align: center;
       font-family: 'open sans';
@@ -32,20 +33,20 @@
       margin: 0;
       height: 100%;
     }
-    
+
     .wrapper {
     	height: auto !important;
     	height: 100%;
-    	margin: 0 auto; 
+    	margin: 0 auto;
     	overflow: hidden;
     }
-    
+
     a {
       text-decoration: none;
     }
-    
-    
-    
+
+
+
     h1, h2 {
       width: 100%;
       float: left;
@@ -64,7 +65,7 @@
       margin-top: 10px;
       margin-bottom: 10px;
     }
-    
+
     .pointer {
       color: #00B0FF;
       font-family: 'Pacifico';
@@ -101,8 +102,8 @@
       width: 100%;
       margin: 0 auto;
     }
-    
-    
+
+
     .main h1 {
       padding:20px 50px 10px;
       float: left;
@@ -119,11 +120,11 @@
       letter-spacing: 2px;
       text-transform: capitalize;
     }
-   
+
     .main h1.demo1 {
       background: #1ABC9C;
     }
-    
+
     .reload.bell {
       font-size: 12px;
       padding: 20px;
@@ -134,12 +135,12 @@
       -webkit-border-radius: 50px;
       -moz-border-radius: 50px;
     }
-    
+
     .reload.bell #notification {
       font-size: 25px;
       line-height: 140%;
     }
-    
+
     .reload, .btn{
       display: inline-block;
       border: 4px solid #A2261E;
@@ -195,7 +196,7 @@
       font-weight: bold;
       color: rgba(255,255,255,0.55);
     }
-    
+
     .back {
       position: absolute;
       top: 0;
@@ -219,54 +220,151 @@
     .back:hover {
       background: rgba(0,0,0,0.5);
     }
-  
-    
+
+
     .page-container {
       max-width: 700px;
       margin: auto;
       position: relative;
     }
-    
+
     .page-container p{
       font-size: 21px;
       font-weight: 100;
       line-height: 180%;
     }
-    
+
     .page-container h3 {
       font-family: "noto serif";
       font-size: 23px;
     }
-    
+
     .gallery {
       width: 500px;
       height: 333px;
       margin: 150px auto 100px;
     }
-    
+
     .navigation {
       margin-bottom: 150px;
     }
-    
+
     .fg-card, .fg-card > img {
       border-radius: 3px;
     }
-    
+
     .fg-caption {
       color: white;
       font-style: italic;
       font-family:noto serif;
       font-size: 24px;
     }
-    
-	</style>
+
+	#carbonads {
+  --width: 180px;
+  --font-size: 14px;
+}
+
+#carbonads {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: block;
+  overflow: hidden;
+  margin-bottom: 20px;
+  max-width: var(--width);
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0 0 0 1px hsla(0, 0%, 0%, .1);
+  background-color: hsl(0, 0%, 98%);
+  font-size: var(--font-size);
+  line-height: 1.5;
+}
+
+#carbonads a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#carbonads a:hover {
+  color: inherit;
+}
+
+#carbonads span {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.carbon-img {
+  display: block;
+  margin-bottom: 8px;
+  max-width: var(--width);
+  line-height: 1;
+}
+
+.carbon-img img {
+  display: block;
+  margin: 0 auto;
+  max-width: var(--width) !important;
+  width: var(--width);
+  height: auto;
+}
+
+.carbon-text {
+  display: block;
+  padding: 0 1em 8px;
+}
+
+.carbon-poweredby {
+  display: block;
+  padding: 10px var(--font-size);
+  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, hsla(0, 0%, 0%, .025) 5px, hsla(0, 0%, 0%, .025) 10px) hsla(203, 11%, 95%, .4);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 0;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 759px) {
+  #carbonads {
+    float: none;
+    margin: 0 auto;
+    max-width: 330px;
+  }
+  #carbonads span {
+    position: relative;
+  }
+  #carbonads > span {
+    max-width: none;
+  }
+  .carbon-img {
+    float: left;
+    margin: 0;
+  }
+
+  .carbon-img img {
+    max-width: 130px !important;
+  }
+  .carbon-text {
+    float: left;
+    margin-bottom: 0;
+    padding: 8px 20px;
+    text-align: left;
+    max-width: calc(100% - 130px - 3em);
+  }
+  .carbon-poweredby {
+    left: 130px;
+    bottom: 0;
+    display: block;
+    width: 100%;
+  }}</style>
 	<script>
 	  $(document).ready( function() {
 	    $(".gallery").flipping_gallery({
 	      enableScroll: true,
 	      autoplay: 2000
 	    });
-	    
+
 	    $(".next").click(function() {
 	      $(".gallery").flipForward();
 	      return false;
@@ -276,8 +374,10 @@
 	      return false;
 	    });
 	  });
-		
-	</script>
+
+	  </script>
+    <link rel="stylesheet" href="../css/demo.css">
+    <script src="..js/demo.js"></script>
 </head>
 <body>
   <div class="wrapper">
@@ -290,7 +390,7 @@
   	      <a class="reload btn" href="https://github.com/samuelbetio/alphabet.file">Download on Github</a>
   	    </div>
   	  </div>
-  	  
+
       <div class="page-container">
       <div class="pointer2">Click Me</div>  
       <div class="pointer">Scroll Me</div>  
@@ -306,7 +406,7 @@
           <a href="#" data-caption="You can always find a decent coffee shop, even in the Himalayas!"><img src="img/4.jpg"></a>
           <a href="#" data-caption="Beautiful People, Beautiful Country"><img src="img/5.jpg"></a>
         </div>
-        
+
 
         <div class="navigation">
           <a href="#" class="btn prev">Previous</a>
