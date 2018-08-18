@@ -1,0 +1,268 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>zoom through</title>
+<meta name="title" content="openpolytech" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,100italic,300italic,400italic,700italic,900italic'
+ rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href='style/main.css' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+html {
+height: 100%;
+}
+body {
+/* background: url(img/background.png); */
+background:rgb(22, 104, 87);
+padding: 0;
+text-align: center;
+font-family: "Lato", "HelveticaNeue", 
+"Helvetica Neue", Helvetica, Arial, sans-serif;
+position: relative;
+margin: 0;
+height: 100%;
+}
+.wrapper {
+height: auto !important;
+height: 100%;
+margin: 0 auto;
+overflow: hidden;
+}
+a {
+text-decoration: none;
+}
+h1, h2 {
+width: 100%;
+float: left;
+}
+h1 {
+margin-top: 100px;
+color: #00B0FF;
+margin-bottom: 5px;
+font-size: 70px;
+letter-spacing: -4px;
+}
+h2 {
+letter-spacing: 0px;
+color: rgba(255,255,255,0.65);
+font-weight: 100;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+.pointer {
+color: #00B0FF;
+font-family: "Lato", "HelveticaNeue", 
+"Helvetica Neue", Helvetica, 
+	Arial, sans-serif;
+font-size: 24px;
+margin-top: 15px;
+position: absolute;
+top: 130px;
+right: -40px;
+}
+.pointer2 {
+color: #00B0FF;
+font-family: "Lato", "HelveticaNeue", 
+"Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 24px;
+margin-top: 15px;
+position: absolute;
+top: 130px;
+left: -40px;
+}
+pre {
+margin: 80px auto;
+}
+pre code {
+padding: 35px;
+border-radius: 5px;
+font-size: 15px;
+background: rgba(0,0,0,0.1);
+border: rgba(0,0,0,0.05) 5px solid;
+max-width: 500px;
+}
+.main {
+float: left;
+width: 100%;
+margin: 0 auto;
+}
+.main h1 {
+padding: 20px 50px 10px;
+float: left;
+width: 100%;
+font-size: 60px;
+box-sizing: border-box;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+font-weight: 100;
+margin: 0;
+padding-top: 25px;
+font-family: "Lato", "HelveticaNeue", 
+"Helvetica Neue", Helvetica, Arial, sans-serif;
+font-style: italic;
+letter-spacing: 2px;
+text-transform: capitalize;
+}
+.main h1.demo1 {
+background: #1ABC9C;
+}
+.reload.bell {
+font-size: 12px;
+padding: 20px;
+width: 45px;
+text-align: center;
+height: 47px;
+border-radius: 50px;
+-webkit-border-radius: 50px;
+-moz-border-radius: 50px;
+}
+.reload.bell #notification {
+font-size: 25px;
+line-height: 140%;
+}
+.reload, .btn {
+display: inline-block;
+border: 4px solid #A2261E;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+background: #CC3126;
+display: inline-block;
+line-height: 100%;
+padding: 0.7em;
+text-decoration: none;
+color: #0D2633;
+width: 100px;
+line-height: 140%;
+font-size: 17px;
+font-family: open sans;
+font-weight: bold;
+}
+.reload:hover {
+background: #A2261E;
+}
+.btn {
+width: 200px;
+color: #0D2633;
+border: none;
+margin-left: 10px;
+background: #00B0FF;
+}
+.clear {
+width: auto;
+}
+.btn:hover, .btn:hover {
+background: #00CDFF;
+}
+.btns {
+width: 410px;
+margin: 50px auto;
+}
+.back {
+position: absolute;
+top: 0;
+left: 0;
+text-align: center;
+display: block;
+padding: 7px;
+width: 100%;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+background: rgba(0,0,0,0.25);
+font-weight: bold;
+font-size: 13px;
+color: rgba(255,255,255,0.5);
+-webkit-transition: all 200ms ease-out;
+-moz-transition: all 200ms ease-out;
+-o-transition: all 200ms ease-out;
+transition: all 200ms ease-out;
+}
+.back:hover {
+background: rgba(0,0,0,0.5);
+}
+.page-container {
+max-width: 700px;
+margin: auto;
+position: relative;
+}
+.page-container p {
+font-size: 21px;
+font-weight: 100;
+line-height: 180%;
+}
+.page-container h3 {
+font-family: "Lato", "HelveticaNeue", 
+"Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 23px;
+}
+.gallery {
+width: 50rem;
+height: 333px;
+margin: 150px auto 100px;
+}
+.navigation {
+margin-bottom: 150px;
+}
+.fg-card, .fg-card > img {
+border-radius: 3px;
+}
+.fg-caption {
+color: white;
+font-family: "Lato", "HelveticaNeue", 
+"Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 24px;
+}
+</style>
+<script>
+	  $(document).ready( function() {
+	    $(".gallery").flipping_gallery({
+	      enableScroll: true,
+	    //   autoplay: 2000
+	    });
+	    
+	    $(".next").click(function() {
+	      $(".gallery").flipForward();
+	      return false;
+	    });
+	    $(".prev").click(function() {
+	      $(".gallery").flipBackward();
+	      return false;
+	    });
+	  });
+		
+	</script>
+</head>
+<body>
+<div class="wrapper">
+<div class="container-fluid">
+	<div class="row">
+		<div class="gallery"> 
+			<a href="#" data-caption="Smallest building block of all matter, including the body" class="captions"><img src="img/atom.jpg" class="gal1">
+			</a> 
+	
+		<a href="#" data-caption="Groups of atoms are called" class="captions"><img src="img/cells.jpg" class="gal"></a>
+	<!-- <a href="#" data-caption="Molecules group in specific ways to make cells, which are the smallest biological unit of living organisms."><img src="img/3.jpg"></a> 
+	<a href="#" data-caption="You can always find a decent coffee shop, even in the Himalayas!"><img src="img/4.jpg"></a>  -->
+		</div>
+	</div>
+<br>
+<div class="row">
+		<div class="navigation"> 
+			<a href="#" class="btn btn-primary btn-large prev">Previous</a> 
+			<a href="#" class="btn btn-primary btn-large next">Next</a> 
+		</div>
+	 </div>
+   </div>
+ </div>
+
+</body>
+</html>
