@@ -1,7 +1,6 @@
 ## Welcome to GitHub Pages
 <h1 align="center">
-  <a href="https://ci.appveyor.com/project/Daniel15/jest/branch/master"><img src="https://ci.appveyor.com/api/projects/status/8n38o44k585hhvhd/branch/master?svg=true" alt="Windows Build Status"></a>
-  <a href="https://samuelbetio.github.io/alphabet.file/"><img src="https://github.com/samuelbetio.png" height="150" width="150"/>
+  <a href="https://samuelbetio.github.io/alphabet.file/"><img src="https://github.com/samuelbetio.png" height="150" width="150"</a>
   <p align="center">Jest</p>
   <p align="center" style="font-size: 0.5em">🃏 Delightful JavaScript Testing</p>
 </h1>
