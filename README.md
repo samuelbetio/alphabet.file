@@ -1,9 +1,5 @@
 ## Welcome to GitHub Pages
-<h1 align="center">
-  <a href="https://samuelbetio.github.io/alphabet.file/"><img src="https://github.com/samuelbetio.png" height="150" width="150"</a>
-  <p align="center">Jest</p>
-  <p align="center" style="font-size: 0.5em"> Delightful JavaScript Testing</p>
-</h1>
+
 
 You can use the [editor on GitHub](https://github.com/samuelbetio/alphabetfile/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
