@@ -1,0 +1,58 @@
+.owl-theme .owl-controls{
+	margin-top: 35px;
+	text-align: left;
+}
+.owl-theme .owl-controls .owl-pagination {text-align: center;}
+.owl-theme .owl-controls .owl-buttons div{
+	color: #fff;
+	width:30px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	font-size: 12px;
+	background: #272727;
+	display: inline-block;
+	vertical-align:middle;
+	margin:0 2px 0 0;
+	font-size:18px
+}
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+	text-decoration: none;
+	color:#272727;
+}
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	vertical-align: bottom;
+	padding: 0 5px;
+}
+.owl-theme .owl-controls .owl-page span{
+	display: block;
+	width: 50px;
+	position: relative;
+	height: 10px;
+}
+.owl-theme .owl-controls .owl-page span:after{
+	content: '';
+	width: 100%;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	height: 2px;
+}
+.owl-theme .owl-controls .owl-page.active span:after{top: 0;}
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+}
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+	height: auto;
+	width: auto;
+	color: #FFF;
+	padding: 2px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+.owl-item.loading{
+	min-height: 150px;
+	background: url(../images/AjaxLoader.gif) no-repeat center center
+}

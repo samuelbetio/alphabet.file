@@ -1,0 +1,108 @@
+/* =============================================
+			Theme Color
+============================================= */
+a,
+p a,
+p a:hover,
+a:hover,
+a:focus,
+a:active,
+#tg-nav ul li a:hover,
+.tg-mini-cart .tg-product-data a:hover,
+.tg-mini-cart .tg-emptycart:hover,
+.tg-product-data h3 a:hover,
+.col ul li a:hover,
+.price-display .prices input,
+.tg-widget ul li a:hover,
+.tg-shopview li a:hover,
+.tg-shopview li a i:hover,
+.tg-product-nav-tabs li a:hover,
+.tg-post-head .right-box ul li a:hover i,
+.tg-author-detail .author-name h3 a,
+.widget-accordions ul li .tg-panel-heading.actives,
+.tg-comment-head .right-box a:hover,
+.tg-panel-heading h4:hover a,
+.tg-panel-heading h4.actives a,
+.widget-recent-post ul li a,
+.author-name ul li a:hover,
+.tg-blog-tags a:hover i,
+.tg-product-nav-tabs li.active a,
+.tg-theme-hover:hover .tg-hover-content h3,
+.anchor-top i,
+.tg-product-hover a,
+.tg-portfolio-hover a,
+.tg-counter .tg-timer,
+.tg-postmeta li:after,
+.tg-post:hover h3 a,
+.tg-team-hover a,
+#tg-nav ul li.active a,
+.fa-bars,
+.tg-color .tg-banner-content h1,
+.owl-theme .owl-controls.clickable .owl-buttons div:hover,
+.tg-addnav > ul > li > div > a:hover
+{color: #82b440;}
+/* =============================================
+			Theme Background Color
+============================================= */
+.tg-btn:hover,
+.tg-rightarea .form-search fieldset input,
+.form-search fieldset input,
+/*.tg-search-cart .open .tg-btn,*/
+#tg-nav ul li ul li:before,
+.tg-stock:hover,
+.tg-hover-content:before,
+.tg-improve-holder,
+.tg-improve-content,
+.tg-portfolio-head .tg-nav ul li a:hover,
+.tg-portfolio-head .tg-nav ul li.current-menu-item a,
+.owl-theme .owl-controls .owl-page span:after,
+.tg-product-hover a:hover,
+.col .tg-heading-border:after,
+.col.tg-tags ul li a:hover,
+.tg-socialicon li a:hover,
+.tg-banner .tg-heading-border:after,
+.col.aboutus ul li a:hover,
+.ui-slider-horizontal .ui-slider-range,
+.tg-widget ul li a:hover i,
+.tg-shop-sale-slider .item .slider-caption h2,
+.tg-shop-sale-slider .item .slider-caption h2:after,
+.tg-shop-sale-slider .item .slider-caption h2:before,
+.tg-author-detail .tg-heading-border:after,
+.tg-product-nav-tabs li a:hover:after,
+.tg-product-nav-tabs li.active a:after,
+.navbar-toggle:hover,.tg-heading-border:after,
+.tg-product-hover a:hover,
+.tg-team-hover a:hover,
+.tg-bggreen .tg-heading-border.tg-borderwhite:after,
+.tg-pagination ul li.tg-next a:hover,
+.tg-pagination ul li.tg-previous a:hover,
+.tg-banner ul,
+.logo-area,
+#tg-nav ul li.active::before,
+#tg-nav ul li:hover::before,
+.navbar-toggle
+{background:#82b440;}
+.tg-shop-sale-slider .owl-controls .owl-page.active span,
+.preloader-top-sun-line,
+.preloader-bottom-line{background:#82b440 !important;}
+/* =============================================
+			Theme Border Color
+============================================= */
+#tg-nav ul li.active a,
+#tg-nav ul li a:hover,
+#header .tg-cart .tg-mini-cart .tg-btns.shopping .tg-btn:hover,
+.tg-products-detail:hover .product-description,
+.tg-improve-box,
+.four-columns,
+.col.tg-tags ul li a:hover,
+.tg-socialicon li a:hover,
+.preloader-top-sun-bg,
+.tg-theme-hover:hover,
+.tg-recent-post ul li,
+#tg-nav ul li a:after,.navigation-list li:before,
+.tg-addnav > ul > li > div > a:after{border-color: #82b440;}
+/* =============================================
+			Theme Background Color Opacity
+============================================= */
+.tg-improve-box.active .tg-improve-content,
+.tg-improve-box:hover .tg-improve-content{ background: rgba(130, 180, 64, 0.80);}
