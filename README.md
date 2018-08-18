@@ -1,5 +1,9 @@
 ## Welcome to GitHub Pages
-
+<h1 align="center">
+  <img src="http://dp.hanlon.io/313y3u2D0p38/jest.png" height="150" width="150"/>
+  <p align="center">Jest</p>
+  <p align="center" style="font-size: 0.5em">🃏 Delightful JavaScript Testing</p>
+</h1>
 You can use the [editor on GitHub](https://github.com/samuelbetio/alphabetfile/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [![Home](https://github.com/samuelbetio.png?size=40)](https://samuelbetio.github.io/alphabet.file/) to rebuild the pages in your site, from the content in your Markdown files.
