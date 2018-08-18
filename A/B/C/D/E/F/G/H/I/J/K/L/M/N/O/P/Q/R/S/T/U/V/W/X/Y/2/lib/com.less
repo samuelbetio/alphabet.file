@@ -1,0 +1,53 @@
+// =============================================
+// @des:            comLess
+// @author:       	Ethan
+// @time:           2016-12-10
+// @lastTime     	2016-12-10
+// @version       	1.0 beta
+// =============================================
+
+//transition 过渡
+.transition(@transition){
+	-wikit-transition: @transition;
+	-moz-transition: @transition;
+	-ms-transition: @transition;
+	-o-transition: @transition;
+	transition: @transition;
+}
+
+//transform 变形
+.transform(@transform){
+	-wikit-transform:@transform;
+	-moz-transform:@transform;
+	-ms-transform:@transform;
+	-o-transform:@transform;
+	transform:@transform;
+}
+.transform-scale(@scale){
+	.transform(scale(@scale));
+}
+.transform-origin(@origin){
+	-wikit-transform-origin:@origin;
+	-moz-transform-origin:@origin;
+	-ms-transform-origin:@origin;
+	-o-transform-origin:@origin;
+	transform-origin:@origin;
+}
+//透明度
+.opacity(@opacity){
+	// Firefox, Safari(WebKit), Opera)
+	opacity: @opacity;  
+	// IE 8 
+	//filter: "alpha(opacity=@opacity)";   
+	// IE 4-7 
+	filter: alpha(opacity=@opacity); 
+	// needed in IE up to version 7, or set width or height to trigger "hasLayout"  
+	zoom: 1; 
+}
+//隐藏
+.hidden(){
+overflow: hidden; 
+width: 0; 
+height: 0; 
+border:none; 
+}
