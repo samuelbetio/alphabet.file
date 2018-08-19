@@ -1,0 +1,20 @@
+{
+  "name": "partial-imgur-downloader",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "~1.0.7",
+    "jquery": "~1.8.3",
+    "bootstrap": "http://twitter.github.com/bootstrap/assets/bootstrap.zip",
+    "jszip": "~1.0.0",
+    "font-awesome": "~3.2.1",
+    "jquery-bookmarklet": "~1.1.0"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
