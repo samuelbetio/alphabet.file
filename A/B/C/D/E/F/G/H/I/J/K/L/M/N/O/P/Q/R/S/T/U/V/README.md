@@ -8,4 +8,4 @@ You can use the [editor on GitHub](https://github.com/samuelbetio/alphabet.file/
 - ## **Next** to file [W](W/)
 
 - ## **V 7/1** - [Victoria Neborak](7/1/)
-
+- ## **V 7/2** - [Day 25](7/2/)
