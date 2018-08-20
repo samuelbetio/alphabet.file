@@ -8,6 +8,10 @@ You can use the [editor on GitHub](https://github.com/samuelbetio/alphabet.file/
 - ## **Back** to file [F](../)
 - ## **Next** to file [H](H/)
 
+- ## **G 1** to file [1](1/)
+
+- ## **G 2** to file [Facebook Group](2/)
+
 
 
 
