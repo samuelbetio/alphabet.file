@@ -1,0 +1,11 @@
+{
+  "name": "chaffle",
+  "description": "Shuffle Randomly Character.",
+  "main": [
+    "chaffle.min.js"
+  ],
+  "ignore": [
+    ".*"
+  ],
+  "homepage": "http://git.blivesta.com/chaffle"
+}
