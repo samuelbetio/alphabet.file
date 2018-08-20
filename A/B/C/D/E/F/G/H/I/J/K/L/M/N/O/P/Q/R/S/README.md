@@ -10,6 +10,9 @@ You can use the [editor on GitHub](https://github.com/samuelbetio/alphabet.file/
 
 - ## **S 8** - [Start](8/)
 
+- ## **S 8/17** - [SVG](8/17/)
+
+- ## **S 9** - [Swift 4 Cheatsheet](9/)
 
 
 
