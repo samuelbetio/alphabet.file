@@ -17,8 +17,6 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 - ## **N 5** - [Notepad++](A/B/C/D/E/F/G/H/I/J/K/L/M/N/5/npp.7.3.3.Installer.exe/)
 - ## **P** - [P](A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/)
 - ## **S** - [S](A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/)
-- ## **S 8/17** - [SVG](A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/8/17/)
-- ## **S 9** - [Swift 4 Cheatsheet](A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/9/)
 - ## **V** - [V](A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/T/U/V/)
 - ## **W** - [W](A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/T/U/V/W/)
 - ## **Z** - [Z](A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/T/U/V/W/X/Y/Z/)
