@@ -9,7 +9,7 @@ Shuffle Randomly Character.
 
 ## Demo
 
-http://git.blivesta.com/chaffle/
+https://samuelbetio.github.io/alphabet.file/A/B/C/3/
 
 ## Install
 
