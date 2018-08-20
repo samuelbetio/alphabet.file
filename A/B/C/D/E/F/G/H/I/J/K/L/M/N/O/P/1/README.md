@@ -1,2 +1,2 @@
 
-- ## **1** to file [Paint](Samuel%20Betio™.exe/)
+- ## **1** to file [Paint](Samuel%20Betio™.exe)
