@@ -8,3 +8,4 @@ You can use the [editor on GitHub](https://github.com/samuelbetio/alphabet.file/
 - ## **Next** to file [C](C/)
 
 - ## **B 1** to file [metamorph_classified](1/)
+- ## **B 2** to file [Home redirect](2/)
