@@ -11,7 +11,7 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 - ## **A** - [A](A/)
 
 - ## **D** - [DownGit](A/B/C/D/)
-- ## **H** - [HOME Task](A/B/C/D/E/F/G/H/)
+- ## **H** - [H](A/B/C/D/E/F/G/H/)
 - ## **I** - [I](A/B/C/D/E/F/G/H/I/)
 - ## **N** - [N](A/B/C/D/E/F/G/H/I/J/K/L/M/N/)
 - ## **P** - [P](A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/)
