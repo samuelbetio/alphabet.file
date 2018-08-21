@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<title>High Fashion | Product Single</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="stylesheets/foundation.min.css">
+<link rel="stylesheet" href="stylesheets/main.css">
+<link rel="stylesheet" href="stylesheets/app.css">
+<script src="javascripts/modernizr.foundation.js"></script>
+<!-- Google fonts -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />
+<!-- IE Fix for HTML5 Tags -->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="row page_wrap">
+  <!-- page wrap -->
+  <div class="twelve columns">
+    <!-- page wrap -->
+    <div class="row">
+      <div class="nine columns header_nav">
+        <ul id="menu-header" class="nav-bar horizontal">
+          <li><a href="index.html">Home</a></li>
+          <li class="has-flyout"> <a href="#">Example Pages</a><a href="#" class="flyout-toggle"></a>
+            <ul class="flyout">
+              <li class="has-flyout"><a href="blog.html">Blog</a></li>
+              <li class="has-flyout"><a href="blog-single.html">Blog Single Page</a></li>
+              <li class="has-flyout"><a href="products-page.html">Products Page</a></li>
+              <li class="has-flyout"><a href="product-single.html">Product Single</a></li>
+              <li class="has-flyout"><a href="contact.html">Contact Page</a></li>
+            </ul>
+          </li>
+          <li ><a href="galleries.html">Galleries</a></li>
+        </ul>
+        <script>$('ul#menu-header').nav-bar();</script>
+      </div>
+      <div class="three columns header_logo"> <img src="images/logo.png" alt=""> </div>
+    </div>
+    <!-- END Header -->
+    <div class="row">
+      <div class="six columns"> <img src="images/prod_large.jpg" alt=""> </div>
+      <div class="six columns">
+        <div class="panel">
+          <h3>Product Price calculator</h3>
+          <p style="font-style: italic; font-family: Georgia">Example only. Not included</p>
+          <form name="product_list" action="#">
+            <label><strong>Width (cm)</strong></label>
+            <input name="width" id="width" value="15" class="input_title_invoice" type="text">
+            <p></p>
+            <label><strong>Height (cm)</strong></label>
+            <input name="length" id="length" value="20" class="input_title_invoice" type="text">
+            <p></p>
+            <label style="font-weight:bold">Extras</label>
+            <select name="print">
+              <option value="1100">Cheese</option>
+              <option value="2900">Vegetables</option>
+              <option value="1600">Potatos</option>
+            </select>
+            <p style="font-size: 11px; padding: 0 0 11px; margin-top: 9px"> <strong>*Cheese:</strong> Some description text goes here.<br>
+              <strong>*Vegetables:</strong> Some description text goes here.<br>
+              <strong>*Potatos:</strong> Some description text goes here. </p>
+            <input name="unit_price" id="unit_price" value="340.00" type="hidden">
+            <input value="271" name="sales_price" id="total_item" type="hidden">
+            <p style="font-size: 24px">Totals: <span id="grandTotal">$271</span></p>
+          </form>
+        </div>
+        <!-- end panel -->
+      </div>
+    </div>
+    <!-- end row -->
+    <h4>Product Info</h4>
+    <div class="row">
+      <div class="twelve columns">
+        <dl class="tabs three-up">
+          <dd class="active"><a href="#simple1">Overview</a></dd>
+          <dd><a href="#simple2">Spesifications</a></dd>
+          <dd><a href="#simple3">Customer Reviews</a></dd>
+        </dl>
+        <ul class="tabs-content">
+          <li class="active" id="simple1Tab">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum porttitor lacus, eget commodo turpis laoreet at. Donec pretium, enim ut tempor mattis, nisi nunc dapibus dui, et ultricies odio justo a elit.</p>
+            <ul>
+              <li>Lorem</li>
+              <li>Ipsum</li>
+              <li>Dolor</li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum porttitor lacus, eget commodo turpis laoreet at. Donec pretium, enim ut tempor mattis, nisi nunc dapibus dui, et ultricies odio justo a elit.</p>
+          </li>
+          <li id="simple2Tab">Some content</li>
+          <li id="simple3Tab">
+            <p><strong>John Doe:</strong> Amazing Product</p>
+            <p><strong>Jane Doe:</strong> Ok Product</p>
+            <p><strong>Doe Doe:</strong> Cool</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns">
+        <ul id="menu3" class="footer_menu horizontal">
+          <li ><a href="index.html">Home</a></li>
+        </ul>
+        <script>$('ul#menu3').nav-bar();</script>
+      </div>
+    </div>
+  </div>
+  <!-- end page wrap) -->
+</div>
+<!-- end page wrap) -->
+<!-- Included JS Files (Compressed) -->
+<script src="javascripts/foundation.min.js"></script>
+<!-- Initialize JS Plugins -->
+<script src="javascripts/app.js"></script>
+</body>
+</html>
