@@ -1,0 +1,22 @@
+.body .featured div.gallery ul li a {
+	margin: 0 0 7px 0;
+}
+.body div.article div.connect a#facebook {
+	margin:0 0 0 20px;
+}
+.body .content .products ul {
+	height:1%;
+}
+.body .content .products div.paging {
+	height:1%;
+}
+.body .content .products div.paging ul {
+	margin:0 0 0 237px;
+}
+.body .content div.blog div div.stats div.share a#tweets, .body .content div.blog div div.stats div.share a#heart, .body .content div.blog div div.stats div.share a#likes {
+	text-indent:-99999px;
+}
+.body .content div.blog div div.stats div.share {
+	width:80px;
+	padding:0 0 0 500px;
+}
