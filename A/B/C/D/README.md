@@ -15,3 +15,5 @@ You can use the [editor on GitHub](https://github.com/samuelbetio/alphabet.file/
 - ## **D 5** to file [download-chromium](5/)
 - ## **D 6** to file [zkui](6/)
 - ## **D 7** to file [Fit Mom Ultima Tetips](7/)
+- ## **D 8** to file [Create GitHub Directory Download Link](8/)
+- ## **D 9** to file [Living in Fitness](9/)
