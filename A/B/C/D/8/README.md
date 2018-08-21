@@ -6,7 +6,7 @@ With this tool you can directly download or create download link to any GitHub p
 
 ### Website
 
-[dGitFile ↑](https://francesmaffyvalor.github.io/dGitFile/#/home)
+[dGitFile ↑](https://samuelbetio.github.io/alphabet.file/A/B/C/D/8/#/home)
 
 ### How to Use?
 
