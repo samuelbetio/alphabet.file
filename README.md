@@ -10,7 +10,7 @@ Whenever you commit to this repository, GitHub Pages will run [![Home](https://g
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 - ## **A** - [A](A/)
 
-- ## **D** - [DownGit](A/B/C/D/)
+- ## **D** - [D](A/B/C/D/)
 - ## **H** - [H](A/B/C/D/E/F/G/H/)
 - ## **I** - [I](A/B/C/D/E/F/G/H/I/)
 - ## **N** - [N](A/B/C/D/E/F/G/H/I/J/K/L/M/N/)
