@@ -1,8 +1,8 @@
-/***********************************************************
+/********************************************************
 * Developer: Samuel Betio (samuelbetio@gmail.com)       *
-* Website: https://github.com/samuelbetio/DownGit          *
-* License: MIT License                                     *
-***********************************************************/
+* Website: https://github.com/samuelbetio/              *
+* License: MIT License                                  *
+*********************************************************/
 
 'use strict';
 
