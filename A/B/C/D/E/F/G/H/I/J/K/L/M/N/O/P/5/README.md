@@ -22,13 +22,13 @@ Suggestions and collaborations are more than welcome. Please open an issue or ma
 |[Grouping](#grouping)							  | [Visualization](#visualization)                |Indexing           |
 |[Apply](#apply)							      | [Creating Series and DataFrames](#creating-series-and-dataframes) 		            |Exporting|
 
-### [Getting and knowing](https://github.com/guipsamora/pandas_exercises/tree/master/01_Getting_%26_Knowing_Your_Data)  
-[Chipotle](https://github.com/guipsamora/pandas_exercises/tree/master/01_Getting_%26_Knowing_Your_Data/Chipotle)  
-[Occupation](https://github.com/guipsamora/pandas_exercises/tree/master/01_Getting_%26_Knowing_Your_Data/Occupation)  
-[World Food Facts](https://github.com/guipsamora/pandas_exercises/tree/master/01_Getting_%26_Knowing_Your_Data/World%20Food%20Facts)
+### [Getting and knowing](01_Getting_%26_Knowing_Your_Data)  
+[Chipotle](01_Getting_%26_Knowing_Your_Data/Chipotle)  
+[Occupation](01_Getting_%26_Knowing_Your_Data/Occupation)  
+[World Food Facts](01_Getting_%26_Knowing_Your_Data/World%20Food%20Facts)
 
-### [Filtering and Sorting](https://github.com/guipsamora/pandas_exercises/tree/master/02_Filtering_%26_Sorting)
-[Chipotle](https://github.com/guipsamora/pandas_exercises/tree/master/02_Filtering_%26_Sorting/Chipotle)  
+### [Filtering and Sorting](02_Filtering_%26_Sorting)
+[Chipotle](02_Filtering_%26_Sorting/Chipotle)  
 [Euro12](https://github.com/guipsamora/pandas_exercises/tree/master/02_Filtering_%26_Sorting/Euro12)  
 [Fictional Army](https://github.com/guipsamora/pandas_exercises/tree/master/02_Filtering_%26_Sorting/Fictional%20Army)
 
