@@ -1,0 +1,47 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  background: #111;
+  padding: 20px 0;
+  height: 90px;
+  
+  #logo {
+    float: left;
+    h1 {
+      font-size: 36px;
+      margin: 0;
+      padding: 6px 0;
+      line-height: 1;
+      font-family: $accent-font;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+    
+    h1 a, h1 a:hover {
+      color: #fff;
+    }
+    
+    img {
+      padding: 0;
+      margin: 0;
+      max-height: 50px;
+    }
+  }
+  @media (max-width: 768px) {
+    height: 80px;
+    #logo {
+      h1 {
+        font-size: 26px;
+      }
+      
+      img { 
+        max-height: 40px;
+      }
+    }
+  }
+  .is-sticky & {
+    background: rgba(0,0,0,0.85);
+  }
+}

@@ -1,0 +1,223 @@
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+
+/* Nav Menu Essentials */
+.nav-menu {
+  ,* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+    
+  ul {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    z-index: 99;
+  }
+    
+  li {
+    position: relative;
+    white-space: nowrap;
+  }
+    
+  > li {
+    float: left;
+  }
+    
+  li:hover > ul,
+  li.sfHover > ul {
+    display: block;
+  }
+    
+  ul ul {
+    top: 0;
+    left: 100%;
+  }
+    
+  ul li {
+    min-width: 180px;
+  }
+}
+
+/* Nav Menu Arrows */
+.sf-arrows {
+  .sf-with-ul {
+    padding-right: 30px;
+  }
+    
+  .sf-with-ul:after {
+    content: "\f107";
+    position: absolute;
+    right: 15px;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+  }
+    
+  ul .sf-with-ul:after {
+    content: "\f105";
+  }
+}
+
+/* Nav Meu Container */
+#nav-menu-container {
+  float: right;
+  margin: 5px 0;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+/* Nav Meu Styling */
+.nav-menu {
+  a {
+    padding: 10px 15px;
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;   
+    font-size: 14px;
+    outline: none;
+  }
+    
+  a:hover, li:hover > a, .menu-active > a  {
+    color: $accent-color;
+  }
+    
+  ul {
+    margin: 4px 0 0 15px;
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.08);
+      
+    li {
+      background: #fff;
+      border-top:  1px solid #f4f4f4;
+      &:first-child {
+        border-top: 0;
+      }
+      
+      &:hover {
+        background: #f6f6f6;
+      }
+      a {
+        color: #333;
+      }
+
+    }
+    
+    ul {
+      margin: 0;
+    }
+  }
+}
+
+/* Mobile Nav Toggle */
+#mobile-nav-toggle {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  margin: 20px 20px 0 0;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  display: none;
+  transition: all 0.4s;
+  outline: none;
+  
+  i {
+    color: #fff;
+  }
+    
+  @media (max-width: 768px) {
+    display: inline; 
+  }
+    
+}
+
+/* Mobile Nav Styling */
+#mobile-nav {
+  position: fixed;
+  top: 0;
+  padding-top: 18px;
+  bottom: 0;
+  z-index: 998;
+  background: rgba(0, 0, 0, 0.9); 
+  left: -260px;
+  width: 260px;
+  overflow-y: auto;
+  transition: 0.4s;
+    
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+    li {
+      position: relative;
+      a {
+        color: #fff;
+        font-size: 16px;
+        overflow: hidden;
+        padding: 10px 22px 10px 15px;
+        position: relative;
+        text-decoration: none;
+        width: 100%;
+        display: block;
+        outline: none;
+        &:hover {
+          color: #fff;
+        }
+      }
+      
+      li {
+        padding-left: 30px;
+      }
+    }
+    
+    .menu-has-children i {
+      position: absolute;
+      right: 0;
+      z-index: 99;
+      padding: 15px;
+      cursor: pointer;
+      color: #fff;
+      &.fa-chevron-up {
+        color: $accent-color;
+      }
+    }
+    
+    .menu-item-active {
+      color: $accent-color;
+    }
+  }
+}
+
+#mobile-body-overly {
+  width:100%; 
+  height:100%; 
+  z-index:997;
+  top:0; 
+  left:0; 
+  position:fixed; 
+  background: rgba(0, 0, 0, 0.6); 
+  display: none;
+}
+
+/* Mobile Nav body classes */
+body {
+  &.mobile-nav-active {
+    overflow: hidden;
+    
+    #mobile-nav {
+      left: 0;
+    }
+    
+    #mobile-nav-toggle {
+      color: #fff;
+    }
+  }
+}
