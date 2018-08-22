@@ -1,0 +1,236 @@
+/* Figure 2 - Print version goes here */
+
+@media print {
+    h2.tm-section-title {
+        color: blue;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .tm-main-content {
+        margin: 0 auto;
+    }
+
+    .tm-content-box {
+        margin: 0;
+    }
+
+    .tm-team-description-container {
+        max-width: 100%;
+    }
+
+    .flex-2-col {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    #about {
+        display: none;
+    }
+
+    .heading {
+        display: none;
+    }
+
+    .blocks {
+        display: none;
+    }
+
+    #ideas {
+        display: none;
+    }
+
+    .img-fluid {
+        display: none;
+    }
+
+    #contact {
+        display: none;
+    }
+
+    .tm-banner {
+        height: 200px;
+        padding: 20px;
+    }
+
+    .pad {
+        padding: 20px 50px 15px 30px;
+    }
+}
+
+/* Figure 2 - Print version ends here */
+
+@media screen {
+    /* Figure 3 - Galerry block goes here */
+
+    li.box > a > img {
+        border-radius: 50%;
+    }
+
+    div#about > ul.boxes > li.box-bg:hover {
+        background-color: #31b0d5;
+        cursor: pointer;
+    }
+
+    div#about > ul.boxes > li.box-bg > h2:hover {
+        color: #fff;
+    }
+
+    /* Figure 3 - Galerry block ends here */
+
+    /* Changing color and font size of first letter in each paragraph goes here */
+
+    p::first-letter {
+        color: #76cdd7;
+        font-size: 30px;
+    }
+
+    /* Changing color and font size of first letter in each paragraph ends here */
+
+    /* Figure 4 - Block shadow goes here */
+
+    .tm-sidebar,
+    .tm-banner,
+    .flex-2-col,
+    .tm-content-box {
+        box-shadow: 5px 5px 5px #888;
+    }
+
+    /* Figure 4 - Block shadow ends here */
+
+    /*Figure 5 - Triangle goes here */
+
+    .tm-content-box{
+        position: relative;
+    }
+
+    .tm-content-box::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 25px 140px 0 0;
+        border-color: #31B0D5 transparent transparent transparent;
+        margin: 0 0 -25px 0;
+        z-index: 1;
+    }
+
+    .tm-content-box.flex-2-col:nth-child(2)::before{
+        display: none;
+    }
+
+
+    /*Figure 5 - Triangle ends here */
+
+    /*Changing color and add letter spacing of 'How We Do It' goes here*/
+
+    .carousel-inner div:first-child h2 {
+        color: gainsboro;
+        letter-spacing: 5px;
+    }
+
+    /*Changing color and add letter spacing of 'How We Do It' ends here*/
+
+    /* Italic font style for each first paragraph after h2 goes here*/
+    h2 + p {
+        font-style: italic;
+    }
+
+    /* Italic font style for each first paragraph after h2 ends here*/
+
+    /*Figure 6 - Text Alignment goes here */
+    .flex-2-col p {
+        text-indent: 20px;
+        line-height: 30px;
+    }
+
+    /*Figure 6 - Text Alignment ends here */
+
+    /*Figure 8 - List styling goes here */
+    .heading ol li a:visited {
+        color: silver;
+    }
+
+    .heading ol li a:hover {
+        color: #76cdd7;
+        border-bottom: 1.5px solid #76cdd7;
+    }
+
+    .heading h2 {
+        text-align: center;
+        color: #76cdd7;
+    }
+
+    .heading ol > li:first-child::after {
+        content: "New";
+        color: red;
+        vertical-align: top;
+        font-size: 10px;
+    }
+
+    .heading ol > li:nth-child(3)::after {
+        content: "New";
+        color: red;
+        vertical-align: top;
+        font-size: 10px;
+    }
+
+    /*Figure 8 - List styling ends here */
+
+    /*Figure 9 - Block styiling goes here*/
+
+    .blocks div ul p::first-letter {
+        color: black;
+    }
+
+    section.blocks > div.tm-content-box > ul.boxes.gallery-container > li:first-child {
+        background-color: #f2f2f2;
+    }
+
+    section.blocks > div.tm-content-box > ul.boxes.gallery-container > li:nth-child(3) {
+        background-color: #f2f2f2;
+    }
+
+    section.blocks > div.tm-content-box > ul.boxes.gallery-container > li:nth-child(5) {
+        background-color: #f2f2f2;
+    }
+
+    /*Figure 9 - Block styiling ends here*/
+
+    /*Figure 10 - Sidebar goes here*/
+
+    .tm-sidebar .tm-main-nav ul > li:nth-child(-n+3) {
+        border-bottom: 1px dashed #888;
+    }
+
+    /*Figure 10 - Sidebar ends here*/
+
+    /*Figure 11 — Work with Us form goes here */
+
+    input[type="text"] {
+        color: red;
+    }
+
+    button[type="submit"] {
+        color: red;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #31b0d5;
+    }
+
+    div.form-group.col-xs-12.col-sm-12.col-md-6.col-lg-6.form-group-2-col-right.mandatory-field::after {
+        content: "*";
+        color: red;
+        vertical-align: top;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    /*Figure 11 — Work with Us form ends here */
+}
