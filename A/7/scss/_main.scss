@@ -1,0 +1,151 @@
+body {
+    background-color: $bgColor;
+    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+p {
+    color: $pColor;
+}
+
+div.main-wrapper {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    div.logo {
+        width: 500px;
+        height: 500px;
+        img {
+            width: 500px;
+            height: auto;
+        }
+    }
+    nav {
+        border-top: 1px solid $borderColor;
+        border-bottom: 1px solid $borderColor;
+        width: 700px;
+        height: 25px;
+        margin-top: 210px;
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        a {
+            text-decoration: none;
+            color: $colorOfLinks;
+            text-transform: uppercase;
+            &:hover {
+                color: darken($color: $colorOfLinks, $amount: 20);
+                border-bottom: 1px solid $colorOfLinks;
+            }
+        }
+    }
+}
+
+div.toolbar {
+    float: right;
+    margin: 30px 0 30px 0;
+    input[type="text"] {
+        border: 1.5px solid $inputSearchColor;
+        width: 190px;
+        height: 25px;
+        padding: 5px 5px 5px 20px;
+    }
+    ::placeholder {
+        color: $inputSearchColor;
+    }
+}
+
+div.post-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    article {
+        width: 500px;
+        height: fit-content;
+        background-color: $bgColorInsideBlock;
+        margin-bottom: 25px;
+        padding: 10px;
+        h3 {
+            color: $h3ColorInsideBlock;
+            text-transform: uppercase;
+        }
+        img {
+            width: inherit;
+        }
+    }
+}
+
+div.post-description {
+    color: $pInsideBlockColor;
+    border-bottom: 1px solid $borderColor;
+    padding: 10px;
+}
+
+section.about {
+    h1 {
+        text-align: right;
+        color: $hColor;
+        text-transform: uppercase;
+    }
+    p {
+        margin-bottom: 30px;
+    }
+}
+
+section.contact-form {
+    h1 {
+        text-align: right;
+        color: $hColor;
+        text-transform: uppercase;
+    }
+    h4 {
+        text-align: right;
+        color: $hColor;
+        text-transform: uppercase;
+    }
+}
+
+form.contact-me {
+    input[type="text"],
+    input[type="email"] {
+        width: 100%;
+        height: 30px;
+        padding: 5px 5px 5px 20px;
+        margin-bottom: 15px;
+    }
+    textarea {
+        width: 100%;
+        resize: vertical;
+        padding: 5px 5px 5px 20px;
+        font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    button {
+        float: right;
+        width: 200px;
+        height: 40px;
+        cursor: pointer;
+        background-color: $btnColor;
+        color: #fff;
+        border: 1px solid $btnColor;
+        ;
+        font-size: 20px;
+        text-transform: uppercase;
+        margin: 20px 0 20px 0;
+        &:hover {
+            background-color: darken($btnColor, 5%);
+            color: #3f3f3f;
+            margin: 21px 0 20px 1px;
+        }
+    }
+}
+
+footer {
+    margin-top: 70px;
+    color: $pColor;
+}
