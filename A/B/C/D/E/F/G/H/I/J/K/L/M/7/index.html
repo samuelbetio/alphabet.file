@@ -1,1 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Free CSS website template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Your description">
+<meta name="keywords" content="Your keywords">
+<meta name="author" content="Your name">
 
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/camera.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+
+<script type="text/javascript" src="js/jquery.ui.totop.js"></script>
+
+<script type="text/javascript" src="js/camera.js"></script>
+<script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.caroufredsel.js"></script>
+<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+<script>
+$(document).ready(function() {
+	//
+
+	$('#camera_wrap').camera({
+		//thumbnails: true
+		//alignment			: 'centerRight',
+		autoAdvance			: true,
+		mobileAutoAdvance	: true,
+		fx					: 'simpleFade',
+		height: '41%',
+		hover: false,
+		loader: 'none',
+		navigation: true,
+		navigationHover: true,
+		mobileNavHover: true,
+		playPause: false,
+		pauseOnClick: false,
+		pagination			: true,
+		time: 5000,
+		transPeriod: 1000,
+		minHeight: '200px'
+	});
+
+	//	carouFredSel banner
+	$('#banner .carousel.main ul').carouFredSel({
+		auto: {
+			timeoutDuration: 8000
+		},
+		responsive: true,
+		prev: '.banner_prev',
+		next: '.banner_next',
+		width: '100%',
+		scroll: {
+			items: 1,
+			duration: 1000,
+			easing: "easeOutExpo"
+		},
+		items: {
+        	width: '350',
+			height: 'variable',	//	optionally resize item-height
+			visible: {
+				min: 1,
+				max: 4
+			}
+		},
+		mousewheel: false,
+		swipe: {
+			onMouse: true,
+			onTouch: true
+			}
+	});
+
+
+
+	$(window).bind("resize",updateSizes_vat).bind("load",updateSizes_vat);
+	function updateSizes_vat(){
+		$('#banner .carousel.main ul').trigger("updateSizes");
+	}
+	updateSizes_vat();
+
+
+
+}); //
+$(window).load(function() {
+	//
+
+}); //
+</script>
+<!--[if lt IE 8]>
+		<div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg"border="0"alt=""/></a></div>
+	<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+<![endif]-->
+</head>
+
+<body class="front">
+<div id="main">
+
+
+<div class="top1_wrapper">
+<div class="top1_wrapper2">
+<div class="container">
+<div class="row">
+<div class="span12">
+<div class="top1 clearfix">
+
+<header><div class="logo_wrapper"><a href="index.html" class="logo">metamorph_agnoro</a></div></header>
+
+<div class="navbar navbar_">
+	<div class="navbar-inner navbar-inner_">
+		<a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</a>
+		<div class="nav-collapse nav-collapse_ collapse clearfix">
+<ul class="nav nav_left sf-menu clearfix">
+	<li class="active"><a href="index.html">Home</a></li>
+	<li class="sub-menu sub-menu-1"><a href="about.html">about us</a>
+		<ul>
+			<li><a href="about.html">Who We Are</a></li>
+			<li><a href="about.html">Our Team</a></li>
+			<li><a href="about.html">Testimonials</a></li>
+			<li><a href="about.html">Blog</a></li>
+			
+		</ul>
+	</li>
+	<li><a href="services.html">services</a></li>
+</ul>
+
+<ul class="nav nav_right sf-menu clearfix">
+	<li><a href="gallery.html">gallery</a></li>
+	<li><a href="news.html">news</a></li>
+	<li><a href="contacts.html">contacts</a></li>
+</ul>
+		</div>
+	</div>
+</div>
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="top2_wrapper">
+<div class="container">
+<div class="row">
+<div class="span12">
+
+<div class="top2 clearfix">
+
+<div id="slider_wrapper">
+<div class="">
+<div id="slider_inner" class="clearfix">
+<div id="slider" class="clearfix">
+	<div id="camera_wrap">
+		<div data-src="images/slide01.jpg">
+			<div class="camera_caption nav1 fadeIn">
+				<div class="txt1"> Donec lacinia iaculis enim at lobortis.</div>
+			</div>
+		</div>
+		<div data-src="images/slide02.jpg">
+			<div class="camera_caption nav1 fadeIn">
+				<div class="txt1"> Praesent pharetra id purus nec tempor.</div>
+			</div>
+		</div>
+		<div data-src="images/slide03.jpg">
+			<div class="camera_caption nav1 fadeIn">
+				<div class="txt1"> Vestibulum auctor purus sed nibh aliquam malesuada.</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+</div>
+<div class="shadow1"><img src="images/shadow1.png" alt="" class="img"></div>
+</div>
+</div>
+
+<!-- design copyright link, do not delete -->
+<div id="copyright">Website Development by <a href="http://www.metamorphozis.com" class="mylink">free website templates</a></div>
+<!-- end copyright link -->
+
+<div id="banner_wrapper">
+<div class="">
+<div id="banner">
+<a class="banner_prev" href="#"></a>
+<a class="banner_next" href="#"></a>
+<div class="carousel-box">
+	<div class="inner">
+		<div class="carousel main">
+			<ul>
+				<li>
+					<div class="banner">
+						<div class="banner_inner">
+							<a href="#">
+								<div class="banner_inner2">
+									<div class="txt1">Phasellus sagittis</div>
+									<figure><img src="images/banner1.jpg" alt="" class="img"></figure>
+									<div class="txt2">
+										Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do.
+									</div>
+									<div class="txt3">read more</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="banner">
+						<div class="banner_inner">
+							<a href="#">
+								<div class="banner_inner2">
+									<div class="txt1">Cras luctus</div>
+									<figure><img src="images/banner2.jpg" alt="" class="img"></figure>
+									<div class="txt2">
+										Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do.
+									</div>
+									<div class="txt3">read more</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="banner">
+						<div class="banner_inner">
+							<a href="#">
+								<div class="banner_inner2">
+									<div class="txt1">Nam commodo</div>
+									<figure><img src="images/banner3.jpg" alt="" class="img"></figure>
+									<div class="txt2">
+										Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do.
+									</div>
+									<div class="txt3">read more</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="banner">
+						<div class="banner_inner">
+							<a href="#">
+								<div class="banner_inner2">
+									<div class="txt1">Donec massa</div>
+									<figure><img src="images/banner4.jpg" alt="" class="img"></figure>
+									<div class="txt2">
+										Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do.
+									</div>
+									<div class="txt3">read more</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="banner">
+						<div class="banner_inner">
+							<a href="#">
+								<div class="banner_inner2">
+									<div class="txt1">Vivamus mauris</div>
+									<figure><img src="images/banner1.jpg" alt="" class="img"></figure>
+									<div class="txt2">
+										Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do.
+									</div>
+									<div class="txt3">read more</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="banner">
+						<div class="banner_inner">
+							<a href="#">
+								<div class="banner_inner2">
+									<div class="txt1">Fusce vitae</div>
+									<figure><img src="images/banner2.jpg" alt="" class="img"></figure>
+									<div class="txt2">
+										Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do.
+									</div>
+									<div class="txt3">read more</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="banner">
+						<div class="banner_inner">
+							<a href="#">
+								<div class="banner_inner2">
+									<div class="txt1">Duis id molestie</div>
+									<figure><img src="images/banner3.jpg" alt="" class="img"></figure>
+									<div class="txt2">
+										Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do.
+									</div>
+									<div class="txt3">read more</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="banner">
+						<div class="banner_inner">
+							<a href="#">
+								<div class="banner_inner2">
+									<div class="txt1">Aliquam erat</div>
+									<figure><img src="images/banner4.jpg" alt="" class="img"></figure>
+									<div class="txt2">
+										Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do.
+									</div>
+									<div class="txt3">read more</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="h1_wrapper">
+<div class="">
+<div class="">
+<div class="clearfix">
+<div class="h1_inner">
+<h1>Our Special Proposals</h1>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="content">
+<div class="container">
+<div class="row">
+<div class="span4">
+
+<h4>Donec eget libero feugiat augue</h4>
+
+<p>
+	Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt.
+</p>
+
+<a href="#" class="button1">details</a>
+
+</div>
+<div class="span4">
+
+<h4>Praesent posuere ornare</h4>
+
+<p>
+	Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt.
+</p>
+
+<a href="#" class="button1">details</a>
+
+</div>
+<div class="span4">
+
+<h4>Nulla semper purus massa</h4>
+
+<p>
+	Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt.
+</p>
+
+<a href="#" class="button1">details</a>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="bot2_wrapper">
+<div class="container">
+<div class="row">
+<div class="span12">
+<div class="bot2">
+<div class="row">
+
+<div class="span7 block2">
+<div class="phone1">Company Name Here</div>
+
+<div class="social_wrapper">
+	<ul class="social clearfix">
+	    <li><a href="#"><img src="images/social_ic1.png"></a></li>
+	    <li><a href="#"><img src="images/social_ic2.png"></a></li>
+	    <li><a href="#"><img src="images/social_ic3.png"></a></li>
+	    <li><a href="#"><img src="images/social_ic4.png"></a></li>
+	    <li><a href="#"><img src="images/social_ic5.png"></a></li>
+	</ul>
+</div>
+
+</div>
+<div class="span3 block3">
+<div class="bot2_title">Our Address</div>
+<div class="adress1">
+                   1221 Birchmont Drive Northeast.<br>
+                    Phone:  1(234) 567 8910<br>
+                    E-mail: <a href="#">mail@companyname.com</a>
+</div>
+</div>
+</div>
+</div>
+<footer>Copyright  &copy; 2015. All rights reserved.<br /> Your Company Name Here</footer>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>

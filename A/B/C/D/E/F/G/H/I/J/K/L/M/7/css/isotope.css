@@ -1,0 +1,63 @@
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+/**** Custom ****/
+
+#isotope-options{}
+#isotope-filters{ margin: 20px 0px 30px 0px; padding: 0px 0px 0px 0px; list-style: none; background: #42B1F0;}
+#isotope-filters li{display: inline-block; float: left; margin-right: 20px; margin-bottom: 0px;}
+#isotope-filters li a{display:block; font-family: 'Lobster'; font-weight: 400; text-decoration: none; font-size: 22px; line-height: 20px; color: #000; padding: 15px 15px;
+transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -webkit-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out;
+}
+#isotope-filters li a:hover{color: #fff;}
+#isotope-filters li a.selected{color: #fff;}
+
+#isotope-items.thumbnails{margin-bottom: 0;}
+#isotope-items.thumbnails > li{margin-bottom: 30px;}
