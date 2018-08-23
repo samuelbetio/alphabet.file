@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>contacts</title>
+<meta charset="utf-8">    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Your description">
+<meta name="keywords" content="Your keywords">
+<meta name="author" content="Your name">
+<meta name = "format-detection" content = "telephone=no" />
+<!--CSS-->
+<link rel="stylesheet" href="css/bootstrap.css" >
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="fonts/font-awesome.css">
+<!--JS-->
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.mobilemenu.js"></script>
+<script src="js/jquery.ui.totop.js"></script>
+
+</head>
+<body>
+<!--header-->
+<header>
+    <div class="container">
+        <div class="row">
+            <article class="col-lg-12 col-md-12 col-sm-12">
+                <h1 class="navbar-brand navbar-brand_"><a href="index.html">metamorph_tribop</a></h1>
+                <div class="menuBox clearfix">
+                    <nav class="navbar navbar-default navbar-static-top my_navbar clearfix" role="navigation">
+                        <ul class="nav sf-menu clearfix">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="sub-menu"><a href="about.html">about us<span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="#">Dolore ipsu</a></li>
+                                    <li><a href="#">Consecte</a></li>
+                                    <li><a href="#">Elit Conseq</a>
+                                        <ul class="submenu">
+                                            <li><a href="#">Dolore ipsu</a></li>
+                                            <li><a href="#">Consecte</a></li>
+                                            <li><a href="#">Elit Conseq</a></li>
+                                            <li class="tr"></li>
+                                        </ul>
+                                    </li>
+                                    <li class="tr1"></li>
+                                </ul>
+                          </li>
+                            <li><a href="services.html">services</a></li>
+                            <li><a href="blog.html">blog</a></li>
+                            <li class="active"><a href="contact.html">contacts</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </article>
+        </div>
+    </div>
+</header>
+<div class="global indent no-padd">
+    <!--content-->
+    <section class="formBox">
+        <div class="container">
+            <div class="row">
+                <article class="col-lg-4 col-md-4 col-sm-4">
+                    <h3>addresses</h3>
+                    <dl>
+                                <dt>
+                                    8901 Minnesota, Bemidji,</dt>
+                    <dd>1221 Birchmont Drive Northeast.</dd>
+                    <dd>Phone:  1(234) 567 8910</dd>
+                   <dd> E-mail: <a href="#">mail@companyname.com</a></dd>
+                            </dl>                   
+                    
+                   
+                </article>
+                <article class="col-lg-8 col-md-8 col-sm-8 contactBox2">
+                    <h3>get in touch</h3>
+                    <form id="contact-form">
+                        <div class="success-message">Contact form submitted.</div>
+                        <div class="holder">
+                            <div class="form-div-1 clearfix">
+                                <label class="name">
+                                    <input type="text" placeholder="Name*:" data-constraints="@Required @JustLetters" />
+                                    <span class="empty-message">*This field is required.</span>
+                                    <span class="error-message">*This is not a valid name.</span>
+                                </label>
+                            </div>
+                            <div class="form-div-2 clearfix">
+                                <label class="email">
+                                    <input type="text" placeholder="E-mail*:" data-constraints="@Required @Email" />
+                                    <span class="empty-message">*This field is required.</span>
+                                    <span class="error-message">*This is not a valid email.</span>
+                                </label>
+                            </div>
+                            <div class="form-div-3 clearfix">
+                                <label class="phone notRequired">
+                                    <input type="text" placeholder="Telephone:" data-constraints="@JustNumbers"/>
+                                    <span class="empty-message">*This field is required.</span>
+                                    <span class="error-message">*This is not a valid phone.</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-div-4 clearfix">
+                            <label class="message">
+                                <textarea placeholder="Comment*:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+                                <span class="empty-message">*This field is required.</span>
+                                <span class="error-message">*The message is too short.</span>
+                            </label>
+                        </div>
+                        <div class="btns">
+                            <a href="#" data-type="submit" class="btn-default btn1">Submit</a>
+                            <p>*required fields</p>
+                        </div>  
+                    </form>
+                </article>
+            </div>
+        </div>
+    </section>
+</div>
+<!--footer-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <article class="col-lg-4 col-md-4 col-sm-4">
+                <figure><img src="img/foo_icon1.png" alt=""></figure>
+                <div class="extra-wrap">
+                    <p>metamorph_tribop<br>8901 Minnesota, Bemidji,<br />
+1221 Birchmont Drive Northeast.</p>
+                </div>
+            </article>
+            <article class="col-lg-4 col-md-4 col-sm-4">
+                <figure><img src="img/foo_icon2.png" alt=""></figure>
+                <div class="extra-wrap">
+                    <p>Telephone: +1 800 123 4567<br>E-mail: <a href="#">mail@domain.com</a></p>
+                </div>
+            </article>
+            <article class="col-lg-4 col-md-4 col-sm-4">
+                <p class="priv"><strong>metamorph_tribop</strong> &copy; <em id="copyright-year"></em> </p>
+                <ul>
+                	<li><a href="#"><img src="img/follow_icon1.png" alt=""></a></li>
+                	<li><a href="#"><img src="img/follow_icon2.png" alt=""></a></li>
+                	<li><a href="#"><img src="img/follow_icon3.png" alt=""></a></li>
+                	<li><a href="#"><img src="img/follow_icon4.png" alt=""></a></li>
+                </ul>
+            </article>
+        </div>
+    </div>
+    <div id="foot_cp">Website Design: <a href="http://www.metamorphozis.com" class="foot_lk">metamorphozis</a></div>
+</footer>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

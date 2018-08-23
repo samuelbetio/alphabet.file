@@ -1,0 +1,301 @@
+
+
+
+.camera_wrap img, 
+.camera_wrap ol, .camera_wrap ul, .camera_wrap li,
+.camera_wrap table, .camera_wrap tbody, .camera_wrap tfoot, .camera_wrap thead, .camera_wrap tr, .camera_wrap th, .camera_wrap td
+.camera_thumbs_wrap a, .camera_thumbs_wrap img, 
+.camera_thumbs_wrap ol, .camera_thumbs_wrap ul, .camera_thumbs_wrap li,
+.camera_thumbs_wrap table, .camera_thumbs_wrap tbody, .camera_thumbs_wrap tfoot, .camera_thumbs_wrap thead, .camera_thumbs_wrap tr, .camera_thumbs_wrap th, .camera_thumbs_wrap td {
+	background: none;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	list-style: none;
+    line-height: ;
+}
+.camera_wrap {
+	display: none;
+	float: none;
+	position: relative;
+	z-index: 1;
+	margin: 0 !important;
+}
+.camera_pie {
+    display:none;
+}
+.camera_wrap img {
+	max-width: none !important;
+    overflow: hidden;
+}
+.camera_fakehover {
+	height: 100%;
+	position: relative;
+	width: 100%;
+}
+.camera_src {
+	display: none;
+}
+.cameraCont, .cameraContents {
+	height: 100%;
+	position: relative;
+	width:1170px;
+	z-index: 1;
+    display: inline-block;
+    text-align: left;
+}
+.cameraSlide {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+}
+.cameraContent {
+	bottom: 0;
+	display: none;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+}
+.camera_target {
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	text-align: left;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+}
+.camera_overlayer {
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+}
+.camera_target_content {
+	bottom: 0;
+	left: 0;
+	overflow: visible;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 2;
+    text-align:center;
+}
+.camera_target_content .camera_link {
+	display: block;
+	height: 100%;
+	text-decoration: none;
+}
+.camera_loader {
+	background:#efede0 url(../img/camera-loader.gif) no-repeat center;
+	height: 36px;
+    width: 36px;
+    top: 50%;
+	left: 50%;
+	overflow: hidden;
+	position: absolute;
+	margin: -18px 0 0 -18px;
+	z-index: 3;
+    border-radius:36px;
+}
+.camera_loader img {
+    border-radius:36px;
+}
+.camera_clear {
+	display: block;
+	clear: both;
+}
+.showIt {
+	display: none;
+}
+.camera_clear {
+	clear: both;
+	display: block;
+	height: 1px;
+	margin: 0px;
+	position: relative;
+}
+.slider{
+	position: relative;
+    z-index:10;
+    top: 0;
+}
+.camera_pag {
+	position: absolute;
+    z-index:20;
+	bottom:20%;
+    right:5%;
+	padding:0;
+	display:inline-block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.camera_pag_ul {
+    display: inline-block;
+    float: none;
+    text-align: right;
+    float:right;
+}
+.camera-caption {
+	position: absolute;
+	top: 25%;
+    width: 100%;
+	z-index:100;
+	display: block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.camera-caption .title1 {
+    font:300 80px/71px 'Open Sans';
+    color:#fff;
+    font-style:normal;
+    text-transform:uppercase;
+    letter-spacing:0;
+    margin-bottom: 20px;
+}
+.camera-caption .description {
+    font:14px/24px 'Arial';
+    color:#fff;
+    font-style:normal;
+    margin-bottom: 25px;
+}
+.camera-caption .bannerBox {
+    float:right;
+    text-align: left;    
+    background:#fff;
+    padding:54px 44px 14px 41px;
+}
+.camera_prev span, .camera_next span{
+	position: absolute;
+	display: block;
+	width:20px;
+	height:29px;
+	top:50%;
+	cursor: pointer;
+	z-index: 1000;
+    margin-top:-15px;
+}
+.camera_prev span{
+	left:25px;
+	background:url(../img/prev.html) 0 top no-repeat;
+}
+.camera_prev span:hover{
+    background:url(../img/prev.html) 0 bottom no-repeat;
+}
+.camera_next span{
+    right:25px;
+	background:url(../img/next.html) 0 top no-repeat;
+}
+.camera_next span:hover{
+    background:url(../img/next.html) 0 bottom no-repeat;
+}
+.camera_pag_ul {
+    display: inline-block;
+}
+.camera_pag_ul li{
+	display: inline-block;
+	text-indent: -100px;
+	margin-left:7px;
+}
+.camera_pag_ul li:first-child {
+    margin-left:0;
+}
+.camera_pag_ul li>span{
+	cursor: pointer;
+	display: block;
+	width:42px;
+	height:13px;
+    background:#3e454c;
+	text-indent: -100px;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+.camera_pag_ul li>span>span{display: none;}
+.camera_pag_ul li.cameracurrent span, .camera_pag_ul li:hover span{
+    background:#FF7F00;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;    
+}
+/*---------------------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 1220px) {
+}
+/*---------------------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 992px) and (max-width: 1219px){
+.cameraCont, .cameraContents {
+    width: 940px;
+}
+.camera-caption .title1 {
+    font-size:50px;
+    line-height:45px;
+}
+}
+/*---------------------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 991px) {
+.cameraCont, .cameraContents {
+    width: 720px;
+}
+.camera-caption {
+    top:15%;
+}
+.camera-caption .title1 {
+    font-size:50px;
+    line-height:45px;
+}
+}
+/*---------------------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 767px) {
+.cameraCont, .cameraContents {
+    width: 100%;
+}
+.camera_pag {
+    bottom:0;
+}
+.camera-caption {
+    top:15%;
+    padding:0 15px;
+}
+.camera-caption .title1 {
+    font-size:50px;
+    line-height:45px;
+}
+.camera-caption .description br {
+    display:none;
+}
+}
+/*---------------------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 626px) {
+}
+/*---------------------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 560px) {
+}
+/*---------------------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 480px) {
+.camera-caption .title1 {
+    font-size: 20px;
+    line-height: 20px;
+}
+.camera-caption p br {
+    display:none;
+}
+}
+/*---------------------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 320px) {
+}
