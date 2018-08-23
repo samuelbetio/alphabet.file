@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Free CSS Website Templates</title>
+<title>products</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Your description">
@@ -12,7 +12,6 @@
 <link rel="stylesheet" href="css/font-awesome.css" type="text/css" media="screen">
 <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
 <link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" media="screen">
-<link rel="stylesheet" href="css/camera.css" type="text/css" media="screen">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
 
 <script type="text/javascript" src="js/jquery.js"></script>
@@ -21,9 +20,6 @@
 
 <script type="text/javascript" src="js/jquery.ui.totop.js"></script>
 
-<script type="text/javascript" src="js/camera.js"></script>
-<script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
-
 <script type="text/javascript" src="js/jquery.caroufredsel.js"></script>
 <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
 
@@ -31,33 +27,7 @@
 $(document).ready(function() {
 	//
 
-	$('#camera_wrap').camera({
-		//thumbnails: true
-		//alignment			: 'centerRight',
-		autoAdvance			: true,
-		mobileAutoAdvance	: true,
-		fx					: 'scrollRight',
-		height: '36%',
-		hover: false,
-		loader: 'none',
-		navigation: true,
-		navigationHover: true,
-		mobileNavHover: true,
-		playPause: false,
-		pauseOnClick: false,
-		pagination			: true,
-		time: 5000,
-		transPeriod: 1000,
-		minHeight: '200px'
-	});
 
-	
-
-	$(window).bind("resize",updateSizes_vat).bind("load",updateSizes_vat);
-	function updateSizes_vat(){
-		$('#banner .carousel.main ul').trigger("updateSizes");
-	}
-	updateSizes_vat();
 
 }); //
 $(window).load(function() {
@@ -75,7 +45,7 @@ $(window).load(function() {
 <![endif]-->
 </head>
 
-<body>
+<body class="not-front">
 <div id="main">
 
 <div class="top_wrapper">
@@ -88,6 +58,9 @@ $(window).load(function() {
 </div>
 <div class="span9">
 <div class="top1_inner clearfix">
+
+
+
 
 
 </div>
@@ -114,7 +87,7 @@ $(window).load(function() {
 		</a>
 		<div class="nav-collapse nav-collapse_ collapse">
 			<ul class="nav sf-menu clearfix">
-	      <li class="active"><a href="index.html">home</a></li>
+	      <li><a href="index.html">home</a></li>
 	      <li><a href="about.html">about</a></li>
 				<li class="sub-menu sub-menu-1"><a href="services.html">services<em></em></a>
 					<ul>
@@ -125,6 +98,7 @@ $(window).load(function() {
 								<li><a href="services.html">sit amet</a></li>
 								<li><a href="services.html">adipiscing elit</a></li>
 								<li><a href="services.html">nunc suscipit</a></li>
+								<li><a href="404.html">404 page not found</a></li>
 							</ul>
 						</li>
 						<li class="sub-menu sub-menu-2"><a href="about.html">Aenean ac felis<em></em></a>
@@ -138,7 +112,7 @@ $(window).load(function() {
 						<li><a href="services.html">Ut sollicitudin augue</a></li>
 					</ul>
 				</li>
-				<li><a href="products.html">products</a></li>
+				<li class="active"><a href="products.html">products</a></li>
 				<li><a href="gallery.html">gallery</a></li>
 				<li><a href="contact.html">contacts</a></li>
     	</ul>
@@ -153,37 +127,23 @@ $(window).load(function() {
 </div>
 </div>
 
-<div id="slider_wrapper">
-<div class="">
-<div id="slider_inner" class="clearfix">
-<div id="slider" class="clearfix">
-	<div id="camera_wrap">
-		<div data-src="images/slide01.jpg">
-			<div class="camera_caption nav1 fadeIn">
-				<div class="txt1">Class aptent taciti</div>
-				<div class="txt2">Donec feugiat leo mi, vitae</div>
-			</div>
-		</div>
-		<div data-src="images/slide02.jpg">
-			<div class="camera_caption nav1 fadeIn">
-				<div class="txt1">Nullam maximus elementum</div>
-				<div class="txt2">Pellentesque consectetur</div>
-			</div>
-		</div>
-		<div data-src="images/slide03.jpg">
-			<div class="camera_caption nav1 fadeIn">
-				<div class="txt1">Vestibulum congue ligula </div>
-				<div class="txt2">Sed turpis tortor</div>
-			</div>
-		</div>
-
-
-	</div>
-</div>
+<div class="page_slide">
+<img src="images/page_slide3.jpg" alt="">
+<div class="h1_wrapper">
+<div class="container">
+	<h1>Products</h1>
 </div>
 </div>
 </div>
 
+<div class="breadcrumbs1_wrapper">
+<div class="sh1"><img src="images/sh1.png" alt="" class="img"></div>
+<div class="breadcrumbs1_inner">
+<div class="container">
+<div class="breadcrumbs1"><a href="index.html">Home page</a><span></span><a href="index.html">Pages</a><span></span>Products</div>
+</div>
+</div>
+</div>
 
 <div id="content_wrapper">
 <div id="content">
@@ -191,73 +151,141 @@ $(window).load(function() {
 <div class="row">
 <div class="span12">
 
-<div class="slogan1">
-	<div class="txt1">Mauris eleifend justo urna, condimentum posuere arcu</div>
-	<div class="txt2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis lobortis felis. Sed commodo commodo tempor. Nullam eget augue quis felis posuere accumsan eu et erat. Sed urna dolor, posuere sed eros vel, accumsan fermentum mi.</div>
-</div>
-
-<div class="row">
-<div class="span3">
-<div class="save1">
-<div class="green1 clearfix"><img src="images/icon1.png" alt="" /><span>Vivamus ut velit<br /> lectus sit</span></div>
-<h4 class="upper">Lorem ipsum dolor</h4>
-<p>
-	Phasellus consequat ac ante ornare imperdiet. Morbi sodales, lectus sit amet lobortis euismod, magna.
-</p>
-<a href="#" class="button1">more</a>
-</div>
-</div>
-<div class="span3">
-<div class="save1">
-<div class="green1 clearfix"><img src="images/icon2.png" alt="" /><span>Nunc dictum fermentum</span></div>
-<h4 class="upper">Lorem ipsum dolor</h4>
-<p>
-	Phasellus consequat ac ante ornare imperdiet. Morbi sodales, lectus sit amet lobortis euismod, magna.
-</p>
-<a href="#" class="button1">more</a>
-</div>
-</div>
-<div class="span3">
-<div class="save1">
-<div class="green1 clearfix"><img src="images/icon3.png" alt="" /><span>Aenean sit amet <br />lectus sit</span></div>
-<h4 class="upper">Lorem ipsum dolor</h4>
-<p>
-	Phasellus consequat ac ante ornare imperdiet. Morbi sodales, lectus sit amet lobortis euismod, magna.
-</p>
-<a href="#" class="button1">more</a>
-</div>
-</div>
-<div class="span3">
-<div class="save1">
-<div class="green1 clearfix"><img src="images/icon4.png" alt="" /><span>Nam semper <br />lectus sit</span></div>
-<h4 class="upper">Lorem ipsum dolor</h4>
-<p>
-	Phasellus consequat ac ante ornare imperdiet. Morbi sodales, lectus sit amet lobortis euismod, magna.
-</p>
-<a href="#" class="button1">more</a>
-</div>
-</div>
-</div>
-
-<div class="hl1"></div>
-
 <div class="row">
 <div class="span9">
 
-<h3>Morbi sodales, lectus sit amet </h3>
+<h2>Our Products</h2>
 
-<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis lobortis felis.</h4>
+<div class="row">
+<div class="span3">
+<div class="thumb3">
+	<div class="thumbnail clearfix">
+		<figure class="img-polaroid"><img src="images/products01.jpg" alt=""></figure>
+		<div class="caption">
+			<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+			<p>
+				Sed commodo commodo tempor. Nullam eget augue quis felis posuere accumsan eu et erat. Sed urna dolor, posuere sed eros vel,
+			</p>
+			<div class="clearfix">
+				<div class="txt1"><b>Price:</b> $120</div>
+				<div class="txt2"><a href="#" class="button1">more</a></div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="span3">
+<div class="thumb3">
+	<div class="thumbnail clearfix">
+		<figure class="img-polaroid"><img src="images/products02.jpg" alt=""></figure>
+		<div class="caption">
+			<h5>Erem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+			<p>
+				Sed commodo commodo tempor. Nullam eget augue quis felis posuere accumsan eu et erat. Sed urna dolor, posuere sed eros vel,
+			</p>
+			<div class="clearfix">
+				<div class="txt1"><b>Price:</b> $250</div>
+				<div class="txt2"><a href="#" class="button1">more</a></div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="span3">
+<div class="thumb3">
+	<div class="thumbnail clearfix">
+		<figure class="img-polaroid"><img src="images/products03.jpg" alt=""></figure>
+		<div class="caption">
+			<h5>Ipsum dolor sit amet, conse ctetur adipiscing elit.</h5>
+			<p>
+				Sed commodo commodo tempor. Nullam eget augue quis felis posuere accumsan eu et erat. Sed urna dolor, posuere sed eros vel,
+			</p>
+			<div class="clearfix">
+				<div class="txt1"><b>Price:</b> $340</div>
+				<div class="txt2"><a href="#" class="button1">more</a></div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
 
-<p>
-	Sed commodo tempor. Nullam eget augue quis felis posuere accumsan eu et erat. Sed urna dolor, posuere sed eros vel, accumsan fermentum mi. Nunc ullamcorper, dolor non fringilla dapibus, risus tellus congue enim, ac faucibus odio nunc id erat. Phasellus mollis eu nulla eget congue. Vivamus id laoreet nisi, sed scelerisque diam. Curabitur interdum convallis sapien, eget placerat neque placerat ut.
-</p>
+<div class="row">
+<div class="span3">
+<div class="thumb3">
+	<div class="thumbnail clearfix">
+		<figure class="img-polaroid"><img src="images/products04.jpg" alt=""></figure>
+		<div class="caption">
+			<h5>Sit amet, consectetur adipi scing elit. Sed quis lobortis</h5>
+			<p>
+				Sed commodo commodo tempor. Nullam eget augue quis felis posuere accumsan eu et erat. Sed urna dolor, posuere sed eros vel,
+			</p>
+			<div class="clearfix">
+				<div class="txt1"><b>Price:</b> $270</div>
+				<div class="txt2"><a href="#" class="button1">more</a></div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="span3">
+<div class="thumb3">
+	<div class="thumbnail clearfix">
+		<figure class="img-polaroid"><img src="images/products05.jpg" alt=""></figure>
+		<div class="caption">
+			<h5>Adipiscing elit. Sed quis lobortis felis. Sed commodo</h5>
+			<p>
+				Sed commodo commodo tempor. Nullam eget augue quis felis posuere accumsan eu et erat. Sed urna dolor, posuere sed eros vel,
+			</p>
+			<div class="clearfix">
+				<div class="txt1"><b>Price:</b> $150</div>
+				<div class="txt2"><a href="#" class="button1">more</a></div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="span3">
+<div class="thumb3">
+	<div class="thumbnail clearfix">
+		<figure class="img-polaroid"><img src="images/products06.jpg" alt=""></figure>
+		<div class="caption">
+			<h5>Lor sit amet, consectetur adipiscing elit. Sed quis</h5>
+			<p>
+				Sed commodo commodo tempor. Nullam eget augue quis felis posuere accumsan eu et erat. Sed urna dolor, posuere sed eros vel,
+			</p>
+			<div class="clearfix">
+				<div class="txt1"><b>Price:</b> $90</div>
+				<div class="txt2"><a href="#" class="button1">more</a></div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
 
 </div>
 <div class="span3">
 
-<h3>Sed commodo </h3>
+<h3>Category</h3>
 
 <ul class="ul1">
+	<li><a href="#">Lorem ipsum dolor.</a></li>
+	<li><a href="#">Etiam et lorem sed.</a></li>
+	<li><a href="#">Aenean ac felis.</a></li>
+	<li><a href="#">Ut sollicitudin augue.</a></li>
+	<li><a href="#">Lorem ipsum dolor.</a></li>
+	<li><a href="#">Etiam et lorem sed.</a></li>
+	<li><a href="#">Aenean ac felis.</a></li>
+	<li><a href="#">Ut sollicitudin augue.</a></li>
 	<li><a href="#">Lorem ipsum dolor.</a></li>
 	<li><a href="#">Etiam et lorem sed.</a></li>
 	<li><a href="#">Aenean ac felis.</a></li>
@@ -265,8 +293,22 @@ $(window).load(function() {
 
 </ul>
 
+
+
+
+
+
+
+
+
+
+
 </div>
 </div>
+
+
+
+
 
 
 
@@ -314,17 +356,24 @@ $(window).load(function() {
 <footer>Copyright © 2015.All rights reserved.  <a href="#">Privacy Policy</a>
 
 <!-- design copyright link, do not delete -->
-<div id="cprt">Website Design by <a href="http://www.metamorphozis.com" class="mylnk">website templates</a></div>
+<div id="cprt">Website Design by <a href="http://www.metamorphozis.com" rel="nofollow" class="mylnk">website templates</a></div>
 <!-- end copyright link -->
-</div>
 </footer>
 
+</div>
 
 </div>
 </div>
 </div>
 </div>
 </div>
+
+
+
+
+
+
+
 
 
 </div>

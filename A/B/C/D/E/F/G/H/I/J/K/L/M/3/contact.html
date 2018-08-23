@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Free CSS Website Templates</title>
+<title>contacts</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Your description">
@@ -12,7 +12,6 @@
 <link rel="stylesheet" href="css/font-awesome.css" type="text/css" media="screen">
 <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
 <link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" media="screen">
-<link rel="stylesheet" href="css/camera.css" type="text/css" media="screen">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
 
 <script type="text/javascript" src="js/jquery.js"></script>
@@ -21,43 +20,16 @@
 
 <script type="text/javascript" src="js/jquery.ui.totop.js"></script>
 
-<script type="text/javascript" src="js/camera.js"></script>
-<script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
-
 <script type="text/javascript" src="js/jquery.caroufredsel.js"></script>
 <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+
+<script type="text/javascript" src="js/cform.js"></script>
 
 <script>
 $(document).ready(function() {
 	//
 
-	$('#camera_wrap').camera({
-		//thumbnails: true
-		//alignment			: 'centerRight',
-		autoAdvance			: true,
-		mobileAutoAdvance	: true,
-		fx					: 'scrollRight',
-		height: '36%',
-		hover: false,
-		loader: 'none',
-		navigation: true,
-		navigationHover: true,
-		mobileNavHover: true,
-		playPause: false,
-		pauseOnClick: false,
-		pagination			: true,
-		time: 5000,
-		transPeriod: 1000,
-		minHeight: '200px'
-	});
 
-	
-
-	$(window).bind("resize",updateSizes_vat).bind("load",updateSizes_vat);
-	function updateSizes_vat(){
-		$('#banner .carousel.main ul').trigger("updateSizes");
-	}
-	updateSizes_vat();
 
 }); //
 $(window).load(function() {
@@ -75,7 +47,7 @@ $(window).load(function() {
 <![endif]-->
 </head>
 
-<body>
+<body class="not-front">
 <div id="main">
 
 <div class="top_wrapper">
@@ -88,6 +60,9 @@ $(window).load(function() {
 </div>
 <div class="span9">
 <div class="top1_inner clearfix">
+
+
+
 
 
 </div>
@@ -114,7 +89,7 @@ $(window).load(function() {
 		</a>
 		<div class="nav-collapse nav-collapse_ collapse">
 			<ul class="nav sf-menu clearfix">
-	      <li class="active"><a href="index.html">home</a></li>
+	      <li><a href="index.html">home</a></li>
 	      <li><a href="about.html">about</a></li>
 				<li class="sub-menu sub-menu-1"><a href="services.html">services<em></em></a>
 					<ul>
@@ -125,6 +100,7 @@ $(window).load(function() {
 								<li><a href="services.html">sit amet</a></li>
 								<li><a href="services.html">adipiscing elit</a></li>
 								<li><a href="services.html">nunc suscipit</a></li>
+								<li><a href="404.html">404 page not found</a></li>
 							</ul>
 						</li>
 						<li class="sub-menu sub-menu-2"><a href="about.html">Aenean ac felis<em></em></a>
@@ -140,7 +116,7 @@ $(window).load(function() {
 				</li>
 				<li><a href="products.html">products</a></li>
 				<li><a href="gallery.html">gallery</a></li>
-				<li><a href="contact.html">contacts</a></li>
+				<li class="active"><a href="contact.html">contacts</a></li>
     	</ul>
 		</div>
 	</div>
@@ -153,37 +129,23 @@ $(window).load(function() {
 </div>
 </div>
 
-<div id="slider_wrapper">
-<div class="">
-<div id="slider_inner" class="clearfix">
-<div id="slider" class="clearfix">
-	<div id="camera_wrap">
-		<div data-src="images/slide01.jpg">
-			<div class="camera_caption nav1 fadeIn">
-				<div class="txt1">Class aptent taciti</div>
-				<div class="txt2">Donec feugiat leo mi, vitae</div>
-			</div>
-		</div>
-		<div data-src="images/slide02.jpg">
-			<div class="camera_caption nav1 fadeIn">
-				<div class="txt1">Nullam maximus elementum</div>
-				<div class="txt2">Pellentesque consectetur</div>
-			</div>
-		</div>
-		<div data-src="images/slide03.jpg">
-			<div class="camera_caption nav1 fadeIn">
-				<div class="txt1">Vestibulum congue ligula </div>
-				<div class="txt2">Sed turpis tortor</div>
-			</div>
-		</div>
-
-
-	</div>
-</div>
+<div class="page_slide">
+<img src="images/page_slide2.jpg" alt="">
+<div class="h1_wrapper">
+<div class="container">
+	<h1>Contacts</h1>
 </div>
 </div>
 </div>
 
+<div class="breadcrumbs1_wrapper">
+<div class="sh1"><img src="images/sh1.png" alt="" class="img"></div>
+<div class="breadcrumbs1_inner">
+<div class="container">
+<div class="breadcrumbs1"><a href="index.html">Home page</a><span></span><a href="index.html">Pages</a><span></span>Contacts</div>
+</div>
+</div>
+</div>
 
 <div id="content_wrapper">
 <div id="content">
@@ -191,81 +153,87 @@ $(window).load(function() {
 <div class="row">
 <div class="span12">
 
-<div class="slogan1">
-	<div class="txt1">Mauris eleifend justo urna, condimentum posuere arcu</div>
-	<div class="txt2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis lobortis felis. Sed commodo commodo tempor. Nullam eget augue quis felis posuere accumsan eu et erat. Sed urna dolor, posuere sed eros vel, accumsan fermentum mi.</div>
-</div>
+<h2>Contact Address</h2>
 
 <div class="row">
-<div class="span3">
-<div class="save1">
-<div class="green1 clearfix"><img src="images/icon1.png" alt="" /><span>Vivamus ut velit<br /> lectus sit</span></div>
-<h4 class="upper">Lorem ipsum dolor</h4>
-<p>
-	Phasellus consequat ac ante ornare imperdiet. Morbi sodales, lectus sit amet lobortis euismod, magna.
-</p>
-<a href="#" class="button1">more</a>
-</div>
-</div>
-<div class="span3">
-<div class="save1">
-<div class="green1 clearfix"><img src="images/icon2.png" alt="" /><span>Nunc dictum fermentum</span></div>
-<h4 class="upper">Lorem ipsum dolor</h4>
-<p>
-	Phasellus consequat ac ante ornare imperdiet. Morbi sodales, lectus sit amet lobortis euismod, magna.
-</p>
-<a href="#" class="button1">more</a>
-</div>
+<div class="span9">
+
+
+
+<figure class="google_map">
+    <iframe src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=1221+Birchmont+Drive+Northeast,+Bemidji,+Minnesota,+USA&amp;aq=0&amp;oq=Birchmont+Drive+12,+Bemidji,+Minnesota,+USA&amp;sll=47.480351,-94.877832&amp;sspn=0.009078,0.022724&amp;ie=UTF8&amp;hq=&amp;hnear=1221+Birchmont+Dr+NE,+Bemidji,+Beltrami,+Minnesota+56601&amp;t=m&amp;z=14&amp;ll=47.480351,-94.877832&amp;output=embed"></iframe>
+</figure>
+
+
+
+
+
+
+
 </div>
 <div class="span3">
-<div class="save1">
-<div class="green1 clearfix"><img src="images/icon3.png" alt="" /><span>Aenean sit amet <br />lectus sit</span></div>
-<h4 class="upper">Lorem ipsum dolor</h4>
-<p>
-	Phasellus consequat ac ante ornare imperdiet. Morbi sodales, lectus sit amet lobortis euismod, magna.
-</p>
-<a href="#" class="button1">more</a>
-</div>
-</div>
-<div class="span3">
-<div class="save1">
-<div class="green1 clearfix"><img src="images/icon4.png" alt="" /><span>Nam semper <br />lectus sit</span></div>
-<h4 class="upper">Lorem ipsum dolor</h4>
-<p>
-	Phasellus consequat ac ante ornare imperdiet. Morbi sodales, lectus sit amet lobortis euismod, magna.
-</p>
-<a href="#" class="button1">more</a>
-</div>
+
+<h5>Company Name Here</h5>
+
+<dl>
+                                <dd> 8901 Minnesota, Bemidji,</dd>
+                    <dd>1221 Birchmont Drive Northeast.</dd>
+                    <dd>Phone:  1(234) 567 8910</dd>
+                   <dd> E-mail: <a href="#">mail@companyname.com</a></dd>
+                            </dl>
+
+
+
+
+
+
+
+
 </div>
 </div>
 
 <div class="hl1"></div>
 
-<div class="row">
-<div class="span9">
+<h2>Contact Form</h2>
 
-<h3>Morbi sodales, lectus sit amet </h3>
-
-<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis lobortis felis.</h4>
-
-<p>
-	Sed commodo tempor. Nullam eget augue quis felis posuere accumsan eu et erat. Sed urna dolor, posuere sed eros vel, accumsan fermentum mi. Nunc ullamcorper, dolor non fringilla dapibus, risus tellus congue enim, ac faucibus odio nunc id erat. Phasellus mollis eu nulla eget congue. Vivamus id laoreet nisi, sed scelerisque diam. Curabitur interdum convallis sapien, eget placerat neque placerat ut.
-</p>
-
-</div>
-<div class="span3">
-
-<h3>Sed commodo </h3>
-
-<ul class="ul1">
-	<li><a href="#">Lorem ipsum dolor.</a></li>
-	<li><a href="#">Etiam et lorem sed.</a></li>
-	<li><a href="#">Aenean ac felis.</a></li>
-	<li><a href="#">Ut sollicitudin augue.</a></li>
-
-</ul>
-
-</div>
+<div id="note"></div>
+<div id="fields">
+  <form id="ajax-contact-form" class="form-horizontal" action="javascript:alert('success!');">
+    <div class="row">
+      <div class="span4">
+        <div class="control-group">
+            <label class="control-label" for="inputName">Your full name:</label>
+            <div class="controls">
+              <input class="span4" type="text" id="inputName" name="name" value="Your full name:" onBlur="if(this.value=='') this.value='Your full name:'" onFocus="if(this.value =='Your full name:' ) this.value=''">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputEmail">Your email:</label>
+            <div class="controls">
+              <input class="span4" type="text" id="inputEmail" name="email" value="Your email:" onBlur="if(this.value=='') this.value='Your email:'" onFocus="if(this.value =='Your email:' ) this.value=''">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputPhone">Phone number:</label>
+            <div class="controls">
+              <input class="span4" type="text" id="inputPhone" name="phone" value="Phone number:" onBlur="if(this.value=='') this.value='Phone number:'" onFocus="if(this.value =='Phone number:' ) this.value=''">
+            </div>
+        </div>
+      </div>
+      <div class="span8">
+        <div class="control-group">
+            <label class="control-label" for="inputMessage">Message:</label>
+            <div class="controls">
+              <textarea class="span8" id="inputMessage" name="content" onBlur="if(this.value=='') this.value='Message:'"
+                        onFocus="if(this.value =='Message:' ) this.value=''">Message:</textarea>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    </div>
+    <button type="submit" class="submit">Submit</button>
+  </form>
 </div>
 
 
@@ -314,17 +282,24 @@ $(window).load(function() {
 <footer>Copyright © 2015.All rights reserved.  <a href="#">Privacy Policy</a>
 
 <!-- design copyright link, do not delete -->
-<div id="cprt">Website Design by <a href="http://www.metamorphozis.com" class="mylnk">website templates</a></div>
+<div id="cprt">Website Design by <a href="http://www.metamorphozis.com" rel="nofollow" class="mylnk">website templates</a></div>
 <!-- end copyright link -->
-</div>
 </footer>
 
+</div>
 
 </div>
 </div>
 </div>
 </div>
 </div>
+
+
+
+
+
+
+
 
 
 </div>

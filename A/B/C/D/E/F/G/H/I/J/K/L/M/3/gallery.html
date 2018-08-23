@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>gallery</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Your description">
+<meta name="keywords" content="Your keywords">
+<meta name="author" content="Your name">
+
+
+<link rel="stylesheet" href="css/font-awesome.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/touchTouch.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/isotope.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+
+<script type="text/javascript" src="js/jquery.ui.totop.js"></script>
+
+<script type="text/javascript" src="js/touchTouch.jquery.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+
+<script>
+$(document).ready(function() {
+	//
+
+
+
+}); //
+$(window).load(function() {
+	//
+
+	// isotop
+	var $container = $('#isotope-items'),
+		$optionSet = $('#isotope-options'),
+	    $optionSets = $('#isotope-filters'),
+	    $optionLinks = $optionSets.find('a');
+    $container.isotope({
+        filter: '*',
+        layoutMode: 'fitRows'
+    });
+   	$optionLinks.click(function(){
+   		var $this = $(this);
+    	// don't proceed if already selected
+		if ( $this.hasClass('selected') ) {
+			return false;
+		}
+   		$optionSet.find('.selected').removeClass('selected');
+   		$this.addClass('selected');
+
+        var selector = $(this).attr('data-filter');
+        $container.isotope({
+            filter: selector
+        });
+      	return false;
+    });
+	$(window).on("resize", function( event ) {
+		$container.isotope('reLayout');
+	});
+
+	// touchTouch
+	$('.thumb-isotope .thumbnail a').touchTouch();
+
+}); //
+</script>
+<!--[if lt IE 8]>
+		<div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg"border="0"alt=""/></a></div>
+	<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+<![endif]-->
+</head>
+
+<body class="not-front">
+<div id="main">
+
+<div class="top_wrapper">
+<div class="top1_wrapper">
+<div class="container">
+<div class="top1 clearfix">
+<div class="row">
+<div class="span3">
+<header><div class="logo_wrapper"><a href="index.html" class="logo">metamorph_yakori</a></div></header>
+</div>
+<div class="span9">
+<div class="top1_inner clearfix">
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="top2_wrapper">
+<div class="container">
+<div class="top2 clearfix">
+<div class="row">
+<div class="span3">
+<div class="dark"></div>
+</div>
+<div class="span9">
+<div class="menu_wrapper">
+<div class="navbar navbar_">
+	<div class="navbar-inner navbar-inner_">
+		<a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</a>
+		<div class="nav-collapse nav-collapse_ collapse">
+			<ul class="nav sf-menu clearfix">
+	      <li><a href="index.html">home</a></li>
+	      <li><a href="about.html">about</a></li>
+				<li class="sub-menu sub-menu-1"><a href="services.html">services<em></em></a>
+					<ul>
+						<li><a href="services.html">Lorem ipsum dolor</a></li>
+						<li class="sub-menu sub-menu-2"><a href="about.html">Etiam et lorem sed<em></em></a>
+							<ul>
+								<li><a href="services.html">lorem ipsum dolor</a></li>
+								<li><a href="services.html">sit amet</a></li>
+								<li><a href="services.html">adipiscing elit</a></li>
+								<li><a href="services.html">nunc suscipit</a></li>
+								<li><a href="404.html">404 page not found</a></li>
+							</ul>
+						</li>
+						<li class="sub-menu sub-menu-2"><a href="about.html">Aenean ac felis<em></em></a>
+							<ul>
+								<li><a href="services.html">lorem ipsum dolor</a></li>
+								<li><a href="services.html">sit amet</a></li>
+								<li><a href="services.html">adipiscing elit</a></li>
+								<li><a href="services.html">nunc suscipit</a></li>
+							</ul>
+						</li>
+						<li><a href="services.html">Ut sollicitudin augue</a></li>
+					</ul>
+				</li>
+				<li><a href="products.html">products</a></li>
+				<li class="active"><a href="gallery.html">gallery</a></li>
+				<li><a href="contact.html">contacts</a></li>
+    	</ul>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="page_slide">
+<img src="images/page_slide1.jpg" alt="">
+<div class="h1_wrapper">
+<div class="container">
+	<h1>Gallery</h1>
+</div>
+</div>
+</div>
+
+<div class="breadcrumbs1_wrapper">
+<div class="sh1"><img src="images/sh1.png" alt="" class="img"></div>
+<div class="breadcrumbs1_inner">
+<div class="container">
+<div class="breadcrumbs1"><a href="index.html">Home page</a><span></span><a href="index.html">Pages</a><span></span>Gallery</div>
+</div>
+</div>
+</div>
+
+<div id="content_wrapper">
+<div id="content">
+<div class="container">
+<div class="row">
+<div class="span12">
+
+<h2>Our Photos</h2>
+
+<div id="isotope-options">
+    <ul id="isotope-filters" class="clearfix">
+        <li><a href="#" class="selected" data-filter="*">Show All</a></li>
+        <li><a href="#" data-filter=".isotope-filter1">Category 1</a></li>
+        <li><a href="#" data-filter=".isotope-filter2">Category 2</a></li>
+        <li><a href="#" data-filter=".isotope-filter3">Category 3</a></li>
+    </ul>
+</div>
+
+<ul class="thumbnails" id="isotope-items">
+    <li class="span4 isotope-element isotope-filter1">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/gallery01.jpg">
+					<figure>
+						<img src="images/gallery01.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Sit amet, consectetur adipiscing elit.
+					</div>
+				</a>
+			</div>
+		</div>
+    </li>
+    <li class="span4 isotope-element isotope-filter2">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/gallery02.jpg">
+					<figure>
+						<img src="images/gallery02.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Sit amet, consectetur adipiscing elit.
+					</div>
+				</a>
+			</div>
+		</div>
+    </li>
+    <li class="span4 isotope-element isotope-filter3">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/gallery03.jpg">
+					<figure>
+						<img src="images/gallery03.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Sit amet, consectetur adipiscing elit.
+					</div>
+				</a>
+			</div>
+		</div>
+    </li>
+
+    <li class="span4 isotope-element isotope-filter1">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/gallery04.jpg">
+					<figure>
+						<img src="images/gallery04.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Sit amet, consectetur adipiscing elit.
+					</div>
+				</a>
+			</div>
+		</div>
+    </li>
+    <li class="span4 isotope-element isotope-filter2">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/gallery05.jpg">
+					<figure>
+						<img src="images/gallery05.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Sit amet, consectetur adipiscing elit.
+					</div>
+				</a>
+			</div>
+		</div>
+    </li>
+    <li class="span4 isotope-element isotope-filter3">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/gallery06.jpg">
+					<figure>
+						<img src="images/gallery06.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Sit amet, consectetur adipiscing elit.
+					</div>
+				</a>
+			</div>
+		</div>
+    </li>
+
+    <li class="span4 isotope-element isotope-filter1">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/gallery07.jpg">
+					<figure>
+						<img src="images/gallery07.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Sit amet, consectetur adipiscing elit.
+					</div>
+				</a>
+			</div>
+		</div>
+    </li>
+    <li class="span4 isotope-element isotope-filter2">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/gallery08.jpg">
+					<figure>
+						<img src="images/gallery08.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Sit amet, consectetur adipiscing elit.
+					</div>
+				</a>
+			</div>
+		</div>
+    </li>
+    <li class="span4 isotope-element isotope-filter3">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/gallery09.jpg">
+					<figure>
+						<img src="images/gallery09.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Sit amet, consectetur adipiscing elit.
+					</div>
+				</a>
+			</div>
+		</div>
+    </li>
+
+
+
+
+
+</ul>
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="bot_wrapper">
+<div class="container">
+<div class="bot">
+<div class="row">
+<div class="span3">
+
+<div class="logo2_wrapper"><a href="index.html" class="logo2">metamorph_yakori</a></div>
+
+</div>
+<div class="span3">
+
+<div class="location1">
+	<dl>
+                                <dd> 8901 Minnesota, Bemidji,</dd>
+                    <dd>1221 Birchmont Drive Northeast.</dd>
+                    <dd>Phone:  1(234) 567 8910</dd>
+                   <dd> E-mail: <a href="#">mail@companyname.com</a></dd>
+                            </dl>
+</div>
+
+</div>
+<div class="span6">
+
+<div class="location2">
+
+<div class="social_wrapper_bot">
+	<ul class="social clearfix">
+	    <li><a href="#"><img src="images/social1.png" alt="" /></a></li>
+	    <li><a href="#"><img src="images/social2.png" alt="" /></a></li>
+	    <li><a href="#"><img src="images/social3.png" alt="" /></a></li>
+	    <li><a href="#"><img src="images/social4.png" alt="" /></a></li>
+	    <li><a href="#"><img src="images/social5.png" alt="" /></a></li>
+	</ul>
+</div>
+
+<footer>Copyright © 2015.All rights reserved.  <a href="#">Privacy Policy</a>
+
+<!-- design copyright link, do not delete -->
+<div id="cprt">Website Design by <a href="http://www.metamorphozis.com" rel="nofollow" class="mylnk">website templates</a></div>
+<!-- end copyright link -->
+</footer>
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>
