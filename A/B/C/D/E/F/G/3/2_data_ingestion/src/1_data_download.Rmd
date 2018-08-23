@@ -1,0 +1,118 @@
+---
+title: "1_data_download"
+author: "Matthew Ross"
+date: "5/8/2018"
+output: 
+  html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+# Downloading data from Google Drive
+
+After people have used Google Earth Engine and our GROD.js script in the the `1_user_interface` script to identify dams, we must download the data and bind it together before checking it for quality. This script does that. 
+
+
+```{r setup}
+
+library(tidyverse)
+library(googledrive)
+library(lubridate)
+library(listviewer)
+
+
+
+
+
+#This chunk sets the directory upstream by two folders. It is here so that the directory 
+# resets to the top level directory for the GROD.Rproj. That way it works if you have your
+# rmd outputs set to inline or in console. 
+knitr::opts_knit$set(root.dir='../..')
+
+```
+
+
+```{r}
+drive_download(as_id('https://docs.google.com/spreadsheets/d/1J_jvedUA3fDjD4EAYYUe-bmEszaDJWjTzlbqJJN6MXE/edit#gid=0'),path='2_data_ingestion/data/validation_records.csv',overwrite=T)
+
+val.sheet <- read_csv('2_data_ingestion/data/validation_records.csv')
+
+
+for(i in 1:nrow(val.sheet)){
+  files <- drive_ls(as_id(val.sheet$Link[i]))
+  for(j in 1:nrow(files)){
+    drive_download(as_id(files$id[j]),path=paste0('2_data_ingestion/data/in/validation/',val.sheet$Name[i],'.csv'),overwrite=T)
+  }
+}
+```
+
+Here we need to use the amazing `googledrive` package to connect to our shared folder `GROD_data_ingestion` which houses all the users contributed data files. We then download information about all these files, so that we can filter them based on the most recent contribution. The way our script works, is that each save is cumulative. Meaning if a user finds 100 dams on a Monday and saves that file, and then goes back and finds 200 more on Tuesday, the Tuesday file will have both Monday and Tuesday data. This way we only need to download one file per user, while having a robust and continuus version and backup control, if a little verbose and space-consuming. These files are tiny so it's not a big deal. 
+
+```{r file retrieval}
+#Get the folders from GROD_data_ingestion on google drive
+overall.folder <- drive_ls('GROD_data_ingestion')
+
+#Create an empty list to hold these sub folders
+subfolders <- list()
+
+
+#Need to extract csv names in a forloop because google only allows one query at a time
+for(i in 1:nrow(overall.folder)) {
+  subfolders[[i]] <- drive_ls(overall.folder$name[i]) %>%
+    mutate(folder=overall.folder$name[i])
+}
+
+
+
+#Define a function to extract user names based on drive_resource list from 
+# Google drive API. 
+name.extractor <- function(x) {
+ name <-  x$owners[[1]]$displayName
+ return(name)
+}
+
+#unlist and filter these subfiles
+csv.names <- do.call('rbind',subfolders) %>%
+  #Grab the last modified time from drive resources. Map is the best
+  mutate(timestamp=ymd_hms(map_chr(drive_resource,'modifiedTime'))) %>%
+  #Grab the size file
+  mutate(size = as.numeric(map_chr(drive_resource,'size'))) %>%
+  #Grab the username
+  mutate(user = map_chr(drive_resource,name.extractor)) %>%
+  #Group by user and keep only the most recent data save. 
+  group_by(folder) %>%
+  mutate(newest_record = max(timestamp)) %>%
+  filter(timestamp==newest_record)
+``` 
+
+Now that we have filtered the data to a single cumulative file per person we can download it. 
+
+```{r download}
+#Download the drive data
+
+
+# A case for a for loop, because google only allows you one query at a time
+for(i in 1:nrow(csv.names)) {
+  # Write an if statement to only download new files
+  if(!csv.names$name[i] %in% list.files('2_data_ingestion/data/tmp')){
+    path=paste0('2_data_ingestion/data/tmp/',csv.names$name[i])
+    drive_download(as_id(csv.names$id[i]),
+                   path=path,
+                   overwrite=T)
+  }
+}
+
+```
+
+
+## Bind that data together and export. 
+```{r}
+full.files <- list.files('2_data_ingestion/data/tmp',pattern='csv',full.names=T)
+
+all_found_dams <- map_df(full.files,read_csv)
+
+save(all_found_dams,file='2_data_ingestion/data/out/raw_found_dams.RData')
+```
+
+
+
