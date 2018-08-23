@@ -1,0 +1,127 @@
+.akordeon {
+	width: 100%;
+	font-size: 12px;
+	border-right:1px solid #e7f9ff;
+	border-left:1px solid #e7f9ff;
+	border-top:1px solid #e7e7e7;
+	border-bottom:1px solid #e7e7e7;
+
+}
+
+.akordeon-item {
+	position: relative;
+	margin-bottom:0px;
+}
+
+.akordeon-item .akordeon-item-head {
+	height: 50px;
+	padding-top: 18px;
+	background:#fafafa;
+	border:none;
+	border-top:1px solid #d5d5d5;
+}
+
+.first {
+	border-top:none !important;
+}
+
+.akordeon p {
+	color:#8a8a8a;
+	margin-bottom:0px !important;
+	line-height:17px;
+}
+
+.akordeon-item .akordeon-item-body {
+	border-bottom: none;
+	overflow: hidden;
+}
+
+.akordeon-icon {
+	width: 24px;
+	height: 24px;
+	/* Old browsers */
+	padding: 0;
+	margin: 0 -3px 0 32px;
+	float: left;
+	cursor: pointer;
+	position:relative;
+	top:-5px;
+	font-size:13px;
+	background:#1b9cff;
+border-radius:2px;
+
+}
+
+.akordeon-heading {
+	float: left;
+	padding-left: 15px;
+	font-weight: normal;
+	font-size:12px;
+	font-weight:800;
+	color:#2e2e2e;
+	font-family:Open sans;
+	
+}
+
+.akordeon-icon span {
+	color: #fff;
+	border:1px solid #fff;
+font-size: 19px;
+padding: 2px 0px 2px 1px;
+position: absolute;
+left: 3px;
+right: 0px;
+top: 3px !important;
+line-height: 12px;
+text-align: center;
+border-radius: 100%;
+width: 18px;
+height: 18px;
+text-align: center;
+
+}
+
+.akordeon-item.expanded .akordeon-icon span {
+	top: -3px;
+color: #fff;
+border:1px solid #fff;
+line-height: 11px;
+font-weight: bold;
+font-size: 17px;
+
+}
+
+.akordeon-item-head-container {
+	width: 100%;
+	position: absolute;
+	left: -8px;
+	cursor: pointer;
+}
+
+.akordeon-item.expanded .akordeon-item-body {
+}
+
+.akordeon-item.expanded .akordeon-heading {
+}
+
+.akordeon-item.expanded .akordeon-item-head:before, .akordeon-item-head:hover:before  {
+   content:"";
+   position:absolute;
+   top:0;
+   right:0;
+	z-index:999;
+   border-width:0 15px 15px 0;
+   border-style:solid;
+   border-color:#1b9cff #cacaca;
+}
+
+
+
+.akordeon-item-content {
+	padding: 0px 25px 20px;
+	min-height: 10px;
+	overflow:auto;
+	background:#fafafa;
+	font-size:12px;
+color:#8a8a8a;
+}

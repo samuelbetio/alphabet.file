@@ -1,0 +1,115 @@
+.isotope {
+	margin-top: 10px;
+}
+
+.folio-inner {
+	overflow:hidden;
+	background:#fff;
+	margin-bottom:25px;
+	
+}
+
+.folio-filter {
+	position: relative;
+	bottom: 7px;
+	display:table;
+	margin:0px 10px;
+	float:none;
+margin-bottom:45px;
+padding:0px;
+background:#1c9cff;
+}
+	
+.folio-filter li {
+	display: inline-block;
+	font-size:15px;
+	font-family:Roboto;
+	font-weight:700;
+	line-height:15px;
+	color:#fff;
+position:relative;
+margin:0 -2px;
+background:url(../images/filter-sep.png) no-repeat right center;
+}
+
+.folio-filter li:last-child {
+	padding-right:0px;
+ }
+
+
+.folio-filter li a {
+	display: block;
+	color: #fff;
+	line-height: 16px;
+padding:13px 30px;
+}
+
+.folio-filter li a span {
+margin-right:6px;
+}
+	
+.folio-filter li a:hover {
+	color: #fff;
+background:#484647;
+}
+	
+	
+.folio-filter li a.selected {color:#fff;
+background:#484647;
+}
+
+.folio-filter li a:hover span {
+
+color:#1c9cff !important;
+}
+
+.selected span {
+
+color:#1c9cff !important;
+}
+	
+.folio-filter li a.selected:before , .folio-filter li a:hover:before {
+   content:"";
+   position:absolute;
+   top:0;
+   right:0;
+	z-index:999;
+
+
+
+
+}
+
+.selected {color:#fff;
+background:#484647;
+
+}
+
+/* Isotope Transitions
+------------------------------- */
+.isotope, .isotope .folio-item {-webkit-transition-duration: 0.8s;-moz-transition-duration:0.8s;-ms-transition-duration:0.8s;-o-transition-duration:0.8s;transition-duration:0.8s;}
+.isotope {-webkit-transition-property:height,width;-moz-transition-property: height,width;-ms-transition-property:height,width;-o-transition-property:height,width;transition-property:height,width;}
+.isotope .item {-webkit-transition-property: -webkit-transform,opacity;-moz-transition-property:-moz-transform,opacity;-ms-transition-property:-ms-transform,opacity;-o-transition-property:top,left,opacity;transition-property:transform, opacity;}
+
+/* Note: Design for a width of 480px */
+@media only screen and (max-width: 470px) {
+
+.folio-filter {
+    margin: 50px auto 0px;
+}
+
+.folio-filter li {
+    font-size: 12px;
+    padding: 3px 3px;
+}
+
+}
+
+/* Note: Design for a width of 480px */
+@media only screen and (max-width: 767px) {
+
+.folio-filter {
+    margin: 50px auto 0px;
+}
+
+}
