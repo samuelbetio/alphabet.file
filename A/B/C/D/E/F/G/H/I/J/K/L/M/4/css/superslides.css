@@ -1,0 +1,66 @@
+#slides {position: relative;}
+#slides .slides-container {display: none;}
+#slides .scrollable {*zoom: 1; position: relative; top: 0; left: 0; overflow-y: auto; -webkit-overflow-scrolling: touch; height: 100%;}
+#slides .scrollable:after {content: ""; display: table; clear: both;}
+
+.slides-navigation {}
+.slides-navigation a {position: absolute; z-index: 10; display: block; width: 71px; height: 66px; text-decoration: none; top: 50%; margin-top: -33px;}
+.slides-navigation a.prev {right: 4%; margin-right: 66px; margin-top: -43px;}
+.slides-navigation a.next {right: 4%;}
+
+.slides-navigation a .over1{display: block; width: 100%; height: 100%; position: absolute; background: url(../images/prev.html) left top no-repeat;}
+.slides-navigation a:hover .over1{background-position: bottom;}
+
+.slides-navigation a.next .over1{background-image: url(../images/next.html);}
+
+.slides-pagination {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  margin-top: 150px;
+  text-align: center;
+  width: 100%;
+}
+.slides-pagination a {
+  width: 17px;
+  height: 18px;
+  display: inline-block;
+  text-indent: -100%;
+  overflow: hidden;
+  background: url(../images/slides-pagination.png) left top no-repeat;
+  margin: 0 5px;
+}
+
+.slides-pagination a.current {
+  background-position: right;
+}
+
+.slides-container {}
+.slides-container .caption{position: absolute; width: 100%; top: 50%; margin-top: -95px; text-align: center; font-family: 'Asap'; font-size: 46px; line-height: 50px; color: #fff; text-transform: uppercase;}
+.slides-container .caption .txt1{}
+.slides-container .caption .txt2{font-size: 84px; line-height: 90px; font-weight: 700;}
+.slides-container .caption .txt3{}
+
+
+
+
+@media (max-width: 991px) {
+  .slides-container .caption{margin-top: -75px; font-size: 36px; line-height: 40px;}
+  .slides-container .caption .txt2{font-size: 64px; line-height: 70px;}
+
+}
+
+@media (max-width: 767px) {
+  .slides-container .caption{margin-top: -50px; font-size: 20px; line-height: 20px;}
+  .slides-container .caption .txt2{font-size: 34px; line-height: 40px;}
+}
+
+@media (max-width: 480px) {
+  .slides-container .caption{margin-top: -35px; font-size: 14px; line-height: 20px;}
+  .slides-container .caption .txt2{font-size: 24px; line-height: 30px;}
+}
+
+
+
+
+
