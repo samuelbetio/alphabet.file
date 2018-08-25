@@ -1,0 +1,51 @@
+.wrap .buy-pro, .wrap .description.customize-section-description a {
+	background: #00c1cf;
+	color: white;
+	padding: 2px 7px;
+	display: inline-block;
+	margin-top: 10px;
+	border-radius: 2px;
+}
+.customize-sep-title {
+	font-size:16px;
+	color:#09F;
+}
+.customize-sep-title:before {
+	content:"\f0fe ";
+	font-family: 'FontAwesome';
+	font-size:18px;
+	padding-right:10px;
+	color:#09F;
+}
+.accordion-section-content .dinozoom {
+	display:block;
+	width: 0 auto;
+}
+.dinozoom-premium {
+	color:#09F;
+	float: right;
+	display:inline-block;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+}
+.dinozoom-premium i {
+	color:#09F;
+}
+.dinozoom-info {
+	text-align:center;
+	font-size:14px;
+}
+a.dinozoom-disabled-color {
+	cursor:not-allowed;
+}
+#accordion-section-pro  h3.accordion-section-title {
+	background-color:#09C;
+	color:#FFF;
+}
+#accordion-section-pro .button {
+	margin:2px;
+}
+#accordion-section-pro .button i {
+	padding-right:5px;
+}
