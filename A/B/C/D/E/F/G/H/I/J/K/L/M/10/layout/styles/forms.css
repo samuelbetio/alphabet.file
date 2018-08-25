@@ -1,0 +1,42 @@
+@charset "utf-8";
+/*
+Template Name: PhotoProwess
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+File: Forms CSS
+*/
+
+form, fieldset, legend{margin:0; padding:0; border:none;}
+legend{display:none;}
+input, textarea, select{font-size:12px; font-family:Georgia, "Times New Roman", Times, serif;}
+
+/* ----------------------------------------------Search Form------------------------------------- */
+
+#search{float:right; margin:0; padding:0;}
+#search input{display:block; float:left; width:190px; height:20px; margin:0; padding:5px 5px 5px 10px; color:#C7CED6; background:url("images/search_l.gif") 0 0 no-repeat #2C2C2C; border:none;}
+#search input#go{width:35px; height:30px; margin:0; padding:0; cursor:pointer; background:none;}
+
+/* ----------------------------------------------Forms in Content Area------------------------------------- */
+
+#container #respond{display:block; width:100%;}
+#container #respond input{width:170px; padding:2px; border:1px solid #CCCCCC; margin:5px 5px 0 0;}
+#container #respond textarea{width:98%; border:1px solid #CCCCCC; padding:2px; overflow:auto;}
+#container #respond p{margin:5px 0;}
+#container #respond #submit, #container #respond #reset{margin:0; padding:5px; color:#666666; background-color:#F7F7F7; border:1px solid #CCCCCC; cursor:pointer;}
+
+/* ----------------------------------------------Footer Contact Form------------------------------------- */
+
+#footer label{display:none;}
+#footer input, #footer textarea{display:block; width:203px; margin:0 0 15px 0; border:1px solid #818181;}
+#footer input, #footer textarea, #footer select{font-size:13px; color:#CCCCCC; background-color:#252525;}
+#footer input{padding:18px 10px;}
+#footer textarea{height:68px; padding:10px; overflow:auto;}
+#footer button{padding:5px 10px; font-size:13px; font-weight:bold; text-transform:uppercase; color:#FAF8CC; background-color:#252525; border:none; cursor:pointer;}
+
+/* ----------------------------------------------Homepage Newsletter------------------------------------- */
+
+#homepage input#newsletter{display:block; float:left; width:263px; height:23px; margin:0; padding:5px 10px; color:#989898; background:url("images/newsletter_form.gif") 0 0 no-repeat #FAFAFA; border:none;}
+#homepage input#subscribe{width:102px; height:33px; float:left; margin:0 0 0 15px; padding:0; cursor:pointer;}
+#homepage .fl_right .form_hint{color:#596661; background-color:#FAFAFA;}

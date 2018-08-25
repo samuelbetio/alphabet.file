@@ -1,0 +1,16 @@
+@charset "utf-8";
+/*
+Template Name: PhotoProwess
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+File: Portfolio CSS
+*/
+
+#portfolio{display:block; width:100%;}
+#portfolio ul{margin:0; padding:0; list-style:none;}
+#portfolio li{margin:0 0 45px 0;}
+#portfolio .title{font-size:18px; font-style:italic;}
+#portfolio .imgholder{display:block; margin-bottom:20px; padding-bottom:26px; background:url("images/shadow.gif") bottom center no-repeat;}
+#portfolio .projectdescription{line-height:2em;}

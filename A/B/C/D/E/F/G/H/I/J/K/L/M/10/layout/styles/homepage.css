@@ -1,0 +1,50 @@
+@charset "utf-8";
+/*
+Template Name: PhotoProwess
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+File: Homepage CSS
+*/
+
+#homepage{display:block; width:100%; line-height:1.6em;}
+#homepage .fl_left{display:block; width:500px;}
+#homepage #hpage_slider{display:block; width:498px; height:338px; color:#999999; background-color:#FAFAFA; border:1px solid #D8D9DE; border-bottom-color:#FAFAFA; overflow:hidden;}
+#homepage #hpage_slider div.item{position:relative; display:block; width:480px; height:320px; margin:9px;}
+
+/* ----------------------------------------------Slider Navigation Buttons------------------------------------- */
+
+/*
+
+Navigation dynamically created using: jquery.cycle.min.js
+
+HTML Output:
+
+<div id="fsn">
+  <ul id="fs_pagination">
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+  </ul>
+</div>
+
+*/
+
+#homepage #fsn{display:block; position:relative; width:498px; height:18px; margin:0 0 25px 0; text-align:center; z-index:1000; color:#999999; background-color:#FAFAFA; border:1px solid #D8D9DE; border-top-color:#FAFAFA;}
+#homepage #fsn ul{display:block; position:relative; width:100px; height:10px; margin:0 auto; padding:0; overflow:hidden; list-style:none;}
+#homepage #fsn ul li, #homepage #fsn ul li a{display:block; float:left; width:10px; height:10px; margin:0 10px 0 0; padding:0;}
+#homepage #fsn ul li a{float:none; border:none; margin:0; outline:none; text-indent:-5000px; text-decoration:none; background:url("images/slide.png") 50% 50% no-repeat;}
+#homepage #fsn ul li a:hover, #homepage #fsn ul li.activeSlide a{background:url("images/slide.png") 0% 50% no-repeat;}
+
+/* ----------------------------------------------Right Column------------------------------------- */
+
+#homepage .fl_right{display:block; width:400px;}
+#homepage .fl_right ul, #homepage .fl_right .testimonials p{margin:0; padding:0; list-style:none;}
+#homepage .fl_right .testimonials{display:block; width:100%; margin-bottom:40px; padding-bottom:30px; border-bottom:1px solid #D8D9DE;}
+#homepage .fl_right .testimonials li{margin-bottom:25px; background:url("images/quotemarks.gif") 0 0 no-repeat;}
+#homepage .fl_right .testimonials li.last{margin-bottom:0;}
+#homepage .fl_right .testimonials p.name{margin:0 0 15px 60px; padding:15px 0 0 0;}
+#homepage .fl_right .testimonials blockquote{margin:0 0 5px 0; padding:0;}
