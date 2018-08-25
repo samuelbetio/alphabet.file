@@ -1,0 +1,73 @@
+[    {
+        "pk": 1, 
+        "model": "static.faq", 
+        "fields": {
+            "answer": "I require 24 hours notice or you will be charged for the session.", 
+            "question": "What is your cancellation policy?"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "static.faq", 
+        "fields": {
+            "answer": "You will be covered during your massage with the exception of the body part being worked on. Most people disrobe fully but you may leave your underwear on if you prefer. We require draping and do not do fully nude massage. During Reiki and Ear Coning, you stay fully clothed.", 
+            "question": "What do I wear during my massage?"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "static.faq", 
+        "fields": {
+            "answer": "It is very important to drink water after your massage; it keeps the toxins from settling back into the muscles. Some light stretching, a hot bath with epsom salts and rest can also be beneficial post-session. Don't forget to make another appointment so you can continue your healing.", 
+            "question": "What should I do after my massage?"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "static.faq", 
+        "fields": {
+            "answer": "Massage increases circulation, helps improve muscle tone, flushes toxins out of the body, moves lymph, and encourages relaxation which decreases blood pressure. It relieves stress in our bodies and improves overall health. There are certain conditions that contraindicate massage such as some skin disorders and certain types of cancer. Please discuss your concerns before your massage session. Fill out the intake form completely and be honest with your therapists about your health conditions.", 
+            "question": "What are some of the benefits of massage?"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "static.faq", 
+        "fields": {
+            "answer": "First off, we do not charge a monthly fee as some discount massage places do.\r\n\r\nWe hire only highly trained, experienced therapists.\r\n\r\nWe perform a full 60 or 90 minute massage whereas a lot of larger massage offices and spas take 10 minutes off for dressing and undressing time and still call it an hour massage.\r\n\r\nYou receive continuity of care at Healing Circle Massage, we do not have frequent turnover of therapists.", 
+            "question": "How does Healing Circle Massage differ from some of these discount massage places I see popping up?"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "static.faq", 
+        "fields": {
+            "answer": "We will check in throughout the massage to make sure the pressure is deep enough or light enough for you. If at any point the pressure is wrong, the temperature in the room is uncomfortable or you need something, please ask. We're here to insure your massage is wonderful. Believe me, you won't hurt our feelings or make us feel bad by asking us to change something.", 
+            "question": "My last massage therapist worked way too deep and hurt me, how do I know you won't do the same?"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "static.faq", 
+        "fields": {
+            "answer": "Reiki is a hands on healing technique which channels Universal energy through the practitioner and into the person being healed. It goes to where it is needed and heals on all levels: Body, mind and spirit. The energy is sometimes felt as a heat or tingling in the hands.\r\n\r\nReiki can only be used for positive purposes and can be practiced anytime, anywhere simply by placing your hands on a person (or animal/plant) with the intention to heal. There are 3 levels of Reiki; I, II and Reiki Master, which I am, giving the ability to pass the attunements, i.e. give Reiki to others to use. The title Reiki Master simply means that you can pass attunements and teach others.\r\n\r\nMy Reiki healings consist of crystal and gemstone placement on the chakras and a full body session of energy work. An attunement may follow if the client is interested in continuing the healing on herself or others.", 
+            "question": "What is Reiki?"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "static.faq", 
+        "fields": {
+            "answer": "Edward Bach discovered 38 flower essences that help balance out our emotional/spiritual personalities. By working with each client individually, a formula of these essences is customized to help achieve balance. Issues such as jealousy, anger, depression, excessive worry and anxiety can be addressed.", 
+            "question": "What are Bach Flower Essences?"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "static.faq", 
+        "fields": {
+            "answer": "An ancient technique using a hollow paraffin or beeswax taper to draw impurities out of the ear. A non-invasive proceedure taking about 30 minutes, ear coning (or candling) has been known to help swimmer's ear, tinnitus, vertigo, hearing loss and eliminate excessive ear wax.", 
+            "question": "What is Ear Coning?"
+        }
+    }
+]

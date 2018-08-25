@@ -1,0 +1,134 @@
+[
+    {
+        "pk": 1, 
+        "model": "static.service", 
+        "fields": {
+            "category": "M", 
+            "price": "1 hour $80\r\n1.5 hour $110", 
+            "name": "Massage", 
+            "image": "images/KathyPhoto_t.jpg", 
+            "description": "Deep tissue, trigger point, swedish, sports massage and pregnancy massage."
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "static.service", 
+        "fields": {
+            "category": "M", 
+            "price": "$1/minute:\r\nPlease contact me for group/repeat rates.", 
+            "name": "Onsite Chair Massage", 
+            "image": "images/chair_massage.jpg", 
+            "description": "Onsite massage for your company, event or party."
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "static.service", 
+        "fields": {
+            "category": "M", 
+            "price": "$175", 
+            "name": "Romance Special Massage", 
+            "image": "images/couples_massage.jpg", 
+            "description": "Two therapists, Two one-hour massages and a bottle of wine."
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "static.service", 
+        "fields": {
+            "category": "M", 
+            "price": "$80", 
+            "name": "Pregnancy Massage", 
+            "image": "", 
+            "description": "Massage tailored towards the comfort of a pregnant mother."
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "static.service", 
+        "fields": {
+            "category": "M", 
+            "price": "1 hour $80\r\n1.5 hour $110", 
+            "name": "Elder Massage", 
+            "image": "images/dorothy_hands.jpg", 
+            "description": "Having worked with clients as old as 101, Kathy takes special care to assist the elderly with massage and energy work. Kathy has worked with clients with Alzheimer's, Parkinson's, Brain injuries, diabetes and stroke. Home and hospital visits are available on a limited basis."
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "static.service", 
+        "fields": {
+            "category": "O", 
+            "price": "<a href=\"http://www.healingcirclenaturalhealth.com/\">Healing Circle Natural Health</a>", 
+            "name": "Natural Health Consulting", 
+            "image": "", 
+            "description": "Partnering with you to make gentle changes to achieve your health goals."
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "static.service", 
+        "fields": {
+            "category": "O", 
+            "price": "<a href=\"http://www.healthieroffice.com/\">Healthier Office</a>", 
+            "name": "Healthier Office", 
+            "image": "", 
+            "description": "In-office workshops to promote office health and wellness."
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "static.service", 
+        "fields": {
+            "category": "O", 
+            "price": "Reiki Healing $85\r\nwith attunement $135\r\ngroup classes $65", 
+            "name": "Reiki", 
+            "image": "images/reiki_picture_t.jpg", 
+            "description": "Hands on energy healing for body mind and spirit.\r\n(<a href=\"http://www.healingcirclemassage.com/faq.php#what_is_reiki\">more...</a>)"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "static.service", 
+        "fields": {
+            "category": "O", 
+            "price": "$85", 
+            "name": "Bach Flower Essences", 
+            "image": "images/Bach_Flower.jpg", 
+            "description": "Consultation with first formula. (<a href=\"http://www.healingcirclemassage.com/faq.php#what_are_bach_flower_essences\">more...</a>)"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "static.service", 
+        "fields": {
+            "category": "O", 
+            "price": "Sliding Scale $150-$400", 
+            "name": "Birth Assisting", 
+            "image": "", 
+            "description": "I feel my role as a birth assistant is to support the mother and her partner with massage, Reiki, aromatherapy, etc., and to make sure her birth plan is followed."
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "static.service", 
+        "fields": {
+            "category": "O", 
+            "price": " $30", 
+            "name": "Ear Coning", 
+            "image": "images/ear_coning_t.jpg", 
+            "description": "Can help relieve vertigo, swimmer's ear and hearing loss."
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "static.service", 
+        "fields": {
+            "category": "O", 
+            "price": "Group Class $75/couple\r\nIn Home Class: $150/couple", 
+            "name": "Massage Your Mate Classes", 
+            "image": "images/massageyourmateclasses.jpg", 
+            "description": "I arrive with table and lotion and teach safe, effective, ways for you to massage your loved one."
+        }
+    }
+]

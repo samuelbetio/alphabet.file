@@ -1,0 +1,119 @@
+[
+    {
+        "pk": 1, 
+        "model": "static.writing", 
+        "fields": {
+            "image_1": "images/best_practices.jpg", 
+            "image_3": "", 
+            "image_2": "", 
+            "name": "Massage Magazine - July 2006", 
+            "link": "", 
+            "thumbnail_image": "images/best_practices_t.jpg", 
+            "image_4": ""
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "static.writing", 
+        "fields": {
+            "image_1": "images/ten_health_tips_1.jpg", 
+            "image_3": "", 
+            "image_2": "images/ten_health_tips_2.jpg", 
+            "name": "Ten Health Tips", 
+            "link": "", 
+            "thumbnail_image": "images/ten_health_tips_t.jpg", 
+            "image_4": ""
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "static.writing", 
+        "fields": {
+            "image_1": "images/raisethebar_a.jpg", 
+            "image_3": "", 
+            "image_2": "images/raisethebar_b.jpg", 
+            "name": "It's Time to Raise the Bar", 
+            "link": "", 
+            "thumbnail_image": "images/raisethebar_a_t.jpg", 
+            "image_4": ""
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "static.writing", 
+        "fields": {
+            "image_1": "images/massagesampler.jpg", 
+            "image_3": "", 
+            "image_2": "", 
+            "name": "Massage Sampler", 
+            "link": "", 
+            "thumbnail_image": "images/massagesampler_t.jpg", 
+            "image_4": ""
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "static.writing", 
+        "fields": {
+            "image_1": "", 
+            "image_3": "", 
+            "image_2": "", 
+            "name": "A Self-Promotion Primer", 
+            "link": "http://www.bizchicksrule.com/the-art-of-self-promotion-a-primer/ ", 
+            "thumbnail_image": "", 
+            "image_4": ""
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "static.writing", 
+        "fields": {
+            "image_1": "", 
+            "image_3": "", 
+            "image_2": "", 
+            "name": "Women and Stress", 
+            "link": "http://www.bizchicksrule.com/even-wonder-woman-needs-a-day-off-dealing-with-stress/#more-903", 
+            "thumbnail_image": "", 
+            "image_4": ""
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "static.writing", 
+        "fields": {
+            "image_1": "", 
+            "image_3": "", 
+            "image_2": "", 
+            "name": "MassageMag.com Article on Firing Clients", 
+            "link": "http://www.massagemag.com/News/massage-news.php?id=4602 ", 
+            "thumbnail_image": "", 
+            "image_4": ""
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "static.writing", 
+        "fields": {
+            "image_1": "", 
+            "image_3": "", 
+            "image_2": "", 
+            "name": "Southwest Blend Magazine Article on Bach Flower Essences ", 
+            "link": "http://www.southwestblend.com/Body_Mind_Spirit/bach_essences.htm ", 
+            "thumbnail_image": "", 
+            "image_4": ""
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "static.writing", 
+        "fields": {
+            "image_1": "", 
+            "image_3": "", 
+            "image_2": "", 
+            "name": "Southwest Blend Magazine Article on Benefits of Massage", 
+            "link": "http://blendradioandtv.com/healingcircle/massage_benefits.htm", 
+            "thumbnail_image": "", 
+            "image_4": ""
+        }
+    }
+]

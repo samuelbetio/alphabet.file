@@ -1,0 +1,10 @@
+[
+    {
+        "pk": 1, 
+        "model": "static.hometext", 
+        "fields": {
+            "date": "2008-12-03", 
+            "text": "Let us enrich and nourish your body, mind and spirit with a healing, energy-boosting massage.\r\n\r\nWe provide affordable, result-oriented therapeutic and medical massage.\r\n\r\nKathy L. Gruver, LMT, RM is a licensed and certified medical massage therapist, Reiki master, natural health consultant, birth assistant and traditional naturopath. Kathy has been involved in healing since 1990.\r\n\r\nOur upper State St. office in Santa Barbara, CA features two treatment rooms, parking and an alternative medicine lending library.\r\n\r\nTherapists available 7 days a week from 10am to 7pm.\r\n\r\nWe accept personal injury and worker's comp insurance cases with a Doctor's prescription."
+        }
+    }
+]

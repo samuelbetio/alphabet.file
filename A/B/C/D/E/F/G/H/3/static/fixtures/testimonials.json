@@ -1,0 +1,130 @@
+[
+    {
+        "pk": 1, 
+        "model": "static.testimonial", 
+        "fields": {
+            "source": "Tammi (Chiropractor)", 
+            "description": "When I moved to the valley, I didn't even try to find a new therapist. I drive down to see Kathy."
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "static.testimonial", 
+        "fields": {
+            "source": "K.S. (Public Speaker)", 
+            "description": "What would I do without you?"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "static.testimonial", 
+        "fields": {
+            "source": "J.C. (Chiropractor)", 
+            "description": "There are so many massage therapists in town, but Kathy is so much more than just a massage person. I know my patients are going to get the best care possible."
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "static.testimonial", 
+        "fields": {
+            "source": "M. (Personal Trainer)", 
+            "description": "The most grounded professional therapist I've ever met. And I've met a bunch."
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "static.testimonial", 
+        "fields": {
+            "source": "Kristin (Financial Planner)", 
+            "description": "That is the best money I've spent on myself in a long time."
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "static.testimonial", 
+        "fields": {
+            "source": "Karen", 
+            "description": "Not just a massage therapist, truly a healer"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "static.testimonial", 
+        "fields": {
+            "source": "Lisa", 
+            "description": "I've had massage all over the world and you are the best!!"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "static.testimonial", 
+        "fields": {
+            "source": "Peter", 
+            "description": "I had neck pain for years and the doctors told me my only option was surgery. Kathy lessened my pain so that I didn't need to go under the knife."
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "static.testimonial", 
+        "fields": {
+            "source": "Jennifer F PhD", 
+            "description": "My hands were always going numb and after just one visit, my hands stopped tingling."
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "static.testimonial", 
+        "fields": {
+            "source": "Maggie (Geologist)", 
+            "description": "Kathy was able to give me some tips for helping my low back that worked. Why didn't my doctor tell me those things?"
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "static.testimonial", 
+        "fields": {
+            "source": "Jennifer M", 
+            "description": "You have changed my life!"
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "static.testimonial", 
+        "fields": {
+            "source": "Harry", 
+            "description": "Responsible, kind, caring, a true angel on earth."
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "static.testimonial", 
+        "fields": {
+            "source": "Jerry", 
+            "description": "I felt this warmth in her hands and my heart became so full of love I almost wept."
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "static.testimonial", 
+        "fields": {
+            "source": "Paul (Entrepreneur)", 
+            "description": "The perfect combination of fabulous business woman and amazing healer."
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "static.testimonial", 
+        "fields": {
+            "source": "Alexa", 
+            "description": "It's so nice to have a care-giver."
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "static.testimonial", 
+        "fields": {
+            "source": "Reid (Electrical Engineer)", 
+            "description": "I was a total skeptic that massage could do anything! I'm still not sure how it works, but I find myself encouraging people to go see Kathy. I don't know what you're doing, but I can sleep now."
+        }
+    }
+]

@@ -1,0 +1,74 @@
+[
+    {
+        "pk": 1, 
+        "model": "static.event", 
+        "fields": {
+            "image": "images/oprah.jpg", 
+            "name": "Oprah/Obama fund raiser after party 2007."
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "static.event", 
+        "fields": {
+            "image": "images/girls_inc.jpg", 
+            "name": "Girls Inc. Business Panel Discussion"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "static.event", 
+        "fields": {
+            "image": "images/planned_parenthood.jpg", 
+            "name": "Planned Parenthood Booksale"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "static.event", 
+        "fields": {
+            "image": "images/charac_doroth.jpg", 
+            "name": "Client Appreciation 2003 In loving memory of Dorothy Boothe 11/15/2007"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "static.event", 
+        "fields": {
+            "image": "images/outrigger_04.jpg", 
+            "name": "Outrigger Canoe Event 2004"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "static.event", 
+        "fields": {
+            "image": "images/outrigger_05_3.jpg", 
+            "name": "Outrigger Canoe Event 2005"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "static.event", 
+        "fields": {
+            "image": "images/booth_beach_2.jpg", 
+            "name": "Santa Barbara Half Marathon 2005"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "static.event", 
+        "fields": {
+            "image": "images/dancers_2.jpg", 
+            "name": "Client Appreciation 2004"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "static.event", 
+        "fields": {
+            "image": "images/naturopath_convention.jpg", 
+            "name": "2006 Naturopath Convention"
+        }
+    }
+]

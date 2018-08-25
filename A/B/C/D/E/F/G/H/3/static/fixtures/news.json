@@ -1,0 +1,171 @@
+[
+    {
+        "pk": 1, 
+        "model": "static.newsitem", 
+        "fields": {
+            "image_1": "", 
+            "image_3": "", 
+            "image_2": "", 
+            "name": "Fifty Two Heroes", 
+            "link": "http://forum.sb-fitness.com/blogs/kathy/default.aspx", 
+            "thumbnail_image": "images/fifty_two_heroes_t.jpg", 
+            "image_4": ""
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "static.newsitem", 
+        "fields": {
+            "image_1": "images/dermascope_1.jpg", 
+            "image_3": "images/dermascope_3.jpg", 
+            "image_2": "images/dermascope_2.jpg", 
+            "name": "Dermascope Magazine", 
+            "link": "", 
+            "thumbnail_image": "images/dermascope_t.jpg", 
+            "image_4": "images/dermascope_4.jpg"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "static.newsitem", 
+        "fields": {
+            "image_1": "images/bottled_water_web.jpg", 
+            "image_3": "", 
+            "image_2": "", 
+            "name": "Bottled Water Web", 
+            "link": "", 
+            "thumbnail_image": "images/bottled_water_web_t.jpg", 
+            "image_4": ""
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "static.newsitem", 
+        "fields": {
+            "image_1": "images/Pacific_Coast_Business_Times.jpg", 
+            "image_3": "", 
+            "image_2": "", 
+            "name": "Pacific Coast Business Times", 
+            "link": "", 
+            "thumbnail_image": "images/Pacific_Coast_Business_Times_t.jpg", 
+            "image_4": ""
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "static.newsitem", 
+        "fields": {
+            "image_1": "images/sbfitness_a.png", 
+            "image_3": "", 
+            "image_2": "images/sbfitness_b.png", 
+            "name": "SB Fitness", 
+            "link": "", 
+            "thumbnail_image": "images/sbfitness_a_t.png", 
+            "image_4": ""
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "static.newsitem", 
+        "fields": {
+            "image_1": "images/Different_Strokes.jpg", 
+            "image_3": "", 
+            "image_2": "", 
+            "name": "Different Strokes", 
+            "link": "", 
+            "thumbnail_image": "images/Different_Strokes_t.jpg", 
+            "image_4": ""
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "static.newsitem", 
+        "fields": {
+            "image_1": "", 
+            "image_3": "", 
+            "image_2": "", 
+            "name": "Special guest on Radio Show on being a health consultant ", 
+            "link": "http://www.blogtalkradio.com/WellnessExperience/2008/08/14/Connecting-with-a-healthcare-consultant-for-optimimum-wellness", 
+            "thumbnail_image": "", 
+            "image_4": ""
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "static.newsitem", 
+        "fields": {
+            "image_1": "", 
+            "image_3": "", 
+            "image_2": "", 
+            "name": "Special guests on Radio Show on Bach Flower Essences (start at 50:30 and go to 70:20)", 
+            "link": "http://www.blogtalkradio.com/Southwest-Blend/2008/09/07/Champagne-Sundays-Variety-Show ", 
+            "thumbnail_image": "", 
+            "image_4": ""
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "static.newsitem", 
+        "fields": {
+            "image_1": "", 
+            "image_3": "", 
+            "image_2": "", 
+            "name": "Guest on www.naturalsolutionsradio.com  speaking about ANMA convention \u201808", 
+            "link": " http://www.naturalsolutionsradio.com", 
+            "thumbnail_image": "", 
+            "image_4": ""
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "static.newsitem", 
+        "fields": {
+            "image_1": "", 
+            "image_3": "", 
+            "image_2": "", 
+            "name": "The business of life discussing Healthier Office and avoiding getting sick at work.", 
+            "link": "http://www.am1400coach.com/", 
+            "thumbnail_image": "", 
+            "image_4": ""
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "static.newsitem", 
+        "fields": {
+            "image_1": "", 
+            "image_3": "", 
+            "image_2": "", 
+            "name": "Featured expert on Fibromyalgia", 
+            "link": "http://www.everydayhealth.com/fibromyalgia/treating/fibromyalgia-alternative-treatments.aspx", 
+            "thumbnail_image": "", 
+            "image_4": ""
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "static.newsitem", 
+        "fields": {
+            "image_1": "", 
+            "image_3": "", 
+            "image_2": "", 
+            "name": "Spiritland Bistro Tuesday Night for Healing Lecture Featured speaker on \u201cHow to Stay Sick\u201d, a talk on body/mind connection and how our thoughts create our bodies.", 
+            "link": "", 
+            "thumbnail_image": "", 
+            "image_4": ""
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "static.newsitem", 
+        "fields": {
+            "image_1": "", 
+            "image_3": "", 
+            "image_2": "", 
+            "name": "College Lectures", 
+            "link": "", 
+            "thumbnail_image": "", 
+            "image_4": ""
+        }
+    }
+]
