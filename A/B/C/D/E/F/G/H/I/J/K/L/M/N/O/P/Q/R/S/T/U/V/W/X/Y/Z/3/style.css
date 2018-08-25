@@ -1,0 +1,104 @@
+body { 
+	margin : 0;
+	padding : 0;
+	font-family:'Droid Sans', Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	color: #ffffff;
+	background: #000000 url(images/navy_blue.png);
+}
+
+h1 {
+	font-family: "Play","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 30px;
+	margin: 0;
+	color: #ffffff;
+}
+
+h2 {
+	margin: 0;
+}
+
+#wrapper {
+	width: 800px;
+	margin: 120px auto;
+}
+
+#header {
+	width: 800px;
+	height: 35px;
+}
+
+#logo {
+	width: 300px;
+	height: 35px;
+	float: left;
+}
+
+#menu {
+	float: right;
+	width: 450px;
+	height: 35px;
+}
+
+#menu li {
+	float: right;
+}
+
+#menu ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+#menu a {
+	display: block;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 0 0 0 25px;
+	margin-top: 8px;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+#menu a:hover {
+	color: #dddddd;
+}
+
+
+#content {
+	width: 800px;
+	height: 400px;
+	background: #ffffff;
+}
+
+#image {
+	width: 780px;
+	height: 380px;
+	padding: 10px;
+	background: #ffffff url(images/train.jpg); /* Change train.jpg to the image you like. Preferred size: 800x400px. Look here for free images: http://www.morguefile.com/archive */
+}
+
+#text {
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+	background: #ffffff;
+	color: #000000;
+	width: 660px;
+	padding: 10px;
+	margin: 50px auto;
+}
+
+#footer {
+	width: 800px;
+	text-align: center;
+	color: #cccccc;
+	font-size: 10px;
+	margin-top: 5px;
+}
+
+#footer a {
+	color: #cccccc;
+	text-decoration: none;
+}
