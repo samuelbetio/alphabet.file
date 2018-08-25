@@ -1,0 +1,15 @@
+<h2>Current Families</h2>
+<ul class="section">
+{% for section in sections %}
+  <li {% if section.is_active %}class="active"{% endif %}><a href="{{ section.url }}">{{ section.title }}</a></li>
+{% if section.subsections %}
+	<ul class="subsection">
+{% for subsection in section.subsections %}
+	  <li {% if subsection.is_active %}class="active"{% endif %}><a href="{{ subsection.url }}">{{ subsection.title }}</a></li>
+{% endfor %}
+	</ul>
+{% endif %}
+{% endfor %}
+</ul>
+
+

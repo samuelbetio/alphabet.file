@@ -1,0 +1,13 @@
+<div id="email_area">
+  <p>Sign up here to receive Healing Circle Massage's bimonthly newsletter.  We provide practical tips for better health with articles, breaking health news and product recommendations. We respect your privacy and will never sell or give out your information.</p>
+    <form id="email_form" method="post" action="/email/add/">
+      <fieldset>
+        <input class="honey" type="text" name="description" />
+	<p><label for="id_email">Email:</label> {{ email_form.email }}</p>
+        <div class="g-recaptcha-wrap">
+          <div class="g-recaptcha" data-sitekey="6LdSZCAUAAAAAE1Qp8SakkmACjNyl9av5hfiPh8R"></div>
+        </div>
+	<input type="submit" name="submit" value="Submit Email" id="submit_email" />
+      </fieldset>
+    </form>
+  </div>

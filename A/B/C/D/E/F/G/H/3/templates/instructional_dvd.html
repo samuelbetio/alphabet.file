@@ -1,0 +1,89 @@
+{% extends "static_section.html" %}
+
+{% block content %}
+<div id="dvd_header" class="grid_6 alpha omega">
+  <img src="/site_media/images/dvd_cover.jpg" alt=" " />
+</div>
+<div id="dvd_info" class="grid_5 alpha omega">
+<h1>DVD Contents:</h1>
+<ul class="dvd_content">
+<li>Anatomy</li>
+<li>Areas to Avoid</li>
+<li>Hand Positions</li>
+<li>Tools</li>
+<li>Back with Audio Cues</li>
+<li>Back with Visual Cues</li>
+<li>Neck</li>
+<li>Special Features:</li>
+<li>Massage Terminology</li>
+<li>Massage Modalities</li>
+<li>Using a Bed or the Floor</li>
+<li>A Quiz to Test Your Knowledge</li>
+
+</ul>
+  <p>Made for the beginner, this DVD teaches safe and effective massage for home health.  Follow along with Kathy Gruver, a Certified Medical Massage Therapist, to learn a comprehensive back and neck massage in the comfort of your own home.</p>
+<p>Already massage your loved ones? Hone your technique and protect your hands.</p>
+<p>Always wanted to learn massage?</p>
+<p>Either way, this DVD is for you!</p>
+
+</div>
+<div class="clear"> </div>
+<div class="grid_12 omega" style="text-align: center;">
+<br/>
+<h2 style="margin-right: 50px;">19.95 + Shipping, CA Tax</h2>
+      <form style="margin-right: 50px;" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+	<input type="hidden" name="cmd" value="_s-xclick">
+	<input type="hidden" name="hosted_button_id" value="NACG4P2EY5VEN">
+	<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+	<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+<br />
+<p class="center">Continue your education by adding one of Kathy's great <a href="/books/">books</a>,<br/> <i>Body-Mind Therapies for the Bodyworker and other health practitioners</i><br/> or <i>The Alternative Medicine Cabinet</i></p>
+
+<div class="clear">
+  &nbsp;
+</div>
+
+  <div id="more_dvd_info" class="grid_11">
+  <p>To order by phone, please call (805) 680-1984.<br/>Credit cards accepted over the phone.</p>
+</div>
+
+<div id="clear">
+  &nbsp;
+</div>
+
+
+<div id="behind_the_scenes" class="grid_11">
+
+<a href="http://www.bigblendmagazine.com/Body-Mind-Spirit/Therapeutic-Massage.htm" rel="external"><h2>Read the review from Big Blend Magazine</h2></a>
+  &nbsp;
+
+<a href="http://www.youtube.com/watch?v=yDVvctSDcPo" rel="external"><h2>Watch my commercial</h2></a>
+
+<br />
+<h2>What people are saying about Therapeutic Massage at Home:</h2>
+<br />
+<ul>
+  <li class="faq"><p>The instruction was easy to understand and detailed without being monotonous; diction was clear, distinct and expressive; music was original and soothing; and the organization was good, I particularly liked the 'with' and 'without' instruction sections. I can't wait to get home and try it. </p> <p>~ Steven B, ND</p></li>
+  <li class="faq"><p>I LOVE this DVD!</p> <p>~ Marla, Life Coach</p></li>
+
+  {% for testimonial in testimonials %}
+
+  <li class="faq"><p>{{testimonial.description}}</p> <p>~ {{testimonial.source}}</p></li>
+
+  {% endfor %}
+
+</ul>
+
+  <h2>Behind The Scenes</h2>
+  <img src="/site_media/images/shoot1.jpg" alt=" " />
+  <img src="/site_media/images/shoot2.jpg" alt=" " class="odd_image" />
+  <img src="/site_media/images/shoot3.jpg" alt=" " />
+  <img src="/site_media/images/shoot4.jpg" alt=" " class="odd_image" />
+
+</div>
+</div>
+<div class="clear"> </div>
+
+
+{% endblock %}

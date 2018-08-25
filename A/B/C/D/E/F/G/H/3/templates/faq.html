@@ -1,0 +1,31 @@
+{% extends "static_section.html" %}
+
+{% block content %}
+
+<h3>Frequently Asked Questions</h3>
+
+<ul>
+  {% for faq in object_list %}
+
+  <li class="faq"><a href="#{{faq|slugify}}">{{faq.question}}</a></li>
+
+  {% endfor %}
+
+</ul>
+
+{% for faq in object_list %}
+
+
+<div class="faq">
+
+  <p class="faq_question"><a name="{{faq|slugify}}">{{faq.question}}</a></p>
+
+  <p class="faq_answer">{{faq.answer}}</p>
+
+</div>
+
+{% endfor %}
+
+
+
+{% endblock %}

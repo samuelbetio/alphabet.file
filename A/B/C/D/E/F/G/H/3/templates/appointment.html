@@ -1,0 +1,25 @@
+{% extends "static_section.html" %}
+
+{% block content %}
+
+<h1>Appointments:</h1>
+
+<div id="appointments_text">
+<p>Schedule your appointment today!</p>
+<p>Please fill in all of the contact information below and we will be happy to give you a call. Please indicate your preferred time and date in the comments below.</p>
+<p>All appointment requests must be confirmed to be final. If you don't hear from us within 24 hours, please call to confirm. Occasionally, the form has technical difficulties, and we value your business.</p>
+
+<p>If you have any questions, please feel free to contact me at <a href="mailto:healingcirclemassage@hotmail.com">healingcirclemassage@hotmail.com</a> or call me at (805) 680-1984.</p>
+
+</div>
+
+<form method="post" id="appointment_form" action="/appointment/create/">
+
+<div id="form">{{ form.as_p }}
+<p><input type="submit" id="appointment_submit" name="Submit Request" alt="Submit Request" class="submit"  /></p>
+
+</div>
+
+</form>
+
+{% endblock %}

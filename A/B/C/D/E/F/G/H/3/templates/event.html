@@ -1,0 +1,18 @@
+{% extends "static_section.html" %}
+
+{% block content %}
+
+<div id="title">
+  <h1>Events!</h1>
+</div>
+
+{% for event in object_list %}
+
+<div class="event grid_5">
+  <img src="/site_media/{{event.image}}" alt="{{ event.name }}" />
+  <p class="faq">{{event.name}}</p>
+</div>
+
+{% endfor %}
+
+{% endblock %}

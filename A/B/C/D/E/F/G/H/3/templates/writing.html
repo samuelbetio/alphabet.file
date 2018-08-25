@@ -1,0 +1,160 @@
+{% extends "static_section.html" %}
+
+{% block content %}
+
+<div id="title">
+  <h1>Kathy's Articles</h1>
+</div>
+
+
+<ul>
+  {% for testimonial in testimonials %}
+
+  <li class="faq"><p>{{testimonial.description}}</p> <p>~ {{testimonial.source}}</p></li>
+
+  {% endfor %}
+
+</ul>
+
+{% for writing in articles %}
+
+<div class="event grid_5">
+
+{% if not writing.link %}
+{% if not writing.thumbnail_image %}
+{{writing.name}}
+{% endif %}
+{% endif %}
+
+{% if writing.link %}
+
+{% if writing.thumbnail_image %}
+<a href="{{writing.link}}" rel="external"> <img src="/site_media/{{writing.thumbnail_image}}" alt="{{writing.name}}" /></a>
+{% endif %}
+
+<p class="faq"><a href="{{writing.link}}" rel="external">{{writing.name}}</a></p>
+
+{% endif %}
+
+{% if writing.image_1 %}
+ <a href="/site_media/{{writing.image_1}}"> <img src="/site_media/{{writing.thumbnail_image}}" alt="{{writing.name}}" /></a>
+<p class="faq"><a href="/site_media/{{writing.image_1}}">{{writing.name}}</a></p>
+{% endif %}
+
+<div class="faq">
+
+{% if writing.image_2 %}
+(Pages 
+<a href="/site_media/{{writing.image_1}}">1</a>
+<a href="/site_media/{{writing.image_2}}"> | 2</a>
+
+{% if writing.image_3 %}
+<a href="/site_media/{{writing.image_3}}"> | 3</a>
+{% endif %}
+
+{% if writing.image_4 %}
+<a href="/site_media/{{writing.image_1}}"> | 4</a>
+{% endif %}
+)
+{% endif %}
+</div>
+
+</div>
+
+{% endfor %}
+
+<div class="clear">&nbsp;</div>
+<div id="contributing_articles">
+
+
+<h3>Regular Contributor: Southwest Blend Magazine</h3>
+
+{% for article in southwestblend %}
+
+<p class="faq">
+  {% if article.link %}
+  <a href="{{article.link}}" rel="external">{{article.name}}</a>
+  {% else %}
+  {{ article.name }}
+  {% endif %}
+</p>
+
+{% endfor %}
+
+<h3>Regular Contributor: Corporate Wellness Magazine</h3>
+
+{% for article in corporatewellness %}
+
+<p class="faq">
+  {% if article.link %}
+  <a href="{{article.link}}" rel="external">{{article.name}}</a>
+  {% else %}
+  {{ article.name }}
+  {% endif %}
+</p>
+
+{% endfor %}
+
+<h3>Regular Contributor: Pacific Coast Business Times</h3>
+
+<p>Regular Column on Corporate Wellness</p>
+
+<h3>Regular Contributor: www.MASSAGEmag.com</h3>
+
+{% for article in massagemagazine %}
+
+<p class="faq">
+  {% if article.link %}
+  <a href="{{article.link}}" rel="external">{{article.name}}</a>
+  {% else %}
+  {{ article.name }}
+  {% endif %}
+</p>
+
+{% endfor %}
+
+<h3>Contributing Writer: Bizchicksrule.com</h3>
+
+{% for article in bizchicksrule %}
+
+<p class="faq">
+  {% if article.link %}
+  <a href="{{article.link}}" rel="external">{{article.name}}</a>
+  {% else %}
+  {{ article.name }}
+  {% endif %}
+</p>
+
+{% endfor %}
+
+<h3>Contributing Writer: massageschoolsguide.com</h3>
+
+{% for article in massageschoolsguide %}
+
+<p class="faq">
+  {% if article.link %}
+  <a href="{{article.link}}" rel="external">{{article.name}}</a>
+  {% else %}
+  {{ article.name }}
+  {% endif %}
+</p>
+
+{% endfor %}
+
+<h3>Other Writing Contributions:</h3>
+
+{% for article in other %}
+
+<p class="faq">
+  {% if article.link %}
+  <a href="{{article.link}}" rel="external">{{article.name}}</a>
+  {% else %}
+  {{ article.name }}
+  {% endif %}
+</p>
+
+{% endfor %}
+
+</div>
+
+{% endblock %}

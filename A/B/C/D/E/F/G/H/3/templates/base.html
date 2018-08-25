@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+{% load email_tags %}
+
+<head>
+  <title>{% block title %}Healing Circle Massage{% endblock %}</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="keywords" content="massage,therapy,therapeutic,deep tissue,trigger point,sports,corporate,reiki,ear coning,ear candling,health,birth assistant,naturopath,alternative medicine,CAM,complimentary alternative medicine,santa barbara,goleta,acupressure,pathology,nutrition,therapist,natural health,doula,pain relief,lectures,workshops,classes,integrated medicine,traditional naturopath,ND,herbs,homeopathics,bach flower essences,consulting,montecito,california,centralcoast,education,dvd,book,body,mind,spirit,mind/body medicine,mind/body connection,PhD.,mind-body,PNI,psychosomatic therapy,meditation, positive thought,affirmations,natural medicine"/>
+    <meta name="description" content="Heal your body, mind and spirit with medical and therapeutic massage therapist, Kathy Gruver" />
+    <meta name="verify-v1" content="ev86N4AOG4aIZY4Cgui4lzNRz6jZdhakrJ1OK9GphTQ=" />
+  {% block css %}
+  <link rel="stylesheet" type="text/css" href="/site_media/stylesheets/960.css" />
+  <link rel="stylesheet" type="text/css" href="/site_media/stylesheets/text.css" />
+  <link rel="stylesheet" type="text/css" href="/site_media/stylesheets/reset.css" />
+  <link rel="stylesheet" type="text/css" href="/site_media/stylesheets/base.css" />
+  <link rel="icon" type="image/gif" href="/site_media/images/favicon.gif" />
+  {% endblock %}
+  {% block section_css %}{% endblock %}
+  {% block page_css %}{% endblock %}
+  
+  <script type="text/javascript" src="/site_media/scripts/jquery-1.2.3.min.js"></script>
+  <script type="text/javascript" src="/site_media/scripts/base.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+</head>
+<body>
+  <div id="wrapper" class="container_16">
+    <div class="grid_16" id="header">
+    <div id="banner" class="grid_5 alpha">
+      <img alt="Healing Circle Massage" src="/site_media/images/logo.png" />
+    </div>
+    <div class="grid_11 omega">
+      <img src="/site_media/images/header.png" alt="Healing Circle Massage"/>
+      </div>
+<div class="clear"> </div>
+<div class="grid_16 alpha" id="navigation">
+{% block navigation %}
+      <ul>
+	<li><a href="/">Home</a></li>
+	<li><a href="https://www.thegiftcardcafe.com/cart/index.php?storeID=1551" rel="external">Instant Gift Certificates</a></li>
+	<li><a href="/services/">Massage Services</a></li>
+	<li><a href="/store/">Store</a></li>
+	<li><a href="/resume/">Resume</a></li>
+	<li><a href="/speaking/">As a Speaker</a></li>
+	<li><a href="/news/">As an Expert</a></li>
+	<li class="last"><a href="/writings/">As a Writer</a></li>
+	<li><a href="/appointments/">Appointments</a></li>
+	<li class="last"><a href="/testimonials/">Massage Testimonials</a></li>
+      </ul>
+      {% endblock %}
+    </div>
+</div>
+    <div class="clear"> </div>
+
+      <div id="sidebox" class="grid_5 alpha omega">
+	{% block header %}
+
+	<a href="http://www.thealternativemedicinecabinet.com" rel="external">
+	  <p class="announce">Learn more about Kathy's award-winning books:</p>
+	  <p class="announce">The Alternative Medicine Cabinet</p>
+	  <p class="announce">Body-Mind Therapies for the Bodyworker</p>
+	  <p class="announce">Conquer Your Stress with Mind/Body Techniques</p>
+	</a>
+	{% endblock %}
+  <img width="175" src="/site_media/images/global_ebook_award.png" alt="Global Ebook Awards" />
+  <img width="175" src="/site_media/images/NIEAseal-2014-Winner.png" alt="National Indie Excellence Awards Winner" />
+<a href="http://beverlyhillsbookawards.com/" target="_blank"><img src="http://www.beverlyhillsbookawards.com/img/bhba-winner-sticker.png" width="174" height="175" border="0"></a>	
+  <a href="http://usabooknews.com" target="_blank" >
+    <img width="175" src="/site_media/images/390_Finalistonbook.jpg" alt="USA Best Books Finalist!" />
+  </a>
+	  {% display_email_form %}      
+	</div>
+
+	<div id="content-wrapper" class="grid_11 omega">
+	  <div id="content">
+	  {% block content %}
+	  {% endblock %}
+	  </div>
+	</div>
+
+      <div class="clear"> </div>
+
+      <div id="footer" class="grid_16">
+	<div class="grid_8 alpha omega" id="footer_left">
+	  <iframe width="350" height="275" style="margin:10px 0;" src="http://www.youtube.com/embed/mwNXK2DIb1s" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<div class="grid_8 alpha omega" id="footer_right">
+	<p><img alt="Accepts Visa and MasterCard" src="/site_media/images/visa_mastercard.jpg"/></p>
+	<p>Please call us today for an appointment</p>
+	<p>(805) 680-1984</p>
+	<p>Healing Body, Mind and Spirit</p>
+      <p><img alt="BodyWork" src="/site_media/images/bodyworklogo.gif" /><img alt="ANMA" src="/site_media/images/anma.gif" /></p>
+      </div>
+<div class="clear"> </div>
+</div>
+<div class="clear"> </div>
+<div id="subfooter" class="grid_16">
+<p class="blog">&copy; 2018 Healing Circle Massage</p>
+</div>
+<div class="clear"> </div>
+    </div>
+    <script type="text/javascript">
+	  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+      
+    <script type="text/javascript">
+	  try {
+	  var pageTracker = _gat._getTracker("UA-88241-8");
+	  pageTracker._trackPageview();
+	  } catch(err) {}
+    </script>
+
+  </body>
+</html>

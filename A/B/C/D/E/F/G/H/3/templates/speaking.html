@@ -1,0 +1,39 @@
+{% extends "static_section.html" %}
+
+{% load markup %}
+{% block content %}
+<div class="speaking">  
+
+<p>Kathy Gruver is an award-winning author and the host of the national TV show based on her first book, The Alternative Medicine Cabinet (winner Beverly Hills Book Awards). She has earned her PhD in Natural Health and has authored two books on stress: Body/Mind Therapies for the Bodyworker and, just published, Conquer Your Stress with Mind/Body Techniques (Winner Indie Excellence Awards, Beverly Hills Book Awards, Finalist for the USA Best Books Award). She has studied mind/body medicine at the famed Benson-Henry Institute for Mind-Body Medicine at Harvard Medical School and pursued further education at The National Institutes of Health. Gruver has been featured as an expert in numerous publications including Glamour, Time, Wall Street Journal, CNN, WebMD, Prevention, Men's Health, Huffington Post, Yahoo.com, Ladies Home Journal, Massage and Bodyworks Magazine, and Massage Magazine. She has written dozens of health and wellness articles and contributing posts. Dr. Gruver has appeared as a guest expert on over 200 radio and TV shows including NPR, SkyNews London, CBS Radio, and Lifetime Television, and has done over 100 educational lectures around the country. For fun and stress relief Dr. Gruver does flying trapeze and hip hop dance.</p>
+
+<p>A recent winner of NAWBO's Spirit of Entrepreneurship Awards and nominee for the Gutsy Gal Awards, Kathy maintains a massage and natural health practice in Santa Barbara, Calif., also offering phone and email health consultations. She has also produced an instructional massage DVD, Therapeutic Massage at Home; Learn to Rub People the RIGHT Way&trade; and is a practitioner with over 20 years of experience. Her award-winning book, The Alternative Medicine Cabinet was recently turned into a national talk show. More information can be found at <a href="http://www.thealternativemedicinecabinet.com" target="_blank">www.thealternativemedicinecabinet.com</a>.</p>
+
+<div class="grid_4">
+  <img src="/site_media/images/nawbo6_sm.jpg" alt=" " />
+  <img src="/site_media/images/nawbo5_sm.jpg" alt=" " />  
+</div>
+<div class="grid_5">
+  <img src="/site_media/images/nawbo3_md.jpg" alt=" " />
+</div>
+
+<div class="grid_12">
+<p>For more information on booking Dr. Kathy Gruver contact:</p>
+<p><a href="http://www.mvpseminars.com" target="_blank">MVP Seminars - Training & Speakers</a></p>
+<p><a href="http://www.mvpseminars.com" target="_blank">http://www.mvpseminars.com</a></p>
+</div>
+
+<div class="clear">&nbsp;</div>
+
+<h1>Testimonials</h1>
+<ul>
+  {% for testimonial in testimonials %}
+
+  <li class="faq"><p>{{testimonial.description|markdown}}</p> <p>~ {{testimonial.source}}</p></li>
+
+  {% endfor %}
+</ul>
+
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,91 @@
+{% extends "static_section.html" %}
+
+{% block content %}
+
+<p class="podcast">Listen to Kathy's Podcast on <a href="http://theholisticoption.com/podcasts/HolisticHealthAndWellness-Episode44.mp3" rel="external">the emotional components of back pain</a></p>
+
+<div class="clear">
+&nbsp;
+</div>
+
+<div id="title">
+  <h1>Articles Featuring Kathy</h1>
+</div>
+
+<p class="faq"><a href="http://wemagazineforwomen.com/this-business-woman-rubs-people-the-right-way/" rel="external">WE Magazine: This Business Woman Rubs People the RIGHT Way (click to read)</a></p>
+<p class="faq">Calgary Sun: Why I Love My Job</p>
+<p class="faq">Discover Magazine</p>
+<p class="faq"><a href="http://www.thedailysound.com/072009healthy" rel="external">The Daily Sound (click to read)</a></p>
+<p class="faq">Massage Magazine</p>
+
+{% for news_item in news_items %}
+
+<div class="event grid_5">
+
+{% if not news_item.link %}
+{% if not news_item.thumbnail_image %}
+<p class="faq">{{news_item.name}}</p>
+{% endif %}
+{% endif %}
+
+{% if news_item.link %}
+
+{% if news_item.thumbnail_image %}
+<a href="{{news_item.link}}" rel="external"> <img src="/site_media/{{news_item.thumbnail_image}}" alt="{{news_item.name}}" /></a>
+{% endif %}
+
+<p class="faq"><a href="{{news_item.link}}" rel="external">{{news_item.name}}</a></p>
+
+{% endif %}
+
+{% if news_item.image_1 %}
+ <a href="/site_media/{{news_item.image_1}}"> <img src="/site_media/{{news_item.thumbnail_image}}" alt="{{news_item.name}}" /></a>
+ <p class="faq"><a href="/site_media/{{news_item.image_1}}">{{news_item.name}}</a></p>
+{% endif %}
+
+<div class="faq">
+
+{% if news_item.image_2 %}
+(Pages 
+<a href="/site_media/{{news_item.image_1}}">1</a>
+<a href="/site_media/{{news_item.image_2}}"> | 2</a>
+
+{% if news_item.image_3 %}
+<a href="/site_media/{{news_item.image_3}}"> | 3</a>
+{% endif %}
+
+{% if news_item.image_4 %}
+<a href="/site_media/{{news_item.image_1}}"> | 4</a>
+{% endif %}
+)
+{% endif %}
+</div>
+
+</div>
+
+{% endfor %}
+
+<div class="clear">
+&nbsp;
+</div>
+
+<div id="interviews" class="grid_6">
+
+  <h1>On the Air</h1>
+  <p>Kathy has appeared on numerous radio shows as an expert guest on the following topics:</p>
+<ul id="speaking_list">
+{% for interview in interviews %}
+
+{% if not interview.link %}
+<li class="faq">{{interview.name}}</li>
+{% endif %}
+
+{% if interview.link %}
+<li class="faq"><a href="{{interview.link}}" rel="external">{{interview.name}}</a></li>
+{% endif %}
+
+{% endfor %}
+</ul>
+</div>
+
+{% endblock %}

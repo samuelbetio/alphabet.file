@@ -1,0 +1,47 @@
+{% extends "static_section.html" %}
+
+{% block content %}
+<div id="services">
+
+<p>Our upper State St. office in Santa Barbara, CA features two treatment rooms, parking and an alternative medicine lending library.</p>
+
+<p>Dr. Gruver is available Monday through Friday and select evenings.</p>
+
+<p>We accept personal injury and worker's comp insurance cases with a Doctor's prescription.</p>
+
+<h1>Our Services:</h1>
+
+<p id="small_text">Featuring an alternative medicine library: over 1,000 categorized books and articles for you to browse or borrow.</p>
+
+<p class="text">Personal injury and worker's comp accepted with prescription.</p>
+
+{% for service in object_list %}
+
+<div class="service grid_10">
+
+{% if service.image %}
+<div class="grid_6 alpha">
+<img src="/site_media/{{service.image}}" alt=" "/>
+</div>
+{% endif %}
+
+<div class="grid_4 omega">
+
+<p class="service_name">{{service.name}}</p>
+
+<p class="service_description">{{service.description|safe}}</p>
+
+<p class="service_price">{{service.price|safe}}</p>
+
+</div>
+
+</div>
+
+<div class="clear">&nbsp;</div>
+
+
+{% endfor %}
+
+</div>
+
+{% endblock %}
