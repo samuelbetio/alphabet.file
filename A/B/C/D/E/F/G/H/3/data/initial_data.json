@@ -1,0 +1,2882 @@
+[
+    {
+        "pk": 13, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_logentry", 
+            "name": "Can add log entry", 
+            "content_type": 5
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_logentry", 
+            "name": "Can change log entry", 
+            "content_type": 5
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_logentry", 
+            "name": "Can delete log entry", 
+            "content_type": 5
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_group", 
+            "name": "Can add group", 
+            "content_type": 2
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_message", 
+            "name": "Can add message", 
+            "content_type": 4
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_permission", 
+            "name": "Can add permission", 
+            "content_type": 1
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_user", 
+            "name": "Can add user", 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_group", 
+            "name": "Can change group", 
+            "content_type": 2
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_message", 
+            "name": "Can change message", 
+            "content_type": 4
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_permission", 
+            "name": "Can change permission", 
+            "content_type": 1
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_user", 
+            "name": "Can change user", 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_group", 
+            "name": "Can delete group", 
+            "content_type": 2
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_message", 
+            "name": "Can delete message", 
+            "content_type": 4
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_permission", 
+            "name": "Can delete permission", 
+            "content_type": 1
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_user", 
+            "name": "Can delete user", 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_contenttype", 
+            "name": "Can add content type", 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_contenttype", 
+            "name": "Can change content type", 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_contenttype", 
+            "name": "Can delete content type", 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_session", 
+            "name": "Can add session", 
+            "content_type": 7
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_session", 
+            "name": "Can change session", 
+            "content_type": 7
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_session", 
+            "name": "Can delete session", 
+            "content_type": 7
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_site", 
+            "name": "Can add site", 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_site", 
+            "name": "Can change site", 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_site", 
+            "name": "Can delete site", 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_appointment", 
+            "name": "Can add appointment", 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 64, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_contributingwriter", 
+            "name": "Can add contributing writer", 
+            "content_type": 22
+        }
+    }, 
+    {
+        "pk": 67, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_dvdtestimonial", 
+            "name": "Can add dvd testimonial", 
+            "content_type": 23
+        }
+    }, 
+    {
+        "pk": 70, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_email", 
+            "name": "Can add email", 
+            "content_type": 24
+        }
+    }, 
+    {
+        "pk": 43, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_event", 
+            "name": "Can add event", 
+            "content_type": 15
+        }
+    }, 
+    {
+        "pk": 37, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_faq", 
+            "name": "Can add faq", 
+            "content_type": 13
+        }
+    }, 
+    {
+        "pk": 52, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_hometext", 
+            "name": "Can add home text", 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 58, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_interview", 
+            "name": "Can add interview", 
+            "content_type": 20
+        }
+    }, 
+    {
+        "pk": 55, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_newsitem", 
+            "name": "Can add news item", 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_resume", 
+            "name": "Can add resume", 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 34, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_service", 
+            "name": "Can add service", 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 49, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_testimonial", 
+            "name": "Can add testimonial", 
+            "content_type": 17
+        }
+    }, 
+    {
+        "pk": 46, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_writing", 
+            "name": "Can add writing", 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 61, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_writingtestimonial", 
+            "name": "Can add writing testimonial", 
+            "content_type": 21
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_appointment", 
+            "name": "Can change appointment", 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 65, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_contributingwriter", 
+            "name": "Can change contributing writer", 
+            "content_type": 22
+        }
+    }, 
+    {
+        "pk": 68, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_dvdtestimonial", 
+            "name": "Can change dvd testimonial", 
+            "content_type": 23
+        }
+    }, 
+    {
+        "pk": 71, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_email", 
+            "name": "Can change email", 
+            "content_type": 24
+        }
+    }, 
+    {
+        "pk": 44, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_event", 
+            "name": "Can change event", 
+            "content_type": 15
+        }
+    }, 
+    {
+        "pk": 38, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_faq", 
+            "name": "Can change faq", 
+            "content_type": 13
+        }
+    }, 
+    {
+        "pk": 53, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_hometext", 
+            "name": "Can change home text", 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 59, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_interview", 
+            "name": "Can change interview", 
+            "content_type": 20
+        }
+    }, 
+    {
+        "pk": 56, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_newsitem", 
+            "name": "Can change news item", 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_resume", 
+            "name": "Can change resume", 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 35, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_service", 
+            "name": "Can change service", 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 50, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_testimonial", 
+            "name": "Can change testimonial", 
+            "content_type": 17
+        }
+    }, 
+    {
+        "pk": 47, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_writing", 
+            "name": "Can change writing", 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 62, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_writingtestimonial", 
+            "name": "Can change writing testimonial", 
+            "content_type": 21
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_appointment", 
+            "name": "Can delete appointment", 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 66, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_contributingwriter", 
+            "name": "Can delete contributing writer", 
+            "content_type": 22
+        }
+    }, 
+    {
+        "pk": 69, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_dvdtestimonial", 
+            "name": "Can delete dvd testimonial", 
+            "content_type": 23
+        }
+    }, 
+    {
+        "pk": 72, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_email", 
+            "name": "Can delete email", 
+            "content_type": 24
+        }
+    }, 
+    {
+        "pk": 45, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_event", 
+            "name": "Can delete event", 
+            "content_type": 15
+        }
+    }, 
+    {
+        "pk": 39, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_faq", 
+            "name": "Can delete faq", 
+            "content_type": 13
+        }
+    }, 
+    {
+        "pk": 54, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_hometext", 
+            "name": "Can delete home text", 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 60, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_interview", 
+            "name": "Can delete interview", 
+            "content_type": 20
+        }
+    }, 
+    {
+        "pk": 57, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_newsitem", 
+            "name": "Can delete news item", 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_resume", 
+            "name": "Can delete resume", 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 36, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_service", 
+            "name": "Can delete service", 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 51, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_testimonial", 
+            "name": "Can delete testimonial", 
+            "content_type": 17
+        }
+    }, 
+    {
+        "pk": 48, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_writing", 
+            "name": "Can delete writing", 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 63, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_writingtestimonial", 
+            "name": "Can delete writing testimonial", 
+            "content_type": 21
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "peter", 
+            "first_name": "", 
+            "last_name": "", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2009-07-04 00:47:30", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$7fa84$f50af9e665048c660de8ff09311c868f10389e12", 
+            "email": "peter@emlprime.com", 
+            "date_joined": "2008-12-04 20:34:54"
+        }
+    }, 
+    {
+        "pk": 73, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2009-02-22 15:32:16", 
+            "object_repr": "2008-12-03", 
+            "object_id": "1", 
+            "change_message": "Changed text.", 
+            "user": 1, 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 72, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2009-02-21 12:10:29", 
+            "object_repr": "2008-12-03", 
+            "object_id": "1", 
+            "change_message": "Changed employment, training_and_education and professional.", 
+            "user": 1, 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 71, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-02-21 11:39:02", 
+            "object_repr": "Alijor Blog", 
+            "object_id": "10", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 22
+        }
+    }, 
+    {
+        "pk": 70, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-02-21 11:38:37", 
+            "object_repr": "Reiki", 
+            "object_id": "9", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 22
+        }
+    }, 
+    {
+        "pk": 69, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-02-21 11:38:20", 
+            "object_repr": "New Year's Tips", 
+            "object_id": "8", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 22
+        }
+    }, 
+    {
+        "pk": 68, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2009-02-21 11:38:00", 
+            "object_repr": "Southwest Blend Magazine Article on Bach Flower Essences ", 
+            "object_id": "None", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 67, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-02-21 11:37:55", 
+            "object_repr": "Bach Flower Essences ", 
+            "object_id": "7", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 22
+        }
+    }, 
+    {
+        "pk": 66, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2009-02-21 11:37:33", 
+            "object_repr": "Southwest Blend Magazine Article on Benefits of Massage", 
+            "object_id": "None", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 65, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-02-21 11:37:23", 
+            "object_repr": "Benefits of Massage", 
+            "object_id": "6", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 22
+        }
+    }, 
+    {
+        "pk": 64, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-02-21 11:36:45", 
+            "object_repr": "Empathy", 
+            "object_id": "5", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 22
+        }
+    }, 
+    {
+        "pk": 63, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-02-21 11:36:32", 
+            "object_repr": "Modern Massage Myths", 
+            "object_id": "4", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 22
+        }
+    }, 
+    {
+        "pk": 62, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2009-02-21 11:35:53", 
+            "object_repr": "MassageMag.com Article on Firing Clients", 
+            "object_id": "None", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 61, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-02-21 11:35:48", 
+            "object_repr": "Article on Firing Clients", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 22
+        }
+    }, 
+    {
+        "pk": 60, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2009-02-21 11:35:20", 
+            "object_repr": "Women and Stress", 
+            "object_id": "None", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 59, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-02-21 11:35:15", 
+            "object_repr": "Women and Stress", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 22
+        }
+    }, 
+    {
+        "pk": 58, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2009-02-21 11:35:00", 
+            "object_repr": "A Self-Promotion Primer", 
+            "object_id": "None", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 57, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-02-21 11:34:44", 
+            "object_repr": "A Self-Promotion Primer", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 22
+        }
+    }, 
+    {
+        "pk": 56, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2009-02-21 11:32:48", 
+            "object_repr": "Liz; Winchester, MA", 
+            "object_id": "None", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 17
+        }
+    }, 
+    {
+        "pk": 55, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-02-21 11:32:43", 
+            "object_repr": "Liz; Winchester, MA", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 21
+        }
+    }, 
+    {
+        "pk": 54, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2009-02-21 11:32:27", 
+            "object_repr": "Fiona; Adelaide, AUS", 
+            "object_id": "None", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 17
+        }
+    }, 
+    {
+        "pk": 53, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-02-21 11:32:22", 
+            "object_repr": "Fiona; Adelaide, AUS", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 21
+        }
+    }, 
+    {
+        "pk": 52, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2009-02-21 11:31:25", 
+            "object_repr": "Calgary Sun: Why I Love My Job", 
+            "object_id": "None", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 51, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-02-21 11:31:20", 
+            "object_repr": "Calgary Sun: Why I Love My Job", 
+            "object_id": "8", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 20
+        }
+    }, 
+    {
+        "pk": 50, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2009-02-21 11:30:32", 
+            "object_repr": "Special guest on Radio Show on being a health consultant ", 
+            "object_id": "None", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 49, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-02-21 11:30:28", 
+            "object_repr": "Special guest on Radio Show on being a health consultant ", 
+            "object_id": "7", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 20
+        }
+    }, 
+    {
+        "pk": 48, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2009-02-21 11:30:10", 
+            "object_repr": "Special guests on Radio Show on Bach Flower Essences (start at 50:30 and go to 70:20)", 
+            "object_id": "None", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 47, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-02-21 11:30:05", 
+            "object_repr": "Special guests on Radio Show on Bach Flower Essences (start at 50:30 and go to 70:20)", 
+            "object_id": "6", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 20
+        }
+    }, 
+    {
+        "pk": 46, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2009-02-21 11:29:50", 
+            "object_repr": "Guest on www.naturalsolutionsradio.com  speaking about ANMA convention \u201808", 
+            "object_id": "None", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 45, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-02-21 11:29:46", 
+            "object_repr": "Guest on www.naturalsolutionsradio.com  speaking about ANMA convention \u201808", 
+            "object_id": "5", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 20
+        }
+    }, 
+    {
+        "pk": 44, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2009-02-21 11:29:30", 
+            "object_repr": "The business of life discussing Healthier Office and avoiding getting sick at work.", 
+            "object_id": "None", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 43, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-02-21 11:29:26", 
+            "object_repr": "The business of life discussing Healthier Office and avoiding getting sick at work.", 
+            "object_id": "4", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 20
+        }
+    }, 
+    {
+        "pk": 42, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2009-02-21 11:29:08", 
+            "object_repr": "Spiritland Bistro Tuesday Night for Healing Lecture Featured speaker on \u201cHow to Stay Sick\u201d, a talk on body/mind connection and how our thoughts create our bodies.", 
+            "object_id": "None", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 41, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-02-21 11:29:02", 
+            "object_repr": "Spiritland Bistro Tuesday Night for Healing Lecture Featured speaker on \u201cHow to Stay Sick\u201d, a talk on body/mind connection and how our thoughts create our bodies.", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 20
+        }
+    }, 
+    {
+        "pk": 40, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2009-02-21 11:28:39", 
+            "object_repr": "Special guest on Radio Show on Mind/Body medicine with Dr. Life", 
+            "object_id": "None", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 39, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-02-21 11:28:35", 
+            "object_repr": "Special guest on Radio Show on Mind/Body medicine with Dr. Life", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 20
+        }
+    }, 
+    {
+        "pk": 38, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2009-02-21 11:28:19", 
+            "object_repr": "Reiki Interview", 
+            "object_id": "None", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 37, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-02-21 11:28:16", 
+            "object_repr": "Reiki Interview", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 20
+        }
+    }, 
+    {
+        "pk": 36, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2009-02-17 10:36:29", 
+            "object_repr": "Featured expert on Fibromyalgia", 
+            "object_id": "11", 
+            "change_message": "Changed link.", 
+            "user": 1, 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 35, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2009-02-17 10:34:50", 
+            "object_repr": "Featured expert on Fibromyalgia", 
+            "object_id": "11", 
+            "change_message": "Changed thumbnail_image, image_1 and image_2.", 
+            "user": 1, 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 34, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-02-16 21:57:02", 
+            "object_repr": "Fiona; Adelaide, AUS", 
+            "object_id": "18", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 17
+        }
+    }, 
+    {
+        "pk": 33, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-02-16 21:55:56", 
+            "object_repr": "Liz; Winchester, MA", 
+            "object_id": "17", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 17
+        }
+    }, 
+    {
+        "pk": 32, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2009-02-16 21:54:32", 
+            "object_repr": "Peter", 
+            "object_id": "None", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 17
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2009-02-16 21:49:13", 
+            "object_repr": "College Lectures", 
+            "object_id": "None", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-02-16 21:47:51", 
+            "object_repr": "Calgary Sun: Why I Love My Job", 
+            "object_id": "16", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-02-16 21:45:54", 
+            "object_repr": "Reiki Interview", 
+            "object_id": "15", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-02-16 21:45:20", 
+            "object_repr": "Special guest on Radio Show on Mind/Body medicine with Dr. Life", 
+            "object_id": "14", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2009-02-16 21:44:24", 
+            "object_repr": "Different Strokes", 
+            "object_id": "None", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2008-12-04 23:20:07", 
+            "object_repr": "Bottled Water Web", 
+            "object_id": "3", 
+            "change_message": "No fields changed.", 
+            "user": 1, 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2008-12-04 23:12:54", 
+            "object_repr": "College Lectures", 
+            "object_id": "13", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2008-12-04 23:11:49", 
+            "object_repr": "Spiritland Bistro Tuesday Night for Healing Lecture Featured speaker on \u201cHow to Stay Sick\u201d, a talk on body/mind connection and how our thoughts create our bodies.", 
+            "object_id": "12", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2008-12-04 23:07:16", 
+            "object_repr": "Featured expert on Fibromyalgia", 
+            "object_id": "11", 
+            "change_message": "Changed name.", 
+            "user": 1, 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2008-12-04 23:06:25", 
+            "object_repr": "Southwest Blend Magazine Article on Benefits of Massage", 
+            "object_id": "9", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2008-12-04 23:05:47", 
+            "object_repr": "Southwest Blend Magazine Article on Bach Flower Essences ", 
+            "object_id": "8", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2008-12-04 23:05:18", 
+            "object_repr": "MassageMag.com Article on Firing Clients", 
+            "object_id": "7", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2008-12-04 23:04:22", 
+            "object_repr": "Women and Stress", 
+            "object_id": "6", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2008-12-04 23:03:50", 
+            "object_repr": "A Self-Promotion Primer", 
+            "object_id": "5", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2008-12-04 23:02:40", 
+            "object_repr": "Featured expert of Fibromyalgia", 
+            "object_id": "11", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2008-12-04 23:01:58", 
+            "object_repr": "The business of life discussing Healthier Office and avoiding getting sick at work.", 
+            "object_id": "10", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2008-12-04 23:01:21", 
+            "object_repr": "Guest on www.naturalsolutionsradio.com  speaking about ANMA convention \u201808", 
+            "object_id": "9", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2008-12-04 23:00:16", 
+            "object_repr": "Special guests on Radio Show on Bach Flower Essences (start at 50:30 and go to 70:20)", 
+            "object_id": "8", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2008-12-04 22:59:38", 
+            "object_repr": "Special guest on Radio Show on being a health consultant ", 
+            "object_id": "7", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2008-12-04 22:53:01", 
+            "object_repr": "2008-12-03", 
+            "object_id": "1", 
+            "change_message": "Changed employment.", 
+            "user": 1, 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2008-12-04 22:52:22", 
+            "object_repr": "2008-12-03", 
+            "object_id": "1", 
+            "change_message": "Changed employment.", 
+            "user": 1, 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2008-12-04 22:52:09", 
+            "object_repr": "2008-12-03", 
+            "object_id": "1", 
+            "change_message": "Changed employment.", 
+            "user": 1, 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2008-12-04 22:51:53", 
+            "object_repr": "2008-12-03", 
+            "object_id": "1", 
+            "change_message": "Changed employment.", 
+            "user": 1, 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2008-12-04 22:51:06", 
+            "object_repr": "2008-12-03", 
+            "object_id": "1", 
+            "change_message": "Changed employment, training_and_education, professional and personal_interests.", 
+            "user": 1, 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2008-12-04 22:26:54", 
+            "object_repr": "2008-12-03", 
+            "object_id": "1", 
+            "change_message": "Changed employment.", 
+            "user": 1, 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2008-12-04 22:24:05", 
+            "object_repr": "2008-12-03", 
+            "object_id": "1", 
+            "change_message": "Changed training_and_education.", 
+            "user": 1, 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2008-12-04 22:19:16", 
+            "object_repr": "2008-12-03", 
+            "object_id": "1", 
+            "change_message": "Changed employment, training_and_education, professional and personal_interests.", 
+            "user": 1, 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2008-12-04 22:18:43", 
+            "object_repr": "2008-12-03", 
+            "object_id": "1", 
+            "change_message": "Changed employment.", 
+            "user": 1, 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2008-12-04 22:17:58", 
+            "object_repr": "2008-12-03", 
+            "object_id": "1", 
+            "change_message": "Changed employment.", 
+            "user": 1, 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2008-12-04 22:12:17", 
+            "object_repr": "2008-12-03", 
+            "object_id": "1", 
+            "change_message": "No fields changed.", 
+            "user": 1, 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2008-12-04 22:07:10", 
+            "object_repr": "2008-12-03", 
+            "object_id": "1", 
+            "change_message": "Changed employment, training_and_education, professional and personal_interests.", 
+            "user": 1, 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "appointment", 
+            "name": "appointment", 
+            "app_label": "static"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "contenttype", 
+            "name": "content type", 
+            "app_label": "contenttypes"
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "contributingwriter", 
+            "name": "contributing writer", 
+            "app_label": "static"
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "dvdtestimonial", 
+            "name": "dvd testimonial", 
+            "app_label": "static"
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "email", 
+            "name": "email", 
+            "app_label": "static"
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "event", 
+            "name": "event", 
+            "app_label": "static"
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "faq", 
+            "name": "faq", 
+            "app_label": "static"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "group", 
+            "name": "group", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "hometext", 
+            "name": "home text", 
+            "app_label": "static"
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "interview", 
+            "name": "interview", 
+            "app_label": "static"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "logentry", 
+            "name": "log entry", 
+            "app_label": "admin"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "message", 
+            "name": "message", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "newsitem", 
+            "name": "news item", 
+            "app_label": "static"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "permission", 
+            "name": "permission", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "resume", 
+            "name": "resume", 
+            "app_label": "static"
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "service", 
+            "name": "service", 
+            "app_label": "static"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "session", 
+            "name": "session", 
+            "app_label": "sessions"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "site", 
+            "name": "site", 
+            "app_label": "sites"
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "testimonial", 
+            "name": "testimonial", 
+            "app_label": "static"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "user", 
+            "name": "user", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "writing", 
+            "name": "writing", 
+            "app_label": "static"
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "writingtestimonial", 
+            "name": "writing testimonial", 
+            "app_label": "static"
+        }
+    }, 
+    {
+        "pk": "a91b1a6af058ccda5b299a0f56d4be1e", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2008-12-18 20:35:34", 
+            "session_data": "gAJ9cQEoVRJfYXV0aF91c2VyX2JhY2tlbmRxAlUpZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5k\ncy5Nb2RlbEJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwF1LmM2NWI2MGYxMWFiYzExYjA1NDhh\nYzE3ODU3NzY5MjRk\n"
+        }
+    }, 
+    {
+        "pk": "89634f7bbc2b95b3b0b535fee6d677ea", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2009-01-05 10:55:47", 
+            "session_data": "gAJ9cQEuOTA3Yzc0ZmFjZTk3ODQxYWU2ZTk2MTE1OGNmNGEzZWU=\n"
+        }
+    }, 
+    {
+        "pk": "17c881cd019a9b5a197c9c871ef06eaa", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2009-02-06 11:39:51", 
+            "session_data": "gAJ9cQEoVRJfYXV0aF91c2VyX2JhY2tlbmRxAlUpZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5k\ncy5Nb2RlbEJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwF1LmM2NWI2MGYxMWFiYzExYjA1NDhh\nYzE3ODU3NzY5MjRk\n"
+        }
+    }, 
+    {
+        "pk": "e8e4e718cd40beace738023e07ce38de", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2009-02-14 14:46:24", 
+            "session_data": "gAJ9cQEoVRJfYXV0aF91c2VyX2JhY2tlbmRxAlUpZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5k\ncy5Nb2RlbEJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwF1LmM2NWI2MGYxMWFiYzExYjA1NDhh\nYzE3ODU3NzY5MjRk\n"
+        }
+    }, 
+    {
+        "pk": "d859d57b6d2e361aadeec294b569261a", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2009-03-02 21:43:58", 
+            "session_data": "gAJ9cQEoVRJfYXV0aF91c2VyX2JhY2tlbmRxAlUpZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5k\ncy5Nb2RlbEJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwF1LmM2NWI2MGYxMWFiYzExYjA1NDhh\nYzE3ODU3NzY5MjRk\n"
+        }
+    }, 
+    {
+        "pk": "73b995cb389e4f8c23e818db9d2da33f", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2009-03-03 09:33:49", 
+            "session_data": "gAJ9cQEoVRJfYXV0aF91c2VyX2JhY2tlbmRxAlUpZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5k\ncy5Nb2RlbEJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwF1LmM2NWI2MGYxMWFiYzExYjA1NDhh\nYzE3ODU3NzY5MjRk\n"
+        }
+    }, 
+    {
+        "pk": "4d4b66bc42d8c5edb994a68b960c27c3", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2009-03-07 11:27:32", 
+            "session_data": "gAJ9cQEoVRJfYXV0aF91c2VyX2JhY2tlbmRxAlUpZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5k\ncy5Nb2RlbEJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwF1LmM2NWI2MGYxMWFiYzExYjA1NDhh\nYzE3ODU3NzY5MjRk\n"
+        }
+    }, 
+    {
+        "pk": "78f348cb887c5d188a82443a512e4efb", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2009-03-07 12:04:08", 
+            "session_data": "gAJ9cQEoVRJfYXV0aF91c2VyX2JhY2tlbmRxAlUpZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5k\ncy5Nb2RlbEJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwF1LmM2NWI2MGYxMWFiYzExYjA1NDhh\nYzE3ODU3NzY5MjRk\n"
+        }
+    }, 
+    {
+        "pk": "dea5df8fad2531410e9967bf8c709b0c", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2009-04-10 23:53:19", 
+            "session_data": "gAJ9cQEoVRJfYXV0aF91c2VyX2JhY2tlbmRxAlUpZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5k\ncy5Nb2RlbEJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwF1LmM2NWI2MGYxMWFiYzExYjA1NDhh\nYzE3ODU3NzY5MjRk\n"
+        }
+    }, 
+    {
+        "pk": "2ddbc81b611d7f0c0d3484d75a63d744", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2009-05-02 18:52:54", 
+            "session_data": "gAJ9cQEoVRJfYXV0aF91c2VyX2JhY2tlbmRxAlUpZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5k\ncy5Nb2RlbEJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwF1LmM2NWI2MGYxMWFiYzExYjA1NDhh\nYzE3ODU3NzY5MjRk\n"
+        }
+    }, 
+    {
+        "pk": "855c3f67e232090e67477cf01bfb0771", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2009-05-12 12:20:17", 
+            "session_data": "gAJ9cQEoVRJfYXV0aF91c2VyX2JhY2tlbmRxAlUpZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5k\ncy5Nb2RlbEJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwF1LmM2NWI2MGYxMWFiYzExYjA1NDhh\nYzE3ODU3NzY5MjRk\n"
+        }
+    }, 
+    {
+        "pk": "506ba75a52787e9f006e488cf6d19928", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2009-07-08 22:46:05", 
+            "session_data": "gAJ9cQEoVRJfYXV0aF91c2VyX2JhY2tlbmRxAlUpZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5k\ncy5Nb2RlbEJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwF1LmM2NWI2MGYxMWFiYzExYjA1NDhh\nYzE3ODU3NzY5MjRk\n"
+        }
+    }, 
+    {
+        "pk": "f64f81e39f058322666299cd2839188d", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2009-07-18 00:47:30", 
+            "session_data": "gAJ9cQEoVRJfYXV0aF91c2VyX2JhY2tlbmRxAlUpZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5k\ncy5Nb2RlbEJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwF1LmM2NWI2MGYxMWFiYzExYjA1NDhh\nYzE3ODU3NzY5MjRk\n"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "sites.site", 
+        "fields": {
+            "domain": "example.com", 
+            "name": "example.com"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "static.appointment", 
+        "fields": {
+            "phone_number": "8054482304", 
+            "first_name": "laura", 
+            "last_name": "madsen", 
+            "email": "laura.m.madsen@gmail.com", 
+            "description": "need an appointment!"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "static.appointment", 
+        "fields": {
+            "phone_number": "805-698-5795", 
+            "first_name": "Kristin", 
+            "last_name": "Shamordola", 
+            "email": "kshamordola@cox.net", 
+            "description": "Hey Kathy !!! I'm at work - didn't have your e-mail ... I also sent you a text. Looking for a massage this coming Monday ... any time afer about 11 am. Can we spend the whole hour on my low back !?! Owie ! tight !  "
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "static.appointment", 
+        "fields": {
+            "phone_number": "xYplpzbct", 
+            "first_name": "sipenohja", 
+            "last_name": "sipenohja", 
+            "email": "dogjpb@dxsuut.com", 
+            "description": "uoZImq  <a href=\"http://nolslzrlluct.com/\">nolslzrlluct</a>, [url=http://vijukeqrrifj.com/]vijukeqrrifj[/url], [link=http://snpqilfbxjcm.com/]snpqilfbxjcm[/link], http://hpcmweiszjik.com/"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "static.appointment", 
+        "fields": {
+            "phone_number": "QlgwdEAf", 
+            "first_name": "mnxtbeku", 
+            "last_name": "mnxtbeku", 
+            "email": "pqsbks@fpvnig.com", 
+            "description": "2HkKCa  <a href=\"http://ntduwomawenz.com/\">ntduwomawenz</a>, [url=http://blofuguutjwe.com/]blofuguutjwe[/url], [link=http://vrjqiffevqxw.com/]vrjqiffevqxw[/link], http://kyasicqafamo.com/"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "static.appointment", 
+        "fields": {
+            "phone_number": "805 259 8171", 
+            "first_name": "Lisa ", 
+            "last_name": "Taylor", 
+            "email": "LisaMLTaylor@gmail.com", 
+            "description": "Hi Kathy, Lacey walked out the door with out a check, here is my credit card info. I hope this will make it easier for you. Lisa\r\nVISA\r\nLisa M Taylor\r\n#4147210006177720\r\nexp.02/11\r\nsec 4147\r\nLet me know if this is ok. Thanks again for helping Lacey"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "static.appointment", 
+        "fields": {
+            "phone_number": "hCoDyELNw", 
+            "first_name": "rakdjoe", 
+            "last_name": "rakdjoe", 
+            "email": "esouix@vfizyb.com", 
+            "description": "B40Dj0  <a href=\"http://wrpovmcuflqn.com/\">wrpovmcuflqn</a>, [url=http://xunmywnnrjri.com/]xunmywnnrjri[/url], [link=http://ymwqjoxlrdvi.com/]ymwqjoxlrdvi[/link], http://vktblxqxmlap.com/"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "static.appointment", 
+        "fields": {
+            "phone_number": "WduZhusdivv", 
+            "first_name": "eumimql", 
+            "last_name": "eumimql", 
+            "email": "llmfth@ijiuxt.com", 
+            "description": "H9gWMZ  <a href=\"http://lockwioetzbw.com/\">lockwioetzbw</a>, [url=http://uwkdbzpnbasb.com/]uwkdbzpnbasb[/url], [link=http://kelokdzwhxsf.com/]kelokdzwhxsf[/link], http://wpeqrriiwxvh.com/"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "static.appointment", 
+        "fields": {
+            "phone_number": "310-902-3657", 
+            "first_name": "Jim ", 
+            "last_name": "Gleason ", 
+            "email": "jjgleason64@hotmail.com", 
+            "description": "Punk!!\r\n\r\nJust got the e-card from you and wanted to thank you, but found that your email address wasn't in my address book for some ridiculous reason.  But I found you here!\r\n\r\nThanks so much for the card!\r\n\r\nB.G.\r\n\r\n"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "static.appointment", 
+        "fields": {
+            "phone_number": "HwUzVCVvlUqxOhKg", 
+            "first_name": "khnuskyfgfn", 
+            "last_name": "khnuskyfgfn", 
+            "email": "vzqxjf@lxonot.com", 
+            "description": "y3YVJ9  <a href=\"http://epuhgdgvgbzl.com/\">epuhgdgvgbzl</a>, [url=http://hhiocpnmtfcs.com/]hhiocpnmtfcs[/url], [link=http://ympnxpxolcvb.com/]ympnxpxolcvb[/link], http://skgkfqbsasfn.com/"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "static.appointment", 
+        "fields": {
+            "phone_number": "GHzBOVNLfqJIgyY", 
+            "first_name": "clhmnxndped", 
+            "last_name": "clhmnxndped", 
+            "email": "bmtdme@botvrp.com", 
+            "description": "hVvxJE  <a href=\"http://poaribcnydzi.com/\">poaribcnydzi</a>, [url=http://ggqmqijxxevn.com/]ggqmqijxxevn[/url], [link=http://gehwkyivwdqc.com/]gehwkyivwdqc[/link], http://pzkbwaryakkj.com/"
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "static.appointment", 
+        "fields": {
+            "phone_number": "480-751-5248", 
+            "first_name": "Mila", 
+            "last_name": "Gan", 
+            "email": "2advertiselink@gmail.com", 
+            "description": "Hello\r\n\r\nI help run a beauty related site.  It is basically all about facial plastic surgery that helps regain self confidence and boosts self esteem. If there is a choice to be beautiful all the time, why not stay as beautiful as always.\r\n \r\nAnyway, I am writing to you because I have recently viewed your site and am impressed with all of the helpful information.  Your site has the potential of reaching out to a wide range of people! I would like to request to have our site posted on your site, by way of paid contextual link advertisement. Let me know how much it would cost me to have my link placed on your main page, or other related internal pages.\r\n \r\nI\u2019d be delighted to receive a follow up from you. Please contact me at your earliest convenience so we can further discuss this interesting business opportunity.\r\n \r\nMila Gan\r\nSite Link Manager\r\n"
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "static.appointment", 
+        "fields": {
+            "phone_number": "orfmJDQTPqUPKmAf", 
+            "first_name": "peifivhluf", 
+            "last_name": "peifivhluf", 
+            "email": "smwqxl@hzehhq.com", 
+            "description": "S2coUf  <a href=\"http://ginprlsvltdy.com/\">ginprlsvltdy</a>, [url=http://nxunyykftgjy.com/]nxunyykftgjy[/url], [link=http://rerpiqgiwstj.com/]rerpiqgiwstj[/link], http://luburqhcpeci.com/"
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "static.appointment", 
+        "fields": {
+            "phone_number": "FWGSVgGsPM", 
+            "first_name": "tydtmsxx", 
+            "last_name": "tydtmsxx", 
+            "email": "czxwsn@tknylj.com", 
+            "description": "6pXS1p  <a href=\"http://etycadieanbk.com/\">etycadieanbk</a>, [url=http://rdghignhiklq.com/]rdghignhiklq[/url], [link=http://mhyqkcvysibj.com/]mhyqkcvysibj[/link], http://sfotqydlurtm.com/"
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "static.appointment", 
+        "fields": {
+            "phone_number": "805-705-4663", 
+            "first_name": "Jennifer", 
+            "last_name": "Commander", 
+            "email": "jencommander@msn.com", 
+            "description": "Hello.  I am interested in scheduling a 90 minute deep-tissue / sports massage with Kathy.  Possible time:  Wednesday, June 17 late afternoon?  Thx!"
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "static.appointment", 
+        "fields": {
+            "phone_number": "XEfhHfQzNMI", 
+            "first_name": "xwjxeyg", 
+            "last_name": "xwjxeyg", 
+            "email": "lkvvkw@zgdpdy.com", 
+            "description": "IXvkEP  <a href=\"http://cjyshahrrvta.com/\">cjyshahrrvta</a>, [url=http://jnmcljmsbwre.com/]jnmcljmsbwre[/url], [link=http://kpjwsnquyqsm.com/]kpjwsnquyqsm[/link], http://aaaeymbpjcid.com/"
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "static.appointment", 
+        "fields": {
+            "phone_number": "AKuUxcTDz", 
+            "first_name": "vnkcwkvop", 
+            "last_name": "vnkcwkvop", 
+            "email": "djmmre@pekrfd.com", 
+            "description": "JU5p0L  <a href=\"http://wzqnrbpjgsxa.com/\">wzqnrbpjgsxa</a>, [url=http://ftffohuncqiu.com/]ftffohuncqiu[/url], [link=http://evmotagkndgk.com/]evmotagkndgk[/link], http://apzltievextt.com/"
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "static.appointment", 
+        "fields": {
+            "phone_number": "YtTNpfgtJrKRwC", 
+            "first_name": "kyoccdy", 
+            "last_name": "kyoccdy", 
+            "email": "rlzlnm@oxqury.com", 
+            "description": "ba22RL  <a href=\"http://walhwnamroyh.com/\">walhwnamroyh</a>, [url=http://mgygvdpghyvh.com/]mgygvdpghyvh[/url], [link=http://zbufrohskvws.com/]zbufrohskvws[/link], http://skgvoxlsyihd.com/"
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "static.appointment", 
+        "fields": {
+            "phone_number": "YZpJnKfXblqyUf", 
+            "first_name": "myboefynvgj", 
+            "last_name": "myboefynvgj", 
+            "email": "tmvoii@zddenm.com", 
+            "description": "Xsasuz  <a href=\"http://bwjbpeigjuhs.com/\">bwjbpeigjuhs</a>, [url=http://jrrajifvfhtn.com/]jrrajifvfhtn[/url], [link=http://qebykzhscamh.com/]qebykzhscamh[/link], http://asifpxjdkbee.com/"
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "static.appointment", 
+        "fields": {
+            "phone_number": "CWOhRUqPayaBCaQNd", 
+            "first_name": "pxvgkqzd", 
+            "last_name": "pxvgkqzd", 
+            "email": "eifvdt@aqfzaw.com", 
+            "description": "400A0F  <a href=\"http://pefjvoquqtim.com/\">pefjvoquqtim</a>, [url=http://tnvzaxyonuov.com/]tnvzaxyonuov[/url], [link=http://giwublwvjxdv.com/]giwublwvjxdv[/link], http://vpelordfjuic.com/"
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "static.appointment", 
+        "fields": {
+            "phone_number": "fWDnDDJimw", 
+            "first_name": "vznbcuws", 
+            "last_name": "vznbcuws", 
+            "email": "dmpswn@gicsou.com", 
+            "description": "SJj6JT  <a href=\"http://afzhfglfqgcp.com/\">afzhfglfqgcp</a>, [url=http://jfbszloliwxb.com/]jfbszloliwxb[/url], [link=http://icxqgxvpbxzh.com/]icxqgxvpbxzh[/link], http://jvywhedhflsg.com/"
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "static.appointment", 
+        "fields": {
+            "phone_number": "VYJAyhUCDK", 
+            "first_name": "ipsqqb", 
+            "last_name": "ipsqqb", 
+            "email": "lmqfmg@tfxwet.com", 
+            "description": "Hkginr  <a href=\"http://wtcqzjlsemdw.com/\">wtcqzjlsemdw</a>, [url=http://wklnvdescxur.com/]wklnvdescxur[/url], [link=http://nbfnsckcxyfe.com/]nbfnsckcxyfe[/link], http://crvyztxmshqv.com/"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "static.email", 
+        "fields": {
+            "email": "theatrewitch@hotmail.com"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "static.email", 
+        "fields": {
+            "email": "peter@emlprime.com"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "static.email", 
+        "fields": {
+            "email": "selfhealingpower@yahoo.com"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "static.email", 
+        "fields": {
+            "email": "grlnjackson@yahoo.com"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "static.email", 
+        "fields": {
+            "email": "czechokott@aol.com"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "static.email", 
+        "fields": {
+            "email": "charliegirlnurse2003@yahoo.com"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "static.email", 
+        "fields": {
+            "email": "psy1@att.net"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "static.email", 
+        "fields": {
+            "email": "karin_gluck@yahoo.com"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "static.email", 
+        "fields": {
+            "email": "brynettira@gmail.com"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "static.resume", 
+        "fields": {
+            "date": "2008-12-03", 
+            "professional": " * **Oct 2008**  Lecture at Spiritland Bistro's <span class=\"text_emphasis\">Tuesday Nights for Healing</span>. \"How to stay sick: How to ensure you will be sick and unhappy the rest of your miserable life.\" \r\n\r\n * **Oct 2008**  Guest interview on The Business of Life radio (Office Wellness)\r\n\r\n * **Sept 2008**  Guest interview on Southwest Blend Radio (Bach Flower Essences)\r\n\r\n * **Aug 2008**  Guest interview on The Wellness Experience (Natural Health Consulting)\r\n\r\n * **July 2008**  Guest interview on Natural Solutions Radio. \r\n\r\n * **May 2008**  Panel Discussion at Girls Inc. on women in business. \r\n\r\n * **Oct 2006**, Jan 2007 Lectured at Antioch University on Depression and Natural Health\r\n\r\n * **Writer**\r\nOctober '08  Bizchicksrule.com <span class=\"text_emphasis\">Avoiding stress</span>\r\nOctober '08 Southwest Blend. <span class=\"text_emphasis\">Benefits of Massage</span>\r\nOctober '08 Massagemag.com <span class=\"text_emphasis\">How to fire clients</span>\r\nSeptember '08 Bizchicksrule.com <span class=\"text_emphasis\">Networking for women</span>\r\nAugust '08 *Southwest Blend* <span class=\"text_emphasis\">Bach Flower Essences</span>\r\nAugust and December '07 issues of *SB Fitness Magazine* \r\n<span class=\"text_emphasis\">Massage Techniques</span>, <span class=\"text_emphasis\">10 Health Tips</span>\r\nNov/Dec '07 issue of *Massage Magazine*. <span class=\"text_emphasis\">Professionalism in Massage</span>\r\n\r\n * **Featured in articles** in Massage Magazine, SB Fitness Magazine, Everyday Health.com, Different Strokes, Pacific Coast Business Times, Bottle Water Web and Dermascope Magazine. \r\n\r\n * **Selected by Massage Magazine as a \"Best Practice\" for 2006 and 2007**\r\n\r\n * Licensed for massage therapy in SB County and Cities of SB and Goleta.\r\n * Member of Associated Bodywork Massage Professionals, Clayton College Alumni Association, American Naturopath Medical Association, National Association of Women Business Owners, and Central Coast Doula Assoc.\r\n", 
+            "personal_interests": "I enjoy reading, teaching, writing, theatre, dancing, improvisation, good food and wine with my husband, and my 2 3/4 cats. ", 
+            "employment": "**Private Massage and Natural Health Practice, 2001-present**\r\nSANTA BARBARA, CA (formerly in Los Angeles, CA 1995-1999)\r\n\r\nWork with individuals (22-26/week) in a therapeutic setting for recovery from injuries/stress. Close work with local chiropractors for continuity of care. Use techniques including deep tissue, trigger point, prenatal techniques, and Reiki. Perform natural health consultations to assist clients in making gentle changes towards better health. Also work as a birth assistant. \r\n<span class=\"text_emphasis\">Selected as a \"Best Practice\" by Massage Magazine for 2006 AND 2007</span>\r\n\r\n**Santa Barbara Business College, Faculty, September 2007 - June 2008**\r\nSANTA BARBARA, CA \r\nInstructor for <span class=\"text_emphasis\">Pathology for Massage</span>, <span class=\"text_emphasis\">Nutrition for Fitness</span> and <span class=\"text_emphasis\">Introduction to Nutrition</span>. Tasks involve lecture, class planning, grading, exam design and research. \r\n\r\n**Massage Therapist/Chiropractic Assistant, 2001-2003**\r\nDR'S CRAVIOTTO, DAWSON AND WAGNER, DC's\r\n\r\nWork closely with chiropractors on treatment of their patients. Use primarily deep tissue and trigger point work. Active charting with SOAP notes and doctor conferences.  \r\n\r\n**Massage Therapist/Physical Therapy Aide, 2001**\r\nSANTA BARBARA INDUSTRIAL MEDICAL CENTER, PHYSICAL THERAPY DEPARTMENT\r\n\r\nPromote healing of pre and post op patients with various work-related injuries including low back strain, carpal tunnel, tendonitis, and knee and shoulder problems. Work directly with physicians, communication using SOAP notes. Utilize a variety of therapeutic options: massage, e-stim, heat packs, ice massage, stretching and weight training, ultrasound and paraffin dips. \r\n", 
+            "training_and_education": "2007- January 2009  **Clayton College of Natural Health**.  <span class=\"text_emphasis\">M.S. in Natural Health.</span>  Curriculum included Nutrition, Biology, Cancer Treatment, Anatomy, Holistic Development, Healing Relationships, Homeopathy for Animals, Psychospiritual Health, Herb/Vitamin/Mineral/RX interaction, Personal Environment, Mind/Body Wellness. Currently pursuing a Ph.D. in Natural Health.\r\n\r\n2008 **Comprehensive Nutrition Training. Crayhon Research**. <span class=\"text_emphasis\">16 hours of lecture</span>\r\non latest nutritional breakthroughs, eating and supplements for disease, politics of food, autoimmune disorders, gastrointestinal health, weight loss.\r\n\r\n2008 **American Naturopath Medical Association Convention**. <span class=\"text_emphasis\">26 hours of lecture</span>\r\non various topics such as Nutrition for Stress, Fingernail and Tongue Analysis, Chronic Pain, Iridology, Food and Disease, Carpal Tunnel Syndrome (non-surgical treatments), Client Communication, Inflammation, Cancer Therapies, Skin disorders, Legal Concerns and CPR *Certification with the American Heart Assoc*. \r\n\r\nJune 2008 **Food First Seminar with Crayhon Research**.  <span class=\"text_emphasis\">6 hour lecture</span> on latest nutritional research and special diets for treating disease. \r\n\r\nMarch 2008 **Food First Seminar with Crayhon Research**.  <span class=\"text_emphasis\">6 hour lecture</span> on latest nutritional research and health. \r\n\r\n2006-2007  **Clayton College of Natural Health**.  <span class=\"text_emphasis\">**Doctor of Naturopathy for Health Care Professionals.**</span> Highest Honors. Curriculum included Herbology, Iridology, Homeopathy, Diet, Cleansing and Nutrition, Mind-body medicine, Practicum and Assessment techniques. \r\n\r\n2007 **Energetic Kinesiology and Muscle Testing**. <span class=\"text_emphasis\">8 hours.</span> Work with kinesiology to assess conditions and recommend natural remedies. \r\n\r\n2007 **American Naturopath Medical Association Convention**. <span class=\"text_emphasis\">26 hours of lecture</span> on various topics such as Cell Healing, Nutrition, Whole Foods, Minerals, Iridology, Detoxification, Children's Nutrition, Natural Pain Relief, Hormones, Emotional Medicine, Heart Disease, and Color Healing. Special workshops in Probiotics, Energy Balancing, Pain Relief and Intestinal Disorders.\r\n\r\n2007  **Healing And the Childbearing Year** Central Coast Doula Association Conference featuring Penny Simkin. Childhood Sexual Abuse and its effect on childbearing, Postpartum care, Infant care, Healing Remedies for the childbearing year. \r\n\r\n2007  **Dr's Gaby and Wright Nutrition and Disease Lecture** <span class=\"text_emphasis\">4 day lecture</span>\r\naddressing every vitamin, mineral, enzyme and amino acid and information on nutrition for over 300 diseases and disorders. \r\n\r\n2006  **American Naturopath Medical Association Convention** <span class=\"text_emphasis\">26 hours of lecture</span> on various topics such as Nutrition, Mind-body medicine, Herbs, Chinese Medicine, Breath work, Homeopathics, Cancer, Depression and Diabetes education. \r\n\r\n2006  **Clayton College of Natural Health**. <span class=\"text_emphasis\">Certificate of Natural Wellness</span> Highest Honors, Curriculum included Nutrition, Mind-Body Medicine, Alternative Practices, Holistic Lifestyles, and Energy Techniques.\r\n\r\n2004-2005 **Stratford Career Institute**  <span class=\"text_emphasis\">Natural Health Consultant Program</span>, Honors, Curriculum included Herbs, Homeopathy, Smoking Cessation, Diet, Exercise, Health Counseling and Digestive Health Issues.  \r\n\r\n2003  Medical Massage Certification **LMTSuccessGroup**, <span class=\"text_emphasis\">45 hour program</span> \r\nwith training in Postural Distortion, Back Conditions, Cervical Conditions, Arm and Leg Disorders, Insurance Billing and Healing with E-Stim. \r\n\r\n2001  Training and Certification **SB School of Massage**, <span class=\"text_emphasis\">200 hour program</span>\r\nwith training in Swedish, Sports, Shiatsu, On-site Chair, Chiropractic Massage, Pregnancy, Myofascial Release, Deep Tissue, Polarity Balancing, Anatomy and Ethics and Business. \r\n\r\n1995  Training and Certification **School of Massage**, Encino, CA. <span class=\"text_emphasis\">75 hour program</span> with training in Swedish, Deep Tissue, Anatomy and Ethics.\r\n\r\n1990 <span class=\"text_emphasis\">3 years</span> **Private Study** with <span class=\"text_emphasis\">Pat Mauro</span>, LMT, RN, EMT; Pittsburgh, PA. Training in Deep Tissue, Body Manipulation, Herbs, and Intuitive Massage \r\n\r\n1988-1992 **Point Park University**, Pittsburgh, PA  <span class=\"text_emphasis\">BFA theatre, Minor in Psychology</span>, graduated Cum Laude\r\n\r\n<span class=\"text_emphasis\">Reiki Certification</span> to **Master Level** with Diane Vaughn RM, Venice, CA. \r\nI have taught group as well as individual classes and perform healings and attunements.\r\n\r\n<span class=\"text_emphasis\">Further/Self-Study</span> in Pet Massage, Sports Massage, Myofascial Release, Polarity Therapy, Lymphatic Drainage and Acupressure/Trigger Point, Mind/Body Healing, Magnetics, Anatomy, pH, Assessment and Palpation Techniques, Medical Terms. \r\n"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "static.hometext", 
+        "fields": {
+            "date": "2008-12-03", 
+            "text": "Let us enrich and nourish your body, mind and spirit with a healing, energy-boosting massage.\r\n\r\nWe provide affordable, result-oriented therapeutic and medical massage.\r\n\r\nKathy L. Gruver, LMT, RM is a licensed and certified medical massage therapist, Reiki master, natural health consultant, birth assistant and traditional naturopath. Kathy has been involved in healing since 1990.\r\n\r\nOur upper State St. office in Santa Barbara, CA features two treatment rooms, parking and an alternative medicine lending library.\r\n\r\nTherapists available 7 days a week from 10am to 7pm.\r\n\r\nKathy is typically available Monday through Friday.\r\n\r\nWe accept personal injury and worker's comp insurance cases with a Doctor's prescription."
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "static.service", 
+        "fields": {
+            "category": "M", 
+            "price": "1 hour $80\r\n1.5 hour $110", 
+            "name": "Massage", 
+            "image": "images/KathyPhoto_t.jpg", 
+            "description": "Deep tissue, trigger point, swedish, sports massage and pregnancy massage."
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "static.service", 
+        "fields": {
+            "category": "M", 
+            "price": "$1/minute:\r\nPlease contact me for group/repeat rates.", 
+            "name": "Onsite Chair Massage", 
+            "image": "images/chair_massage.jpg", 
+            "description": "Onsite massage for your company, event or party."
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "static.service", 
+        "fields": {
+            "category": "M", 
+            "price": "$175", 
+            "name": "Romance Special Massage", 
+            "image": "images/couples_massage.jpg", 
+            "description": "Two therapists, Two one-hour massages and a bottle of wine."
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "static.service", 
+        "fields": {
+            "category": "M", 
+            "price": "$80", 
+            "name": "Pregnancy Massage", 
+            "image": "", 
+            "description": "Massage tailored towards the comfort of a pregnant mother."
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "static.service", 
+        "fields": {
+            "category": "M", 
+            "price": "1 hour $80\r\n1.5 hour $110", 
+            "name": "Elder Massage", 
+            "image": "images/dorothy_hands.jpg", 
+            "description": "Having worked with clients as old as 101, Kathy takes special care to assist the elderly with massage and energy work. Kathy has worked with clients with Alzheimer's, Parkinson's, Brain injuries, diabetes and stroke. Home and hospital visits are available on a limited basis."
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "static.service", 
+        "fields": {
+            "category": "O", 
+            "price": "<a href=\"http://www.healingcirclenaturalhealth.com/\">Healing Circle Natural Health</a>", 
+            "name": "Natural Health Consulting", 
+            "image": "", 
+            "description": "Partnering with you to make gentle changes to achieve your health goals."
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "static.service", 
+        "fields": {
+            "category": "O", 
+            "price": "<a href=\"http://www.healthieroffice.com/\">Healthier Office</a>", 
+            "name": "Healthier Office", 
+            "image": "", 
+            "description": "In-office workshops to promote office health and wellness."
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "static.service", 
+        "fields": {
+            "category": "O", 
+            "price": "Reiki Healing $85\r\nwith attunement $135\r\ngroup classes $65", 
+            "name": "Reiki", 
+            "image": "images/reiki_picture_t.jpg", 
+            "description": "Hands on energy healing for body mind and spirit.\r\n(<a href=\"http://www.healingcirclemassage.com/faq.php#what_is_reiki\">more...</a>)"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "static.service", 
+        "fields": {
+            "category": "O", 
+            "price": "$85", 
+            "name": "Bach Flower Essences", 
+            "image": "images/Bach_Flower.jpg", 
+            "description": "Consultation with first formula. (<a href=\"http://www.healingcirclemassage.com/faq.php#what_are_bach_flower_essences\">more...</a>)"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "static.service", 
+        "fields": {
+            "category": "O", 
+            "price": "Sliding Scale $150-$400", 
+            "name": "Birth Assisting", 
+            "image": "", 
+            "description": "I feel my role as a birth assistant is to support the mother and her partner with massage, Reiki, aromatherapy, etc., and to make sure her birth plan is followed."
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "static.service", 
+        "fields": {
+            "category": "O", 
+            "price": " $30", 
+            "name": "Ear Coning", 
+            "image": "images/ear_coning_t.jpg", 
+            "description": "Can help relieve vertigo, swimmer's ear and hearing loss."
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "static.service", 
+        "fields": {
+            "category": "O", 
+            "price": "Group Class $75/couple\r\nIn Home Class: $150/couple", 
+            "name": "Massage Your Mate Classes", 
+            "image": "images/massageyourmateclasses.jpg", 
+            "description": "I arrive with table and lotion and teach safe, effective, ways for you to massage your loved one."
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "static.faq", 
+        "fields": {
+            "answer": "I require 24 hours notice or you will be charged for the session.", 
+            "question": "What is your cancellation policy?"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "static.faq", 
+        "fields": {
+            "answer": "You will be covered during your massage with the exception of the body part being worked on. Most people disrobe fully but you may leave your underwear on if you prefer. We require draping and do not do fully nude massage. During Reiki and Ear Coning, you stay fully clothed.", 
+            "question": "What do I wear during my massage?"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "static.faq", 
+        "fields": {
+            "answer": "It is very important to drink water after your massage; it keeps the toxins from settling back into the muscles. Some light stretching, a hot bath with epsom salts and rest can also be beneficial post-session. Don't forget to make another appointment so you can continue your healing.", 
+            "question": "What should I do after my massage?"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "static.faq", 
+        "fields": {
+            "answer": "Massage increases circulation, helps improve muscle tone, flushes toxins out of the body, moves lymph, and encourages relaxation which decreases blood pressure. It relieves stress in our bodies and improves overall health. There are certain conditions that contraindicate massage such as some skin disorders and certain types of cancer. Please discuss your concerns before your massage session. Fill out the intake form completely and be honest with your therapists about your health conditions.", 
+            "question": "What are some of the benefits of massage?"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "static.faq", 
+        "fields": {
+            "answer": "First off, we do not charge a monthly fee as some discount massage places do.\r\n\r\nWe hire only highly trained, experienced therapists.\r\n\r\nWe perform a full 60 or 90 minute massage whereas a lot of larger massage offices and spas take 10 minutes off for dressing and undressing time and still call it an hour massage.\r\n\r\nYou receive continuity of care at Healing Circle Massage, we do not have frequent turnover of therapists.", 
+            "question": "How does Healing Circle Massage differ from some of these discount massage places I see popping up?"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "static.faq", 
+        "fields": {
+            "answer": "We will check in throughout the massage to make sure the pressure is deep enough or light enough for you. If at any point the pressure is wrong, the temperature in the room is uncomfortable or you need something, please ask. We're here to insure your massage is wonderful. Believe me, you won't hurt our feelings or make us feel bad by asking us to change something.", 
+            "question": "My last massage therapist worked way too deep and hurt me, how do I know you won't do the same?"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "static.faq", 
+        "fields": {
+            "answer": "Reiki is a hands on healing technique which channels Universal energy through the practitioner and into the person being healed. It goes to where it is needed and heals on all levels: Body, mind and spirit. The energy is sometimes felt as a heat or tingling in the hands.\r\n\r\nReiki can only be used for positive purposes and can be practiced anytime, anywhere simply by placing your hands on a person (or animal/plant) with the intention to heal. There are 3 levels of Reiki; I, II and Reiki Master, which I am, giving the ability to pass the attunements, i.e. give Reiki to others to use. The title Reiki Master simply means that you can pass attunements and teach others.\r\n\r\nMy Reiki healings consist of crystal and gemstone placement on the chakras and a full body session of energy work. An attunement may follow if the client is interested in continuing the healing on herself or others.", 
+            "question": "What is Reiki?"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "static.faq", 
+        "fields": {
+            "answer": "Edward Bach discovered 38 flower essences that help balance out our emotional/spiritual personalities. By working with each client individually, a formula of these essences is customized to help achieve balance. Issues such as jealousy, anger, depression, excessive worry and anxiety can be addressed.", 
+            "question": "What are Bach Flower Essences?"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "static.faq", 
+        "fields": {
+            "answer": "An ancient technique using a hollow paraffin or beeswax taper to draw impurities out of the ear. A non-invasive proceedure taking about 30 minutes, ear coning (or candling) has been known to help swimmer's ear, tinnitus, vertigo, hearing loss and eliminate excessive ear wax.", 
+            "question": "What is Ear Coning?"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "static.newsitem", 
+        "fields": {
+            "image_1": "", 
+            "image_3": "", 
+            "image_2": "", 
+            "name": "Fifty Two Heroes", 
+            "link": "http://forum.sb-fitness.com/blogs/kathy/default.aspx", 
+            "thumbnail_image": "images/fifty_two_heroes_t.jpg", 
+            "image_4": ""
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "static.newsitem", 
+        "fields": {
+            "image_1": "images/dermascope_1.jpg", 
+            "image_3": "images/dermascope_3.jpg", 
+            "image_2": "images/dermascope_2.jpg", 
+            "name": "Dermascope Magazine", 
+            "link": "", 
+            "thumbnail_image": "images/dermascope_t.jpg", 
+            "image_4": "images/dermascope_4.jpg"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "static.newsitem", 
+        "fields": {
+            "image_1": "images/bottled_water_web.jpg", 
+            "image_3": "", 
+            "image_2": "", 
+            "name": "Bottled Water Web", 
+            "link": "", 
+            "thumbnail_image": "images/bottled_water_web_t.jpg", 
+            "image_4": ""
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "static.newsitem", 
+        "fields": {
+            "image_1": "images/Pacific_Coast_Business_Times.jpg", 
+            "image_3": "", 
+            "image_2": "", 
+            "name": "Pacific Coast Business Times", 
+            "link": "", 
+            "thumbnail_image": "images/Pacific_Coast_Business_Times_t.jpg", 
+            "image_4": ""
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "static.newsitem", 
+        "fields": {
+            "image_1": "images/sbfitness_a.png", 
+            "image_3": "", 
+            "image_2": "images/sbfitness_b.png", 
+            "name": "SB Fitness", 
+            "link": "", 
+            "thumbnail_image": "images/sbfitness_a_t.png", 
+            "image_4": ""
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "static.newsitem", 
+        "fields": {
+            "image_1": "images/edh_fib1.png", 
+            "image_3": "", 
+            "image_2": "images/edh_fib2.png", 
+            "name": "Featured expert on Fibromyalgia", 
+            "link": "", 
+            "thumbnail_image": "images/edh_fibt.png", 
+            "image_4": ""
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "static.interview", 
+        "fields": {
+            "link": "http://www.bigblendmagazine.com/Ultimate-Living/Jan26-2009.htm", 
+            "name": "Reiki Interview"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "static.interview", 
+        "fields": {
+            "link": "http://www.blogtalkradio.com/DrLIFE/va/2009/02/09/Wellness-Dialogues", 
+            "name": "Special guest on Radio Show on Mind/Body medicine with Dr. Life"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "static.interview", 
+        "fields": {
+            "link": "", 
+            "name": "Spiritland Bistro Tuesday Night for Healing Lecture Featured speaker on \u201cHow to Stay Sick\u201d, a talk on body/mind connection and how our thoughts create our bodies."
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "static.interview", 
+        "fields": {
+            "link": "http://www.am1400coach.com/", 
+            "name": "The business of life discussing Healthier Office and avoiding getting sick at work."
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "static.interview", 
+        "fields": {
+            "link": " http://www.naturalsolutionsradio.com", 
+            "name": "Guest on www.naturalsolutionsradio.com  speaking about ANMA convention \u201808"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "static.interview", 
+        "fields": {
+            "link": "http://www.blogtalkradio.com/Southwest-Blend/2008/09/07/Champagne-Sundays-Variety-Show ", 
+            "name": "Special guests on Radio Show on Bach Flower Essences (start at 50:30 and go to 70:20)"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "static.interview", 
+        "fields": {
+            "link": "http://www.blogtalkradio.com/WellnessExperience/2008/08/14/Connecting-with-a-healthcare-consultant-for-optimimum-wellness", 
+            "name": "Special guest on Radio Show on being a health consultant "
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "static.interview", 
+        "fields": {
+            "link": "http://career.calgarysun.jobboom.com/headlines-calgarysun/2009/02/13/8382701.html", 
+            "name": "Calgary Sun: Why I Love My Job"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "static.event", 
+        "fields": {
+            "image": "images/oprah.jpg", 
+            "name": "Oprah/Obama fund raiser after party 2007."
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "static.event", 
+        "fields": {
+            "image": "images/girls_inc.jpg", 
+            "name": "Girls Inc. Business Panel Discussion"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "static.event", 
+        "fields": {
+            "image": "images/planned_parenthood.jpg", 
+            "name": "Planned Parenthood Booksale"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "static.event", 
+        "fields": {
+            "image": "images/charac_doroth.jpg", 
+            "name": "Client Appreciation 2003 In loving memory of Dorothy Boothe 11/15/2007"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "static.event", 
+        "fields": {
+            "image": "images/outrigger_04.jpg", 
+            "name": "Outrigger Canoe Event 2004"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "static.event", 
+        "fields": {
+            "image": "images/outrigger_05_3.jpg", 
+            "name": "Outrigger Canoe Event 2005"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "static.event", 
+        "fields": {
+            "image": "images/booth_beach_2.jpg", 
+            "name": "Santa Barbara Half Marathon 2005"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "static.event", 
+        "fields": {
+            "image": "images/dancers_2.jpg", 
+            "name": "Client Appreciation 2004"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "static.event", 
+        "fields": {
+            "image": "images/naturopath_convention.jpg", 
+            "name": "2006 Naturopath Convention"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "static.writing", 
+        "fields": {
+            "image_1": "images/best_practices.jpg", 
+            "image_3": "", 
+            "image_2": "", 
+            "name": "Massage Magazine - July 2006", 
+            "link": "", 
+            "thumbnail_image": "images/best_practices_t.jpg", 
+            "image_4": ""
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "static.writing", 
+        "fields": {
+            "image_1": "images/ten_health_tips_1.jpg", 
+            "image_3": "", 
+            "image_2": "images/ten_health_tips_2.jpg", 
+            "name": "Ten Health Tips", 
+            "link": "", 
+            "thumbnail_image": "images/ten_health_tips_t.jpg", 
+            "image_4": ""
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "static.writing", 
+        "fields": {
+            "image_1": "images/raisethebar_a.jpg", 
+            "image_3": "", 
+            "image_2": "images/raisethebar_b.jpg", 
+            "name": "It's Time to Raise the Bar", 
+            "link": "", 
+            "thumbnail_image": "images/raisethebar_a_t.jpg", 
+            "image_4": ""
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "static.writing", 
+        "fields": {
+            "image_1": "images/massagesampler.jpg", 
+            "image_3": "", 
+            "image_2": "", 
+            "name": "Massage Sampler", 
+            "link": "", 
+            "thumbnail_image": "images/massagesampler_t.jpg", 
+            "image_4": ""
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "static.testimonial", 
+        "fields": {
+            "source": "Tammi (Chiropractor)", 
+            "description": "When I moved to the valley, I didn't even try to find a new therapist. I drive down to see Kathy."
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "static.testimonial", 
+        "fields": {
+            "source": "K.S. (Public Speaker)", 
+            "description": "What would I do without you?"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "static.testimonial", 
+        "fields": {
+            "source": "J.C. (Chiropractor)", 
+            "description": "There are so many massage therapists in town, but Kathy is so much more than just a massage person. I know my patients are going to get the best care possible."
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "static.testimonial", 
+        "fields": {
+            "source": "M. (Personal Trainer)", 
+            "description": "The most grounded professional therapist I've ever met. And I've met a bunch."
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "static.testimonial", 
+        "fields": {
+            "source": "Kristin (Financial Planner)", 
+            "description": "That is the best money I've spent on myself in a long time."
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "static.testimonial", 
+        "fields": {
+            "source": "Karen", 
+            "description": "Not just a massage therapist, truly a healer"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "static.testimonial", 
+        "fields": {
+            "source": "Lisa", 
+            "description": "I've had massage all over the world and you are the best!!"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "static.testimonial", 
+        "fields": {
+            "source": "Jennifer F PhD", 
+            "description": "My hands were always going numb and after just one visit, my hands stopped tingling."
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "static.testimonial", 
+        "fields": {
+            "source": "Maggie (Geologist)", 
+            "description": "Kathy was able to give me some tips for helping my low back that worked. Why didn't my doctor tell me those things?"
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "static.testimonial", 
+        "fields": {
+            "source": "Jennifer M", 
+            "description": "You have changed my life!"
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "static.testimonial", 
+        "fields": {
+            "source": "Harry", 
+            "description": "Responsible, kind, caring, a true angel on earth."
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "static.testimonial", 
+        "fields": {
+            "source": "Jerry", 
+            "description": "I felt this warmth in her hands and my heart became so full of love I almost wept."
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "static.testimonial", 
+        "fields": {
+            "source": "Paul (Entrepreneur)", 
+            "description": "The perfect combination of fabulous business woman and amazing healer."
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "static.testimonial", 
+        "fields": {
+            "source": "Alexa", 
+            "description": "It's so nice to have a care-giver."
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "static.testimonial", 
+        "fields": {
+            "source": "Reid (Electrical Engineer)", 
+            "description": "I was a total skeptic that massage could do anything! I'm still not sure how it works, but I find myself encouraging people to go see Kathy. I don't know what you're doing, but I can sleep now."
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "static.writingtestimonial", 
+        "fields": {
+            "source": "Fiona; Adelaide, AUS", 
+            "description": "You actually brought tears to my eyes when I read your article out of sheer relief that someone else understands.  Thanks to you, I have made a commitment to turn my life-work balance around!"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "static.writingtestimonial", 
+        "fields": {
+            "source": "Liz; Winchester, MA", 
+            "description": "I just wanted you to know how great I think your writing skills are.  The article was not only inspiring, but completely honest, to the point, and truthful: an outstanding piece of writing."
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "static.contributingwriter", 
+        "fields": {
+            "link": "http://www.bizchicksrule.com/the-art-of-self-promotion-a-primer/ ", 
+            "name": "A Self-Promotion Primer", 
+            "publication": "B"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "static.contributingwriter", 
+        "fields": {
+            "link": "http://www.bizchicksrule.com/even-wonder-woman-needs-a-day-off-dealing-with-stress/#more-903", 
+            "name": "Women and Stress", 
+            "publication": "B"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "static.contributingwriter", 
+        "fields": {
+            "link": "http://www.massagemag.com/News/massage-news.php?id=4602 ", 
+            "name": "Article on Firing Clients", 
+            "publication": "M"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "static.contributingwriter", 
+        "fields": {
+            "link": "http://www.massagemag.com/News/massage-news.php?id=5045", 
+            "name": "Modern Massage Myths", 
+            "publication": "M"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "static.contributingwriter", 
+        "fields": {
+            "link": "http://www.massagemag.com/News/massage-news.php?id=5327", 
+            "name": "Empathy", 
+            "publication": "M"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "static.contributingwriter", 
+        "fields": {
+            "link": "http://blendradioandtv.com/healingcircle/massage_benefits.htm", 
+            "name": "Benefits of Massage", 
+            "publication": "S"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "static.contributingwriter", 
+        "fields": {
+            "link": "http://www.southwestblend.com/Body_Mind_Spirit/bach_essences.htm ", 
+            "name": "Bach Flower Essences ", 
+            "publication": "S"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "static.contributingwriter", 
+        "fields": {
+            "link": "http://www.blendradioandtv.com/healingcircle/healthy-New-Year.htm", 
+            "name": "New Year's Tips", 
+            "publication": "S"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "static.contributingwriter", 
+        "fields": {
+            "link": "http://www.bigblendmagazine.com/healingcircle/reiki.htm", 
+            "name": "Reiki", 
+            "publication": "S"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "static.contributingwriter", 
+        "fields": {
+            "link": "http://alijorblog.com/2008/12/10/benefits-of-massage-by-kathy-gruver-medical-massage-therapist/", 
+            "name": "Alijor Blog", 
+            "publication": "O"
+        }
+    }
+]
