@@ -1,0 +1,294 @@
+/*
+    Theme Name: Personal
+    Theme URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+    Author: BootstrapMade
+    Author URL: https://bootstrapmade.com
+*/
+/* ==== Google font ==== */
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:300,400,600,700');
+/* === fontawesome === */
+@import url('font-awesome.css');
+
+/* ==== overwrite bootstrap standard ==== */
+@import url('overwrite.css');
+@import url('animate.css');
+
+
+body {
+	font-family:'Open Sans', Arial, sans-serif;
+	font-size:14px;
+	font-weight:300;
+	line-height:1.6em;
+	background-color:#fefefe;
+	overflow-x:hidden;
+}
+h1,h2,h3,h4,h5,h6 {
+	color:#000;
+	line-height:1.1em;
+}
+
+.menu {
+	position:fixed;
+	background-color:#;
+	z-index:9999;
+}
+
+.logo {	
+	margin-top:50px;
+	margin-bottom:50px;
+}
+
+.logo h1{
+	margin-left:20px;
+	text-align:center;
+	color:#6EE5A1;
+	text-decoration:none;
+	font-size:25px;
+	font-weight:700;
+}
+.logo span {
+	text-align:center;
+	margin-left:55px;
+}
+.logo a:hover {	
+	text-decoration:none;
+}
+
+
+
+.nav-stacked > li + li {
+  margin-top: 20px;
+  margin-left: 0;
+}
+
+.nav-stacked li a {
+	text-transform:uppercase;
+	font-weight:600;
+	color:#000;
+	margin-left:50px;
+}
+.nav-stacked li a:hover {
+	color:#6EE5A1;
+}
+
+.nav-pills > li > a {
+  border-radius: 0;
+}
+
+.nav-stacked > li {
+  float:none;
+}
+.nav-stacked > li a {
+	text-align:center;
+}
+
+.footer {
+	font-size:16px;
+	text-decoration:none;
+	list-style:none;
+	margin-left:20px;
+	margin-top:400px;
+}
+.footer a {
+	color:#6EE5A1;
+	text-decoration:none;
+	list-style:none;
+}
+.footer a:hover {
+	color:#6EE5A1;
+}
+
+#about {
+	margin-top:10px;
+}
+
+#graphics {
+	margin-top:20px;
+}
+
+#graphics .center {
+	margin-left:190px;
+	margin-top:50px;
+}
+
+.galleries {
+	margin-top:90px;
+
+}
+
+.about-data {
+	margin-top:100px;
+	text-align:center;
+	text-decoration:none;
+	list-style:none;
+
+}
+
+.recent h3 {
+	font-size:50px;	
+	text-decoration:0;
+	color:#6EE5A1;
+	text-align:center;
+}
+
+.center h2{
+	text-align:center;
+	font-size: 20px;
+	margin-top: 0;
+	margin-bottom: 20px;
+	margin-top:40px;
+	margin-bottom:40px;
+	text-transform:uppercase;
+}
+
+.center p {
+	text-align:center;
+	margin-bottom:40px;
+	font-size:16px;
+}
+
+#feature {
+  background: #fff;
+  padding-bottom: 80px;
+  margin-left:190px;
+  margin-top:30px;
+}
+
+.features{
+  padding: 0;
+}
+
+.feature-wrap {
+  margin-bottom: 35px;
+  overflow: hidden;
+}
+
+.feature-wrap h2{
+  margin-top: 10px;
+}
+
+.feature-wrap .pull-left {
+  margin-right: 25px;
+}
+
+.feature-wrap i{
+  font-size: 48px;
+  height: 110px;
+  width: 110px;
+  margin: 3px;
+  border-radius: 100%;
+  line-height: 110px;
+  text-align:center;
+  background: #ffffff;
+  color: #6EE5A1;
+  border: 3px solid #ffffff;
+  box-shadow: inset 0 0 0 5px #fff;
+  -webkit-box-shadow: inset 0 0 0 5px #fff;
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+  float: left;
+  margin-right: 25px;
+}
+
+.feature-wrap i:hover {
+  background: #6EE5A1;
+  color: #fff;
+  box-shadow: inset 0 0 0 5px #6EE5A1;
+  -webkit-box-shadow: inset 0 0 0 5px #6EE5A1;
+  border: 3px solid #6EE5A1;
+}
+
+#contact-page{
+    padding-top: 0;
+	margin-top:30px;
+}
+
+#contact-page .contact-form 
+.form-group label {
+  color: #4E4E4E;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.form-group .form-control {
+   background:#f6f6f6;
+  padding: 7px 12px;
+  border-color:#eee;
+  box-shadow: none;
+}
+
+textarea#message{
+  resize: none;
+  padding: 10px;
+}
+.btn-primary {
+  padding: 8px 20px;
+  background: #6EE5A1;
+  color: #fff;
+  border-radius: 4px;
+  border:none;
+  margin-top: 10px;
+}
+
+
+.validation {
+    color: red;
+    display:none;
+    margin: 0 0 20px;
+    font-weight:400;
+    font-size:13px;
+}
+
+#sendmessage {
+    color: green;
+    border:1px solid green;
+    display:none;
+    text-align:center;
+    padding:15px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+#errormessage {
+    color: red;
+    display:none;
+    border:1px solid red;
+    text-align:center;
+    padding:15px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+#sendmessage.show, #errormessage.show, .show {
+	display:block;
+}
+
+.btn-primary:hover, 
+.btn-primary:focus{
+  background: #6EE5A1;
+  outline: none;
+  box-shadow: none;
+} 
+#contact-page .contact-wrap {
+  margin-top: 20px;
+}
+ul.social-network {
+	list-style:none;
+	margin-top:40px;
+	text-align:center;
+	font-size:30px;
+	margin-right:50px;
+}
+
+ul.social-network li {
+	display:inline;
+	margin: 0 15px;
+	color:#6EE5A1;
+}
+ul.social-network li a {	
+	color:#6EE5A1;
+	
+}
+
