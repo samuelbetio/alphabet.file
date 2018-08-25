@@ -60,6 +60,10 @@ A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/T/U/V/W/X/Y/Z/
 9. W X
 0. Y Z
 ```
+
+[CODE OF CONDUCT](CODE_OF_CONDUCT.md)
+[CONTRIBUTING](CONTRIBUTING.md)
+[PULL REQUEST TEMPLATE](PULL_REQUEST_TEMPLATE.md)
 ### Jekyll Themes
 
 Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/samuelbetio/alphabetfile/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
