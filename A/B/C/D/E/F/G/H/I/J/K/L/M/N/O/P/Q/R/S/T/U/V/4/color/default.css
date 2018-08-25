@@ -1,0 +1,115 @@
+a:hover,
+a:focus {
+    color: #FE7A66;
+}
+
+a,.tp-caption a.btn:hover {
+	color: #FE7A66;
+}
+.top-nav-collapse {
+	background: #FE7A66;
+}
+
+.navbar-custom ul.nav ul.dropdown-menu li a:hover {
+	color: #FE7A66;
+}
+
+.team-wrapper-big:hover .team-wrapper-overlay, .team-wrapper-small:hover .team-wrapper-overlay { background: #FE7A66; }
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+    background-color: #FE7A66;
+}
+
+.widget-avatar .avatar:hover {
+    border: 5px solid #FE7A66;
+}
+
+.bg-skin {
+	background: #FE7A66;
+}
+
+.highlight-color {
+	background-color: #FE7A66;
+}
+
+
+/* pricing box  */
+.pricing-box.skin {
+	background: #FE7A66;
+}
+
+
+/* portfolio */
+
+
+
+
+/* blog */
+
+ul.comment-meta li a:hover {
+	color: #FE7A66;
+}
+
+ul.comment-meta li.reply a {
+	background: #FE7A66;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+  color: #FE7A66;
+}
+
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  color: #FE7A66;
+}
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  background-color: #FE7A66;
+  border-color: #FE7A66;
+}
+.sidebar .widget ul li a:hover {
+	color: #FE7A66;
+}
+
+.widget .tagcloud a {
+  background: #FE7A66;
+}
+
+.flex-control-paging li a.flex-active { background: #FE7A66;
+	}
+/* team */
+.team-box {
+	background: #FE7A66;
+}
+
+form#contact-form input:focus,form#contact-form select:focus,form#contact-form textarea:focus {
+	border-color: #FE7A66;
+}
+form.search-form input:focus {
+	border-color: #FE7A66;
+}
+
+/* footer */
+ul.footer-menu li a:hover {
+	color: #FE7A66;
+}
+
+footer a.totop:hover {
+	color: #FE7A66;
+}
+
+
+.btn-skin {
+  color: #fff;
+  background-color: #FE7A66;
+  border-color: #FE7A66;
+}
