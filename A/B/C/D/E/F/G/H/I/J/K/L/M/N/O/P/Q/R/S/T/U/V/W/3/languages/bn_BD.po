@@ -1,0 +1,724 @@
+# This file is distributed under the same license as the Personal package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Personal Portfolio\n"
+"POT-Creation-Date: 2016-02-01 20:14+0200\n"
+"PO-Revision-Date: 2016-02-02 01:19+0200\n"
+"Last-Translator: \n"
+"Language-Team: Dinozoom\n"
+"Language: bn_BD\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.1\n"
+"X-Poedit-Basepath: ..\\\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_ex;esc_attr_x\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "উফ! ঐ পাতাটি পাওয়া যায়নি।"
+
+#: 404.php:19
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "মনে হচ্ছে এই ঠিকানাতে কিছুই পাওয়া যায়নি। হয়তো অনুসন্ধান করে দেখতে পারেন?"
+
+#: comments.php:27 inc/options-config.php:832
+msgid "Comments"
+msgstr "মন্তব্যসমূহ"
+
+#: comments.php:31 comments.php:50
+msgid "Comment navigation"
+msgstr "মন্তব্যের নেভিগেশন"
+
+#: comments.php:33 comments.php:53
+msgid "Older Comments"
+msgstr "পুরনো মন্তব্যসমূহ"
+
+#: comments.php:34 comments.php:54
+msgid "Newer Comments"
+msgstr "নূতন মন্তব্যসমূহ"
+
+#: comments.php:66
+msgid "Comments are closed."
+msgstr "মন্তব্য প্রধান বন্ধ আছে।"
+
+#: comments.php:76
+msgid "Name"
+msgstr "নাম"
+
+#: comments.php:77 inc/options-config.php:517 inc/options-config.php:523
+msgid "Email"
+msgstr "ইমেইল"
+
+#: comments.php:78
+msgid "Website"
+msgstr "ওয়েবসাইট"
+
+#: comments.php:82
+msgid "Your email address will not be published."
+msgstr "আপনার ই-মেইল এ্যাড্রেস প্রকাশিত হবে না।"
+
+#: comments.php:86
+msgid "Cancel reply"
+msgstr "জবাব বাতিল"
+
+#: comments.php:87 inc/options-config.php:849
+msgid "Post Comment"
+msgstr "মন্তব্য প্রকাশ করুন"
+
+#: content-blog.php:30 content.php:28 inc/options-config.php:636
+#: inc/options-config.php:637
+msgid "Read more..."
+msgstr "আরও পড়ুন..."
+
+#: content-none.php:14
+msgid "Nothing Found"
+msgstr "কিছুই পাওয়া যায়নি"
+
+#: content-none.php:20
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "আপনার প্রথম পোস্ট প্রকাশ করার জন্য প্রস্তুত? <a href=\"%1$s\">এখান থেকে শুরু করুন</a>।"
+
+#: content-none.php:24
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "দুঃখিত, কোনকিছু আপনার অনুসন্ধানকৃত বিষয়ের সাথে মিলেনি। অনুগ্রহ করে কিছু ভিন্ন কীওয়ার্ড দ্বারা আবার চেষ্টা করুন।"
+
+#: content-none.php:29
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "মনে হচ্ছে আপনি যেটি খুঁজছেন সেটি আমরা খুঁজে পাইনি। সম্ভবত খুঁজলে পাওয়া যাবে।"
+
+#: content-page-nontitle.php:14 content-page.php:24 content-single.php:27
+#: content.php:35
+msgid "Pages:"
+msgstr "পাতাসমূহ:"
+
+#: content-page.php:16 inc/template-tags.php:33 inc/template-tags.php:197
+#: inc/template-tags.php:210
+msgid "Edit"
+msgstr "সম্পাদনা করুন"
+
+#: functions.php:53
+msgid "Primary Menu"
+msgstr "প্রাথমিক মেনু"
+
+#: functions.php:121 functions.php:135
+msgid "Sidebar"
+msgstr "সাইডবার"
+
+#: functions.php:121
+msgid "Right"
+msgstr "ডান"
+
+#: functions.php:135
+msgid "Left"
+msgstr "বাম"
+
+#: header.php:22
+msgid "Skip to content"
+msgstr "এড়িয়ে মূল বিষয়বস্তুতে যান"
+
+#: inc/admin/class.wbls-customize-disabled-select-control.php:13
+msgid "Select Color"
+msgstr "রঙ নির্বাচন করুন"
+
+#: inc/admin/class.wbls-customize-disabled-select-control.php:18
+#: inc/admin/class.wbls-customize-disabled-select-control.php:41
+#: inc/admin/class.wbls-customize-disabled-select-control.php:64
+#: inc/options-config.php:943
+msgid "Upgrade"
+msgstr ""
+
+#: inc/admin/class.wbls-customize-disabled-select-control.php:106
+msgid "More options &amp; features now available."
+msgstr ""
+
+#: inc/admin/class.wbls-customize-disabled-select-control.php:106
+msgid "Upgrade Now"
+msgstr ""
+
+#: inc/admin/class.wbls-customize-disabled-select-control.php:108
+msgid "Donate"
+msgstr "দান করা"
+
+#: inc/admin/class.wbls-customize-disabled-select-control.php:110
+msgid "Support Forums"
+msgstr "সহযোগিতার ফোরামসমূহ"
+
+#: inc/admin/class.wbls-customize-disabled-select-control.php:112
+msgid "Feedback"
+msgstr "ফিডব্যাক"
+
+#: inc/admin/class.wbls-customize-disabled-select-control.php:112
+msgid "Reviews"
+msgstr "রিভিউ"
+
+#: inc/admin/class.wbls-customize-disabled-select-control.php:114
+msgid "Documentation"
+msgstr "ডকুমেন্টেশন"
+
+#: inc/admin/class.wbls-customize-disabled-select-control.php:116
+msgid "More Themes"
+msgstr ""
+
+#: inc/admin/class.wbls-customizer-api-wrapper.php:88
+msgid "Upgrade to Pro"
+msgstr ""
+
+#: inc/extras.php:53
+msgid "Page %s"
+msgstr "পাতা %s"
+
+#: inc/options-config.php:12 inc/options-config.php:92
+#: inc/options-config.php:186 inc/options-config.php:252
+#: inc/options-config.php:311 inc/options-config.php:369
+#: inc/options-config.php:867
+msgid "Enable this section"
+msgstr "অধ্যায় অক্ষম"
+
+#: inc/options-config.php:18 inc/options-config.php:98
+#: inc/options-config.php:204 inc/options-config.php:276
+#: inc/options-config.php:329
+msgid "Quantity"
+msgstr ""
+
+#: inc/options-config.php:25
+msgid "Effect"
+msgstr ""
+
+#: inc/options-config.php:32
+msgid "Animation speed"
+msgstr ""
+
+#: inc/options-config.php:43 inc/options-config.php:375
+msgid "Speed"
+msgstr ""
+
+#: inc/options-config.php:57 inc/options-config.php:812
+msgid "Slider"
+msgstr ""
+
+#: inc/options-config.php:62 inc/options-config.php:105
+#: inc/options-config.php:192 inc/options-config.php:228
+#: inc/options-config.php:264 inc/options-config.php:317
+#: inc/options-config.php:448 inc/options-config.php:450
+#: inc/options-config.php:879
+msgid "Title"
+msgstr "শিরোনাম"
+
+#: inc/options-config.php:68 inc/options-config.php:111
+#: inc/options-config.php:198 inc/options-config.php:234
+#: inc/options-config.php:270 inc/options-config.php:323
+#: inc/options-config.php:456 inc/options-config.php:885
+msgid "Description"
+msgstr "বিবরণ"
+
+#: inc/options-config.php:74 inc/options-config.php:903
+msgid "Link"
+msgstr "লিংক"
+
+#: inc/options-config.php:80 inc/options-config.php:293
+#: inc/options-config.php:400
+msgid "Image"
+msgstr "ছবি"
+
+#: inc/options-config.php:117 inc/options-config.php:168
+#: inc/options-config.php:561 inc/options-config.php:567
+#: inc/options-config.php:772 inc/options-config.php:800
+#: inc/options-config.php:892
+msgid "Text color"
+msgstr "লেখার রং"
+
+#: inc/options-config.php:127 inc/options-config.php:432
+msgid "Hide"
+msgstr "লুকিয়ে ফেলুন"
+
+#: inc/options-config.php:137
+msgid "Service"
+msgstr "সেবা"
+
+#: inc/options-config.php:142 inc/options-config.php:220
+#: inc/options-config.php:345
+msgid "Select Page"
+msgstr "পৃষ্ঠা নির্বাচন করুন "
+
+#: inc/options-config.php:142 inc/options-config.php:156
+#: inc/options-config.php:220 inc/options-config.php:345
+msgid "(required)"
+msgstr "(আবশ্যক)"
+
+#: inc/options-config.php:150 inc/options-config.php:240
+#: inc/options-config.php:299 inc/options-config.php:359
+#: inc/options-config.php:444
+msgid "Custom Link"
+msgstr "কাস্টম লিঙ্ক"
+
+#: inc/options-config.php:156 inc/options-config.php:474
+msgid "Icon"
+msgstr "আইকন"
+
+#: inc/options-config.php:156 inc/options-config.php:220
+#: inc/options-config.php:345
+msgid "Featured Image"
+msgstr "নির্বাচিত ছবি"
+
+#: inc/options-config.php:163 inc/options-config.php:481
+msgid "Color"
+msgstr "রঙ"
+
+#: inc/options-config.php:174 inc/options-config.php:920
+msgid "Background color"
+msgstr "ব্যাকগ্রাউন্ড এর রং"
+
+#: inc/options-config.php:228 inc/options-config.php:234
+#: inc/options-config.php:240 inc/options-config.php:299
+#: inc/options-config.php:353 inc/options-config.php:359
+msgid "Optional"
+msgstr "ঐচ্ছিক"
+
+#: inc/options-config.php:258 inc/options-config.php:723
+msgid "Black"
+msgstr "কালো"
+
+#: inc/options-config.php:258 inc/options-config.php:724
+msgid "White"
+msgstr "সাদা"
+
+#: inc/options-config.php:351
+msgid "Matt Mullenweg"
+msgstr "ম্যাট মুলেনওয়েগ"
+
+#: inc/options-config.php:353
+msgid "Author"
+msgstr "লেখক"
+
+#: inc/options-config.php:382 inc/options-config.php:384
+msgid "Overlays"
+msgstr ""
+
+#: inc/options-config.php:389
+msgid "Transitions"
+msgstr ""
+
+#: inc/options-config.php:413
+msgid "Add social media icons in Header"
+msgstr ""
+
+#: inc/options-config.php:419
+msgid "Add social media icons in Footer"
+msgstr ""
+
+#: inc/options-config.php:425
+msgid "Size"
+msgstr "আকার"
+
+#: inc/options-config.php:462
+msgid "Enter the URL"
+msgstr "ইউআরএল লিখুন"
+
+#: inc/options-config.php:467
+msgid "Open link in a new window/tab"
+msgstr "নতুন উইন্ডো/ট্যাবে ওপেন করুন"
+
+#: inc/options-config.php:497 inc/options-config.php:498
+msgid "Personal Portfolio Theme Options"
+msgstr ""
+
+#: inc/options-config.php:501
+msgid "Contact Info"
+msgstr "যোগাযোগের তথ্যঃ"
+
+#: inc/options-config.php:505 inc/options-config.php:511
+msgid "Address"
+msgstr "ঠিকানা"
+
+#: inc/options-config.php:511 inc/options-config.php:523
+#: inc/options-config.php:535 inc/options-config.php:913
+msgid "Custom URL"
+msgstr "নিজস্ব ইউআরএল"
+
+#: inc/options-config.php:529 inc/options-config.php:535
+msgid "Phone"
+msgstr ""
+
+#: inc/options-config.php:545
+msgid "Header"
+msgstr "হেডার"
+
+#: inc/options-config.php:551
+msgid "Footer"
+msgstr "নিম্নাংশ"
+
+#: inc/options-config.php:567
+msgid "When moving mouse over link"
+msgstr ""
+
+#: inc/options-config.php:577
+msgid "Map embed code"
+msgstr ""
+
+#: inc/options-config.php:584
+msgid "Display Settings"
+msgstr "ডিসপ্লে সেটিংসমূহ"
+
+#: inc/options-config.php:592 inc/options-config.php:621
+msgid "Layout"
+msgstr "লেআউট"
+
+#: inc/options-config.php:592
+msgid "Asides"
+msgstr "পার্শ্বনিবন্ধ"
+
+#: inc/options-config.php:594
+msgid "One Column"
+msgstr "এক কলাম"
+
+#: inc/options-config.php:595 inc/options-config.php:596
+msgid "Two Columns"
+msgstr "দুই কলাম"
+
+#: inc/options-config.php:595 inc/options-config.php:600
+#: inc/options-config.php:602 inc/options-config.php:607
+msgid "Right Sidebar"
+msgstr "ডান পার্শ্বের সাইডবার"
+
+#: inc/options-config.php:596 inc/options-config.php:598
+#: inc/options-config.php:603 inc/options-config.php:606
+msgid "Left Sidebar"
+msgstr "বাম সাইডবার"
+
+#: inc/options-config.php:597 inc/options-config.php:601
+#: inc/options-config.php:605
+msgid "Three Columns"
+msgstr "তিন কলামবিশিষ্ট"
+
+#: inc/options-config.php:599 inc/options-config.php:604
+#: inc/options-config.php:608 inc/options-config.php:783
+msgid "Content"
+msgstr "বিষয়বস্তু"
+
+#: inc/options-config.php:615
+msgid "Front page"
+msgstr "প্রধান পাতা"
+
+#: inc/options-config.php:616 searchform.php:9
+msgid "Search"
+msgstr "অনুসন্ধান"
+
+#: inc/options-config.php:617 inc/template-tags.php:111
+msgid "Archives"
+msgstr "সংরক্ষণাগার"
+
+#: inc/options-config.php:623
+msgid "Full text"
+msgstr "সম্পূর্ণ টেক্সট"
+
+#: inc/options-config.php:624
+msgid "Summary"
+msgstr "সারসংক্ষেপ"
+
+#: inc/options-config.php:630
+msgid "Set the excerpt length (in number of words)"
+msgstr ""
+
+#: inc/options-config.php:647
+msgid "Logo Upload"
+msgstr ""
+
+#: inc/options-config.php:652
+msgid "Logo"
+msgstr ""
+
+#: inc/options-config.php:652
+msgid "Alignment"
+msgstr "এ্যালাইনমেন্ট"
+
+#: inc/options-config.php:655
+msgid "Align Left"
+msgstr "লেফট এলাইনমেন্ট"
+
+#: inc/options-config.php:656
+msgid "Align Center"
+msgstr "সেন্টার এলাইনমেন্ট"
+
+#: inc/options-config.php:657
+msgid "Align Right"
+msgstr "রাইট এলাইনমেন্ট"
+
+#: inc/options-config.php:661
+msgid "A search form for your site."
+msgstr "আপনার সাইটের জন্য একটি অনুসন্ধান ফর্ম। "
+
+#: inc/options-config.php:671
+msgid "Featured Image Header"
+msgstr "হেডারের নির্বাচিত ছবি"
+
+#: inc/options-config.php:677
+msgid "Display post date?"
+msgstr "পোস্টের তারিখ দেখান?"
+
+#: inc/options-config.php:683
+msgid "Display item author if available?"
+msgstr "যদি পাওয়া যায় তাহলে কি উপাদানটির লেখকের নাম প্রদর্শন করা হবে?"
+
+#: inc/options-config.php:689
+msgid "Categories"
+msgstr "বিভাগসমূহ"
+
+#: inc/options-config.php:695
+msgid "Tags"
+msgstr "ট্যাগগুলি"
+
+#: inc/options-config.php:703
+msgid "Styles"
+msgstr "স্টাইল"
+
+#: inc/options-config.php:711
+msgid "Primary Color"
+msgstr "রঙ"
+
+#: inc/options-config.php:717
+msgid "Base Color Scheme"
+msgstr "মূল কালার স্কিম"
+
+#: inc/options-config.php:719
+msgid "Gray"
+msgstr "ধূসর"
+
+#: inc/options-config.php:720
+msgid "Red"
+msgstr "লাল"
+
+#: inc/options-config.php:721
+msgid "Green"
+msgstr "সবুজ"
+
+#: inc/options-config.php:722
+msgid "Blue"
+msgstr "নীল"
+
+#: inc/options-config.php:725
+msgid "Brown"
+msgstr "বাদামী"
+
+#: inc/options-config.php:726
+msgid "Orange"
+msgstr "কমলা"
+
+#: inc/options-config.php:727
+msgid "Tan"
+msgstr "তামাটে রঙ"
+
+#: inc/options-config.php:728
+msgid "Yellow"
+msgstr "হলুদ"
+
+#: inc/options-config.php:729
+msgid "Purple"
+msgstr "বেগুনি"
+
+#: inc/options-config.php:730
+msgid "Silver"
+msgstr "সিলভার"
+
+#: inc/options-config.php:731
+msgid "Pink"
+msgstr "গোলাপী"
+
+#: inc/options-config.php:737 inc/options-config.php:759
+#: inc/options-config.php:787
+msgid "Font Family"
+msgstr "ফন্ট ফ্যামিলি"
+
+#: inc/options-config.php:743 inc/options-config.php:765
+#: inc/options-config.php:793
+msgid "Font Sizes"
+msgstr "ফন্ট সাইজ"
+
+#: inc/options-config.php:754 inc/options-config.php:898
+msgid "Custom Background"
+msgstr "কাস্টম ব্যাকগ্রাউন্ড"
+
+#: inc/options-config.php:778
+msgid "Border color"
+msgstr "বর্ডারের রং"
+
+#: inc/options-config.php:783
+msgid "Posts"
+msgstr "পোস্ট"
+
+#: inc/options-config.php:806
+msgid "Metadata"
+msgstr "মেটাডেটা"
+
+#: inc/options-config.php:816
+msgid "Services Section"
+msgstr ""
+
+#: inc/options-config.php:820
+msgid "Projects Section"
+msgstr ""
+
+#: inc/options-config.php:824
+msgid "Background Image"
+msgstr "ব্যকগ্রাউন্ডের ছবি"
+
+#: inc/options-config.php:828
+msgid "Social Media"
+msgstr "সামাজিক মাধ্যম"
+
+#: inc/options-config.php:836
+msgid "Notes"
+msgstr "নোট সমুহ"
+
+#: inc/options-config.php:842
+msgid "Other Notes"
+msgstr "অন্যান্য নোট"
+
+#: inc/options-config.php:848
+msgid "Submit label"
+msgstr ""
+
+#: inc/options-config.php:855
+msgid "Testimonials"
+msgstr ""
+
+#: inc/options-config.php:859
+msgid "Customers"
+msgstr ""
+
+#: inc/options-config.php:863
+msgid "Call to Action"
+msgstr ""
+
+#: inc/options-config.php:873
+msgid "Show Sitewide"
+msgstr ""
+
+#: inc/options-config.php:880 inc/options-config.php:908
+#: inc/template-tags.php:285 inc/template-tags.php:290
+msgid "Hello, World!"
+msgstr ""
+
+#: inc/options-config.php:907
+msgid "Text"
+msgstr "লেখা"
+
+#: inc/options-config.php:926
+msgid "Advanced Options"
+msgstr "অ্যাডভান্সড অপশন"
+
+#: inc/options-config.php:930
+msgid "Reset all theme settings to default. Refresh the page after save to view full effects."
+msgstr ""
+
+#: inc/options-config.php:936
+msgid "Custom CSS Styles"
+msgstr ""
+
+#: inc/template-tags.php:37
+msgid "Leave a comment"
+msgstr "মন্তব্য দিন "
+
+#: inc/template-tags.php:37
+msgid "1 Comment"
+msgstr "১টি মন্তব্য "
+
+#: inc/template-tags.php:37
+msgid "% Comments"
+msgstr "%টি মন্তব্য "
+
+#: inc/template-tags.php:48
+msgid "Featured"
+msgstr "ফিচার্ড"
+
+#: inc/template-tags.php:56 inc/template-tags.php:62
+msgid ", "
+msgstr ","
+
+#: inc/template-tags.php:73
+msgid "Category: %s"
+msgstr "বিভাগ: %s"
+
+#: inc/template-tags.php:75
+msgid "Tag: %s"
+msgstr "ট্যাগ: %s"
+
+#: inc/template-tags.php:77
+msgid "Author: %s"
+msgstr "লিখেছেন: %s"
+
+#: inc/template-tags.php:79
+msgid "Year: %s"
+msgstr "বছর: %s"
+
+#: inc/template-tags.php:81
+msgid "Month: %s"
+msgstr "মাস: %s"
+
+#: inc/template-tags.php:83
+msgid "Day: %s"
+msgstr "দিন: %s"
+
+#: inc/template-tags.php:105
+msgid "Archives: %s"
+msgstr "সংরক্ষণাগার: %s"
+
+#: inc/template-tags.php:109
+msgid "%1$s: %2$s"
+msgstr "%1$s: %2$s"
+
+#: inc/template-tags.php:197
+msgid "Pingback:"
+msgstr "পিংব্যাকঃ"
+
+#: inc/template-tags.php:213
+msgid "Your comment is awaiting moderation."
+msgstr "আপনার মন্তব্য অনুমোদনের অপেক্ষায় আছে।"
+
+#: inc/template-tags.php:230
+msgid "Previous"
+msgstr "পূর্ববর্তী"
+
+#: inc/template-tags.php:231
+msgid "Next"
+msgstr "পরবর্তী"
+
+#: inc/template-tags.php:244
+msgid "Page"
+msgstr "পাতা"
+
+#: inc/template-tags.php:250
+msgid "Older posts"
+msgstr "আগের প্রকাশনাসমূহ"
+
+#: inc/template-tags.php:254
+msgid "Newer posts"
+msgstr "সাম্প্রতিক প্রকাশনাসমূহ"
+
+#: inc/template-tags.php:306
+#, php-format
+msgid "Copyright &copy; %1$d %2$s."
+msgstr ""
+
+#: inc/template-tags.php:308
+msgid "Proudly powered by %s"
+msgstr "%s দ্বারা সদম্ভে চালিত হচ্ছে"
+
+#: inc/template-tags.php:311
+msgid "%1$s by %2$s."
+msgstr "%2$s-এর %1$s।"
+
+#: inc/template-tags.php:312
+msgid "Personal Portfolio WordPress Theme"
+msgstr ""
+
+#: search.php:17
+msgid "Search Results for: %s"
+msgstr "%s এর জন্য খোঁজার ফলাফল"
+
+#: searchform.php:8
+msgid "Search &hellip;"
+msgstr "অনুসন্ধান করুন &hellip;"

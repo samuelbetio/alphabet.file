@@ -1,0 +1,724 @@
+# This file is distributed under the same license as the Personal package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Personal Portfolio\n"
+"POT-Creation-Date: 2016-02-01 20:14+0200\n"
+"PO-Revision-Date: 2016-02-02 01:22+0200\n"
+"Last-Translator: \n"
+"Language-Team: Dinozoom\n"
+"Language: sr_RS\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.1\n"
+"X-Poedit-Basepath: ..\\\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_ex;esc_attr_x\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Упс! Та страница не може бити пронађена."
+
+#: 404.php:19
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "Изгледа да ништа није пронађено на овом месту. Можда да покушате претраживање?"
+
+#: comments.php:27 inc/options-config.php:832
+msgid "Comments"
+msgstr "Коментари"
+
+#: comments.php:31 comments.php:50
+msgid "Comment navigation"
+msgstr "Кретање коментара"
+
+#: comments.php:33 comments.php:53
+msgid "Older Comments"
+msgstr "Старији коментари"
+
+#: comments.php:34 comments.php:54
+msgid "Newer Comments"
+msgstr "Новији коментари"
+
+#: comments.php:66
+msgid "Comments are closed."
+msgstr "Затворено за коментаре."
+
+#: comments.php:76
+msgid "Name"
+msgstr "Име"
+
+#: comments.php:77 inc/options-config.php:517 inc/options-config.php:523
+msgid "Email"
+msgstr "Е-пошта"
+
+#: comments.php:78
+msgid "Website"
+msgstr "Веб место"
+
+#: comments.php:82
+msgid "Your email address will not be published."
+msgstr "Ваша адреса е-поште неће бити објављена."
+
+#: comments.php:86
+msgid "Cancel reply"
+msgstr "Одустани од одговора"
+
+#: comments.php:87 inc/options-config.php:849
+msgid "Post Comment"
+msgstr "Предај коментар"
+
+#: content-blog.php:30 content.php:28 inc/options-config.php:636
+#: inc/options-config.php:637
+msgid "Read more..."
+msgstr "Прочитај више..."
+
+#: content-none.php:14
+msgid "Nothing Found"
+msgstr "Ништа није пронађено"
+
+#: content-none.php:20
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Спремни сте да објавите свој први чланак? <a href=\"%1$s\">Започните овде</a>."
+
+#: content-none.php:24
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Жао нам је, али ништа не одговара вашем упиту. Молимо вас да покушате поново са другим кључним речима."
+
+#: content-none.php:29
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Изгледа да не можемо да пронађемо оно што сте тражили. Можда ће претраживање помоћи."
+
+#: content-page-nontitle.php:14 content-page.php:24 content-single.php:27
+#: content.php:35
+msgid "Pages:"
+msgstr "Стране:"
+
+#: content-page.php:16 inc/template-tags.php:33 inc/template-tags.php:197
+#: inc/template-tags.php:210
+msgid "Edit"
+msgstr "Уреди"
+
+#: functions.php:53
+msgid "Primary Menu"
+msgstr "Примарни изборник"
+
+#: functions.php:121 functions.php:135
+msgid "Sidebar"
+msgstr "Бочна трака"
+
+#: functions.php:121
+msgid "Right"
+msgstr "Десно"
+
+#: functions.php:135
+msgid "Left"
+msgstr "Лево"
+
+#: header.php:22
+msgid "Skip to content"
+msgstr "Скочи на садржај"
+
+#: inc/admin/class.wbls-customize-disabled-select-control.php:13
+msgid "Select Color"
+msgstr "Изабери боју"
+
+#: inc/admin/class.wbls-customize-disabled-select-control.php:18
+#: inc/admin/class.wbls-customize-disabled-select-control.php:41
+#: inc/admin/class.wbls-customize-disabled-select-control.php:64
+#: inc/options-config.php:943
+msgid "Upgrade"
+msgstr "Купи проширење"
+
+#: inc/admin/class.wbls-customize-disabled-select-control.php:106
+msgid "More options &amp; features now available."
+msgstr ""
+
+#: inc/admin/class.wbls-customize-disabled-select-control.php:106
+msgid "Upgrade Now"
+msgstr ""
+
+#: inc/admin/class.wbls-customize-disabled-select-control.php:108
+msgid "Donate"
+msgstr "поклонити"
+
+#: inc/admin/class.wbls-customize-disabled-select-control.php:110
+msgid "Support Forums"
+msgstr "Форуми подршке"
+
+#: inc/admin/class.wbls-customize-disabled-select-control.php:112
+msgid "Feedback"
+msgstr "Реаговање"
+
+#: inc/admin/class.wbls-customize-disabled-select-control.php:112
+msgid "Reviews"
+msgstr "Прегледи"
+
+#: inc/admin/class.wbls-customize-disabled-select-control.php:114
+msgid "Documentation"
+msgstr "Документација"
+
+#: inc/admin/class.wbls-customize-disabled-select-control.php:116
+msgid "More Themes"
+msgstr ""
+
+#: inc/admin/class.wbls-customizer-api-wrapper.php:88
+msgid "Upgrade to Pro"
+msgstr ""
+
+#: inc/extras.php:53
+msgid "Page %s"
+msgstr "Страна %s"
+
+#: inc/options-config.php:12 inc/options-config.php:92
+#: inc/options-config.php:186 inc/options-config.php:252
+#: inc/options-config.php:311 inc/options-config.php:369
+#: inc/options-config.php:867
+msgid "Enable this section"
+msgstr "овај одељак"
+
+#: inc/options-config.php:18 inc/options-config.php:98
+#: inc/options-config.php:204 inc/options-config.php:276
+#: inc/options-config.php:329
+msgid "Quantity"
+msgstr ""
+
+#: inc/options-config.php:25
+msgid "Effect"
+msgstr ""
+
+#: inc/options-config.php:32
+msgid "Animation speed"
+msgstr ""
+
+#: inc/options-config.php:43 inc/options-config.php:375
+msgid "Speed"
+msgstr ""
+
+#: inc/options-config.php:57 inc/options-config.php:812
+msgid "Slider"
+msgstr ""
+
+#: inc/options-config.php:62 inc/options-config.php:105
+#: inc/options-config.php:192 inc/options-config.php:228
+#: inc/options-config.php:264 inc/options-config.php:317
+#: inc/options-config.php:448 inc/options-config.php:450
+#: inc/options-config.php:879
+msgid "Title"
+msgstr "Наслов"
+
+#: inc/options-config.php:68 inc/options-config.php:111
+#: inc/options-config.php:198 inc/options-config.php:234
+#: inc/options-config.php:270 inc/options-config.php:323
+#: inc/options-config.php:456 inc/options-config.php:885
+msgid "Description"
+msgstr "Опис"
+
+#: inc/options-config.php:74 inc/options-config.php:903
+msgid "Link"
+msgstr "Веза"
+
+#: inc/options-config.php:80 inc/options-config.php:293
+#: inc/options-config.php:400
+msgid "Image"
+msgstr "Слика"
+
+#: inc/options-config.php:117 inc/options-config.php:168
+#: inc/options-config.php:561 inc/options-config.php:567
+#: inc/options-config.php:772 inc/options-config.php:800
+#: inc/options-config.php:892
+msgid "Text color"
+msgstr "Боја текста"
+
+#: inc/options-config.php:127 inc/options-config.php:432
+msgid "Hide"
+msgstr "Сакриj"
+
+#: inc/options-config.php:137
+msgid "Service"
+msgstr "услуга"
+
+#: inc/options-config.php:142 inc/options-config.php:220
+#: inc/options-config.php:345
+msgid "Select Page"
+msgstr "Одабери страницу"
+
+#: inc/options-config.php:142 inc/options-config.php:156
+#: inc/options-config.php:220 inc/options-config.php:345
+msgid "(required)"
+msgstr "(обавезно)"
+
+#: inc/options-config.php:150 inc/options-config.php:240
+#: inc/options-config.php:299 inc/options-config.php:359
+#: inc/options-config.php:444
+msgid "Custom Link"
+msgstr "Прилагођенa везa"
+
+#: inc/options-config.php:156 inc/options-config.php:474
+msgid "Icon"
+msgstr "икона"
+
+#: inc/options-config.php:156 inc/options-config.php:220
+#: inc/options-config.php:345
+msgid "Featured Image"
+msgstr "Издвојена слика"
+
+#: inc/options-config.php:163 inc/options-config.php:481
+msgid "Color"
+msgstr "Боја"
+
+#: inc/options-config.php:174 inc/options-config.php:920
+msgid "Background color"
+msgstr "Боја позадине"
+
+#: inc/options-config.php:228 inc/options-config.php:234
+#: inc/options-config.php:240 inc/options-config.php:299
+#: inc/options-config.php:353 inc/options-config.php:359
+msgid "Optional"
+msgstr "Необавезно"
+
+#: inc/options-config.php:258 inc/options-config.php:723
+msgid "Black"
+msgstr "црна"
+
+#: inc/options-config.php:258 inc/options-config.php:724
+msgid "White"
+msgstr "бела"
+
+#: inc/options-config.php:351
+msgid "Matt Mullenweg"
+msgstr "Мет Муленвег"
+
+#: inc/options-config.php:353
+msgid "Author"
+msgstr "Аутор"
+
+#: inc/options-config.php:382 inc/options-config.php:384
+msgid "Overlays"
+msgstr ""
+
+#: inc/options-config.php:389
+msgid "Transitions"
+msgstr ""
+
+#: inc/options-config.php:413
+msgid "Add social media icons in Header"
+msgstr ""
+
+#: inc/options-config.php:419
+msgid "Add social media icons in Footer"
+msgstr ""
+
+#: inc/options-config.php:425
+msgid "Size"
+msgstr "Величина"
+
+#: inc/options-config.php:462
+msgid "Enter the URL"
+msgstr "Унеси URL"
+
+#: inc/options-config.php:467
+msgid "Open link in a new window/tab"
+msgstr "Отвори везу у новом прозору/језичку"
+
+#: inc/options-config.php:497 inc/options-config.php:498
+msgid "Personal Portfolio Theme Options"
+msgstr ""
+
+#: inc/options-config.php:501
+msgid "Contact Info"
+msgstr "Подаци за контактирање"
+
+#: inc/options-config.php:505 inc/options-config.php:511
+msgid "Address"
+msgstr "адреса"
+
+#: inc/options-config.php:511 inc/options-config.php:523
+#: inc/options-config.php:535 inc/options-config.php:913
+msgid "Custom URL"
+msgstr "Прилагођеном URL-у"
+
+#: inc/options-config.php:529 inc/options-config.php:535
+msgid "Phone"
+msgstr ""
+
+#: inc/options-config.php:545
+msgid "Header"
+msgstr "Заглавље"
+
+#: inc/options-config.php:551
+msgid "Footer"
+msgstr "Подножје"
+
+#: inc/options-config.php:567
+msgid "When moving mouse over link"
+msgstr ""
+
+#: inc/options-config.php:577
+msgid "Map embed code"
+msgstr ""
+
+#: inc/options-config.php:584
+msgid "Display Settings"
+msgstr "Подешавања приказа"
+
+#: inc/options-config.php:592 inc/options-config.php:621
+msgid "Layout"
+msgstr "Распоред"
+
+#: inc/options-config.php:592
+msgid "Asides"
+msgstr "Са стране"
+
+#: inc/options-config.php:594
+msgid "One Column"
+msgstr "један ступац"
+
+#: inc/options-config.php:595 inc/options-config.php:596
+msgid "Two Columns"
+msgstr "два ступца"
+
+#: inc/options-config.php:595 inc/options-config.php:600
+#: inc/options-config.php:602 inc/options-config.php:607
+msgid "Right Sidebar"
+msgstr "десна бочна трака"
+
+#: inc/options-config.php:596 inc/options-config.php:598
+#: inc/options-config.php:603 inc/options-config.php:606
+msgid "Left Sidebar"
+msgstr "лева бочна трака"
+
+#: inc/options-config.php:597 inc/options-config.php:601
+#: inc/options-config.php:605
+msgid "Three Columns"
+msgstr "три ступца"
+
+#: inc/options-config.php:599 inc/options-config.php:604
+#: inc/options-config.php:608 inc/options-config.php:783
+msgid "Content"
+msgstr "Садржај"
+
+#: inc/options-config.php:615
+msgid "Front page"
+msgstr "Почетна страница"
+
+#: inc/options-config.php:616 searchform.php:9
+msgid "Search"
+msgstr "Претрага"
+
+#: inc/options-config.php:617 inc/template-tags.php:111
+msgid "Archives"
+msgstr "Архиве"
+
+#: inc/options-config.php:623
+msgid "Full text"
+msgstr "Цео текст"
+
+#: inc/options-config.php:624
+msgid "Summary"
+msgstr "Сажетак"
+
+#: inc/options-config.php:630
+msgid "Set the excerpt length (in number of words)"
+msgstr ""
+
+#: inc/options-config.php:647
+msgid "Logo Upload"
+msgstr "Унос логотипа"
+
+#: inc/options-config.php:652
+msgid "Logo"
+msgstr ""
+
+#: inc/options-config.php:652
+msgid "Alignment"
+msgstr "Поравнање"
+
+#: inc/options-config.php:655
+msgid "Align Left"
+msgstr "Уравнато лево"
+
+#: inc/options-config.php:656
+msgid "Align Center"
+msgstr "Центрирано"
+
+#: inc/options-config.php:657
+msgid "Align Right"
+msgstr "Уравнато десно"
+
+#: inc/options-config.php:661
+msgid "A search form for your site."
+msgstr "Образац за претрагу вашег веб места."
+
+#: inc/options-config.php:671
+msgid "Featured Image Header"
+msgstr "Издвојена слика у заглављу"
+
+#: inc/options-config.php:677
+msgid "Display post date?"
+msgstr "Прикажи датум чланка?"
+
+#: inc/options-config.php:683
+msgid "Display item author if available?"
+msgstr "Прикажи аутора ставке уколико је доступно?"
+
+#: inc/options-config.php:689
+msgid "Categories"
+msgstr "Категорије"
+
+#: inc/options-config.php:695
+msgid "Tags"
+msgstr "Ознаке"
+
+#: inc/options-config.php:703
+msgid "Styles"
+msgstr "Стилови"
+
+#: inc/options-config.php:711
+msgid "Primary Color"
+msgstr "боја"
+
+#: inc/options-config.php:717
+msgid "Base Color Scheme"
+msgstr "Основна шема боја"
+
+#: inc/options-config.php:719
+msgid "Gray"
+msgstr "Сива"
+
+#: inc/options-config.php:720
+msgid "Red"
+msgstr "црвена"
+
+#: inc/options-config.php:721
+msgid "Green"
+msgstr "зелена"
+
+#: inc/options-config.php:722
+msgid "Blue"
+msgstr "Плава"
+
+#: inc/options-config.php:725
+msgid "Brown"
+msgstr "браон"
+
+#: inc/options-config.php:726
+msgid "Orange"
+msgstr "наранџаста"
+
+#: inc/options-config.php:727
+msgid "Tan"
+msgstr "мрка"
+
+#: inc/options-config.php:728
+msgid "Yellow"
+msgstr "жута"
+
+#: inc/options-config.php:729
+msgid "Purple"
+msgstr "љубичаста"
+
+#: inc/options-config.php:730
+msgid "Silver"
+msgstr "сива"
+
+#: inc/options-config.php:731
+msgid "Pink"
+msgstr "роза"
+
+#: inc/options-config.php:737 inc/options-config.php:759
+#: inc/options-config.php:787
+msgid "Font Family"
+msgstr "Фамилија словног лика"
+
+#: inc/options-config.php:743 inc/options-config.php:765
+#: inc/options-config.php:793
+msgid "Font Sizes"
+msgstr "Величина словног лика"
+
+#: inc/options-config.php:754 inc/options-config.php:898
+msgid "Custom Background"
+msgstr "Прилагођена позадина"
+
+#: inc/options-config.php:778
+msgid "Border color"
+msgstr "Боја ивице"
+
+#: inc/options-config.php:783
+msgid "Posts"
+msgstr "Чланци"
+
+#: inc/options-config.php:806
+msgid "Metadata"
+msgstr "Метаподаци"
+
+#: inc/options-config.php:816
+msgid "Services Section"
+msgstr ""
+
+#: inc/options-config.php:820
+msgid "Projects Section"
+msgstr ""
+
+#: inc/options-config.php:824
+msgid "Background Image"
+msgstr "Слика у позадини"
+
+#: inc/options-config.php:828
+msgid "Social Media"
+msgstr "Društveni mediji"
+
+#: inc/options-config.php:836
+msgid "Notes"
+msgstr "Напомене"
+
+#: inc/options-config.php:842
+msgid "Other Notes"
+msgstr "Друге напомене"
+
+#: inc/options-config.php:848
+msgid "Submit label"
+msgstr ""
+
+#: inc/options-config.php:855
+msgid "Testimonials"
+msgstr ""
+
+#: inc/options-config.php:859
+msgid "Customers"
+msgstr ""
+
+#: inc/options-config.php:863
+msgid "Call to Action"
+msgstr "Позив на акцију"
+
+#: inc/options-config.php:873
+msgid "Show Sitewide"
+msgstr ""
+
+#: inc/options-config.php:880 inc/options-config.php:908
+#: inc/template-tags.php:285 inc/template-tags.php:290
+msgid "Hello, World!"
+msgstr "Здраво, свете!"
+
+#: inc/options-config.php:907
+msgid "Text"
+msgstr "Текст"
+
+#: inc/options-config.php:926
+msgid "Advanced Options"
+msgstr "Напредне могућности"
+
+#: inc/options-config.php:930
+msgid "Reset all theme settings to default. Refresh the page after save to view full effects."
+msgstr ""
+
+#: inc/options-config.php:936
+msgid "Custom CSS Styles"
+msgstr "Custom CSS stil"
+
+#: inc/template-tags.php:37
+msgid "Leave a comment"
+msgstr "Оставите коментар"
+
+#: inc/template-tags.php:37
+msgid "1 Comment"
+msgstr "1 коментар"
+
+#: inc/template-tags.php:37
+msgid "% Comments"
+msgstr "% коментара"
+
+#: inc/template-tags.php:48
+msgid "Featured"
+msgstr "Издвојено"
+
+#: inc/template-tags.php:56 inc/template-tags.php:62
+msgid ", "
+msgstr ", "
+
+#: inc/template-tags.php:73
+msgid "Category: %s"
+msgstr "Категорија: %s"
+
+#: inc/template-tags.php:75
+msgid "Tag: %s"
+msgstr "Ознака: %s"
+
+#: inc/template-tags.php:77
+msgid "Author: %s"
+msgstr "Аутор: %s"
+
+#: inc/template-tags.php:79
+msgid "Year: %s"
+msgstr "Година: %s"
+
+#: inc/template-tags.php:81
+msgid "Month: %s"
+msgstr "Месец: %s"
+
+#: inc/template-tags.php:83
+msgid "Day: %s"
+msgstr "Дан: %s"
+
+#: inc/template-tags.php:105
+msgid "Archives: %s"
+msgstr "Архиве: %s"
+
+#: inc/template-tags.php:109
+msgid "%1$s: %2$s"
+msgstr "%1$s: %2$s"
+
+#: inc/template-tags.php:197
+msgid "Pingback:"
+msgstr "Повратни пинг:"
+
+#: inc/template-tags.php:213
+msgid "Your comment is awaiting moderation."
+msgstr "Ваш коментар чека преглед."
+
+#: inc/template-tags.php:230
+msgid "Previous"
+msgstr "Претходна"
+
+#: inc/template-tags.php:231
+msgid "Next"
+msgstr "Следећа"
+
+#: inc/template-tags.php:244
+msgid "Page"
+msgstr "Страна"
+
+#: inc/template-tags.php:250
+msgid "Older posts"
+msgstr "Старији чланци"
+
+#: inc/template-tags.php:254
+msgid "Newer posts"
+msgstr "Новији чланци"
+
+#: inc/template-tags.php:306
+#, php-format
+msgid "Copyright &copy; %1$d %2$s."
+msgstr ""
+
+#: inc/template-tags.php:308
+msgid "Proudly powered by %s"
+msgstr "Са поносом покреће %s"
+
+#: inc/template-tags.php:311
+msgid "%1$s by %2$s."
+msgstr "%1$s од %2$s."
+
+#: inc/template-tags.php:312
+msgid "Personal Portfolio WordPress Theme"
+msgstr ""
+
+#: search.php:17
+msgid "Search Results for: %s"
+msgstr "Резултати претраживања за: %s"
+
+#: searchform.php:8
+msgid "Search &hellip;"
+msgstr "Претрага &hellip;"

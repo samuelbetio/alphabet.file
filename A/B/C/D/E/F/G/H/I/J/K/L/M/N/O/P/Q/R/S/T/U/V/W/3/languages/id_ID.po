@@ -1,0 +1,724 @@
+# This file is distributed under the same license as the Personal package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Personal Portfolio\n"
+"POT-Creation-Date: 2016-02-01 20:14+0200\n"
+"PO-Revision-Date: 2016-02-02 01:21+0200\n"
+"Last-Translator: \n"
+"Language-Team: Dinozoom\n"
+"Language: id_ID\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.1\n"
+"X-Poedit-Basepath: ..\\\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_ex;esc_attr_x\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Ups! Laman tersebut tak ditemukan."
+
+#: 404.php:19
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "Sepertinya tidak ditemukan apapun di sini. Mungkin coba pencarian?"
+
+#: comments.php:27 inc/options-config.php:832
+msgid "Comments"
+msgstr "Komentar"
+
+#: comments.php:31 comments.php:50
+msgid "Comment navigation"
+msgstr "Navigasi komentar"
+
+#: comments.php:33 comments.php:53
+msgid "Older Comments"
+msgstr "Komentar Sebelumnya"
+
+#: comments.php:34 comments.php:54
+msgid "Newer Comments"
+msgstr "Komentar Berikutnya"
+
+#: comments.php:66
+msgid "Comments are closed."
+msgstr "Komentar ditutup."
+
+#: comments.php:76
+msgid "Name"
+msgstr "Nama"
+
+#: comments.php:77 inc/options-config.php:517 inc/options-config.php:523
+msgid "Email"
+msgstr "Surel"
+
+#: comments.php:78
+msgid "Website"
+msgstr "Situs web"
+
+#: comments.php:82
+msgid "Your email address will not be published."
+msgstr "Alamat surel Anda tidak akan dipublikasikan."
+
+#: comments.php:86
+msgid "Cancel reply"
+msgstr "Batalkan balasan"
+
+#: comments.php:87 inc/options-config.php:849
+msgid "Post Comment"
+msgstr "Kirim Komentar"
+
+#: content-blog.php:30 content.php:28 inc/options-config.php:636
+#: inc/options-config.php:637
+msgid "Read more..."
+msgstr "Baca selanjutnya..."
+
+#: content-none.php:14
+msgid "Nothing Found"
+msgstr "Tidak Menemukan Apa-apa"
+
+#: content-none.php:20
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Sudah siap menerbitkan tulisan pertamamu? <a href=\"%1$s\">Mulai di sini</a>."
+
+#: content-none.php:24
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Maaf, tidak ada yang cocok dengan kata yang anda cari. Silahkan coba lagi dengan kata kunci yang lain"
+
+#: content-none.php:29
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Rupanya kami tidak dapat menemukan apa yang Anda cari. Mungkin pencarian dapat membantu."
+
+#: content-page-nontitle.php:14 content-page.php:24 content-single.php:27
+#: content.php:35
+msgid "Pages:"
+msgstr "Halaman:"
+
+#: content-page.php:16 inc/template-tags.php:33 inc/template-tags.php:197
+#: inc/template-tags.php:210
+msgid "Edit"
+msgstr "Sunting"
+
+#: functions.php:53
+msgid "Primary Menu"
+msgstr "Menu Utama"
+
+#: functions.php:121 functions.php:135
+msgid "Sidebar"
+msgstr "Bilah Sisi"
+
+#: functions.php:121
+msgid "Right"
+msgstr "Kanan"
+
+#: functions.php:135
+msgid "Left"
+msgstr "Kiri"
+
+#: header.php:22
+msgid "Skip to content"
+msgstr "Lanjut ke konten"
+
+#: inc/admin/class.wbls-customize-disabled-select-control.php:13
+msgid "Select Color"
+msgstr "Pilih Warna"
+
+#: inc/admin/class.wbls-customize-disabled-select-control.php:18
+#: inc/admin/class.wbls-customize-disabled-select-control.php:41
+#: inc/admin/class.wbls-customize-disabled-select-control.php:64
+#: inc/options-config.php:943
+msgid "Upgrade"
+msgstr "Mutakhirkan"
+
+#: inc/admin/class.wbls-customize-disabled-select-control.php:106
+msgid "More options &amp; features now available."
+msgstr ""
+
+#: inc/admin/class.wbls-customize-disabled-select-control.php:106
+msgid "Upgrade Now"
+msgstr ""
+
+#: inc/admin/class.wbls-customize-disabled-select-control.php:108
+msgid "Donate"
+msgstr "menyumbangkan"
+
+#: inc/admin/class.wbls-customize-disabled-select-control.php:110
+msgid "Support Forums"
+msgstr "Forum Dukungan"
+
+#: inc/admin/class.wbls-customize-disabled-select-control.php:112
+msgid "Feedback"
+msgstr "Umpan balik"
+
+#: inc/admin/class.wbls-customize-disabled-select-control.php:112
+msgid "Reviews"
+msgstr "Ulasan"
+
+#: inc/admin/class.wbls-customize-disabled-select-control.php:114
+msgid "Documentation"
+msgstr "Dokumentasi"
+
+#: inc/admin/class.wbls-customize-disabled-select-control.php:116
+msgid "More Themes"
+msgstr ""
+
+#: inc/admin/class.wbls-customizer-api-wrapper.php:88
+msgid "Upgrade to Pro"
+msgstr ""
+
+#: inc/extras.php:53
+msgid "Page %s"
+msgstr "Laman %s"
+
+#: inc/options-config.php:12 inc/options-config.php:92
+#: inc/options-config.php:186 inc/options-config.php:252
+#: inc/options-config.php:311 inc/options-config.php:369
+#: inc/options-config.php:867
+msgid "Enable this section"
+msgstr "bagian ini"
+
+#: inc/options-config.php:18 inc/options-config.php:98
+#: inc/options-config.php:204 inc/options-config.php:276
+#: inc/options-config.php:329
+msgid "Quantity"
+msgstr ""
+
+#: inc/options-config.php:25
+msgid "Effect"
+msgstr ""
+
+#: inc/options-config.php:32
+msgid "Animation speed"
+msgstr ""
+
+#: inc/options-config.php:43 inc/options-config.php:375
+msgid "Speed"
+msgstr ""
+
+#: inc/options-config.php:57 inc/options-config.php:812
+msgid "Slider"
+msgstr ""
+
+#: inc/options-config.php:62 inc/options-config.php:105
+#: inc/options-config.php:192 inc/options-config.php:228
+#: inc/options-config.php:264 inc/options-config.php:317
+#: inc/options-config.php:448 inc/options-config.php:450
+#: inc/options-config.php:879
+msgid "Title"
+msgstr "Judul"
+
+#: inc/options-config.php:68 inc/options-config.php:111
+#: inc/options-config.php:198 inc/options-config.php:234
+#: inc/options-config.php:270 inc/options-config.php:323
+#: inc/options-config.php:456 inc/options-config.php:885
+msgid "Description"
+msgstr "Deskripsi"
+
+#: inc/options-config.php:74 inc/options-config.php:903
+msgid "Link"
+msgstr "Tautan"
+
+#: inc/options-config.php:80 inc/options-config.php:293
+#: inc/options-config.php:400
+msgid "Image"
+msgstr "Gambar"
+
+#: inc/options-config.php:117 inc/options-config.php:168
+#: inc/options-config.php:561 inc/options-config.php:567
+#: inc/options-config.php:772 inc/options-config.php:800
+#: inc/options-config.php:892
+msgid "Text color"
+msgstr "Warna teks"
+
+#: inc/options-config.php:127 inc/options-config.php:432
+msgid "Hide"
+msgstr "Sembunyikan"
+
+#: inc/options-config.php:137
+msgid "Service"
+msgstr "layanan"
+
+#: inc/options-config.php:142 inc/options-config.php:220
+#: inc/options-config.php:345
+msgid "Select Page"
+msgstr "Pilih Laman"
+
+#: inc/options-config.php:142 inc/options-config.php:156
+#: inc/options-config.php:220 inc/options-config.php:345
+msgid "(required)"
+msgstr "(wajib)"
+
+#: inc/options-config.php:150 inc/options-config.php:240
+#: inc/options-config.php:299 inc/options-config.php:359
+#: inc/options-config.php:444
+msgid "Custom Link"
+msgstr "Tautan Kustom"
+
+#: inc/options-config.php:156 inc/options-config.php:474
+msgid "Icon"
+msgstr "icon"
+
+#: inc/options-config.php:156 inc/options-config.php:220
+#: inc/options-config.php:345
+msgid "Featured Image"
+msgstr "Gambar Andalan"
+
+#: inc/options-config.php:163 inc/options-config.php:481
+msgid "Color"
+msgstr "Warna"
+
+#: inc/options-config.php:174 inc/options-config.php:920
+msgid "Background color"
+msgstr "Warna latar belakang"
+
+#: inc/options-config.php:228 inc/options-config.php:234
+#: inc/options-config.php:240 inc/options-config.php:299
+#: inc/options-config.php:353 inc/options-config.php:359
+msgid "Optional"
+msgstr "Opsional"
+
+#: inc/options-config.php:258 inc/options-config.php:723
+msgid "Black"
+msgstr "Hitam"
+
+#: inc/options-config.php:258 inc/options-config.php:724
+msgid "White"
+msgstr "Putih"
+
+#: inc/options-config.php:351
+msgid "Matt Mullenweg"
+msgstr "Matt Mullenweg"
+
+#: inc/options-config.php:353
+msgid "Author"
+msgstr "Penulis"
+
+#: inc/options-config.php:382 inc/options-config.php:384
+msgid "Overlays"
+msgstr ""
+
+#: inc/options-config.php:389
+msgid "Transitions"
+msgstr ""
+
+#: inc/options-config.php:413
+msgid "Add social media icons in Header"
+msgstr ""
+
+#: inc/options-config.php:419
+msgid "Add social media icons in Footer"
+msgstr ""
+
+#: inc/options-config.php:425
+msgid "Size"
+msgstr "Ukuran"
+
+#: inc/options-config.php:462
+msgid "Enter the URL"
+msgstr "Masukkan URL"
+
+#: inc/options-config.php:467
+msgid "Open link in a new window/tab"
+msgstr "Buka tautan di jendela/tab baru"
+
+#: inc/options-config.php:497 inc/options-config.php:498
+msgid "Personal Portfolio Theme Options"
+msgstr ""
+
+#: inc/options-config.php:501
+msgid "Contact Info"
+msgstr "Info Kontak"
+
+#: inc/options-config.php:505 inc/options-config.php:511
+msgid "Address"
+msgstr "alamat"
+
+#: inc/options-config.php:511 inc/options-config.php:523
+#: inc/options-config.php:535 inc/options-config.php:913
+msgid "Custom URL"
+msgstr "URL Tersuai"
+
+#: inc/options-config.php:529 inc/options-config.php:535
+msgid "Phone"
+msgstr ""
+
+#: inc/options-config.php:545
+msgid "Header"
+msgstr "Kepala Laman"
+
+#: inc/options-config.php:551
+msgid "Footer"
+msgstr "Kaki"
+
+#: inc/options-config.php:567
+msgid "When moving mouse over link"
+msgstr ""
+
+#: inc/options-config.php:577
+msgid "Map embed code"
+msgstr ""
+
+#: inc/options-config.php:584
+msgid "Display Settings"
+msgstr "Pengaturan Tampilan"
+
+#: inc/options-config.php:592 inc/options-config.php:621
+msgid "Layout"
+msgstr "Tata letak"
+
+#: inc/options-config.php:592
+msgid "Asides"
+msgstr "Aside"
+
+#: inc/options-config.php:594
+msgid "One Column"
+msgstr "Satu Kolom"
+
+#: inc/options-config.php:595 inc/options-config.php:596
+msgid "Two Columns"
+msgstr "Dua Kolom"
+
+#: inc/options-config.php:595 inc/options-config.php:600
+#: inc/options-config.php:602 inc/options-config.php:607
+msgid "Right Sidebar"
+msgstr "Bilah Sisi Kanan"
+
+#: inc/options-config.php:596 inc/options-config.php:598
+#: inc/options-config.php:603 inc/options-config.php:606
+msgid "Left Sidebar"
+msgstr "Bilah Sisi Kiri"
+
+#: inc/options-config.php:597 inc/options-config.php:601
+#: inc/options-config.php:605
+msgid "Three Columns"
+msgstr "Tiga Kolom"
+
+#: inc/options-config.php:599 inc/options-config.php:604
+#: inc/options-config.php:608 inc/options-config.php:783
+msgid "Content"
+msgstr "Konten"
+
+#: inc/options-config.php:615
+msgid "Front page"
+msgstr "Laman depan"
+
+#: inc/options-config.php:616 searchform.php:9
+msgid "Search"
+msgstr "Cari"
+
+#: inc/options-config.php:617 inc/template-tags.php:111
+msgid "Archives"
+msgstr "Arsip"
+
+#: inc/options-config.php:623
+msgid "Full text"
+msgstr "Teks penuh"
+
+#: inc/options-config.php:624
+msgid "Summary"
+msgstr "Ringkasan"
+
+#: inc/options-config.php:630
+msgid "Set the excerpt length (in number of words)"
+msgstr ""
+
+#: inc/options-config.php:647
+msgid "Logo Upload"
+msgstr "Unggah Logo"
+
+#: inc/options-config.php:652
+msgid "Logo"
+msgstr ""
+
+#: inc/options-config.php:652
+msgid "Alignment"
+msgstr "Perataan"
+
+#: inc/options-config.php:655
+msgid "Align Left"
+msgstr "Rata Kiri"
+
+#: inc/options-config.php:656
+msgid "Align Center"
+msgstr "Rata Tengah"
+
+#: inc/options-config.php:657
+msgid "Align Right"
+msgstr "Rata Kanan"
+
+#: inc/options-config.php:661
+msgid "A search form for your site."
+msgstr "Sebuah formulir pencarian untuk situs Anda."
+
+#: inc/options-config.php:671
+msgid "Featured Image Header"
+msgstr "Gambar Tajuk Andalan"
+
+#: inc/options-config.php:677
+msgid "Display post date?"
+msgstr "Perlihatkan tanggal pos?"
+
+#: inc/options-config.php:683
+msgid "Display item author if available?"
+msgstr "Tampilkan penulis jika tersedia?"
+
+#: inc/options-config.php:689
+msgid "Categories"
+msgstr "Kategori"
+
+#: inc/options-config.php:695
+msgid "Tags"
+msgstr "Tag"
+
+#: inc/options-config.php:703
+msgid "Styles"
+msgstr "Gaya"
+
+#: inc/options-config.php:711
+msgid "Primary Color"
+msgstr "primer"
+
+#: inc/options-config.php:717
+msgid "Base Color Scheme"
+msgstr "Skema Warna Dasar"
+
+#: inc/options-config.php:719
+msgid "Gray"
+msgstr "Abu-abu"
+
+#: inc/options-config.php:720
+msgid "Red"
+msgstr "Merah"
+
+#: inc/options-config.php:721
+msgid "Green"
+msgstr "Hijau"
+
+#: inc/options-config.php:722
+msgid "Blue"
+msgstr "Biru"
+
+#: inc/options-config.php:725
+msgid "Brown"
+msgstr "Cokelat"
+
+#: inc/options-config.php:726
+msgid "Orange"
+msgstr "Jingga"
+
+#: inc/options-config.php:727
+msgid "Tan"
+msgstr "Cokelat Kekuningan"
+
+#: inc/options-config.php:728
+msgid "Yellow"
+msgstr "Kuning"
+
+#: inc/options-config.php:729
+msgid "Purple"
+msgstr "Ungu"
+
+#: inc/options-config.php:730
+msgid "Silver"
+msgstr "Perak"
+
+#: inc/options-config.php:731
+msgid "Pink"
+msgstr "Pink"
+
+#: inc/options-config.php:737 inc/options-config.php:759
+#: inc/options-config.php:787
+msgid "Font Family"
+msgstr "Kelompok Font"
+
+#: inc/options-config.php:743 inc/options-config.php:765
+#: inc/options-config.php:793
+msgid "Font Sizes"
+msgstr "Ukuran Font"
+
+#: inc/options-config.php:754 inc/options-config.php:898
+msgid "Custom Background"
+msgstr "Latar Belakang Tersuai"
+
+#: inc/options-config.php:778
+msgid "Border color"
+msgstr "Warna garis tepi"
+
+#: inc/options-config.php:783
+msgid "Posts"
+msgstr "Pos"
+
+#: inc/options-config.php:806
+msgid "Metadata"
+msgstr "Metadata"
+
+#: inc/options-config.php:816
+msgid "Services Section"
+msgstr ""
+
+#: inc/options-config.php:820
+msgid "Projects Section"
+msgstr ""
+
+#: inc/options-config.php:824
+msgid "Background Image"
+msgstr "Gambar Latar belakang "
+
+#: inc/options-config.php:828
+msgid "Social Media"
+msgstr "Media sosial"
+
+#: inc/options-config.php:836
+msgid "Notes"
+msgstr "Catatan"
+
+#: inc/options-config.php:842
+msgid "Other Notes"
+msgstr "Catatan Lain"
+
+#: inc/options-config.php:848
+msgid "Submit label"
+msgstr ""
+
+#: inc/options-config.php:855
+msgid "Testimonials"
+msgstr ""
+
+#: inc/options-config.php:859
+msgid "Customers"
+msgstr ""
+
+#: inc/options-config.php:863
+msgid "Call to Action"
+msgstr "Call to Action"
+
+#: inc/options-config.php:873
+msgid "Show Sitewide"
+msgstr ""
+
+#: inc/options-config.php:880 inc/options-config.php:908
+#: inc/template-tags.php:285 inc/template-tags.php:290
+msgid "Hello, World!"
+msgstr "Hallo, Dunia"
+
+#: inc/options-config.php:907
+msgid "Text"
+msgstr "Teks"
+
+#: inc/options-config.php:926
+msgid "Advanced Options"
+msgstr "Opsi Lanjut"
+
+#: inc/options-config.php:930
+msgid "Reset all theme settings to default. Refresh the page after save to view full effects."
+msgstr ""
+
+#: inc/options-config.php:936
+msgid "Custom CSS Styles"
+msgstr "Gaya CSS Ubah Suai"
+
+#: inc/template-tags.php:37
+msgid "Leave a comment"
+msgstr "Tinggalkan sebuah komentar"
+
+#: inc/template-tags.php:37
+msgid "1 Comment"
+msgstr "1 Komentar"
+
+#: inc/template-tags.php:37
+msgid "% Comments"
+msgstr "% Komentar"
+
+#: inc/template-tags.php:48
+msgid "Featured"
+msgstr "Andalan"
+
+#: inc/template-tags.php:56 inc/template-tags.php:62
+msgid ", "
+msgstr ", "
+
+#: inc/template-tags.php:73
+msgid "Category: %s"
+msgstr "Kategori: %s"
+
+#: inc/template-tags.php:75
+msgid "Tag: %s"
+msgstr "Tag: %s"
+
+#: inc/template-tags.php:77
+msgid "Author: %s"
+msgstr "Penulis: %s"
+
+#: inc/template-tags.php:79
+msgid "Year: %s"
+msgstr "Tahun: %s"
+
+#: inc/template-tags.php:81
+msgid "Month: %s"
+msgstr "Bulan: %s"
+
+#: inc/template-tags.php:83
+msgid "Day: %s"
+msgstr "Hari: %s"
+
+#: inc/template-tags.php:105
+msgid "Archives: %s"
+msgstr "Arsip: %s"
+
+#: inc/template-tags.php:109
+msgid "%1$s: %2$s"
+msgstr "%1$s: %2$s"
+
+#: inc/template-tags.php:197
+msgid "Pingback:"
+msgstr "Ping-balik:"
+
+#: inc/template-tags.php:213
+msgid "Your comment is awaiting moderation."
+msgstr "Komentar Anda sedang menunggu moderasi."
+
+#: inc/template-tags.php:230
+msgid "Previous"
+msgstr "Sebelumnya"
+
+#: inc/template-tags.php:231
+msgid "Next"
+msgstr "Berikutnya"
+
+#: inc/template-tags.php:244
+msgid "Page"
+msgstr "Laman"
+
+#: inc/template-tags.php:250
+msgid "Older posts"
+msgstr "Pos-pos terdahulu"
+
+#: inc/template-tags.php:254
+msgid "Newer posts"
+msgstr "Pos-pos terbaru"
+
+#: inc/template-tags.php:306
+#, php-format
+msgid "Copyright &copy; %1$d %2$s."
+msgstr ""
+
+#: inc/template-tags.php:308
+msgid "Proudly powered by %s"
+msgstr "Dengan bangga ditenagai oleh %s"
+
+#: inc/template-tags.php:311
+msgid "%1$s by %2$s."
+msgstr "%1$s oleh %2$s."
+
+#: inc/template-tags.php:312
+msgid "Personal Portfolio WordPress Theme"
+msgstr ""
+
+#: search.php:17
+msgid "Search Results for: %s"
+msgstr "Hasil Pencarian untuk: %s"
+
+#: searchform.php:8
+msgid "Search &hellip;"
+msgstr "Cari &hellip;"
