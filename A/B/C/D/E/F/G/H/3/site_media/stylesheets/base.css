@@ -1,0 +1,220 @@
+
+*
+{
+    margin:0;
+    padding:0;
+}
+
+.honey {
+  display: none;
+}
+
+.g-recaptcha-wrap {
+    width: 290px!important;
+    overflow: hidden;
+}
+
+body
+{
+    font-family: trebuchet ms,modern;
+    font-size: 14px;
+    background-color: #e8e0d5;
+    color: #333333;
+    line-height: 18px;
+}
+
+#wrapper
+{
+background-image: url(/site_media/images/page_bg.jpg);
+}
+
+.errorlist {
+  font-weight: bold;
+  color: red;
+}
+
+#header, #subfooter
+{
+  background-color:#AD9B7B;
+}
+
+#banner img
+{
+  margin-left: 30px;
+}
+
+#navigation
+{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#navigation li
+{
+    background-image: url("/site_media/images/nav_sep.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    display: inline;
+    font-size: 14px;
+    list-style-type: none;
+    padding-right: 15px;
+}
+
+#navigation li.last
+{
+  background-image: none;
+  padding-right: 0px;
+}
+
+#navigation ul
+{
+  margin: 0 50px 0 30px;
+}
+
+#navigation a
+{
+  text-decoration: none;
+  padding: 5px;
+}
+
+a
+{
+  color: #000000;
+}
+
+a:hover
+{
+  color: #666666;
+}
+
+p
+{
+margin: 5px 0 5px 0;
+}
+
+h1
+{
+  font-size: 18px;
+  text-align: center;
+}
+
+h3
+{
+  text-align: center;
+  font-size: 16px;
+}
+
+#contributing_articles
+{
+  text-align: center;
+}
+
+#subfooter
+{
+  text-align: center;
+}
+
+#content
+{
+margin: 20px;
+}
+
+#content-wrapper
+{
+  border-left: 7px solid #AD9B7B;
+}
+
+#sidebox
+{
+  margin-left: 20px;
+  font-size: 10px;
+  text-align: center;
+}
+
+#footer_left
+{
+  margin-left: 10px;
+  text-align:center;
+}
+
+#footer_right
+{
+  text-align: center;
+  margin-top: 20px;
+}
+
+#footer
+{
+  border-top: 7px solid #AD9B7B;
+}
+
+#form
+{
+  width: 450px;
+  position: relative;
+  height: 280px;
+}
+
+#form label
+{
+  text-align: left;
+}
+
+#form input, #form textarea
+{
+  float: right;
+}
+
+#appointment_submit
+{
+  position:absolute;
+  bottom: 0px;
+  left: 150px;
+}
+
+.resume_headshot
+{
+  margin: 10px 220px;
+  max-width: 200px;
+}
+
+.announce
+{
+  font-size: 14px;
+}
+
+.faq
+{
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.faq p
+{
+  margin: 0px 20px 0px 20px;
+}
+
+.dvd_content li, .book_contents li
+{
+  list-style-type: disc;
+  font-size: 12px;
+  margin-left: 40px;
+}
+
+.service
+{
+  border: 1px solid #333333;
+  margin: 10px 10px 10px 0px;
+  padding: 10px;
+}
+
+.service_description
+{
+  font-size: 12px;
+}
+
+.service_price
+{
+  font-size: 12px;
+  font-weight: bold;
+}
