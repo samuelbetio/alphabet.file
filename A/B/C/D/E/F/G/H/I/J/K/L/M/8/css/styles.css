@@ -1,0 +1,239 @@
+/***********************
+         GENERAL
+************************/
+
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+#wrapper{
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+
+}
+a{
+  text-decoration: none;
+
+}
+img{
+  max-width: 100%;
+}
+h3{
+  margin: 0 0 1em 0;
+}
+/***********************
+         HEADING
+************************/
+
+header{
+  float: left;
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
+  width: 100%;
+}
+#logo{
+  text-align: center;
+  margin: 0;
+}
+
+h1{
+  font-family: 'Changa One', sans-serif;
+  margin: 15px 0;
+  font-size: 1.75em;
+  font-weight: normal;
+  line-height: 0.8em;
+}
+h2{
+  font-size: 0.75em;
+  margin: -5px 0 0;
+  font-weight: normal;
+}
+
+/***********************
+       NAVIGATION
+************************/
+nav {
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+}
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+
+}
+
+nav a {
+  font-weight: 800;
+  padding: 15px 10px;
+}
+
+/***********************
+       FOOTER
+************************/
+footer{
+  font-size: 0.75em;
+  text-align: center;
+  clear: both;
+  padding-top: 50px;
+  color: #ccc;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+#footer {
+   position: absolute;
+   bottom:0;
+   left: 16%;
+   width:67%;
+}
+
+
+
+/***********************
+     PAGE: HOME
+************************/
+
+
+/***********************
+     PAGE: ABOUT
+************************/
+
+
+/***********************
+     PAGE: CONTACT
+************************/
+
+
+/***********************
+         COLORS
+************************/
+
+body{
+  background-color: #fff;
+  color: #999;
+}
+/*green header*/
+header{
+  background: #6ab47b;
+  border-color: #599a68;
+}
+
+/* logo text */
+h1, h2{
+  color: #fff;
+}
+
+/*nav background on mobile devices*/
+nav{
+  background:#599a68;
+}
+
+nav a, nav a:visited {
+  color: #fff;
+}
+a{
+  color: #6ab47b;
+}
+/* selected nav link color*/
+nav a.selected, nav a:hover {
+  color: #32673f;
+}
+
+#text{
+  color: #599a68;
+}
+
+
+/***********************
+         BOOKING
+************************/
+
+.time-slot {
+}
+
+.time-slot input{
+  display:none;
+}
+
+.time-slot label{
+  padding:10px 20px;
+  color:#FFF;
+  cursor: pointer;
+  background:#EEE;
+  border-radius:5px;
+  transition: 0.3s ease all;
+}
+
+.time-slot input:checked ~ label{
+  background: #f2dede;
+  cursor: not-allowed;
+  animation: flashBooked 0.5s ease;
+}
+
+.time-slot input:not(:checked) ~ label{
+  background: #6AB074;
+  animation: flashAvailable 0.5s ease;
+}
+
+/* Animation for time slot to flash red  when booked */
+@keyFrames flashBooked{
+  0%, 100% {background:#f2dede; transform:scale(1);}
+  50%      {background: #F99090; transform:scale(1.5);}
+}
+
+/* Animation for time slot to flash green when available */
+@keyFrames flashAvailable{
+  0%, 100% {background:#6AB074; transform:scale(1);}
+  50%      {background: rgb(119, 218, 78); transform:scale(1.5);}
+}
+
+
+.text-center{
+  margin-top: 70px;
+}
+
+/***********************
+         SLIDESHOW
+************************/
+.slideshow {
+  margin-left: 10%;
+  width: 80%;
+
+}
+
+/***********************
+      Booking Page
+************************/
+#mainDiv{
+  width =80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.textbox{
+  width: 20%;
+  margin: 5px 30% 5px 30%;
+}
+
+.button{
+  width: 20%;
+  margin: 10px 30% 5px 30%;
+}
+
+.bookingBtn{
+  margin: 5px 5px;
+  padding: 25px 20px;
+  color: white;
+  background-color: green;
+}
