@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' type='text/css'>
+  </head>
+  <body>
+    <h1>Passwordless - Login</h1>
+    <p>
+    User: 
+    <% if(user) { %>
+    	<%= user %> (<a href='/logout'>logout</a>)
+    <% } else { %>
+    	Not logged in
+    <% } %>
+    </p>
+    <p>
+    <form action="/sendtoken" method="POST">
+      Email:
+      <br><input name="user" type="text">
+      <br><input type="submit" value="Login / Register">
+    </form>
+    </p>
+    <ul>
+      <li>
+        <a href='/'>Back to homepage</a>
+      </li>
+      <li>
+        <a href='/restricted'>Restricted page</a>
+      </li>
+    </ul>
+  </body>
+</html>
