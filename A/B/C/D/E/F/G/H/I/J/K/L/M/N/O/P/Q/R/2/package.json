@@ -1,0 +1,35 @@
+{
+  "name": "respond-proxy.html",
+  "version": "0.0.3",
+  "description": "HA Proxy status - http",
+  "test": {
+    "chai": "",
+    "mocha": "^2.5.3",
+    "express": "^4.14.0",
+    "hapi": "^15.0.3"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuelbetio/respond-proxy.html.git"
+  },
+  "keywords": [
+    "ha",
+    "http",
+    "status",
+    "for",
+    "node.js"
+  ],
+  "author": "Teo Deleanu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samuelbetio/respond-proxy.html"
+  },
+  "homepage": "https://github.com/samuelbetio/respond-proxy.html#readme"
+}
