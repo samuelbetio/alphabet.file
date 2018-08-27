@@ -1,0 +1,82 @@
+body {
+    color : #A4C7DF;
+    background-color : #334455;
+    font-family: 'PT Sans', sans-serif;
+    font-size : 14px;
+    cursor : default;
+}
+
+a {
+    color: #B6E3F3;
+    text-shadow: 0px 0px 3px rgba(100, 187, 214, 0.31);
+}
+
+a:hover {
+    color: #D2F3FF;
+    text-shadow: 0px 0px 4px rgba(180, 237, 255, 0.31);
+}
+
+
+.title {
+    padding-top : 30px;
+    font-size: 26px;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 14px;
+    text-align: center;
+}
+
+
+.container {
+    width: 700px;
+    height: 400px;
+    margin-top : 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.dragscroll {
+    border: 1px solid rgb(31, 40, 49);
+    background-color : #283849;
+    overflow: auto;
+}
+
+.vertical.dragscroll {
+    width: 270px;
+    height: 380px;
+    float: left;
+    padding: 10px;
+}
+
+.free.dragscroll {
+    float: right;
+    width: 400px;
+    height: 400px;
+}
+
+.horizontal.dragscroll {
+    margin-top : 10px;
+    width: 700px;
+    margin-left: auto;
+    background-color: #000000;
+    margin-right: auto;
+}
+
+.free, .horizontal {
+    cursor : -webkit-grab;
+    cursor : -moz-grab;
+    cursor : -o-grab;
+    cursor : grab;
+}
+
+
+.free:active, .horizontal:active {
+    cursor : -webkit-grabbing;
+    cursor : -moz-grabbing;
+    cursor : -o-grabbing;
+    cursor : grabbing;
+}
+
+
