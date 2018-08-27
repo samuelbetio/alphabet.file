@@ -1,0 +1,322 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />    
+    <title>Microlight.js, code highlighting library</title>
+
+    <meta property="og:title" content="microlight.js (2.2k)" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://asvd.github.io/microlight/" />
+    <meta property="og:image" content="https://asvd.github.io/microlight/microlight-preview.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="200" />
+    <meta property="og:image:height" content="200" />
+    <meta property="og:description" content="Highlights code in any programming language" />
+
+
+    <link
+       href='https://fonts.googleapis.com/css?family=PT+Sans+Caption&subset=latin'
+       rel='stylesheet' type='text/css'>
+
+    <link
+       href='https://fonts.googleapis.com/css?family=PT+Sans&subset=latin'
+       rel='stylesheet' type='text/css'>
+
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78377553-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+
+    <script type="text/javascript" src="microlight.js"></script>
+    <script type="text/javascript" src="intence.js"></script>
+    <script type="text/javascript" src="dragscroll.js"></script>
+
+  </head>
+  <body>
+    <div class=wrapper>
+        <div class=content>
+          <h1><span class=logo>microlight.js</span> <span class=size>2.2k</span></h1>
+          <p>
+            <span class=logo>microlight.js</span> is
+            a tiny <a href="https://github.com/asvd/microlight"
+            target="_blank">open-source</a> library which
+            improves readability of code snippets
+            by <span class=logo>highlighting</span>, for any
+            programming language, without attaching additional
+            language-packages or styles:
+          </p>
+
+
+          <div class="dragscroll intence" scrollImg=scroll.png>
+          <div class=microlight>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My page&lt;/title&gt;
+
+    &lt;!--  some embedded js --&gt;
+    &lt;script type="text/javascript"&gt;
+      /**
+       * Bubble-sorts the input array
+       */
+      function(input) {
+          // switches the two elems if needed
+          // returns true if switched
+          function switchEls(idx) {
+              var switched = false;
+
+              if (input[idx] &lt; input[idx-1]) {
+                  var tmp = input[idx];
+                  input[idx] = input[idx-1];
+                  input[idx-1] = tmp;
+                  switched = true;
+              }
+
+              return switched;
+          }
+
+          var switched;
+          do {
+              switched = false;
+              for (var i = 1; i &lt; input.length; i++) {
+                  switched |= switchEls(i);
+              }
+          } while (switched);
+
+          return input;
+      }
+    &lt;/script&gt;
+
+    &lt;!--  a little bit of css --&gt;
+    &lt;style&gt;
+      body {
+          background-color: black;
+      }
+
+      h1 {
+          color: white;
+          font-family: monospace;
+      } 
+    &lt;/style&gt;
+
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Welcome to my page&lt;/h1&gt;
+
+
+    &lt;!--  and finally php --&gt;
+    &lt;?php 
+       // write "Hello world!" 10 times
+       for ($i = 1; $i &lt;=10; $i++) {
+           echo "Hello world!&lt;br/&gt;";
+       }
+    ?&gt;
+
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</div>
+</div>
+
+          <h3>Language-agnostic</h3>
+
+          <p>
+            Unlike other code-highlighting
+            solutions, <span class=logo>microlight.js</span> does not
+            keep a set of rules for many languages. Instead it uses a
+            general highlighting strategy providing a reasonable
+            highlight for most of them. As result:
+          </p>
+
+          <ul>
+            <li>The library size is extremely
+            compact<div class=comment>2.2k, seriously, can you
+            imagine!</div></li>
+            <li>You don't need to specify which language is
+            that <div class=comment>and you don't need to bother users
+            with this as well</div></li>
+            <li>The code can be mixed containing several languages
+            <div class=comment>just like in the example above</div></li>
+          </ul>
+
+          <p>
+            In fact, <span class=logo>microlight.js</span> does not
+            care about what language the code is written in, nor does
+            it care about the code structure. It just goes through the
+            code and <span class=logo>highlights</span>.
+          </p>
+
+
+          <h3>Colorless highlight</h3>
+
+          <p>
+            <span class=logo>microlight.js</span> aims at increasing
+            code readability, not at converting code into
+            rainbow. Instead of changing colors, it only alters font
+            type and look. Such approach has the following benefits:
+          </p>
+
+          <ul>
+            <li>No need to tune-up the color theme to make it match to
+            the design &mdash; it will match out-of-the-box</li>
+            <li>There is no CSS shipped
+            with <span class=logo>microlight.js</span>. The library
+            contains everything needed bundled in 2.2k</li>
+            <li>Not involving colors makes them available for other
+            purposes, like displaying a diff</li>
+            <li>Colorless highlight does not put any disadvantages on
+            people with color blindness</li>
+            <li>It looks cool<div class=comment>okay, this was the primary reason for such a styling</div></li>
+          </ul>
+
+
+          <h3>Compatibility</h3>
+
+          <p>
+            <span class=logo>microlight.js</span> is written in
+            vanilla-js and is shipped as a UMD-module, so it should
+            work in any reasonable environment. The library was
+            successfully tested on recent versions of major browsers:
+          </p>
+
+        <div class=browsers>
+          <div class=browser><img src="icons/chrome.png"/><div>10+</div></div>
+          <div class=browser><img src="icons/opera.png"/><div>12+</div></div>
+          <div class=browser><img src="icons/ie.png"/><div>9+</div></div>
+          <div class=browser><img src="icons/ff.png"/><div>14+</div></div>
+          <div class=browser><img src="icons/safari.png"/><div>7+</div></div>
+        </div>
+
+
+
+
+
+          <h3>Setting-up</h3>
+
+          <p>
+            Download and unpack
+            the <a href="https://github.com/asvd/microlight/releases/download/v0.0.7/microlight-0.0.7.tar.gz">distribution</a>,
+            or install it using bower / npm:
+          </p>
+
+          <div class="microlight inline">$ bower install microlight</div>
+          <div class="microlight inline">$ npm install microlight</div>
+
+          <p>
+            Load <span class=logo>microlight.js</span> in a
+            preferable way (as a UMD-module):
+          </p>
+
+          <div class="microlight inline">&lt;script src="path/to/microlight.js"&gt;&lt;/script&gt;</div>
+
+          <p>
+            Create an element with code content to be highlighted, and
+            add the <span class=logo>microlight</span> class (if you
+            prefer to use another class name for the code elements to
+            highlight, provide it to
+            the <span class=logo>reset()</span> method as described
+            below). Don't forget to mask the html-related characters,
+            and apply the monospace style:
+          </p>
+
+          <div class="microlight inline">&lt;div class=microlight&gt;for (var i = 0; i&amp;lt;=10; i++) {
+    // say hello
+    echo("hello");
+}&lt;/div&gt;</div>
+          <div class="microlight inline">.microlight {
+    font-family : monospace;
+    white-space : pre;
+}</div>
+
+          <p>
+            The result will look like this:
+          </p>
+
+<div class="microlight example">for (var i = 0; i&lt;=10; i++) {
+    // say hello
+    echo("hello");
+}</div>
+
+          <p>
+            Tune-up the element style according to your taste:
+          </p>
+
+          <div class="microlight inline">.microlight {
+    font-family : monospace;
+    white-space : pre;
+    background-color : #C4E4E8;
+    color            : #052C36;    
+}</div>
+          <p>
+            &mdash; looks like this:
+          </p>
+
+<div class="microlight example2">for (var i = 0; i&lt;=10; i++) {
+    // say hello
+    echo("hello");
+}</div>
+          
+
+
+          <p>
+            If you change the content on the fly, or switch the style
+            of an element with the highlighted code, or add
+            the <span class=logo>microlight</span> class to the new
+            nodes, invoke the following to re-apply the highlight:
+          </p>
+
+          <div class="microlight inline">microlight.reset();</div>
+
+          <p>
+            You can also use this method to specify a custom class
+            name instead of <span class=logo>microlight</span> for the
+            elements containing code:
+          </p>
+
+          <div class="microlight inline">microlight.reset("code");</div>
+
+            <div class=comment>
+              &mdash; will highlight the content inside elements
+              having class=code
+            </div>
+
+          <p>
+            Have fun!
+          </p>
+
+          <h3><span class=logo>microlight.js</span> minified and highlighted by itself</h3>
+
+<div class="microlight example3">!function(e,t){"function"==typeof define&amp;&amp;define.amd?define(["exports"],t):t("undefined"!=typeof exports?exports:e.microlight={})}(this,function(e){var t,i=window,n=document,o="appendChild",r="test",a=";text-shadow:",l="opacity:.",s=" 0px 0px ",c="3px 0px 5",d=")",u=n.getElementsByClassName("microlight"),f=function(e){for(e=0;t=u[e++];)for(var f,p,h,g,m,y=t.textContent,x=0,b=y[0],w=1,v=t.innerHTML="",k=0,C=/(\d*\, \d*\, \d*)(, ([.\d]*))?/g.exec(i.getComputedStyle(t).color),N="px rgba("+C[1]+",",E=C[3]||1;p=f,f=7&gt;k&amp;&amp;"\\"==f?1:w;){if(w=b,b=y[++x],g=v.length&gt;1,!w||k&gt;8&amp;&amp;"\n"==w||[/\S/[r](w),1,1,!/[$\w]/[r](w),("/"==f||"\n"==f)&amp;&amp;g,'"'==f&amp;&amp;g,"'"==f&amp;&amp;g,y[x-4]+p+f=="--&gt;",p+f=="*/"][k])for(v&amp;&amp;(t[o](m=n.createElement("span")).setAttribute("style",["",a+s+9+N+.7*E+"),"+s+2+N+.4*E+d,l+6+a+s+7+N+E/4+"),"+s+3+N+E/4+d,l+7+a+c+N+E/5+"),-"+c+N+E/5+d,"font-style:italic;"+l+5+a+c+N+E/4+"),-"+c+N+E/4+d][k?3&gt;k?2:k&gt;6?4:k&gt;3?3:+/^(a(bstract|lias|nd|rguments|rray|s(m|sert)?|uto)|b(ase|egin|ool(ean)?|reak|yte)|c(ase|atch|har|hecked|lass|lone|ompl|onst|ontinue)|de(bugger|cimal|clare|f(ault|er)?|init|l(egate|ete)?)|do|double|e(cho|ls?if|lse(if)?|nd|nsure|num|vent|x(cept|ec|p(licit|ort)|te(nds|nsion|rn)))|f(allthrough|alse|inal(ly)?|ixed|loat|or(each)?|riend|rom|unc(tion)?)|global|goto|guard|i(f|mp(lements|licit|ort)|n(it|clude(_once)?|line|out|stanceof|t(erface|ernal)?)?|s)|l(ambda|et|ock|ong)|m(icrolight|odule|utable)|NaN|n(amespace|ative|ext|ew|il|ot|ull)|o(bject|perator|r|ut|verride)|p(ackage|arams|rivate|rotected|rotocol|ublic)|r(aise|e(adonly|do|f|gister|peat|quire(_once)?|scue|strict|try|turn))|s(byte|ealed|elf|hort|igned|izeof|tatic|tring|truct|ubscript|uper|ynchronized|witch)|t(emplate|hen|his|hrows?|ransient|rue|ry|ype(alias|def|id|name|of))|u(n(checked|def(ined)?|ion|less|signed|til)|se|sing)|v(ar|irtual|oid|olatile)|w(char_t|hen|here|hile|ith)|xor|yield)$/[r](v):0]),m[o](n.createTextNode(v))),h=k&amp;&amp;7&gt;k?k:h,v="",k=11;![1,/[\/{}[(\-+*=&lt;&gt;:;|\\.,?!&amp;@~]/[r](w),/[\])]/[r](w),/[$\w]/[r](w),"/"==w&amp;&amp;2&gt;h&amp;&amp;"&lt;"!=f,'"'==w,"'"==w,w+b+y[x+1]+y[x+2]=="&lt;!--",w+b=="/*",w+b=="//","#"==w][--k];);v+=w}};e.reset=f,"complete"==n.readyState?f():i.addEventListener("load",f,0)});</div>
+
+          <br/>
+
+
+          <p class=footer>
+            <a href="https://github.com/asvd/microlight" target="_blank">github.com/asvd/microlight</a>
+            <br/>
+            <a href="https://twitter.com/asvd0" target="_blank">twitter.com/asvd0</a>
+            <br/>
+            <br/>
+            spring of 2016, munich
+          </p>
+
+          <br/>
+          <br/>
+          <br/>
+    </div>
+  </body>
+</html>
+
+

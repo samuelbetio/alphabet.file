@@ -1,0 +1,198 @@
+html {
+    height: 100%;
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(41, 60, 65);
+    color: #C1DEE6;
+    font-size: 14px;
+    font-family: 'PT Sans', sans;
+    cursor: default;
+    height: 100%;
+    padding: 0px;
+    margin : 0px;
+}
+
+::selection {
+  background: rgb(149, 182, 191);
+}
+
+::-moz-selection {
+  background: rgb(149, 182, 191);
+}
+
+
+
+
+
+p {
+    text-align: justify;
+    padding-top: 4px;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    width : 500px;
+    height : 100px;
+}
+
+
+h1, h3 {
+    font-family: 'PT Sans Caption', sans;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 20px;
+}
+
+h3 {
+    color : #FAFEFF;
+    text-shadow: 0px 0px 9px rgba(181, 247, 255,0.5),
+                 0px 0px 2px rgba(181, 247, 255,0.4);
+}
+
+
+.intence {
+    overflow: hidden;
+    height : 300px;
+}
+
+.intence, .microlight.example, .microlight.example3 {
+    border : 1px solid #3C575B;
+    margin-bottom: 5px;
+    background-image: url('bg.png');
+}
+
+
+.intence, .microlight.example, .microlight.example3, .microlight.example2 {
+    border-radius: 1px;
+    box-shadow: 2px 2px 20px -7px rgba(0, 0, 0, .6);
+}
+
+.microlight {
+    font-family: 'Droid Sans Mono', monospace;
+    white-space: pre;
+    padding : 5px;
+    color: #B5F7FF;
+}
+
+.microlight.inline {
+    margin-bottom: 5px;
+    background-color: #1F2F33;
+}
+
+.microlight.example {
+}
+
+.microlight.example2 {
+    border : 1px solid #C4E4E8;
+    margin-bottom: 5px;
+    background-color: #C4E4E8;
+    color:#052C36;    
+}
+
+
+
+.microlight.example3 {
+    white-space : normal;
+    word-break : break-all;
+    overflow-wrap: break-word;
+}
+
+
+.logo {
+    color : #FAFEFF;
+    text-shadow: 0px 0px 9px rgba(181, 247, 255,0.5),
+                 0px 0px 2px rgba(181, 247, 255,0.4);
+}
+
+h1 .size {
+    font-size: 12pt;
+}
+
+.footer {
+    font-size: 8pt;
+    line-height: 1.5;
+    text-align: center;
+    padding-top: 40px;
+}
+
+li {
+    padding-bottom: 8px;
+}
+
+
+
+
+.dragscroll {
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    cursor: -o-grab;
+    cursor: grab;
+    margin-bottom: 24px;
+}
+
+.dragscroll:active {
+    cursor : -webkit-grabbing;
+    cursor : -moz-grabbing;
+    cursor : -o-grabbing;
+    cursor : grabbing;
+}
+
+.comment {
+    color : #60A6A5;
+    font-style: italic;
+}
+
+
+a {
+    color: #CCFDF5;
+    text-shadow: 0px 0px 7px rgba(156, 255, 237, 0.5);
+}
+
+a:hover {
+    color: #EDFFFC;
+    text-shadow: 0px 0px 12px rgba(156, 255, 237, 0.9);
+}
+
+
+
+.browsers {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom : 00px;
+    margin-top : 0px;
+    width: 240px;
+    height: 60px;
+}
+
+.browser {
+    float : left;
+    padding: 4px;
+    width: 40px;
+}
+
+.browser img {
+    width: 40px;
+    height: 40px;
+    opacity : .9;
+}
+
+.browser div {
+    margin-top : -2px;
+    margin-bottom: 0px;
+    text-align: center;
+    padding-left: 4px;
+    font-size: 10px;
+    width: 40px;
+    font-family: sans;
+}
+
