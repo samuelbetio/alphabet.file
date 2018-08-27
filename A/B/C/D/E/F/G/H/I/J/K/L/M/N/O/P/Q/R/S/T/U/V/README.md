@@ -7,5 +7,14 @@ You can use the [editor on GitHub](https://github.com/samuelbetio/alphabet.file/
 - ## **Back** to file [U](../)
 - ## **Next** to file [W](W/)
 
+- ## **V 1** - [1](1/)
+- ## **V 2** - [2](2/)
+- ## **V 3** - [3](3/)
+- ## **V 4** - [4](4/)
+- ## **V 5** - [5](5/)
+- ## **V 6** - [6](6/)
 - ## **V 7/1** - [Victoria Neborak](7/1/)
 - ## **V 7/2** - [Day 25](7/2/)
+- ## **V 8** - [8](8/)
+- ## **V 9** - [9](9/)
+
