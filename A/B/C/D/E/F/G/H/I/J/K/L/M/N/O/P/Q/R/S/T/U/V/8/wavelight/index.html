@@ -1,0 +1,102 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />    
+    <title>Wavelight, code highlighting library</title>
+
+    <meta property="og:title" content="wavelight.js" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://asvd.github.io/wavelight/" />
+<!--    <meta property="og:image" content="https://asvd.github.io/wavelight/microlight-preview.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="200" />
+    <meta property="og:image:height" content="200" /> -->
+    <meta property="og:description" content="Highlights code in any programming language" />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script type="text/javascript" src="wavelight.js"></script>
+
+  </head>
+  <body>
+    <div class=wavelight
+         contenteditable=true
+         spellcheck=false>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My page&lt;/title&gt;
+
+    &lt;?php 
+       // write "Hello world!" 10 times
+       for ($i = 1; $i &lt;=10; $i++) {
+           echo "Hello world!&lt;br/&gt;";
+       }
+    ?&gt;
+
+    &lt;!--  some embedded js --&gt;
+    &lt;script type="text/javascript"&gt;
+      /**
+       * Bubble-sorts the input array
+       */
+      function(input) {
+          // switches the two elems if needed
+          // returns true if switched
+          function switchEls(idx) {
+              var switched = false;
+<i>
+              if (input[idx] &lt; input[idx-1]) {
+                  var tmp = input[idx];
+                  input[idx] = input[idx-1];
+                  input[idx-1] = tmp;
+                  switched = true;
+              }
+</i>
+              return switched;
+          }
+
+          var switched;
+          do {
+              switched = false;
+              for (var i = 1; i &lt; input.length; i++) {
+                  switched |= switchEls(i);
+              }
+          } while (switched);
+
+          return input;
+      }
+    &lt;/script&gt;
+<b>
+    &lt;!--  a little bit of css --&gt;
+    &lt;style&gt;
+      body {
+          background-color: black;
+      }
+
+      h1 {
+          color: white;
+          font-family: monospace;
+      } 
+    &lt;/style&gt;
+</b>
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Welcome to my page&lt;/h1&gt;
+
+
+    &lt;!--  and finally php --&gt;
+    &lt;?php 
+       // write "Hello world!" 10 times
+       for ($i = 1; $i &lt;=10; $i++) {
+           echo "Hello world!&lt;br/&gt;";
+       }
+    ?&gt;
+
+
+  &lt;/body&gt;
+&lt;/html&gt;
+    </div>
+  </body>
+</html>
+
