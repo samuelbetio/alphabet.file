@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Secured banner example</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class=centered>
+      <div class=rel>
+
+        <h3>banner</h3>
+        <a href=# id=link>
+          <div class=image id=image></div>
+        </a>
+
+        <div class=text>
+
+          This is a demo for
+          the <a href='https://gist.github.com/asvd/415db1212e299205aa0c'>
+          RPC for the jailed JavaScript</a>.
+
+          <br/><br/>
+
+          The squared area above is a place for a partner's
+          advertising banner managed by a "3rd party code" loaded as a
+          restricted plugin. The potentially insecure code runs in a
+          Worker and cannot access the main document, with except for
+          the two methods explicitily exported by the application: for
+          changing the url the banner is pointing to, and for changing
+          the banner image. Even if the Plugin performs an attempt to
+          set too big image, it will be cropped by the application.
+
+          <br/><br/>
+
+          <a href='https://asvd.github.io/rpcjs/banner.tar.gz'>Download
+          this demo</a> 4 kb
+          </a>
+
+
+        </div>
+
+      </div>
+    </div>
+
+    <script type="text/javascript" src="application.js"></script>
+  </body>
+</html>
+
