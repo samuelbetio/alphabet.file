@@ -1,0 +1,130 @@
+/* Generics */
+
+.DlHighlight {
+    color: #48AFFF;
+    text-shadow: 0px 0px 5px rgba(125, 184, 231, 0.13);
+/*
+    border-left: 1px solid rgba(54, 143, 213, 0.38);
+    background-color: rgba(103, 165, 214, 0.04);
+    margin-left: -20px;
+    padding-left: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: -3px 0px 8px -4px rgba(54, 143, 213, 0.32);
+    line-height : 12pt;
+*/
+
+}
+
+.DlHighlight pre { margin: 0; padding: 0; }
+
+.DlHighlight .keyword {
+color: #6BBEFF;
+text-shadow: 0px 0px 8px rgba(160, 198, 228, 0.34);
+}
+
+.DlHighlight .builtin {
+    text-shadow: 0px 0px 5px rgba(125, 184, 231, 0.28);
+    color: #55AAED;
+ }
+
+.DlHighlight .string {
+font-style: italic;
+color : #3B87C4;
+}
+
+.DlHighlight .string .before, .DlHighlight .string .after {
+font-style: italic;
+color : #27618F;
+}
+
+.DlHighlight .regexp {
+    font-weight: bold;
+    color: #1979C3;
+}
+.DlHighlight .regexp .before, .DlHighlight .regexp .after {
+    font-weight: bold;
+    color: #59AAE9;
+}
+
+.DlHighlight .comment {
+    color: #4E7EA5;
+}
+.DlHighlight .comment .before, .DlHighlight .comment .after {
+    color: #4E7EA5;
+}
+
+.DlHighlight .hashkey {
+    color : #5B9DD1;
+}
+
+.DlHighlight .hasharrow {
+    color : #27618F;
+    text-shadow: 0px 0px 8px rgba(160, 198, 228, 0.34);
+}
+
+.DlHighlight .paren {
+
+}
+
+.DlHighlight .operator {
+
+}
+
+.DlHighlight .error {
+
+}
+
+.DlHighlight .defun {
+
+}
+
+.DlHighlight .line-numbers {
+  float: left;
+  margin-left: -4.5em;
+  width: 3em;
+  text-align: right;
+  color: #999;
+  font: 0.9em tahoma,verdana,sans-serif;
+  padding-top: 0.05em;
+}
+.DlHighlight .line-numbers:after { content: "." }
+
+/* XML */
+
+.DlHighlight .xml-tag-close .before { color: #52a; }
+
+.DlHighlight .xml-entity { color: #b2a; }
+.DlHighlight .xml-entity .before, .DlHighlight .xml-entity .after { color: #607; }
+
+/* CSS */
+
+.DlHighlight .css-class {
+    color: #000;
+    font-style: italic;
+}
+
+.DlHighlight .css-pseudo-class {
+    color: #777;
+}
+
+.DlHighlight .css-id {
+    color: #A6D8FF;
+    text-shadow: 0px 0px 5px rgba(125, 184, 231, 0.66);
+}
+
+.DlHighlight .css-color-spec { color: #a51; }
+.DlHighlight .css-length {
+    color: #48AFFF;
+}
+
+.DlHighlight .css-length .after {
+    font-weight: bold;
+}
+
+.DlHighlight .css-declaration-kw {
+}
+
+.DlHighlight .css-comma {
+    color: red;
+}
