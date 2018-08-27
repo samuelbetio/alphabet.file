@@ -1,0 +1,222 @@
+
+
+html,body { height: 100%; margin: 0px; padding: 0px; }
+
+body {
+    color : #112233;
+    background-color : #FFFFFF;
+    font-family: 'PT Sans', sans-serif;
+    font-size : 14px;
+    cursor : default;
+}
+
+a {
+    color: #445566;
+    text-shadow: 0px 0px 3px rgba(100, 187, 214, 0.31);
+}
+
+a:hover {
+    color: #667788;
+    text-shadow: 0px 0px 4px rgba(180, 237, 255, 0.31);
+}
+
+
+.title {
+    padding-top : 30px;
+    padding-bottom: 30px;
+    font-size: 26px;
+    text-align: center;
+}
+
+
+.subtitle {
+    font-size: 14px;
+    text-align: left;
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 40px;
+}
+
+
+.clear {
+    clear: both;
+}
+
+.block {
+    width : 800px;
+    margin-bottom : 10px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+}
+
+
+.side {
+    float : left;
+    width: 200px;
+}
+
+.middle {
+    float : left;
+    width: 378px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.scrollable {
+    overflow: auto;
+}
+
+.inner {
+    overflow: visible;
+}
+
+.box {
+    border: 1px solid rgb(185, 204, 223);
+    background-color : #EAEEF4;
+}
+
+    
+
+.inner {
+    padding : 10px;
+}
+
+
+.section h3 {
+    font-size: 26px;
+}
+
+.section p {
+    font-size: 16px;
+}
+
+
+
+#article {
+    height : 200px;
+}
+
+.hint {
+    font-style: italic;
+    color : #4A6177;
+}
+
+.hint_bloomberg {
+    text-align: right;
+    padding-right: 4px;
+    padding-top: 11px;
+}
+
+.hint_dailybeast {
+    text-align: center;
+    padding-top: 11px;
+}
+
+.hint_icons {
+    text-align: right;
+    padding-right: 15px;
+    padding-top: 11px;
+    float : left;
+}
+
+.hint_intence {
+    text-align: center;
+}
+
+
+.bloomberg {
+    padding: 1px;
+}
+
+#bloomberg_title {
+    font-size: 20px;
+    padding: 3px;
+}
+
+#bloomberg_line {
+    background-color: #aabbcc;
+    height: 3px;
+    width: 0px;
+}
+
+.dailybeast_button {
+    margin: 3px;
+    position: relative;
+    height: 27px;
+    background-color : rgb(221, 228, 234);
+}
+
+.dailybeast_currentmark {
+    position: absolute;
+    height: 100%;
+    width : 3px;
+    background-color : #6A8299;
+    opacity : 0;
+    transition : opacity .2s;
+}
+
+.dailybeast_indicator {
+    position: absolute;
+    width: 0px;
+    height: 100%;
+    background-color : #BECCDA;
+}
+
+
+.dailybeast_label {
+    position: absolute;
+    font-size : 16px;
+    margin: 3px;
+    padding-left: 10px;
+    width: 100%;
+    height: 100%;
+    color : #112233;
+    transition: color .2s;
+}
+
+
+.dailybeast_label:hover {
+    color : #8899AA;
+    cursor : pointer;
+}
+
+
+#icons_container {
+    float : right;
+    width: 100px;
+}
+
+
+.icon_block {
+    position: relative;
+    height: 100px;
+    width: 100px;
+}
+
+.icon_indicator {
+    position: absolute;
+    width: 100%;
+    background-color : #CFDBE8;
+}
+
+.icon_position {
+    position: absolute;
+    background-color : #BDCBD8;
+    bottom: 0px;
+    width: 100%;
+}
+
+.icon_image {
+    position: absolute;
+    opacity : .3;
+}
+
+
+.icon_image:hover {
+    opacity : 1;
+    cursor : pointer;
+}
+
