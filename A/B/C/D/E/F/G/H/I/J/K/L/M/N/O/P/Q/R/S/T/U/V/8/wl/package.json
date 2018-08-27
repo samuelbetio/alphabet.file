@@ -1,0 +1,30 @@
+{
+  "author": "Dmitry Prokashev <heliosframework@gmail.com>",
+  "name": "wl",
+  "description": "Whenable events implementation",
+  "version": "0.2.1",
+  "keywords": [
+    "async",
+    "asynchronous",
+    "event",
+    "events",
+    "whenable",
+    "promise",
+    "promises",
+    "isomorphic"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/asvd/wl.git"
+  },
+  "scripts": {
+    "test": "node tests/tests_node.js"
+  },
+  "main": "wl.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
