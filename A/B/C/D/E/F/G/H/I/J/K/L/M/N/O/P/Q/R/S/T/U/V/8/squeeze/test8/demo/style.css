@@ -1,0 +1,41 @@
+body {
+    background-color: #112233;
+    color: #aabbcc;
+    font-family: sans;
+    font-size: 12px;
+    line-height: 21px;
+    cursor: default;
+}
+
+
+
+.normal {
+    top: 100px;
+    left: 100px;
+    width: 20%;
+    height: 400px;
+    overflow: auto;
+    background-color:#223344;
+    position : static;
+    margin: 20px;
+
+}
+
+
+
+
+
+.second {
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    width: 20%;
+    height: 400px;
+    overflow: auto;
+    background-color:#223344;
+
+}
+
+
+
+
