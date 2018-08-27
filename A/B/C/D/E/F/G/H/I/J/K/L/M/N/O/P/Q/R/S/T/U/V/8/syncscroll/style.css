@@ -1,0 +1,121 @@
+body {
+    color : #334455;
+    background-color: #aabbcc;
+    font-family: 'PT Sans', sans-serif;
+    font-size : 14px;
+    cursor : default;
+}
+
+a {
+    color: #556677;
+    text-shadow: 0px 0px 3px rgba(100, 187, 214, 0.31);
+}
+
+a:hover {
+    color: #778899;
+    text-shadow: 0px 0px 4px rgba(180, 237, 255, 0.31);
+}
+
+
+.title {
+    padding-top : 30px;
+    font-size: 26px;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 14px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+.frame {
+    border: 1px solid rgb(31, 40, 49);
+    background-color : #283849;
+    color : #aabbcc;
+    overflow: auto;
+    position: relative;
+}
+
+
+.clear {
+    clear: both;
+}
+
+.mid {
+    width: 910px;
+    height: 300px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.goethe {
+    width: 270px;
+    white-space: nowrap;
+    height: 300px;
+    float : left;
+    font-size: 10px;
+    padding: 5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.hsize {
+    width: 30px;
+    height: 100px;
+    float: left;
+}
+
+
+.earth {
+    width: 440px;
+    height: 300px;
+    overflow: auto;
+}
+
+
+.left {
+    float : left;
+}
+
+
+
+.right {
+    float : right;
+}
+
+
+.mid.time.romanian {
+    height: auto;
+}
+
+.mid.time.floss {
+    height: auto;
+}
+
+.mid.time.floss img {
+    height: 220px;
+}
+
+.mid.time.romanian img {
+    height: 400px;
+}
+
+
+.dragscroll {
+    cursor : -webkit-grab;
+    cursor : -moz-grab;
+    cursor : -o-grab;
+    cursor : grab;
+}
+
+
+.dragscroll:active {
+    cursor : -webkit-grabbing;
+    cursor : -moz-grabbing;
+    cursor : -o-grabbing;
+    cursor : grabbing;
+}
+
