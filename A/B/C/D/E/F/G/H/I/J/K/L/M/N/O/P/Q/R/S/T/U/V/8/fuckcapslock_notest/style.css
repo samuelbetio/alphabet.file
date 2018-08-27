@@ -1,0 +1,241 @@
+body {
+    color : #A4C7DF;
+    background-color : #001122;
+    font-family: 'PT Sans', sans-serif;
+    font-size : 14px;
+    cursor : default;
+}
+
+
+::selection {
+  background: #8599ad;
+}
+
+::-moz-selection {
+  background: #8599ad;
+}
+
+
+
+
+.title {
+    padding-top : 30px;
+    font-size: 26px;
+    text-align: center;
+}
+
+a {
+    color: #B6E3F3;
+    text-shadow: 0px 0px 3px rgba(100, 187, 214, 0.31);
+}
+
+a:hover {
+    color: #D2F3FF;
+    text-shadow: 0px 0px 4px rgba(180, 237, 255, 0.31);
+}
+
+.editable_area {
+    border : 1px solid #86a5c4;
+    margin-bottom : 10px;
+}
+
+
+.caps_container {
+    width : 300px;
+}
+
+
+.caps_held, .caps_released {
+    border : 1px solid #334455;
+    text-align : center;
+    margin-top : 10px;
+    margin-bottom : 10px;
+    margin-right : auto;
+    margin-left: auto;
+    height : 25px;
+    width : 100px;
+    padding-top : 6px;
+    border-radius : 2px;
+    color : #86a5c4;
+}
+
+.caps_held {
+    background-color : #223344;
+    text-shadow : 0px 0px 3px rgba(183, 219, 255, 0.61);
+    color : #b6d6f6;
+    border-color : #5d7791;
+}
+
+.caps_released {
+    background-color : #112233;
+}
+
+#log {
+    height : 200px;
+    overflow:scroll;
+}
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    width : 300px;
+}
+
+textarea {
+    width : 298px;
+    padding : 0;
+    height : 100px;
+    background-color : #112233;
+    outline: none !important;
+    border : 1px solid #334455;
+    color : #86a5c4;
+    resize : none;
+    font-family : sans;
+    text-size: 12px;
+}
+
+input {
+    margin-top : 10px;
+    width : 298px;
+    padding : 0;
+    background-color : #112233;
+    outline: none !important;
+    border : 1px solid #334455;
+    color : #86a5c4;
+    font-family : sans;
+    text-size: 12px;
+}
+
+
+#password_result {
+    height : 20px;
+    font-family : sans;
+    font-size: 12px;
+    color : #86a5c4;
+    padding-top : 3px;
+    overflow : hidden;
+    white-space: nowrap;
+}
+
+
+.editable_area {
+    width : 298px;
+    padding : 0;
+    height : 100px;
+    background-color : #112233;
+    outline: none !important;
+    border : 1px solid #334455;
+    color : #86a5c4;
+    resize : none;
+    font-family : sans;
+    text-size: 12px;
+    overflow : auto;
+}
+
+#window_indicators, #input_indicators {
+    width : 1100px;
+    margin-right : auto;
+    margin-left: auto;
+    height : 190px;
+    text-align: center;
+    margin-top : 10px;
+}
+
+.basicBox {
+    display: inline-block;
+    width : 150px;
+    height : 180px;
+    margin : 2px;
+}
+
+.basicHolder {
+    display : inline-table;
+}
+
+.logHolder {
+    display : table;
+    width : 150px;
+    height : 180px;
+}
+
+.logHolder1 {
+    display : table;
+    width : 144px;
+    height : 154px;
+    padding : 3px;
+}
+
+.logHolder2 {
+    display : block;
+    width : 144px;
+    height : 152px;
+    overflow : hidden;
+}
+
+
+.basicReflector {
+    width : 144px;
+    height : 20px;
+    background-color :  #112233;
+    color : #7394b5;
+    padding-top : 2px;
+    margin-bottom : 2px;
+    border : 1px solid #223344;
+}
+
+.box {
+    display: inline-block;
+    width : 150px;
+    height : 180px;
+    margin : 2px;
+    border : 1px solid #223344;
+    background-color : #041525;
+}
+
+.boxheader {
+    height : 20px;
+    background-color :  #112233;
+    color : #7394b5;
+    padding-top : 2px;
+}
+
+.boxheader_event {
+    height : 20px;
+    background-color :  #112233;
+    padding-top : 2px;
+    color : #99BEE7;
+}
+
+.props {
+    display : table;
+    text-align : left;
+    padding : 3px;
+    overflow : hidden;
+    color : #496e87;
+}
+
+
+.propcontainer {
+    width : 145px;
+    overflow : hidden;
+}
+
+.propline {
+    white-space: nowrap;
+}
+
+.logline {
+    white-space: nowrap;
+    text-align : left;
+}
+
+.propname {
+    font-weight : bold;
+}
+
+.propval {
+}
+
+.oldval {
+    opacity : .4;
+}
