@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calendar &bullet; 0.0.1</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- MomentJS -->
+    <script src="ajax/libs/moment.js/2.18.1/moment-with-locales.min.js"></script>
+    <!-- Lodash -->
+    <script src="ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+    <!-- jQuery -->
+    <script src="ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Semantic UI -->
+    <link href="ajax/libs/semantic-ui/2.2.11/semantic.css" rel="stylesheet">
+    <script src="ajax/libs/semantic-ui/2.2.11/semantic.min.js"></script>
+    <!-- Lato -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+    <!-- OpenSans -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+    <!-- Calendar -->
+    <style>
+        /* Calendar */
+        html, body,
+        #calendar {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+            #calendar > nav {
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                #calendar > nav > .nav {
+                    height: 50px;
+                    width: 50px;
+                    padding: 5px;
+                }
+
+                    #calendar > nav > .nav.hide {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                    }
+
+                    #calendar > nav > .nav svg {
+                        fill: #777777;
+                    }
+
+                    #calendar > nav > .nav:hover svg {
+                        fill: #000000;
+                    }
+
+                #calendar > nav > .title {
+                    color: #666666;
+                    font-weight: 300;
+                    font-size: 25px;
+                    line-height: 25px;
+                    text-align: center;
+                    letter-spacing: -1px;
+                    position: relative;
+                }
+
+                    #calendar > nav > .title strong {
+                        font-weight: 800;
+                    }
+            /* Calendar: Year */
+            #calendar > .YYYY {
+                position: absolute;
+                width: 100%;
+                left: 0;
+                top: 50px;
+                bottom: 10px;
+            }
+                /* Calendar: Months */
+                #calendar > .YYYY > .M {
+                    float: left;
+                    width: calc((100% - 50px) / 4);
+                    margin-left: 10px;
+                    text-align: center;
+                }
+                /* Calendar: Rows */
+                #calendar > .YYYY[data-w="16"] > .M[data-w="4"] {
+                    height: calc(100%/16*4);
+                }
+
+                #calendar > .YYYY[data-w="16"] > .M[data-w="5"] {
+                    height: calc(100%/16*5);
+                }
+
+                #calendar > .YYYY[data-w="16"] > .M[data-w="6"] {
+                    height: calc(100%/16*6);
+                }
+
+                #calendar > .YYYY[data-w="17"] > .M[data-w="4"] {
+                    height: calc(100%/17*4);
+                }
+
+                #calendar > .YYYY[data-w="17"] > .M[data-w="5"] {
+                    height: calc(100%/17*5);
+                }
+
+                #calendar > .YYYY[data-w="17"] > .M[data-w="6"] {
+                    height: calc(100%/17*6);
+                }
+
+                #calendar > .YYYY[data-w="18"] > .M[data-w="4"] {
+                    height: calc(100%/18*4);
+                }
+
+                #calendar > .YYYY[data-w="18"] > .M[data-w="5"] {
+                    height: calc(100%/18*5);
+                }
+
+                #calendar > .YYYY[data-w="18"] > .M[data-w="6"] {
+                    height: calc(100%/18*6);
+                }
+                /* Calendar: Month-names */
+                #calendar > .YYYY > .M > .MMMM {
+                    color: #444444;
+                    font-weight: 700;
+                    line-height: 1.5em;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+
+                #calendar > .YYYY > .M > .ddd {
+                    font-size: 10px;
+                    font-weight: 700;
+                    line-height: 2em;
+                    text-transform: uppercase;
+                    text-align: center;
+                    width: calc(100%/7);
+                    float: left;
+                }
+
+                    #calendar > .YYYY > .M > .ddd:before {
+                        content: attr(data-ddd);
+                    }
+                /* Calendar: Days */
+                #calendar > .YYYY > .M > .MM {
+                    clear: both;
+                    width: 100%;
+                    height: calc(100% - 3.5em);
+                }
+
+                #calendar > .YYYY > .M[data-w="4"] > .MM > .D {
+                    height: calc((100% + 3px) / 4);
+                }
+
+                #calendar > .YYYY > .M[data-w="5"] > .MM > .D {
+                    height: calc((100% + 4px) / 5);
+                }
+
+                #calendar > .YYYY > .M[data-w="6"] > .MM > .D {
+                    height: calc((100% + 5px) / 6);
+                }
+
+                #calendar > .YYYY > .M > .MM > .D {
+                    float: left;
+                    width: calc((100% + 6px) / 7);
+                    position: relative;
+                    border: 1px solid #DEDEDE;
+                    margin-right: -1px;
+                    margin-bottom: -1px;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    color: #333333;
+                    background: #FFFFFF;
+                    text-decoration: none;
+                }
+
+                    #calendar > .YYYY > .M > .MM > .D.active {
+                        font-weight: bold;
+                        background: #32358F;
+                        color: #FFFFFF;
+                        box-shadow: inset 1px 0px 0px #FFFFFF, inset -1px 0px 0px #FFFFFF, inset 0px -1px 0px #FFFFFF, inset 0px 1px 0px #FFFFFF;
+                    }
+
+                    #calendar > .YYYY > .M > .MM > .D:first-child[data-d="1"] {
+                        margin-left: calc(((100% + 6px) / 7) * 1 - 1px);
+                    }
+
+                    #calendar > .YYYY > .M > .MM > .D:first-child[data-d="2"] {
+                        margin-left: calc(((100% + 6px) / 7) * 2 - 2px);
+                    }
+
+                    #calendar > .YYYY > .M > .MM > .D:first-child[data-d="3"] {
+                        margin-left: calc(((100% + 6px) / 7) * 3 - 3px);
+                    }
+
+                    #calendar > .YYYY > .M > .MM > .D:first-child[data-d="4"] {
+                        margin-left: calc(((100% + 6px) / 7) * 4 - 4px);
+                    }
+
+                    #calendar > .YYYY > .M > .MM > .D:first-child[data-d="5"] {
+                        margin-left: calc(((100% + 6px) / 7) * 5 - 5px);
+                    }
+
+                    #calendar > .YYYY > .M > .MM > .D:first-child[data-d="6"] {
+                        margin-left: calc(((100% + 6px) / 7) * 6 - 6px);
+                    }
+
+                    #calendar > .YYYY > .M > .MM > .D > .num {
+                        position: absolute;
+                        font-size: 11px;
+                        top: 0px;
+                        left: 4px;
+                    }
+
+                    #calendar > .YYYY > .M > .MM > .D:hover > .num {
+                        font-weight: 700;
+                    }
+
+                    #calendar > .YYYY > .M > .MM > .D a {
+                        margin-left: 25px;
+                    }
+                    .ui.popup { padding: 0.2em 0.5em; }
+    </style>
+</head>
+<body>
+    <div id="calendar"></div>
+    <div class="ui modal">
+        <i class="close icon"></i>
+        <div class="header" id="header" align="center" style="color:#028640">
+        </div>
+        <h5 id="date" style="text-indent: 1.5em; padding:10px"></h5>
+        <div class="description" id="description" style="text-indent: 1.5em; padding-left:10px">
+        </div>
+        <div class="ui list" id="participants" style="padding-left:30px">
+        </div>
+        <br />
+        <div class="actions">
+            <div class="ui green button" id="ui-button">Got It!</div>
+        </div>
+    </div>
+
+    <script>
+			/* Calendar */
+        class Calendar {
+                constructor(element, locale, callback) {
+                this.events = [
+                                         {
+                                             date: "2018-10-17",
+                                             event: "My 30th Birthday",
+                                             description: "Think about where to go, what to ask for a present and so on"
+                                         },
+                                         {
+                                             date: "2017-12-31",
+                                             event: "New year",
+                                             description: "Find a flat for selebration, prepare gifts and winter-mood"
+                                         },
+                                         {
+                                             date: "2017-12-31",
+                                             event: "Nice teacher's Birthday",
+                                             description: "Send her some cute lines"
+                                         },
+                                         {
+                                             date: "2018-07-26",
+                                             event: "My Fun Page",
+                                             description: "Like, Follow, Share my page",
+                                             participants: [{
+                                                 name: "Samuel R. Betio",
+                                                 url: "https://www.facebook.com/samuelrapanabetio/",
+                                                 avatar: "https://scontent.fceb1-1.fna.fbcdn.net/v/t1.0-9/24775252_1617999971595206_8049663727385118939_n.jpg?oh=4f1e55a66ab87a06c61dfe812d745a19&oe=5B248278"
+                                             }]
+                                         },
+                                         {
+                                             date: "2017-09-01",
+                                             event: "3-d cource is comming",
+                                             description: "Prepare supplies and mental-health, get to know schedule",
+                                             participants: [{
+                                                 name: "Tosik",
+                                                 url: "https://www.facebook.com/tony.churkin?ref=pymk&fref=pymk",
+                                                 avatar: "https://scontent.fzag1-1.fna.fbcdn.net/v/t1.0-1/p240x240/20228531_505432593136717_8789436456211863254_n.jpg?oh=668a836a7ac9230fab1d7f22c8419744&oe=5A0C41DD"
+                                             }, {
+                                                 name: "Kyrill",
+                                                 url: "https://ru-ru.facebook.com/people/Cyril-Yemets/100002333087715",
+                                                 avatar: "https://pp.userapi.com/c630227/v630227647/11c78/VX_scC-iud8.jpg"
+                                             },
+                                             {
+                                                 name: "Vovas",
+                                                 url: "https://vk.com/honcharov12",
+                                                 avatar: "https://pp.userapi.com/c604519/v604519822/45989/Ayb5Oyx7ET0.jpg"
+                                             }]
+                                         },
+                                         {
+                                             date: "2017-08-11",
+                                             event: "Dad's Birthday",
+                                             description: "Buy nice backpack for a gift",
+                                         }
+                ]
+                    this.element = element;
+                    this.locale = locale;
+                    this.callback = callback;
+                    moment.locale(locale);
+                    this.show(moment().year());
+                }
+                show(year) {
+                   
+                    this.year = year;
+                    var m, d1, t = [], y = '',
+                        w = 0, r = 0,
+                        n = _.reduce(moment.weekdaysShort(), function (n, ddd)
+                        { return n += '<div class="ddd" data-ddd="' + ddd + '"></div>'; }, '');
+                    for (m = 0; m <= 11; m++) {
+                        d1 = moment([year, m, 1]);
+                        t.push('<div class="MMMM">' + moment.months()[m] + '</div>' + n + '<div class="MM"><a href="#" class="' + (year == moment().year() && m == moment().month() && 1 == moment().date() ? 'active ' : '') + 'D" data-d="' + d1.day() + '" data-date="' + year + '-' + ('00' + (m + 1)).slice(-2) + '-01" draggable="false"><span class="num">1</span><div class="content"></div></a>' + _.range(2, d1.daysInMonth() + 1).reduce(function (MM, d) { return MM += '<a href="#" class="' + (year == moment().year() && m == moment().month() && d == moment().date() ? 'active ' : '') + 'D" data-date="' + year + '-' + ('00' + (m + 1)).slice(-2) + '-' + ('00' + d).slice(-2) + '" draggable="false">' + '<span class="num">' + d + '</span>' + '<div class="content"></div></a>'; }, '') + '</div>');
+                        w = Math.max(w, Math.ceil((d1.day() + d1.daysInMonth()) / 7));
+                        if (m == 3 || m == 7 || m == 11) {
+                            y += '<div class="M" data-w="' + w + '">' + t.join('</div><div class="M" data-w="' + w + '">') + '</div>';
+                            r += w;
+                            w = 0;
+                            t = [];
+                        }
+                    }
+                    this.element.innerHTML = '<nav><a href="#" class="nav prev" draggable="false"><svg viewBox="0 0 512 512"><path d="M189.8,349.7c3.1-3.1,3-8,0-11.3L123.4,264H408c4.4,0,8-3.6,8-8c0-4.4-3.6-8-8-8H123.4l66.3-74.4c2.9-3.4,3.2-8.1,0.1-11.2c-3.1-3.1-8.5-3.3-11.4-0.1c0,0-79.2,87-80,88S96,253.1,96,256s1.6,4.9,2.4,5.7s80,88,80,88c1.5,1.5,3.6,2.3,5.7,2.3C186.2,352,188.2,351.2,189.8,349.7z"/></svg></a><div class="title"><strong>' + year + '</strong></div><a href="#" class="nav next" draggable="false"><svg viewBox="0 0 512 512"><path d="M322.2,349.7c-3.1-3.1-3-8,0-11.3l66.4-74.4H104c-4.4,0-8-3.6-8-8c0-4.4,3.6-8,8-8h284.6l-66.3-74.4c-2.9-3.4-3.2-8.1-0.1-11.2c3.1-3.1,8.5-3.3,11.4-0.1c0,0,79.2,87,80,88s2.4,2.8,2.4,5.7s-1.6,4.9-2.4,5.7s-80,88-80,88c-1.5,1.5-3.6,2.3-5.7,2.3C325.8,352,323.8,351.2,322.2,349.7z"/></svg></a></nav><div class="YYYY" data-w="' + r + '">' + y + '</div>';
+                    this.element.querySelector('.prev').addEventListener('click', () => { this.show(--this.year); });
+                    this.element.querySelector('.next').addEventListener('click', () => { this.show(++this.year); });
+                    var that = this;
+                    $(this.element).on('click', '.D', function () {
+                        that.callback($(this).data('date'));
+                    });
+                    var AllDays = $(".D");
+                    for(var i=0;i<AllDays.length;i++)
+                    {
+                        var current_day = AllDays[i];
+                        var atribute = current_day.getAttribute("data-date");
+                        function checker(element)
+                        {
+                            if (element.date == atribute)
+                            {
+                                current_day.children[1].insertAdjacentHTML('beforeend', '<p class="for-popup ui mini green empty circular label" data-variation="tiny" data-content="' + element.event + '">');
+                                var people = '';
+                                if (undefined !== element.participants)
+                                for (var i = 0; i < element.participants.length;i++)
+                                    people += '<div class="item"><img class="ui avatar image" src="' + element.participants[i].avatar + '">' +
+                                        '<div class="content"><a class="header" href="'+ element.participants[i].url+'">' + element.participants[i].name + '</a></div></div>'
+                                current_day.children[1].children[current_day.children[1].children.length - 1].addEventListener
+                                        ('click', function () {
+                                            $('#header').text(element.event);
+                                            $('#date').text(element.date);
+                                            $('#description').text(element.description);
+                                            $('#participants').html(people);
+                                            $('.ui.modal').modal('show');
+                                        });
+
+                            }
+                        }
+                        this.events.forEach(checker);
+                    }
+                    $('.for-popup').popup();
+                    $('#ui-button').on('click', function () {
+                        $('.ui.modal').modal('hide');
+                    })
+
+                }
+            }
+
+			new Calendar(document.getElementById('calendar'), 'en', function(date) {
+				//alert(date);
+			});
+    </script>
+</body>
+</html>
