@@ -1,0 +1,54 @@
+body {
+    background-color: #112233;
+    color: #aabbcc;
+    font-family: sans;
+    font-size: 12px;
+    line-height: 21px;
+    cursor: default;
+}
+
+
+
+.normal {
+    position: fixed;
+    top: 100px;
+    left: 100px;
+    width: 300px;
+    height: 300px;
+    overflow: auto;
+    background-color:#223344;
+}
+
+
+
+
+.first {
+    background-color:#223344;
+
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    left: 500px;
+    top : 100px;
+
+    overflow: hidden;
+}
+
+.second {
+    position: absolute;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+.second::-webkit-scrollbar {
+    display: none;
+}
+
+
+.third{
+    width: 300px;
+    height: 300px;
+}
+
+
+
