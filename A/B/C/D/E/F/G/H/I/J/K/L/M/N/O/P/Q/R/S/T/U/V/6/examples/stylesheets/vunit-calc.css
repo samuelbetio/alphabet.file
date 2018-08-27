@@ -1,0 +1,47 @@
+/* From https://coderwall.com/p/qac-og */
+/* line 5, ../sass/vunit-calc.scss */
+html, body {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  font-family: "Arial", "Helvetica", sans-serif;
+  margin: 0;
+}
+
+/* line 20, ../sass/vunit-calc.scss */
+.circle {
+  /* Let's make this a 200 x 200 circle */
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: red;
+  position: absolute;
+  /*
+   * We set the top property to be half of the
+   * viewport height minus half of the height
+   * of the element height to center it vertically.
+   *
+   * Similarly set the left property to be
+   * half of the viewport width minus half
+   * the element width to center it horizontally
+   */
+  top: calc(50vh -  100px );
+  left: calc(50vw -  100px );
+  /*
+   * Here is the code for WebKit browsers that will allow
+   * viewport-units-buggyfill to perform calc on viewport
+   * units.
+   */
+  content: 'viewport-units-buggyfill; top: calc(50vh -  100px ); left: calc(50vw -  100px );';
+}
+/* line 49, ../sass/vunit-calc.scss */
+.circle span {
+  color: white;
+  padding: 10px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  width: 180px;
+  height: 180px;
+  font-size: 14.0px;
+}
