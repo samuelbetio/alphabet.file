@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <title>svg</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="change.js"></script>
+  </head>
+  <body>
+
+hh
+
+
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="700px" height="700px" version="1.1"
+     xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink">
+
+
+<defs>
+  <pattern id="pattern2"
+           x="0" y="30" width="100px" height="140px"
+           patternUnits="userSpaceOnUse" >
+
+	<image id="myimage" x="0" y="0" width="100px" height="140px" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAACMCAYAAACK9Qy7AAADbklEQVR4Xu3dMW7UQBTG8ckRKLkCNcod0tBwCaR00R5jRU1FS0WThjug1LnGlpSwDkKRItszZsbPE+8v9dM6+33zvXn/9Xj36ucp/U7+ulHgajDk6zH//3w5PKZPx3fZQnXjEg26pMPdvH6/viWGTEi0xsJiyIjYawhd2jkYwpCUtlyBpSt1qzoJkRAJmRqjTFmB01NpC9SyXmvLuk5naPG3vQK3b5eB4fsPeVJ/uH9Ml1aXbj7mzfzxvT2pX5rQpe+XISPrcctkMoQhf/miNMKXVichEiIhU2PUsHdJiIRISGhCkHqe60Iq1iL19CZP9Ol07r17qeud1HcjdOmCYchIA9kycQxhyCJS17JGFsyWn/YyhCFp06nNHmIPsYdMkeEw3bVOCFIP4fD8RZD6jEZLuKZ1QkofRyi98WTKMmWZsmY/ji79DGgvdVqWsdfYGzn22tQrE6dlVQrYeu9iyM4NQep5iA6pQOpI/VmBJR9NtO75rV/PHrLzPcTYW2mwhFQKqGV1JiBDGJKcOpkYadeY7uwhnSWutSFIPYTD8xdB6kgdqc/lZOlX/DnkMLF3td5DkHrlkMCQSgGBYWcCMoQhSH3ulIiESMiihCD1PESHVCB1pI7UkfoLBXz8HnhfovX0VPp6SL2zqY0hDPE4whxoSoiESEhkQpB6CIfnL4LUkTpSR+pIfT9fbonUOxtnGcKQRT+96lyWc1nbfqmMlqVlPbUspJ6H6JAKpI7UkTpSR+pIfSwFHvoMPFzhjmFn4zFDGOIWbuQtXI+0VSaudctC6iEcnr8IUkfqSB2pI3WkjtTPCqzx3IcbVJXjZ6mAretaj704pHIhMKRSQAnpTMDeDUHqeYgOqUDqSB2pI3WkjtSROlKf7IQP9+cf6209Vvb+esCwM65hCEMccog85IDUQzg8fxGkjtSROlJH6jgEqSN1pP5PgeFwBTAEhsAwEgydOqlMXOuWhdTzEB1SsRqpl66YS6s73M37utqPgl2a0KXvlyEjC3J4PLlUwNZ1DGFIerqF23pl7eX1JERCJGRqjtr0qzX20mJavw8t65W2LKQewuH5iywl9ZSL3HDJ4+ekbkT7El2Wkjqh/1Po0oXKkJkuUrKiS4UurWMIQ54V2GIFlq7UreokREIkZG74lZBOE3J9e8pDi4oQBf4AqBwFIFAAtTAAAAAASUVORK5CYII="/>
+
+  </pattern>
+
+
+
+
+    <linearGradient id="gradient1"
+                    x1="0%"   y1="0%"
+                    x2="100%" y2="0%"
+                    spreadMethod="pad">
+        <stop offset="0%"   stop-color="#ffffff" stop-opacity="1"/>
+        <stop offset="100%" stop-color="#000000" stop-opacity="1"/>
+    </linearGradient>
+
+    <mask id="mask4" x="0" y="0" width="500" height="700" >
+        <rect id="maskrect" x="0" y="0"  width="500" height="700"
+            style="stroke:none; fill: url(#gradient1)"/>
+    </mask>
+
+
+
+
+  
+</defs>
+
+<g style="mask: url(#mask4);">
+  <rect id="myrect" x="130" y="30" width="700px" height="140px" style="fill: url(#pattern2);"/>
+  <rect x="130" y="250" width="700px" height="140px" style="fill: rgb(100,200,255);"/>
+</g>
+
+
+
+</svg>
+
+
+  </body>
+</html>
