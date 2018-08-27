@@ -1,0 +1,704 @@
+/**
+ * @fileoverview microlight - syntax highlightning library
+ * @version 0.0.1
+ *
+ * @license MIT, see http://github.com/asvd/microlight
+ * @copyright 2015 asvd <heliosframework@gmail.com>
+ *
+ * Code structure aims at following points in the given priority:
+ *  1. performance
+ *  2. compressed library size
+ *  3. readability
+ */
+
+
+(function (root, factory) {
+    if (typeof define === 'function' && define.amd) {
+        define(['exports'], factory);
+    } else if (typeof exports !== 'undefined') {
+        factory(exports);
+    } else {
+        factory((root.microlight = {}));
+    }
+}(this, function (exports) {
+    var _window        = window;
+    var _document      = document;
+    var test           = 'test';
+    var length         = 'length';
+    var nodeName       = 'nodeName';
+    var childNodes     = 'childNodes';
+    var startContainer = 'startContainer';
+    var endContainer   = 'endContainer';
+    var startOffset    = 'startOffset';
+    var endOffset      = 'endOffset';
+    var createElement  = 'createElement';
+    var createTextNode = 'createTextNode';
+    var currentTarget  = 'currentTarget';
+    var spanSample     = _document[createElement]('span');
+    var brSample       = _document[createElement]('br');
+    var brtr           = /(br|tr)/i;
+    var nullChr = '\0';
+
+    var mutationObserveOptions = {
+        characterData : 1,
+        subtree       : 1,
+        childList     : 1
+    };
+
+
+
+    /**
+     * Recursively runs through (sub)nodes of the given element and
+     * extracts the text content, replacing all <br> and <tr> tags
+     * with the newlines (which are not recognized by the .textContent
+     * property of an element). Additionally the function calculates
+     * the selection offset mesaured in number of symbols in the
+     * resulted text; in this case, selNode is the original element
+     * holding the selection, and pos is the offset inside that
+     * element (selNodeEnd and posEnd arguments then have the same
+     * meaning, but are related to the selection end
+     * respectively). Reuslt object contains the .t property with the
+     * resulted text, .p property with the selection start offest
+     * (which is -1 in case when the selection position is outside of
+     * the node), and .e property holding the selection end position
+     * in the resulted text;
+     *
+     * @param {Object} node to run through
+     * @param {Numebr} pos
+     * @param {Object} selNode
+     * @param {Numebr} posEnd
+     * @param {Object} selNodeEnd
+     *
+     * @returns {Object} containing .n, .p, and .t properties
+     */
+    var extractContent = function(node, pos, selNode, posEnd, selNodeEnd) {
+        var resultText = '',
+            resultPos = -1,
+            resultPosEnd = -1,
+            i = 0, result, len,
+
+            // Reading change markers if present
+            // (owerwritten in case of node with subnodes)
+            //
+            // In order to save some space on conditions:
+            // m == 0 means no marker set
+            // m > 0 means marker at position m-1
+            resultMarker1 = -1,
+            resultMarker2 = -1;
+
+            
+        if (len = node[length]) {
+            // text node
+
+            // saving the content extracting the change markers
+            var splitted = node.textContent.split(nullChr);
+            for (var i = 0; i < splitted.length; i++) {
+                if (i == 1) {
+                    resultMarker1 = resultText.length;
+                }
+
+                if (i == splitted.length-1 && splitted.length > 1) {
+                    resultMarker2 = resultText.length;
+                }
+
+                resultText += splitted[i];
+            }
+
+            if (selNode == node) {
+                resultPos = pos;
+            }
+
+            if (selNodeEnd == node) {
+                resultPosEnd = posEnd;
+            }
+        } else {
+            if (node[childNodes][length]) {
+                // node with subnodes
+                for (i = 0; i < node[childNodes][length];i++) {
+                    result = extractContent(
+                        node[childNodes][i],
+                        pos,
+                        selNode,
+                        posEnd,
+                        selNodeEnd
+                    );
+
+                    // assigning the first marker from the subnode
+                    // (if not yet set)
+                    if (resultMarker1<0 &&
+                        result.m+1
+                    ) {
+                        resultMarker1 = resultText[length] + result.m;
+                    }
+
+                    // assigning the second marker from the subnode
+                    // (if present)
+                    if (result.M+1) {
+                        resultMarker2 = resultText[length] + result.M;
+                    }
+
+                    if (selNode == node && pos == i) {
+                        resultPos = resultText[length];
+                    }
+
+                    if (result.p+1) { // same as if (result.p >= 0)
+                        resultPos = resultText[length] + result.p;
+                    }
+
+                    if (selNodeEnd == node && posEnd == i) {
+                        resultPosEnd = resultText[length];
+                    }
+
+                    if (result.e+1) { // same as if (result.e >= 0)
+                        resultPosEnd = resultText[length] + result.e;
+                    }
+
+
+                    resultText += result.t;
+                }
+            } else {
+                // node without subnodes
+                if (selNode == node) {
+                    // span with no children (happens on FF when removing
+                    // the contents)
+                    resultPos = 0;
+                }
+                if (selNodeEnd == node) {
+                    // span with no children (happens on FF when removing
+                    // the contents)
+                    resultPosEnd = 0;
+                }
+            }
+
+            if (brtr[test](node[nodeName])) {
+                resultText += '\n';
+            }
+        }
+
+        return {
+            t : resultText,
+            p : resultPos,
+            e : resultPosEnd,
+            m : resultMarker1,
+            M : resultMarker2
+        };
+    }
+
+
+    /**
+     * Inserts the special markers around the selection, so that the
+     * change will be recognized after tokenizing, even despite the
+     * content could partially match to what was on that place
+     */
+    var markSelection = function(ev) {
+        if (ev && ev[currentTarget]) {
+            ev[currentTarget].ml.disconnect();
+        }
+
+        var sel = window.getSelection();
+        var ran = sel.getRangeAt(0);
+        var marker1 = _document[createTextNode](nullChr);
+        var marker2 = _document[createTextNode](nullChr);
+        ran.insertNode(marker1);
+        ran.setStart(ran.endContainer, ran.endOffset);
+        ran.insertNode(marker2);
+        ran.setStartAfter(marker1);
+        ran.setEndBefore(marker2);
+        sel.removeAllRanges();
+        sel.addRange(ran);
+
+        if (ev && ev[currentTarget]) {
+            ev[currentTarget].ml.observe(ev[currentTarget], mutationObserveOptions);
+        }
+    }
+
+
+    var reset = function(i, el, microlighted) {
+        microlighted = _document.getElementsByClassName('microlight');
+
+        for (i = 0; el = microlighted[i++];) {
+            (function(el, cb, previouslyFormatted) {
+                // MutationObserver can already be defined
+                // (in case when reset() was invoked again)
+                if (!el.ml) {
+                    (el.ml = new MutationObserver(cb =
+function(){
+//    var timestamp = (new Date).getTime();
+    var
+        // set of formatting types and content
+        //
+        // each element is an array which will be converted to
+        // formatted a node
+        //
+        // first element is a formatting type (number)
+        // second element is a text content of the node
+        // third element is boolean which is true when token is marked
+        //
+        // possible formatting types:
+        //  0: newline (represented with <br/>)
+        //  1: not formatted
+        //  2: punctuation (operators, braces)
+        //  3: keywords
+        //  4: strings and regexps
+        //  5: comments
+        formatted = [],
+        formattingType,
+        lastFormattedEntry,
+
+        // selection data
+        sel        = _window.getSelection(),
+        ran,
+
+        // style and color templates
+        textShadow = ';text-shadow:',
+        opacity    = ';opacity:.',
+        _0px_0px   = ' 0px 0px ',
+        _3px_0px_5 = '3px 0px 5',
+        colorArr   = /(\d*\, \d*\, \d*)(, ([.\d]*))?/g.exec(
+            _window.getComputedStyle(el).color
+        ),
+        pxColor    = 'px rgba('+colorArr[1]+',',
+        alpha      = colorArr[3]||1,
+        token      = '',  // current token
+
+        // current token type:
+        //  0: anything else (normally whitespace, not highlighted)
+        //  1: newline (separate token as <br/> tag)
+        //  2: operator or brace
+        //  3: closing brace (after which '/' is division not regex)
+        //  4: (key)word
+        //  5: regex
+        //  6: string starting with "
+        //  7: string starting with '
+        //  8: xml comment  <!-- -->
+        //  9: multiline comment /* */
+        // 10: single-line comment starting with two slashes //
+        // 11: single-line comment starting with a hash #
+        tokenType = 0,
+
+        text,
+        pos        = 0,        // current character position
+
+        // particular characters from a parsed string of code
+        prev2,                 // character before the previous
+        prev1,                 // previous character
+        chr        = 1,        // current character
+        next1,                 // next character
+
+        // should not be false when given to extractContent (so that it
+        // works in the proper mode of extracting text), but should
+        // not also be recognized as any of existing nodes
+        selNode = 1,
+        selOffset = 0,
+        selNodeEnd = 1,
+        selOffsetEnd = 0,
+        content,
+        node, // used when restoring selection
+        tokenMarked;
+
+
+    // temporarily disconnecting the observer for changing the dom
+    el.ml.disconnect();
+
+// TODO only evaluate modified range
+    if (sel.rangeCount) {
+        markSelection();
+        ran = sel.getRangeAt(0);
+        selNode      = ran[startContainer];
+        selOffset    = ran[startOffset];
+        selNodeEnd   = ran[endContainer];
+        selOffsetEnd = ran[endOffset];
+    }
+
+    content = extractContent(
+        el, selOffset, selNode, selOffsetEnd, selNodeEnd
+    );
+
+
+    // taking two characters before and one after the marker
+    // (neighbouring nodes might be modified by typing)
+    content.m = Math.max(content.m-2, 0);
+    if (content.M < content.t.length) {
+        content.M++;
+    }
+
+
+    text = content.t;
+
+
+    var previouslyFormattedIdx = 0;
+    var startSubstituted = 0;
+    var endExisting = el[childNodes][length];
+    var endSubstituted = 0;
+
+    var tailSearchStarted = 0;
+    var tailSearchInterrupted = 0;
+    var previousTokenPos;
+
+
+    // nodes and positions to restore selection onto
+    // assuming selection points are always re-tokenized
+    var nodeToSelectIdxStart = -1;
+    var nodeToSelectStart = 0;
+    var posToSelectStart = 0;
+    var nodeToSelectIdxEnd = -1;
+    var nodeToSelectEnd = 0;
+    var posToSelectEnd = 0;
+
+    while (pos < text[length]) {
+        var previousToken = previouslyFormatted[previouslyFormattedIdx]||0;
+        var previousText;
+        var len;
+
+        if (
+            // there is a previously formatted token for this position
+            previousToken &&
+            // text content matches to what was in the previous token
+            (previousText = previousToken[1]) == text.substr(pos, len = previousText[length]) &&
+            // and there is no change marker within the upcoming token
+            (content.M < pos || content.m > pos + len)
+        ) {
+            // copying the token from the previously formatted content
+            formatted.push(previousToken);
+            
+            previouslyFormattedIdx++;
+            pos += len;
+        } else {
+            // no matching previously formatted token found
+            // (or a change marker detected)
+            // tokenizing the content from here
+
+            // taking one token before
+            // (as we might merge the upcoming token into it)
+            startSubstituted = Math.max(0, previouslyFormattedIdx-1);
+
+            previousTokenPos = 0;
+            previouslyFormattedIdx = previouslyFormatted[length];
+
+            next1 = text[pos];
+            while (prev2 = prev1,
+                   // escaping if needed
+                   // pervious character will not be
+                   // therefore recognized as a token
+                   // finalize condition
+                   prev1 = tokenType < 8 && prev1 == '\\' ? 1 : chr
+            ) {
+                chr = next1;
+                next1=text[pos+1];
+
+                // checking if token should be finalized
+                if (!chr  || // end of content
+                    // types 0-1 (whitespace and newline), types 2-3
+                    // (operators and braces) always consist of a single
+                    // character
+                    tokenType < 4 ||
+                    // types 10-11 (single-line comments) end with a
+                    // newline
+                    (tokenType > 9 && chr == '\n') ||
+                    [ // finalize condition for other token types
+                        !/[$\w]/[test](chr), // 4: (key)word
+                                             // 5: regex
+                        (prev1 == '/' || prev1 == '\n') && token[length] > 1,
+                                             // 6: string with "
+                        prev1 == '"' && token[length] > 1,
+                                             // 7: string with '
+                        prev1 == "'" && token[length] > 1,
+                                             // 8: xml comment
+                        text[pos-3]+prev2+prev1 == '-->',
+                        prev2+prev1 == '*/'  // 9: multiline comment
+                    ][tokenType-4]
+                ) {
+                    // appending the token to the result
+                    formattingType =
+                        // not formatted
+                        !tokenType ? 1 :
+                        // newline
+                        tokenType == 1 ? 0 :
+                        // punctuation
+                        tokenType < 4 ? 2 :
+                        // comments
+                        tokenType > 7 ? 5 :
+                        // regex and strings
+                        tokenType > 4 ? 4 :
+                        // otherwise tokenType == 4, (key)word
+                        /^(a(bstract|lias|nd|rguments|rray|s(m|sert)?|uto)|b(ase|egin|ool(ean)?|reak|yte)|c(ase|atch|har|hecked|lass|lone|ompl|onst|ontinue)|de(bugger|cimal|clare|f(ault|er)?|init|l(egate|ete)?)|do|double|e(cho|ls?if|lse(if)?|nd|nsure|num|vent|x(cept|ec|p(licit|ort)|te(nds|nsion|rn)))|f(allthrough|alse|inal(ly)?|ixed|loat|or(each)?|riend|rom|unc(tion)?)|global|goto|guard|i(f|mp(lements|licit|ort)|n(it|clude(_once)?|line|out|stanceof|t(erface|ernal)?)?|s)|l(ambda|et|ock|ong)|module|mutable|NaN|n(amespace|ative|ext|ew|il|ot|ull)|o(bject|perator|r|ut|verride)|p(ackage|arams|rivate|rotected|rotocol|ublic)|r(aise|e(adonly|do|f|gister|peat|quire(_once)?|scue|strict|try|turn))|s(byte|ealed|elf|hort|igned|izeof|tatic|tring|truct|ubscript|uper|ynchronized|witch)|t(emplate|hen|his|hrows?|ransient|rue|ry|ype(alias|def|id|name|of))|u(n(checked|def(ined)?|ion|less|signed|til)|se|sing)|v(ar|irtual|oid|olatile)|w(char_t|hen|here|hile|ith)|xor|yield)$/[test](token) ? 3 : 1
+                
+                    lastFormattedEntry = formatted[formatted[length]-1]||0;
+
+                    // merging similarry formatted tokens to reduce node amount
+                    if (token) {
+                        if (// there is a previous entry to merge into
+                            lastFormattedEntry &&
+                            (// current token has a matching formatting type...
+                             formattingType == lastFormattedEntry[0] ||
+                             // ...or is a whitespace
+                             token == ' ' || /^\s$/[test](token)) &&
+                            // both previous and current entries are not newlines
+                            lastFormattedEntry[0] && formattingType
+                        ) {
+                            lastFormattedEntry[1] += token;
+                            lastFormattedEntry[2] = tokenType;
+                        } else {
+                            formatted.push(lastFormattedEntry = [formattingType, token, tokenType]);
+                        }
+    
+                        // noting the selection points
+                        if (content.p &&
+                            content.p >= pos-lastFormattedEntry[1][length] &&
+                            content.p < pos) {
+
+                            nodeToSelectIdxStart = formatted[length]-1;
+                            posToSelectStart = content.p-pos+lastFormattedEntry[1].length;
+                        }
+
+                        if (content.e &&
+                            content.e >= pos-lastFormattedEntry[1][length] &&
+                            content.e < pos) {
+                            nodeToSelectIdxEnd = formatted[length]-1;
+                            posToSelectEnd = content.e-pos+lastFormattedEntry[1].length;
+                        }
+                    }
+
+
+                    if (!tailSearchStarted && (content.M+1) &&
+                        // 'end of change' marker in the very beginning
+                        (!content.M ||
+                        // 'end of change' marker passed
+                        content.M < pos)
+                    ) {
+                        tailSearchStarted = 1;
+
+                        // restoring the tail position
+                        for(var i = pos; i < text[length]; i++) {
+                            if (!previousTokenPos) {
+                                if (!previouslyFormattedIdx) {
+                                    // reached the begenning
+                                    tailSearchInterrupted = 1;
+                                } else {
+                                    previouslyFormattedIdx--;
+                                    previousTokenPos = previouslyFormatted[previouslyFormattedIdx][1][length];
+                                }
+                            }
+
+                            previousTokenPos--;
+                        }
+                    }
+
+                    // checking if we should switch back to cloning tokens
+                    if (tailSearchStarted &&
+                        !tailSearchInterrupted &&
+                        // previous token just finalized as well
+                        previousTokenPos == 0 &&
+                        // previous token exactly matches the newly evaluated
+                        previouslyFormatted[previouslyFormattedIdx-1][0] == formattingType &&
+                        previouslyFormatted[previouslyFormattedIdx-1][1] == token &&
+                        previouslyFormatted[previouslyFormattedIdx-1][2] == tokenType
+                    ) {
+                        // switching back to copying from the
+                        // previously formatted tokens
+                        break;
+                    } else {
+                        // initializing a new token
+                        token = '';
+                        tokenMarked = 0;
+                        var lastToken = formatted[formatted[length]-1]||0;
+
+                        if (chr == ' ') {
+                            tokenType = 0;
+                        } else if (chr == '\n') {
+                            tokenType = 1;
+                        } else if (chr == ']' || chr == ')') {
+                            tokenType = 3;
+                        } else if ('{}[(-+*=<>:;|\\.,?!&@~'.indexOf(chr) != -1) {
+                            // slash checked later, can be a comment or a regex
+                            tokenType = 2;
+                        } else {
+                            // going down until matching a
+                            // token type start condition
+                            tokenType = 13;
+
+ // TODO regexps-array is recalculated on every step, assign to a variable
+                            while (![
+                                1,                   //  0: whitespace
+                                chr == '\n',         //  1: newline
+                                chr == '/',          //  2: operator or braces
+                                                     // (others checked above)
+                                chr == ']' || chr == ')', //  3: closing brace
+                                /[$\w]/[test](chr),  //  4: word
+                                chr == '/' &&        //  7: regex
+                                    // previous token was an
+                                    // opening brace or an
+                                    // operator (otherwise
+                                    // division, not a regex)
+                                    (!lastToken || lastToken[2] < 3) &&
+                                    // workaround for xml
+                                    // closing tags
+                                    prev1 != '<',
+                                chr == '"',          //  6: string with "
+                                chr == "'",          //  7: string with '
+                                                     //  8: xml comment
+                                chr+next1+text[pos+1]+text[pos+2] == '<!--',
+                                chr+next1 == '/*',   //  9: multiline comment
+                                chr+next1 == '//',   // 10: single-line comment
+                                chr == '#'           // 11: hash-style comment
+                            ][--tokenType]);
+                        }
+                    }
+                }
+
+                token += chr;
+
+                if (tailSearchStarted && !tailSearchInterrupted &&
+                    ++previousTokenPos == previouslyFormatted[previouslyFormattedIdx][1][length]) {
+                    previousTokenPos = 0;
+                    previouslyFormattedIdx++;
+                }
+                    
+                pos++;
+            }
+
+
+
+            endSubstituted = formatted[length];
+            endExisting = Math.min(
+                              el[childNodes][length],
+                              el[childNodes][length] -
+                              previouslyFormatted[length] +
+                              previouslyFormattedIdx
+                );
+        }
+    }
+    
+
+
+//    console.log(startSubstituted + ' - ' + endExisting + ' => ' + startSubstituted + ' - ' + endSubstituted);
+
+
+    // removing modified nodes
+    for (i = startSubstituted; i < endExisting; i++) {
+        el.removeChild(el[childNodes][startSubstituted]);
+    }
+    var referenceNode = el[childNodes][startSubstituted];
+
+
+    // inserting newly formatted nodes
+    var item;
+    for (i = startSubstituted; i < endSubstituted; i++) {
+        item = formatted[i];
+        if (item[0]) {
+            // formatted node
+            node = spanSample.cloneNode(0);
+            node.setAttribute('style',[
+                // 1: not formatted
+                '',
+                // 2: punctuation
+                opacity+6+
+                        textShadow+_0px_0px+7+pxColor + alpha/4+'),'+
+                                   _0px_0px+3+pxColor + alpha/4+')',
+                // 3: keywords
+                textShadow+_0px_0px+7+pxColor + alpha*.6+'),'+
+                               _0px_0px+3+pxColor + alpha*.4+')',
+                // 4: strings and regexps
+                opacity+7+
+                        textShadow+_3px_0px_5+pxColor + alpha/5+'),-'+
+                                   _3px_0px_5+pxColor + alpha/5+')',
+                // 5: comments
+                'font-style:italic'+
+                        opacity+5+
+                        textShadow+_3px_0px_5+pxColor + alpha/3+'),-'+
+                                   _3px_0px_5+pxColor + alpha/3+')'
+            ][item[0]-1]);
+
+            node.appendChild(_document[createTextNode](item[1]));
+        } else {
+            // newline
+            node = brSample.cloneNode(0);
+        }
+
+        if (i == nodeToSelectIdxStart) {
+            nodeToSelectStart = node[childNodes][0]||node;
+        }
+        if (i == nodeToSelectIdxEnd) {
+            nodeToSelectEnd = node[childNodes][0]||node;
+        }
+
+        el.insertBefore(node, referenceNode);
+    }
+    
+
+
+    previouslyFormatted = formatted;
+
+
+    // restoring the selection position
+    if (nodeToSelectStart||nodeToSelectEnd) {
+        sel.removeAllRanges();
+
+        if (nodeToSelectStart) {
+            if (brtr[test](nodeToSelectStart[nodeName])) {
+                // node to select is <br/>
+                // replacing next node with '\n' and putting the
+                // selection there (otherwise Chorme treats it wrong)
+                node = nodeToSelectStart;
+                posToSelectStart = 0;
+                el.replaceChild(
+                    nodeToSelectStart = _document[createTextNode]('\n'),
+                    node
+                );
+
+                if (nodeToSelectEnd == node) {
+                    nodeToSelectEnd = nodeToSelectStart;
+                    posToSelectEnd = 0;
+                }
+            }
+
+            ran.setStart(nodeToSelectStart, posToSelectStart);
+        }
+
+        if (nodeToSelectEnd) {
+            if (brtr[test](nodeToSelectEnd[nodeName])) {
+                // node to select is <br/>
+                // replacing next node with '\n' and putting the
+                // selection there (otherwise Chorme treats it wrong)
+                node = nodeToSelectEnd;
+                posToSelectEnd = 0;
+                el.replaceChild(
+                    nodeToSelectEnd = _document[createTextNode]('\n'),
+                    node
+                );
+            }
+
+            ran.setEnd(nodeToSelectEnd, posToSelectEnd);
+        }
+
+        sel.addRange(ran);
+    }
+
+
+    // connecting the observer back again
+    el.ml.observe(el, mutationObserveOptions);
+//    console.log((new Date).getTime() - timestamp);
+}
+                )).observe(el, mutationObserveOptions);
+
+                cb();
+
+
+                el.addEventListener('paste', markSelection, 0);
+
+            }
+                
+            })(el);
+        }
+    }
+
+
+    if (_document.readyState == 'complete') {
+        reset();
+    } else {
+        _window.addEventListener('load', reset, 0);
+    }
+
+    exports.reset = reset;
+}));
+

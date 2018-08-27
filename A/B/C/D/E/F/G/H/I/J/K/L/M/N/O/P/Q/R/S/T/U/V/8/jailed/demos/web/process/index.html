@@ -1,0 +1,162 @@
+ <html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Data processing demo</title>
+    <script type="text/javascript" src="../../../lib/jailed.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="intence.js"></script>
+    <script type="text/javascript" src="dragscroll.js"></script>
+
+  </head>
+  <body>
+    <div class=hpad></div>
+
+    <div class=centered>
+      <div class=rel>
+        <div class=application_and_labels>
+          <div class=rel>
+            <div class=labels>
+              <div class=rel>
+                <div class=label>input data</div>
+                <div class=label_explanation>shipped by the application</div>
+                <div class=label>processing code</div>
+                <div class=label_explanation id=code_explanation>
+                  provided <span class='or'>|</span> changeable by a
+                  user and is therefore untrusted. The code is then
+                  evaluated in a&nbsp;Plugin created with
+                  the <a target="_blank"
+                  href="https://github.com/asvd/jailed">Jailed</a>
+                  library. The Plugin runs in a sandboxed iframe in
+                  order to prevent accessing the main application
+                </div>
+                <div class=label>output</div>
+              </div>
+            </div>
+
+            <div class=application>
+              <div class=rel>
+                <div class=data_row id=input_row>
+                  <div class=rel>
+                    <div class=data_content id=input_data></div>
+                    <div class=data_inline_label>Regenerate</div>
+                    <div class=data_inline_icon id=input_regenerate_icon></div>
+                  </div>
+                </div>
+                <div class=code_block>
+                  <div class=rel>
+                    <div class=rel><div id=code_background></div></div>
+                    <div class="code_container intence dragscroll"
+                         scrollImg=scroll.png
+                         nochilddrag
+                         id=code_container><span
+                              class="code microlight"
+                              contenteditable=true
+                              id=code
+                              spellcheck=false></span></div>
+                  </div>
+                </div>
+                <div class=data_row id=output_row>
+                  <div class=rel>
+                    <div class=data_content id=output_data></div>
+                    <div class=data_inline_label>Process</div>
+                    <div class=data_inline_icon id=output_process_icon></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class=description>
+          <h3>data processing demo</h3>
+
+
+        <div class=links_container>
+          <div class=rel>
+            <div class=link_block>
+              <div class=links_cast>cast</div>
+            </div>
+
+
+            <div class=link_block>
+              <div class=link_label>this demo</div>
+              <div class=link>
+                <a target="_blank" href='https://github.com/asvd/jailed/tree/master/demos/web/process/'>
+                  source code
+                </a>
+              </div>
+            </div>
+
+            <div class=link_block>
+              <div class=link_label>untrusted code sandboxing</div>
+              <div class=link>
+                <a target="_blank" href='https://github.com/asvd/jailed/'>
+                  jailed
+                </a>
+              </div>
+            </div>
+
+            <div class=link_block>
+              <div class=link_label>gradient scrolling indicator</div>
+              <div class=link>
+                <a target="_blank" href='https://asvd.github.com/intence/'>
+                  intence
+                </a>
+              </div>
+            </div>
+
+<!--
+            <div class=link_block>
+              <div class=link_label>code highlight</div>
+              <div class=link>
+                <a target="_blank" href='https://github.com/asvd/microlight/'>
+                  microlight
+                </a>
+              </div>
+            </div>
+-->
+
+            <div class=link_block>
+              <div class=link_label>scrolling with mouse drag</div>
+              <div class=link>
+                <a target="_blank" href='https://github.com/asvd/dragscroll/'>
+                  dragscroll
+                </a>
+              </div>
+            </div>
+<!--
+            <div class=link_block>
+              <div class=link_label>processing indicator</div>
+              <div class=link>
+                <a target="_blank" href='https://github.com/asvd/loadload/'>
+                  loadload
+                </a>
+              </div>
+            </div>
+
+            -->
+
+          </div>
+        </div>
+
+
+
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="microlight.js"></script>
+    <script type="text/javascript" src="application.js"></script>
+  </body>
+</html>
+
+

@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>JS console demo</title>
+    <script type="text/javascript" src="../../../lib/jailed.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class=centered>
+      <div class=rel>
+        <div class=inv>❱</div>
+
+        <div class=border id=border>
+          <div class=terminalWrap id=terminalWrap>
+            <div class=rel>
+              <div class=terminal id=terminal></div>
+            </div>
+          </div>
+          <div class=indicator id=indicator></div>
+          <div class=command id=command>
+            <input type=text class=commandText id=line></input>
+          </div>
+          <div class=shadow></div>
+        </div>
+
+        <div class=text>
+          <h3>console</h3>
+
+          User-submitted code is evaluated in a&nbsp;Plugin created
+          with the <a href="https://github.com/asvd/jailed">Jailed</a>
+          library. The code is executed in a sandboxed iframe in order
+          to prevent accessing the main application.
+        </div>
+
+        <div class=links>
+          <a href='https://github.com/asvd/jailed/tree/master/demos/web/console'>
+            http://github.com/asvd/jailed/tree/master/demos/web/console
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <script type="text/javascript" src="application.js"></script>
+  </body>
+</html>
+
