@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>fuckcapslock.js</title>
+    <link
+       href='http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic'
+       rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="fuckcapslock.js"></script>
+    <script type="text/javascript" src="application.js"></script>
+  </head>
+  <body>
+    <div class=title>
+       <a href="https://github.com/asvd/fuckcapslock">fuckcapslock.js</a>
+    </div>
+
+      <div>
+        Fuckcapslock is a JavaScript library which negotiates the
+        effect of the CapsLock button &mdash; the case of the typed
+        characters is not affected any longer, and the whole page
+        behaves as if CapsLock was never active.
+      </div>
+      <textarea>You can try it yourself by switching the CapsLock on and off on your keyboard (if you have it LOL), and entering some text into this textarea.</textarea>
+
+    <div class=title>Why?</div>
+
+      <p>
+        The CapsLock button has very attractive position &mdash; it is
+        located in the home row (the one in the middle, where your
+        hands lie relaxed) and is therefore easily accessible without
+        bending the fingers. In fact, it's more accessible than any
+        other non-letter key.
+      </p>
+
+
+      <p>
+        For historical reasons, the most accessible button has the
+        most stupid function assigned to it &mdash; TO MAKE ALL THE
+        TYPED CHARACTERS APPEAR IN CAPS. This rudimental side-effect
+        made the button useless for other purposes.
+      </p>
+
+
+      <p>
+        Until now. With fuckcapslock.js the state of the CapsLock key
+        is disregarded. There is yet an opprotunity to handle its
+        events and reuse the button as a convenient hotkey or a
+        modifier. It exposes the keyboard events in the normal way and
+        can be identified by the key code 20 or code 'CapsLock'. Just
+        like as this indicator reflects you pushing the CapsLock:
+      </p>
+
+</div>
+
+      <div id=caps_indicator class=caps_released>CapsLock</div>
+
+
+      <p>
+        Also you can inculcate your users the good manners so that
+        they type in a normal case.
+      </p>
+
+    <div class=title>No way! ENTERING THE TEXT IN ALL CAPS IS OFTEN NEEDED!!</div>
+
+    <p>
+      Acutally we can live without it.
+    </p>
+
+
+    <p>
+      Text in all capitals is harder to read (because all the letters
+      have the same shape). If you still wish to use the CapsLock when
+      typing an expressive message and you want to SHOUT OUT LOUD,
+      just remind yourself that in real life shouting requires some
+      extra effort. So if you are trying to express yourself in the
+      similar way while typing a message &mdash; be so kind to make a
+      little effort as well &mdash; HOLD THE FUCKING SHIFT.
+    </p>
+
+
+    <p>
+      Special cases (data type implies input in capitals) can be
+      predicted during development and should be respectively
+      processed upon input regardless of the CapsLock state. For
+      example:
+    </p>
+
+    Enter your name as it appears on your credit card (just kidding).
+
+    <p>
+      Besides, typing in ALL CAPS is not the most useful function, and
+      definitely it does not deserve the most accessible button.
+    </p>
+
+
+    <div class=title>How to use</div>
+
+    <p>
+      fuckcapslock.js is an open-source library [github]
+    </p>
+
+    <p>
+      Include fuckcapslock.js the very first in your project:
+    </p>
+
+    <p>
+      Track the CapsLock keypress as following, checking against the keycode == 20 or code == 'CapsLock':
+    </p>
+
+
+    <div class=title>What exactly does fuckcapslock.js</div>
+
+    <p>
+      It tracks the state of the CapsLock upon keyboard events, and if
+      the CapsLock is on, it does the following:
+    <p>
+
+    <ul>
+
+      <li>
+        Changing the content of the inputs, textareas and
+        content-editable divs is prevented, the library then inserts
+        the characters which would appear if the CapsLock was
+        inactive;
+      </li>
+
+      <li>
+        Keyboard events (keyup, keydown and keypress) are taken over,
+        suppressed, and re-emitted with updated properties as those
+        would be if the CapsLock was inactive.
+      </li>
+
+    </ul>
+
+    <div class=title>Compatibility</div>
+
+    <p>
+      Fuck CapsLock! Make use of the button! Make the world a better place! <span style="text-decoration: line-through;">Make America great again!</span>
+    </p>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+body {
+    color : #A4C7DF;
+    background-color : #001122;
+    font-family: 'PT Sans', sans-serif;
+    font-size : 14px;
+    cursor : default;
+}
+
+.title {
+    padding-top : 30px;
+    font-size: 26px;
+    text-align: center;
+}
+
+a {
+    color: #B6E3F3;
+    text-shadow: 0px 0px 3px rgba(100, 187, 214, 0.31);
+}
+
+a:hover {
+    color: #D2F3FF;
+    text-shadow: 0px 0px 4px rgba(180, 237, 255, 0.31);
+}
+
+.editable_area {
+    border : 1px solid #aabbcc;
+}
+
+
+.caps_held, .caps_released {
+    border : 1px solid white;
+}
+
+.caps_held {
+    background-color : #334455;
+}
+
+.caps_released {
+    background-color : #112233;
+}
+
