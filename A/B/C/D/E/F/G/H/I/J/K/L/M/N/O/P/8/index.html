@@ -1,1 +1,331 @@
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Template Name: PhotoProwess
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>PhotoProwess</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="layout/styles/layout.css" type="text/css" />
+<script type="text/javascript" src="layout/scripts/jquery.min.js"></script>
+<script type="text/javascript" src="layout/scripts/jquery.ui.min.js"></script>
+<script type="text/javascript" src="layout/scripts/jquery.defaultvalue.js"></script>
+<script type="text/javascript" src="layout/scripts/jquery.scrollTo-min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+    $("#fullname, #validemail, #message").defaultvalue("Full Name", "Email Address", "Message");
+    $('#shout a').click(function () {
+        var to = $(this).attr('href');
+        $.scrollTo(to, 1200);
+        return false;
+    });
+    $('a.topOfPage').click(function () {
+        $.scrollTo(0, 1200);
+        return false;
+    });
+    $("#tabcontainer").tabs({
+        event: "click"
+    });
+});
+</script>
+<!-- Homepage Only Scripts -->
+<script type="text/javascript" src="layout/scripts/jquery.cycle.min.js"></script>
+<script type="text/javascript">
+$(function() {
+    $('#hpage_slider').after('<div id="fsn"><ul id="fs_pagination">').cycle({
+        timeout: 5000,
+        fx: 'fade',
+        pager: '#fs_pagination',
+        pause: 1,
+        pauseOnPagerHover: 0
+    });
+});
+</script>
+<script type="text/javascript" src="layout/scripts/piecemaker/swfobject/swfobject.js"></script>
+<script type="text/javascript">
+var flashvars = {};
+flashvars.cssSource = "layout/scripts/piecemaker/piecemaker.css";
+flashvars.xmlSource = "layout/scripts/piecemaker/piecemaker.xml";
+var params = {};
+params.play = "false";
+params.menu = "false";
+params.scale = "showall";
+params.wmode = "transparent";
+params.allowfullscreen = "true";
+params.allowscriptaccess = "sameDomain";
+params.allownetworking = "all";
+swfobject.embedSWF('layout/scripts/piecemaker/piecemaker.swf', 'piecemaker', '960', '430', '10', null, flashvars, params, null);
+</script>
+<!-- End Homepage Only Scripts -->
+</head>
+<body id="top">
+<div class="wrapper col1">
+  <div id="topbar" class="clear">
+    <ul>
+      <li><a href="#">Libero</a></li>
+      <li><a href="#">Maecenas</a></li>
+      <li><a href="#">Mauris</a></li>
+      <li class="last"><a href="#">Suspendisse</a></li>
+    </ul>
+    <form action="#" method="post" id="search">
+      <fieldset>
+        <legend>Site Search</legend>
+        <input type="text" value="Search Our Website&hellip;" onfocus="this.value=(this.value=='Search Our Website&hellip;')? '' : this.value ;" />
+        <input type="image" id="go" src="images/search.gif" alt="Search" />
+      </fieldset>
+    </form>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col2">
+  <div id="header" class="clear">
+    <div class="fl_left">
+      <h1><a href="index.html">PhotoProwess</a></h1>
+      <p>Free Website Template</p>
+    </div>
+    <div id="topnav">
+      <ul>
+        <li class="last"><a href="pages/gallery.html">Gallery</a><span>Test Text Here</span></li>
+        <li><a href="pages/portfolio.html">Portfolio</a><span>Test Text Here</span></li>
+        <li><a href="#">DropDown</a><span>Test Text Here</span>
+          <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+          </ul>
+        </li>
+        <li><a href="pages/full-width.html">Full Width</a><span>Test Text Here</span></li>
+        <li><a href="pages/style-demo.html">Style Demo</a><span>Test Text Here</span></li>
+        <li class="active"><a href="index.html">Homepage</a><span>Test Text Here</span></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col3">
+  <div id="featured_slide"> 
+    <!-- ####################################################################################################### -->
+    <div id="piecemaker"><img src="images/demo/piecemaker/960x360.gif" alt="" height="360" width="960"/></div>
+    <!-- ####################################################################################################### --> 
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col4">
+  <div id="container" class="clear"> 
+    <!-- ####################################################################################################### -->
+    <div id="shout" class="clear">
+      <div class="fl_left">
+        <h2>Need A Professional Photographer ?</h2>
+        <p>Why not try our services today, you won't regret your choice !</p>
+      </div>
+      <p class="fl_right"><a href="#contact">Contact Us Today</a></p>
+    </div>
+    <!-- ####################################################################################################### -->
+    <div id="homepage" class="clear">
+      <div class="fl_left">
+        <h2>10 Things About...Manicures</h2>
+        <div id="hpage_slider">
+          <div class="item"><img src="images/demo/featured-project/1.gif" alt="" height="342" width="568">/></div>
+          <div class="item"><img src="images/demo/featured-project/2.gif" alt="" height="342" width="568">/></div>
+          <div class="item"><img src="images/demo/featured-project/3.gif" alt="" height="342" width="568">/></div>
+          <div class="item"><img src="images/demo/featured-project/4.gif" alt="" height="342" width="568">/></div>
+          <div class="item"><img src="images/demo/featured-project/5.gif" alt="" height="342" width="568">/></div>
+        </div>
+<br>
+<br>       <h2>The history of the manicure can be dated back to over 3,000 years ago when ancient Babylonian and Egyptian men and <br>women used stained fingernails to signify their wealth. In addition to staining their fingernails black or red, they also used <br>many rich oils to care for their fingernails.</h2>
+<br>
+<br>
+<br><center><img src="images/1.jpg" alt="Img" height="342" width="568"></center>
+<br>
+<br>1.  Today, manicures have increasingly become a fashion statement and there are a variety of manicure procedures to choose from, <br>including a basic manicure, French manicure, gel manicure, and paraffin manicure.
+<br>
+<br>
+<br><center><img src="images/2.jpg" alt="Img" height="342" width="568"></center>
+<br>
+<br>2.  Don't skip the consultation. Like skin care treatments, manicures should be preceded by a consultation. These pre-appointment <br>sessions are important not only for the client, but also the professional and allow the professional to explain which services <br>they think best suit the client and why. During the consultation, observe the client's hands and fingernails and calmly point out <br>any signs of infection or skin conditions. Should there be any concern, kindly recommend that the client visits a physician to <br>assist them with the problem. If the client is unable to get a service that day due to a condition, it would be a nice gesture to <br>offer a discounted voucher for another day when their condition has been resolved. Most clients enjoy a special and offering them <br>a discount shows them that even though they cannot get a service at the present time, they can always look forward to being <br>pampered at a discounted price on another occasion.
+<br>
+<br>
+<br><center><img src="images/3.jpg" alt="Img" height="342" width="568"></center>
+<br>
+<br>3. Sanitation is a must. When giving a manicure, sanitation is mandatory. Both the professional and the client should sanitize <br>and wash their hands with an threeantibacterial soap and dry off with a clean towel. All of the equipment and tools needed for <br>the manicure should be disinfected before, during, and after each use and arranged for easy access.
+<br>
+<br>
+<br><center><img src="images/4.jpg" alt="Img" height="342" width="568"></center>
+<br>
+<br>4.  Start with a blank canvas. When giving a manicure, it is important to remove any fingernail polish from the client's <br>fingernails with a non-acetone polish remover and a cosmetic pad, being sure to wipe towards the free edge of the fingernail. <br>During this time, share other services with them that they may enjoy and encourage them to relax and enjoy the pampering.
+<br>
+<br>
+<br><center><img src="images/5.jpg" alt="Img" height="342" width="568"></center>
+<br>
+<br>5.  Shape it up! Every client has a unique preference as to the shape of their fingernails. Always inquire about fingernail shape <br>before filing or cutting. File the client's fingernails to their requested shape by using an emery board in one direction. Gently <br>use strokes from the right to the left and then to the center. Do not file the fingernails in a sawing motion; bevel any rough <br>edges in order to prevent future damage to the free edge layers.
+<br>
+<br>
+<br><center><img src="images/6.jpg" alt="Img" height="342" width="568"></center>
+<br>
+<br>6.  Cuticle care. Cuticles are a specialized type of epidermis that connects the finger's skin with the nail and provides a <br>barrier that protects against bacteria and infection. During a manicure, apply cuticle remover around the cuticles of each <br>fingernail and gently massage the area in a circular motion. To easily remove any excess residue from the client's fingernails, <br>the professional should soak the client's hands for approximately three minutes in a clear manicure bowl filled with lukewarm <br>water. The professional may also add a few drops of hand soap to the water. Using a cuticle pusher, gently push back the <br>cuticles; they should not be pushed back too far, however, because it can damage the fingernail and impede growth. If necessary, <br>cuticle clippers can be used, but take care to avoid cutting the client at all costs. Clean the excess cuticle from the <br>fingernail plate and dispose of them properly.
+<br>
+<br>
+<br><center><img src="images/7.jpg" alt="Img" height="342" width="568"></center>
+<br>
+<br>7.  Pamper away. Do not forget to pamper the client during their manicure! Professionals can use a lotion or any type of <br>aromatherapy oil to gently massage the client's hands and fingers, replenishing their skin and cuticles. Lotions with a mild or <br>fruity fragrance can add a feminine touch to the experience. Massages with lotions or oils are also recommended because the <br>client will notice a difference in their appearance before the service is even complete.
+<br>
+<br>
+<br><center><img src="images/8.jpg" alt="Img" height="342" width="568"></center>
+<br>8.  Clean the nails. Fingernail lacquer or polish will not adhere to any oily surface, so be sure to wipe off the oil and <br>moisture from the fingernail plate eightbefore applying the base coat. A thin layer of base coat should always be applied before <br>painting the client's fingernails with their desired polish color. Base coat is important because it acts as an adhesive to the <br>fingernail plate and a bonding agent with the fingernail polish.
+<br>
+<br>
+<br><center><img src="images/9.jpg" alt="Img" height="342" width="568"></center>
+<br>
+<br>9.  Don't shake it. Before applying the fingernail polish, the professional should roll the bottle of polish in the palm of their <br>hands; avoid shaking the bottle as that action may result in air bubbles that can transfer to the fingernail plate during <br>application. Always apply a thin layer of polish and use a stroking method from the cuticle to the free edge, starting from the <br>center of the fingernail. Three strokes should be enough to evenly distribute on each fingernail.
+<br>
+<br>
+<br><center><img src="images/10.jpg" alt="Img" height="342" width="568"></center>
+<br>
+<br>10.  Dry time. Allow the polish to dry between coatings for a smooth finish. Furthermore, be sure to seal the polish with a top <br>coat or sealant after allowing the last coat of colored polish to thoroughly dry. Do not rush to apply top coat if the enamel has <br>not properly dried as failure to do so can result in smudging of the polish and may also cause peeling in certain areas from the <br>fingernail plate.
+<br>
+<br>
+<br><img src="images/k.jpg" alt="Img" height="142" width="168">
+<br>Kerlisha "Kerly" Munroe, an INM educator, has worked as a professional nail artist for many years, expressing hers and her <br>clients' personalities on the tiniest of canvases through intricate nail art and design. Munroe uses social media to share her <br>love of her craft and her positive outlook has helped her succeed in business and life, in spite of living with sickle cell <br>anemia. Her expertise and passion for nails has made her an important part of INM's team.
+<br>
+<br>
+<br><font size=1>Credits to: dermascope </font>
+      </div>
+      <div class="fl_right">
+        <h2>What People Say About Us</h2>
+        <ul class="testimonials">
+          <li>
+            <p class="name"><strong>Client Name</strong> - CEO</p>
+            <blockquote>Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoreet tincidunt ut vel velit. Idenim semper pellente velis felit ac nullam pretium morbi lacus.</blockquote>
+            <p class="readmore"><a href="#"><strong>View This Project</strong></a></p>
+          </li>
+          <li class="last">
+            <p class="name"><strong>Client Name</strong> - CEO</p>
+            <blockquote>Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoreet tincidunt ut vel velit. Idenim semper pellente velis felit ac nullam pretium morbi lacus.</blockquote>
+            <p class="readmore"><a href="#"><strong>View This Project</strong></a></p>
+          </li>
+        </ul>
+        <h2>Subscribe To Our Newsletter</h2>
+        <p>Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoreet tincidunt ut vel velit.</p>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Newsletter Signup:</legend>
+            <input type="text" id="newsletter" value="Enter Email Here&hellip;" onfocus="this.value=(this.value=='Enter Email Here&hellip;')? '' : this.value ;" />
+            <input type="image" id="subscribe" src="images/sign-up.gif" alt="Submit" />
+          </fieldset>
+        </form>
+        <p class="form_hint">* Please add name@domain.com to your trusted email list</p>
+      </div>
+    </div>
+    <!-- ####################################################################################################### --> 
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper">
+  <div id="footer" class="clear">
+    <div class="fl_left">
+      <div class="about_us border">
+        <h2>About Us</h2>
+        <p>Sednulla nam nibh a nibh eu urna facinia mauristibulus sit urna. Vitaerisus lobortis proin elit et curabituris elit estibulum cursus iacus orci. Dignissimmorbi rhoncus sed netus ligula conseque netus nulla aliquat id dui. Ipsumintesque venean hendiment enim nis maecenas justo justo vitae purus sed. Rutrumcondimentumsan elit.</p>
+      </div>
+      <div id="contact" class="clear">
+        <h2>Contact Us</h2>
+        <div class="fl_left">
+          <form method="post" action="#">
+            <label for="fullname">Name:</label>
+            <input type="text" name="fullname" id="fullname" value="" />
+            <label for="validemail">Email:</label>
+            <input type="text" name="validemail" id="validemail" value="" />
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" cols="45" rows="10"></textarea>
+            <button type="submit" value="submit"><span>Submit</span></button>
+          </form>
+        </div>
+        <div class="fl_right">
+          <address>
+          <strong class="title">Company Name</strong><br />
+          Street Name &amp; Number<br />
+          Town<br />
+          Postcode/Zip
+          </address>
+          <ul>
+            <li><strong class="title">Tel:</strong><br />
+              xxxxx xxxxxxxxxx</li>
+            <li><strong class="title">Fax:</strong><br />
+              xxxxx xxxxxxxxxx</li>
+            <li><strong class="title">Email:</strong><br />
+              <a href="#">contact@mydomain.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- ####################################################################################################### -->
+    <div class="fl_right">
+      <div id="tabcontainer" class="border">
+        <ul id="tabnav">
+          <li><a href="#tabs-1">From The Blog</a></li>
+          <li><a href="#tabs-2">Latest Tweets</a></li>
+          <li class="last"><a href="#tabs-3">Interesting Links</a></li>
+        </ul>
+        <div id="tabs-1" class="tabcontainer">
+          <ul class="blogposts">
+            <li>
+              <p class="posttitle">Justoid nonummy laoreet phasellent</p>
+              <p class="publishedon">Published on 01 Jan 2042, by Username</p>
+              <p class="postintro">Miet gravida nulla at augue curabitae faucibulum nulla curabitur consectetus dolorem. Ametuervestibus nam nibh laculis vivamus suscinia masse convallis sollis quam males.</p>
+              <p class="readmore"><a href="#">Read More &raquo;</a></p>
+            </li>
+            <li class="last">
+              <p class="posttitle">Justoid nonummy laoreet phasellent</p>
+              <p class="publishedon">Published on 01 Jan 2042, by Username</p>
+              <p class="postintro">Miet gravida nulla at augue curabitae faucibulum nulla curabitur consectetus dolorem. Ametuervestibus nam nibh laculis vivamus suscinia masse convallis sollis quam males.</p>
+              <p class="readmore"><a href="#">Read More &raquo;</a></p>
+            </li>
+          </ul>
+        </div>
+        <!-- ########### -->
+        <div id="tabs-2" class="tabcontainer">
+          <ul class="twitterfeed">
+            <li><a href="#">@namehere</a> Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoreet tincidunt ut vel velit. <span>1 day ago</span></li>
+            <li><a href="#">@namehere</a> Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoreet tincidunt ut vel velit. <span>1 day ago</span></li>
+            <li><a href="#">@namehere</a> Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoreet tincidunt ut vel velit. <span>1 day ago</span></li>
+            <li class="last"><a href="#">@namehere</a> Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoreet tincidunt ut vel velit. <span>1 day ago</span></li>
+          </ul>
+        </div>
+        <!-- ########### -->
+        <div id="tabs-3" class="tabcontainer">
+          <ul>
+            <li><a href="#">Lorem ipsum dolor sit</a></li>
+            <li><a href="#">Amet consectetur</a></li>
+            <li><a href="#">Praesent vel sem id</a></li>
+            <li><a href="#">Curabitur hendrerit est</a></li>
+            <li><a href="#">Aliquam eget erat nec sapien</a></li>
+            <li><a href="#">Cras id augue nunc</a></li>
+            <li><a href="#">In nec justo non</a></li>
+            <li><a href="#">Vivamus mollis enim ut</a></li>
+            <li class="last"><a href="#">Sed a nulla urna</a></li>
+          </ul>
+        </div>
+      </div>
+      <h2>Keep Up To Date</h2>
+      <ul class="socialize">
+        <li><span>Facebook:</span> <a href="#">www.facebook.com/myhandel</a></li>
+        <li><span>Twitter:</span> <a href="#">www.twitter.com/myhandel</a></li>
+        <li class="last"><span>LinkedIn:</span> <a href="#">www.linkedin.com/myhandel</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="backtotop"><a href="#top" class="topOfPage">To The Top</a></div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper">
+  <div id="copyright" class="clear">
+    <p class="fl_left">Copyright &copy; 2014 - All Rights Reserved - <a href="#">Domain Name</a></p>
+    <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+  </div>
+</div>
+</body>
+</html>
