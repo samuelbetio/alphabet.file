@@ -1,0 +1,52 @@
+@charset "utf-8";
+/*
+Template Name: PlusBusiness
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+File: Featured Slider CSS
+*/
+
+#featured_slide{display:block; position:relative; width:860px; height:260px; margin:0 auto; padding:20px 50px; overflow:hidden; font-size:12px; font-family:Verdana, Arial, Helvetica, sans-serif; color:#333333; background-color:#B2C629;}
+#featured_slide a{color:#FFFFFF; background-color:#B2C629;}
+#featured_slide a, #featured_slide ul, #featured_slide img{margin:0; padding:0; border:none; outline:none; list-style:none; text-decoration:none;}
+#featured_slide h1, #featured_slide h2, #featured_slide h3, #featured_slide h4, #featured_slide h5, #featured_slide h6{margin:15px 0 10px 0; padding:0; line-height:normal; font-size:36px; font-weight:normal; font-family:Georgia, "Times New Roman", Times, serif;}
+
+/* ----------------------------------------------Start Carousel------------------------------------- */
+
+#featured_content, #featured_content ul{display:block; width:860px; height:260px; margin:0; padding:0; list-style:none; overflow:hidden;}
+#featured_content li{display:block; position:relative; width:860px; height:260px; overflow:hidden;}
+
+/* ----------------------------------------------Carousel Content------------------------------------- */
+
+#featured_content img{display:block; float:right; width:380px; height:250px; margin:0 10px 0 0; padding:4px; border:1px solid #FFFFFF;}
+#featured_content .floater{display:block; float:left; width:415px; height:250px; margin:0 0 0 10px; padding:0; overflow:hidden;}
+#featured_content p{margin:0 0 20px 0; padding:0; line-height:1.6em;}
+#featured_content p.readmore{display:block; width:100%; margin:0; padding:0; text-align:right; line-height:normal; font-weight:bold;}
+#featured_content p.readmore a{padding:8px 15px 10px; color:#FFFFFF; background-color:#95AD19;}
+
+/* ----------------------------------------------Previous & Next Buttons------------------------------------- */
+
+#featured-item-prev, #featured-item-next{display:block; position:absolute; top:118px; width:36px; height:64px;}
+#featured-item-prev{left:5px;}
+#featured-item-next{right:5px;}
+
+/* ---------------------------------------------------------------------------------------------------------- */
+/* ---------------DO NOT CHANGE THE FOLLOWING CODE OTHERWISE THE FEATURED PANEL WONT WORK-------------------- */
+/* ---------------------------------------------------------------------------------------------------------- */
+
+/*
+Product Name:jCarousel
+Version:0.2.3
+Author:Jan Sorgalla
+Author URI:http://sorgalla.com/jcarousel/
+Licence:Dual licensed under the <a href="http://www.opensource.org/licenses/mit-license.php">MIT</a> and <a href="http://www.opensource.org/licenses/gpl-license.php">GPL</a> licenses.
+*/
+
+.jcarousel-container{position:relative;}
+.jcarousel-clip{z-index:2; padding:0; margin:0; overflow:hidden; position:relative;}
+.jcarousel-list{z-index:1; overflow:hidden; position:relative; top:0; left:0; margin:0; padding:0;}
+.jcarousel-list li, .jcarousel-item{float:left; list-style:none; width:75px; height:75px;}
+.jcarousel-next{z-index:3; display:none;}
+.jcarousel-prev{z-index:3; display:none;}

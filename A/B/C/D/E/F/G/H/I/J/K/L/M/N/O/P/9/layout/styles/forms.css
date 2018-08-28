@@ -1,0 +1,26 @@
+@charset "utf-8";
+/*
+Template Name: PlusBusiness
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+File: Forms CSS
+*/
+
+form, fieldset, legend{margin:0; padding:0; border:none;}
+legend{display:none;}
+input, textarea, select{font-size:12px; font-family:Verdana, Arial, Helvetica, sans-serif;}
+
+/* ----------------------------------------------Forms in Content Area------------------------------------- */
+
+#container #respond{display:block; width:100%;}
+#container #respond input{width:170px; padding:2px; border:1px solid #CCCCCC; margin:5px 5px 0 0;}
+#container #respond textarea{width:98%; border:1px solid #CCCCCC; padding:2px; overflow:auto;}
+#container #respond p{margin:5px 0;}
+#container #respond #submit, #container #respond #reset{margin:0; padding:5px; color:#666666; background-color:#F7F7F7; border:1px solid #CCCCCC; cursor:pointer;}
+
+/* ----------------------------------------------Search Form------------------------------------- */
+
+#topbar input{display:block; float:left; width:238px; margin:0 5px 0 0; padding:5px; color:#333333; background-color:#FFFFFF; border:1px solid #999999;}
+#topbar input#go{width:auto; height:auto; margin:0; padding:4px; font-weight:bold; text-transform:uppercase; color:#FFFFFF; background-color:#C80000; border-color:#C80000; cursor:pointer;}

@@ -1,0 +1,132 @@
+@charset "utf-8";
+/*
+Template Name: PlusBusiness
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+File: Layout CSS
+*/
+
+@import url("navi.css");
+@import url("forms.css");
+@import url("tables.css");
+@import url("featured_slide.css");
+
+html{overflow-y:scroll;}
+body{margin:0; padding:0; font-size:13px; font-family:verdana, Arial, Helvetica, sans-serif; color:#333333; background-color:#FFFFFF;}
+
+.justify{text-align:justify;}
+.bold{font-weight:bold;}
+.center{text-align:center;}
+.right{text-align:right;}
+.nostart{margin:0; padding:0; list-style-type:none;}
+
+.clear{clear:both;}
+br.clear{clear:both; margin-top:-15px;}
+
+a{color:#B2C629; background-color:#FFFFFF; outline:none; text-decoration:none;}
+
+.fl_left, .imgl{float:left;}
+.fl_right, .imgr{float:right;}
+
+img{display:block; margin:0; padding:0; border:none;}
+.imgl, .imgr{border:1px solid #999999; padding:5px;}
+.imgl{margin:0 8px 8px 0; clear:left;}
+.imgr{margin:0 0 8px 8px; clear:right;}
+
+/* ----------------------------------------------Wrapper------------------------------------- */
+
+div.wrapper{display:block; width:100%; margin:0; text-align:left;}
+div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, div.wrapper h6{margin:0; padding:0; font-size:20px; font-weight:normal; line-height:normal; font-family:Georgia, "Times New Roman", Times, serif;}
+.col1{color:#CCCCCC; background-color:#000000;}
+.col2, .col2 a{color:#FFFFFF; background-color:#B2C629;}
+.col3{color:#777777; background-color:#FFFFFF;}
+.col3 a{color:#95AD19; background-color:#FFFFFF;}
+.col4{color:#FFFFFF; background-color:#000000;}
+.col4 a{color:#95AD19; background-color:#000000;}
+.col5, .col5 a{color:#333333; background-color:#95AD19;}
+
+/* ----------------------------------------------Generalise------------------------------------- */
+
+#header, #topbar, #homepage, #breadcrumb, #container, #footer, #copyright{display:block; position:relative; width:960px; margin:0 auto;}
+
+/* ----------------------------------------------Header------------------------------------- */
+
+#header{padding:20px 0; z-index:1000;}
+#header #logo{display:block; float:left; width:300px; overflow:hidden;}
+#header #logo h1, #header #logo p{margin:0; padding:0; line-height:normal;}
+#header #logo h1{font-size:36px; text-transform:uppercase;}
+#header h1 a{color:#B2C629; background-color:#000000;}
+
+/* ----------------------------------------------BreadCrumb------------------------------------- */
+
+#breadcrumb{padding:20px 0;}
+#breadcrumb ul{margin:0; padding:0; list-style:none;}
+#breadcrumb ul li{display:inline;}
+#breadcrumb ul li.current a{text-decoration:underline;}
+
+/* ----------------------------------------------Content------------------------------------- */
+
+#container{padding:20px 0;}
+#container h1, #container h2, #container h3, #container h4, #container h5, #container h6{margin:0 0 15px 0; padding:0 0 8px 0; border-bottom:1px solid #E7E6E6;}
+
+/* ----------------------------------------------Homepage Block------------------------------------- */
+
+.homepage{display:block; width:100%; margin:15px 0 0 0; padding:0;}
+.homepage ul{margin:0; padding:0; list-style:none;}
+.homepage li{display:block; float:left; width:300px; margin:0 30px 0 0; padding:0;}
+.homepage li.last{margin-right:0;}
+.homepage li h2{display:block; width:100%; height:65px; margin:0; padding:15px 0 8px 0; font-weight:normal; line-height:normal; border-bottom:1px dotted #999999;}
+.homepage li h2 img{float:left; margin:-15px 8px 0 0; padding:5px; border:1px solid #999999;}
+.homepage p{margin:0 0 25px 0; padding:0; line-height:1.6em;}
+.homepage p.readmore{display:block; text-align:right; line-height:normal; font-weight:bold;}
+.homepage p.readmore a{padding:8px 15px 10px; color:#FFFFFF; background-color:#95AD19;}
+
+/* ----------------------------------------------Content Block------------------------------------- */
+
+#content{display:block; float:left; width:600px;}
+
+/* Comments */
+
+#comments{margin-bottom:40px;}
+#comments .commentlist{margin:0; padding:0;}
+#comments .commentlist ul{margin:0; padding:0; list-style:none;}
+#comments .commentlist li.comment_odd, #comments .commentlist li.comment_even{margin:0 0 10px 0; padding:15px; list-style:none;}
+#comments .commentlist li.comment_odd{color:#666666; background-color:#F7F7F7;}
+#comments .commentlist li.comment_odd a{color:#95AD19; background-color:#F7F7F7;}
+#comments .commentlist li.comment_even{color:#666666; background-color:#E8E8E8;}
+#comments .commentlist li.comment_even a{color:#95AD19; background-color:#E8E8E8;}
+#comments .commentlist .author .name{font-weight:bold;}
+#comments .commentlist .submitdate{font-size:smaller;}
+#comments .commentlist p{margin:10px 5px 10px 0; padding:0; font-weight:normal; text-transform:none;}
+#comments .commentlist li .avatar{float:right; border:1px solid #EEEEEE; margin:0 0 0 10px;}
+
+/* ----------------------------------------------Column------------------------------------- */
+
+#column{display:block; float:right; width:300px;}
+#column .holder{display:block; width:300px; margin-bottom:20px;}
+#column .holder p{line-height:1.6em;}
+#column .holder h2.title{display:block; width:100%; height:65px; margin:0; padding:15px 0 0 0; font-size:20px; line-height:normal;}
+#column .holder h2.title img{float:left; margin:-15px 8px 0 0; padding:5px; border:1px solid #666666;}
+#column .holder p.readmore{display:block; width:100%; font-weight:bold; text-align:right; line-height:normal;}
+#column div.imgholder{display:block; width:290px; margin:0 0 10px 0; padding:4px; color:#666666; background-color:#F7F7F7; border:1px solid #CCCCCC;}
+
+/* ----------------------------------------------Footer------------------------------------- */
+
+#footer{padding:20px 0;}
+#footer ul{margin:0; padding:0; list-style:none;}
+#footer h2{margin:0 0 15px 0; padding:0 0 8px 0; font-size:18px; color:#CCCCCC; background-color:#000000; border-bottom:1px dotted #CCCCCC;}
+#footer .box{display:block; float:right; width:250px; margin:0 0 0 25px; padding:0;}
+#footer .box1{display:block; float:left; width:400px; line-height:1.6em;}
+#footer .box1 .imgl{border:1px solid #CCCCCC; padding:5px; color:#FFFFFF; background-color:#000000;}
+#footer .contactdetails li{margin:0 0 8px 0;}
+#footer .flickrbox, #footer .flickrbox .wrap{display:block; width:260px;}
+#footer .flickrbox .wrap .fix{clear:both;}
+#footer .flickrbox .wrap .flickr_badge_image{display:block; float:left; margin:0 10px 10px 0; width:80px; height:80px;}
+#footer .flickrbox .wrap #flickr_badge_image3, #footer .flickrbox .wrap #flickr_badge_image6{margin-right:0;}
+
+/* ----------------------------------------------Copyright------------------------------------- */
+
+#copyright{padding:10px 0;}
+#copyright p{margin:0; padding:0;}
