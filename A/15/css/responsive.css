@@ -1,0 +1,122 @@
+
+
+/*
+Author: XpeedStudio
+Author URI: http://themeforest.net/user/XpeedStudio/portfolio
+*/
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    body {
+        font-size: 15px;
+    }
+    
+
+}
+
+/* Portrait tablets and small desktops */
+@media  (max-width: 991px) {
+    html {
+        font-size: 90%;
+    }
+   
+
+
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    html {
+        font-size: 80%;
+    }
+	.main_header h3 {
+    font-size: 24px;
+    letter-spacing: 15px;
+	margin-bottom:5px;
+	}
+	.main_header p {
+    font-size: 16px;
+	}
+	.main_header h2 {
+    font-size: 45px;
+	}
+	.info {
+    text-align: center;
+    margin-bottom: 40px;
+	}
+	.portfolio .portfolio-item {
+    text-align: center;
+	}
+	.contact_area{
+		text-align:center;
+	}
+	.all_rights{
+		float:none;
+		text-align:center;
+	}
+	.social{
+		float:none;
+		text-align:center;
+	}
+	.social a{
+		margin:5px;
+		text-align:center;
+	}
+}
+
+
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+    html {
+        font-size: 65%;
+    }
+	.main_header h3 {
+    font-size: 12px;
+    letter-spacing: 10px;
+    margin-bottom: 5px;
+	}
+	.main_header p {
+    font-size: 11px;
+	}
+	.main_header h2 {
+    font-size: 30px;
+	}
+	.info {
+    text-align: center;
+    margin-bottom: 40px;
+	}
+	.wrap {
+    padding:30px 0;
+	}
+	.contact_area{
+		text-align:center;
+	}
+	.footer_area{
+		text-align:center;
+	}
+	.main_contact {
+    margin-bottom: 50px;
+	}
+	.info h3 {
+    font-size: 26px;
+	}
+
+}
+
+
+
+@media (max-width: 320px) {
+
+
+    html {
+        font-size: 60.5%;
+    }
+	.contact_area{
+		text-align:center;
+	}
+	.footer_area{
+		text-align:center;
+	}
+	
+}
+
