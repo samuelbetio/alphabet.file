@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Piecemaker>
+  <Contents>
+    <Image Source="images/demo/piecemaker/1.gif" Title="Slide 1"></Image>
+    <Image Source="images/demo/piecemaker/2.gif" Title="Slide 2">
+      <Text>&lt;h1&gt;This Is A Headline&lt;/h1&gt;&lt;p&gt;Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoreet tincidunt ut vel velit. Idenim semper pellente velis felit ac nullam pretium morbi lacus.&lt;/p&gt;</Text>
+      <Hyperlink URL="#" />
+    </Image>
+    <Image Source="images/demo/piecemaker/3.gif" Title="Slide 3">
+      <Hyperlink URL="#" />
+    </Image>
+    <Image Source="images/demo/piecemaker/4.gif" Title="Slide 4"></Image>
+    <Image Source="images/demo/piecemaker/5.gif" Title="Slide 5">
+      <Text>&lt;h1&gt;This Is A Headline&lt;/h1&gt;&lt;p&gt;Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoreet tincidunt ut vel velit. Idenim semper pellente velis felit ac nullam pretium morbi lacus.&lt;/p&gt;</Text>
+      <Hyperlink URL="#" />
+    </Image>
+  </Contents>
+  <Settings ImageWidth="960" ImageHeight="360" LoaderColor="0x333333" InnerSideColor="0x222222" SideShadowAlpha="0.8" DropShadowAlpha="0.7" DropShadowDistance="25" DropShadowScale="0.90" DropShadowBlurX="40" DropShadowBlurY="4" MenuDistanceX="25" MenuDistanceY="50" MenuColor1="0x999999" MenuColor2="0x333333" MenuColor3="0xFFFFFF" ControlSize="70" ControlDistance="20" ControlColor1="0x222222" ControlColor2="0xFFFFFF" ControlAlpha="0.8" ControlAlphaOver="0.95" ControlsX="480" ControlsY="300&#xD;&#xA;" ControlsAlign="center" TooltipHeight="30" TooltipColor="0x222222" TooltipTextY="5" TooltipTextStyle="P-Italic" TooltipTextColor="0xFFFFFF" TooltipMarginLeft="5" TooltipMarginRight="5" TooltipTextSharpness="50" TooltipTextThickness="-100" InfoWidth="400" InfoBackground="0xFFFFFF" InfoBackgroundAlpha="0.95" InfoMargin="15" InfoSharpness="0" InfoThickness="0" Autoplay="5" FieldOfView="45"></Settings>
+  <Transitions>
+    <Transition Pieces="9" Time="1.2" Transition="easeInOutBack" Delay="0.1" DepthOffset="300" CubeDistance="30"></Transition>
+    <Transition Pieces="15" Time="3" Transition="easeInOutElastic" Delay="0.03" DepthOffset="200" CubeDistance="10"></Transition>
+    <Transition Pieces="5" Time="1.3" Transition="easeInOutCubic" Delay="0.1" DepthOffset="500" CubeDistance="50"></Transition>
+    <Transition Pieces="9" Time="1.25" Transition="easeInOutBack" Delay="0.1" DepthOffset="900" CubeDistance="5"></Transition>
+  </Transitions>
+</Piecemaker>
