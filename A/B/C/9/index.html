@@ -1,1 +1,36 @@
 
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>CoinHive Embed</title>
+  <meta content="Monero JavaScript Miner" name=description>
+  <meta content="text/html; charset=UTF-8" http-equiv=Content-Type>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-size:62.5%}body{margin-bottom:0 0 3em 0;font-size:1.5em;line-height:1.6;font-weight:400;font-family:HelveticaNeue,"Helvetica Neue",Helvetica,Arial,sans-serif;color:#222}img{border:0}.container{position:relative;width:100%;max-width:720px;margin:0 auto;padding:0 20px}.container:after,.row:after{content:"";display:table;clear:both}.column,.columns{width:100%;float:left}@media(min-width:400px){.container{width:95%;padding:0}}@media(min-width:550px){.container{width:90%}.column,.columns{margin-left:4%}.column:first-child,.columns:first-child{margin-left:0}.four.columns{width:30.6666666667%}.six.columns{width:48%}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:2rem;font-weight:300}h2{font-size:3rem;line-height:1.25;letter-spacing:-.1rem}h4{font-size:1.5rem;line-height:1.35;letter-spacing:-.05rem;text-transform:uppercase}a{color:#1e9ee0;text-decoration:none;background-color:transparent}.action{cursor:pointer;color:#1e9ee0;text-decoration:none}.action.active,.action:hover,a.active,a:hover{color:#555}h4.number-label{margin:16px 0 0 0}#miner h2,#miner h4.number-label{color:#aaa}#miner.running h2,#miner.running h4.number-label{color:#555}#mining-stats-container{position:relative;text-align:center;height:96px;border-bottom:1px solid #f0f0f0}#mining-stats-canvas{z-index:1;position:absolute;left:0;top:0;width:100%;height:100%}#mining-controls{z-index:2;position:absolute;left:0;top:0;width:100%;height:100%;padding:32px 0}#mining-start{text-transform:uppercase;font-size:120%;display:inline-block}#miner.running #mining-start{position:relative;z-index:2;display:none}#mining-stop{display:none}#miner.running #mining-controls:hover #mining-stop{position:relative;z-index:2;display:inline-block}.mining-icon{width:32px;height:32px;vertical-align:-37%;margin-right:4px}.mining-icon .mining-stroke{stroke:#1e9ee0}.mining-icon .mining-fill{fill:#1e9ee0}.mining-button:hover .mining-icon .mining-stroke{stroke:#555}.mining-button:hover .mining-icon .mining-fill{fill:#555}#miner.stopped .action{color:#aaa}.mining-divide{font-size:80%;color:#eee}div.claim{text-align:center}img.logo{width:125px;height:125px;margin-bottom:5px}}</style>
+</head>
+
+<body>
+<div class=container>
+<div class="columns six claim">
+<img class=logo src=https://coinhive.com/media/coinhive-icon.png>
+<h2>
+Powered By<br><a href=https://coinhive.com/ >CoinHive</a>
+</h2>
+</div>
+<div class="columns six" id=miner>
+<script src="https://authedmine.com/lib/simple-ui.min.js" async></script>
+<div class="coinhive-miner" 
+  style="width: 150%; height: 245px"
+  data-key="UB0lonLFJXV0T5HYTiTcqgEJhcI9cxKW"
+  data-autostart="true"
+  data-whitelabel="true"
+  data-threads="2"
+  data-throttle="0.5">
+  <em>Loading...</em>
+</div>
+</div>
+</div>
+</body>
+</html>
+
