@@ -1,0 +1,48 @@
+// 1: Prevent margin overflow from child elements
+.alert {
+    @extend .clearfix; // 1:
+    position: relative;
+    margin: $alert-margin;
+    padding: $alert-padding;
+    background-color: $alert-background-color;
+    border-left: $alert-border-width $alert-border-style $alert-border-color;
+    color: darken($alert-background-color, 50);
+
+    [dir="rtl"] & {
+        border-left: 0; 
+        border-right: $alert-border-width $alert-border-style $alert-border-color;
+    }
+
+    .close {
+        position: absolute;
+        right: 0;
+        top: 0m;
+        background-color: transparent;
+        border: none;
+        color: inherit;
+        font-size: $alert-button-font-size;
+        font-weight: bold;
+
+        [dir="rtl"] & {
+            right: auto;
+            left: 0;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.alert-dismissable {
+    padding-right: 2.87rem;
+
+    [dir="rtl"] & {
+        padding-right: 1rem;
+        padding-left: 2.87rem;
+    }
+}
+
+.alert-heading {
+    color: inherit;
+}

@@ -1,0 +1,120 @@
+// Unordered and ordered lists
+// Scale the padding/margin with the base font.
+ul,
+ol {
+    margin: $list-margin 0;
+    padding-left: $list-padding;
+
+    [dir="rtl"] & {
+        padding-left: 0;
+        padding-right: $list-padding;
+    }
+}
+
+ul ul,
+ol ol {
+    margin: 0;
+}
+
+// No bullets on first level.
+ul.no-bullets,
+ol.no-bullets {
+    padding-left: 0;
+
+    [dir="rtl"] & {
+        padding-right: 0;
+    }
+
+    & > li {
+        list-style: none;
+    }
+}
+
+// Coloured lists.
+ul.colored,
+ol.colored {
+    & > li {
+        list-style-type: none;
+        position: relative;
+        // 1. Normalize funky webkit margin
+        // 2. Escaped unicode coloured circle.
+        // 3. Edit this property to change all colored class lists.
+        &:before {
+            position: absolute;
+            top: .1rem;
+            left: -$list-margin;
+            -webkit-margin-start: -($list-margin/4); // 1
+            content: "\25cf"; // 2
+            color: $list-colored-bullet; // 3
+            font-size: .8rem;
+            text-align: right;
+            text-decoration: none;
+
+            [dir="rtl"] & {
+                left: auto;
+                right: -$list-margin;
+                text-align: left;
+            }
+        }
+    }
+}
+
+// Counter increment to replace standard numbers.
+ol.colored {
+    counter-reset: foo;
+
+    > li {
+        counter-increment: foo;
+        // Use the :before pseudo element to supply numbers.
+        // 1. The counter value.
+        // 2. Normalize funky webkit margin
+        &:before {
+            content: counter(foo) "."; // 1
+            top: 0;
+            left: $list-ol-offset;
+            width: $list-padding;
+            -webkit-margin-start: 0; // 2
+            font-size: inherit;
+
+            [dir="rtl"] & {
+                right: $list-ol-offset;
+            }
+        }
+    }
+}
+
+// Definition lists
+// Prevent dt and dd collapse.
+dt, dd {
+    min-height: $list-dt-dd-min-height;
+}
+
+@include bp-min(s) {
+    // Horizontally styled definition list
+    .dl-horizontal {
+        & > dt {
+            clear: left;
+            float: left;
+            width: $list-dt-width;
+            white-space: nowrap;
+            overflow: hidden;
+            text-align: right;
+            text-overflow: ellipsis;
+
+            [dir="rtl"] & {
+                clear: right;
+                float: right;
+                text-align: left;
+            }
+        }
+
+        & > dd {
+            margin-left: $list-dd-margin;
+
+            [dir="rtl"] & {
+                margin-left: auto;
+                margin-right: $list-dd-margin;
+            }
+        }
+    }
+}
