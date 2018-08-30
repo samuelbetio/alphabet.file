@@ -25,7 +25,5 @@
     "package.json"
   ],
   "dependencies": {
-    "angular": ">=1.0.6",
-    "qrcode-generator": "^1.1.0"
   }
 }
