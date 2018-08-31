@@ -1,6 +1,5 @@
 [Pass.csv](Passwords.csv)
 
-[Pass.tsv](Passwords.tsv)
 
 [Info.xlsx](Personal%20info.xlsx)
 
