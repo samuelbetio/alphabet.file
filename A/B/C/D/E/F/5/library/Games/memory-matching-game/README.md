@@ -1,6 +1,6 @@
 # Memory Game Project
 
-A [Udacity](../../../../) project developed using HTMl, CSS, JavaScript and jQuery.
+A [Udacity](../../../) project developed using HTMl, CSS, JavaScript and jQuery.
 
 ## How To Play:
 
