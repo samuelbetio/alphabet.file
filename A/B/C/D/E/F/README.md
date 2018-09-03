@@ -18,6 +18,9 @@ You can use the [editor on GitHub](https://github.com/samuelbetio/alphabet.file/
 
 
 - ## **F 2** to file [FileSaver.js](2/)
+- ## **F 3** to file [F 3](3/)
+- ## **F 4** to file [F 4](4/)
+- ## **F 5** to file [F 5](5/)
 
 
 
