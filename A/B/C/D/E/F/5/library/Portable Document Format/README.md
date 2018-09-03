@@ -1,0 +1,1 @@
+The Portable Document Format is a file format developed in the 1990s to present documents, including text formatting and images, in a manner independent of application software, hardware, and operating systems.
