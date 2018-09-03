@@ -1,0 +1,1 @@
+EXE is a file extension for an executable file format. An executable is a file that contains a program - that is, a particular kind of file that is capable of being executed or run as a program in the computer. An executable file can be run by a program in Microsoft DOS or Windows through a command or a double click.
