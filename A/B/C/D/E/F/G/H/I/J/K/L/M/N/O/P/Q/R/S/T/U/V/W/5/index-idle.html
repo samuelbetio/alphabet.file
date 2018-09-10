@@ -133,6 +133,7 @@
  };
 </script>
 <script>
+ var animating = false;
  var canvas = document.getElementsByTagName('canvas')[0];
  var context = canvas.getContext('2d');
  var landscape = new Landscape(context, canvas.width, canvas.height);
@@ -143,18 +144,42 @@
    landscape.paintBackground(context, canvas.width, canvas.height);
    blueRobot.paint(context, canvas.width/2, landscape.horizon*1.1);
    landscape.paintForeground(context, canvas.width, canvas.height);
-   requestAnimationFrame(paint);
+   if (animating)
+     requestAnimationFrame(paint);
+ }
+ var interval = null;
+ var cancelingTimeout = null;
+ function startAnim() {
+   if (cancelingTimeout) {
+     clearTimeout(cancelingTimeout);
+     cancelingTimeout = null;
+   }
+   if (!animating) {
+     animating = true;
+     paint();
+     // but tick every 100ms, so that we don't slow down when we don't paint
+     interval = setInterval(function () {
+       var dx = blueRobot.tick();
+       landscape.advance(dx);
+     }, 100);
+   }
+ }
+ function stopAnim() {
+   if (cancelingTimeout) return;
+   cancelingTimeout = setTimeout(function () {
+     cancelingTimeout = null;
+     if (animating) {
+       clearInterval(interval);
+       animating = false;
+     }
+   }, 1000);
  }
  paint();
- // but tick every 100ms, so that we don't slow down when we don't paint
- setInterval(function () {
-   var dx = blueRobot.tick();
-   landscape.advance(dx);
- }, 100);
+ blueRobot.sprites.onload = paint;
 </script>
 <p class="buttons">
- <input type=button value="Walk" onclick="blueRobot.walk()">
- <input type=button value="Stop" onclick="blueRobot.stop()">
+ <input type=button value="Walk" onclick="blueRobot.walk(); startAnim();">
+ <input type=button value="Stop" onclick="blueRobot.stop(); stopAnim();">
 <footer>
  <small> Blue Robot Player Sprite by <a href="https://johncolburn.deviantart.com/">JohnColburn</a>.
  Licensed under the terms of the Creative Commons Attribution Share-Alike 3.0 Unported license.</small>
