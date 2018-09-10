@@ -1,0 +1,296 @@
+[
+  {
+    "desc": "Stream video and filter with canvas",
+    "url": "gum-canvas",
+    "tags": "getUserMedia canvas",
+    "support": {
+      "live": "opera chrome",
+      "nightly": "firefox"
+    },
+    "test": "navigator.getUserMedia !== undefined"
+  },
+  {
+    "desc": "Stream video to the browser<br><small>Also works on Opera Mobile 12</small>",
+    "url": "gum",
+    "tags": "getUserMedia",
+    "support": {
+      "live": "opera chrome",
+      "nightly": "firefox"
+    },
+    "test": "navigator.getUserMedia !== undefined"
+  },
+  {
+    "desc": "Drag and drop and XHR upload",
+    "url": "dnd-upload",
+    "tags": "file dnd xhr2",
+    "support": {
+      "live": "chrome firefox opera safari",
+      "nightly": "ie"
+    },
+    "test": "typeof FileReader != 'undefined' && 'draggable' in document.createElement('span') && !!window.FormData && 'upload' in new XMLHttpRequest"
+  },
+  {
+    "desc": "Hidden property",
+    "url": "hidden",
+    "tags": "hidden",
+    "support": {
+      "live": "chrome firefox opera safari",
+      "nightly": ""
+    },
+    "test": "'hidden' in document.createElement('i')"
+  },
+  {
+    "desc": "Simple class manipulation",
+    "url": "classlist",
+    "tags": "classlist",
+    "support": {
+      "live": "chrome opera firefox safari",
+      "nightly": ""
+    },
+    "test": "'classList' in document.createElement('i')"
+  },
+  {
+    "desc": "Storage events",
+    "url": "storage-events",
+    "tags": "storage",
+    "support": {
+      "live": "chrome safari opera firefox ie"
+    },
+    "test": "Modernizr.localstorage"
+  },
+  {
+    "desc": "dataset (data-* attributes)",
+    "url": "dataset",
+    "tags": "dataset",
+    "support": {
+      "live": "chrome opera safari firefox",
+      "nightly": ""
+    },
+    "test": "'dataset' in document.createElement('i')"
+  },
+  {
+    "desc": "History API using pushState",
+    "url": "history",
+    "notes": "Uses onpopstate event",
+    "tags": "history",
+    "support": {
+      "live": "chrome safari firefox opera"
+    },
+    "test": "Modernizr.history"
+  },
+  {
+    "desc": "Browser based file reading",
+    "url": "file-api-simple",
+    "note": "Not part of HTML5",
+    "tags": "file-api",
+    "support": {
+      "live": "firefox chrome opera safari"
+    },
+    "test": "typeof FileReader != 'undefined'"
+  },
+  {
+    "desc": "Drag files directly into your browser",
+    "url": "file-api",
+    "note": "Not directly part of HTML5",
+    "tags": "file-api dnd",
+    "support": {
+      "live": "firefox chrome opera safari"
+    },
+    "test": "typeof FileReader != 'undefined' && Modernizr.draganddrop"
+  },
+  {
+    "desc": "Simple chat client",
+    "url": "web-socket",
+    "tags": "websocket",
+    "support": {
+      "live": "safari chrome opera",
+      "nightly": "firefox"
+    },
+    "test": "Modernizr.websockets"
+  },
+  {
+    "desc": "Two videos playing in sync",
+    "url": "two-videos",
+    "tags": "video",
+    "support": {
+      "live": "firefox opera safari chrome ie"
+    },
+    "test": "Modernizr.video"
+  },
+  {
+    "desc": "Interactive canvas gradients",
+    "url": "canvas-grad",
+    "tags": "canvas",
+    "support": {
+      "live": "firefox opera safari chrome ie"
+    },
+    "test": "Modernizr.canvas"
+  },
+  {
+    "desc": "Canvas & Video",
+    "url": "video-canvas",
+    "tags": "video canvas",
+    "support": {
+      "live": "firefox opera safari chrome ie"
+    },
+    "test": "Modernizr.video && Modernizr.canvas"
+  },
+  {
+    "desc": "Video",
+    "url": "video",
+    "tags": "video",
+    "support": {
+      "live": "firefox opera safari chrome ie"
+    },
+    "test": "Modernizr.video"
+  },
+  {
+    "desc": "Canvas",
+    "url": "canvas",
+    "tags": "canvas",
+    "support": {
+      "live": "firefox opera safari chrome ie"
+    },
+    "test": "Modernizr.canvas"
+  },
+  {
+    "desc": "Content Editable",
+    "url": "contenteditable",
+    "tags": "contenteditable storage",
+    "support": {
+      "live": "ie firefox opera safari chrome"
+    },
+    "test": "'isContentEditable' in document.createElement('span');"
+  },
+  {
+    "desc": "Geolocation",
+    "url": "geo",
+    "tags": "geolocation",
+    "note": "Works on Safari Mobile too",
+    "support": {
+      "live": "firefox chrome safari opera ie"
+    },
+    "test": "Modernizr.geolocation"
+  },
+  {
+    "desc": "postMessage",
+    "url": "postmessage",
+    "note": "same domain",
+    "tags": "postMessage",
+    "support": {
+      "live": "ie firefox opera safari chrome"
+    },
+    "test": "Modernizr.postmessage"
+  },
+  {
+    "desc": "postMessage",
+    "url": "postmessage2",
+    "tags": "postMessage",
+    "note": "cross domain",
+    "support": {
+      "live": "ie firefox opera safari chrome"
+    },
+    "test": "Modernizr.postmessage"
+  },
+  {
+    "desc": "drag and drop",
+    "url": "drag",
+    "tags": "dnd",
+    "support": {
+      "live": "ie firefox safari chrome opera"
+    },
+    "test": "Modernizr.draganddrop"
+  },
+  {
+    "desc": "drag anything",
+    "url": "drag-anything",
+    "tags": "dnd",
+    "support": {
+      "live": "ie firefox safari chrome opera"
+    },
+    "test": "Modernizr.draganddrop"
+  },
+  {
+    "desc": "offline detection",
+    "url": "offline",
+    "tags": "offline events",
+    "note": "Works on Safari Mobile too",
+    "support": {
+      "live": "firefox opera chrome safari"
+    }
+  },
+  {
+    "desc": "navigator.onLine tests",
+    "url": "nav-online",
+    "tags": "offline",
+    "note": "Doesn't use events, only polls",
+    "support": {
+      "live": "firefox opera ie chrome safari"
+    }
+  },
+  {
+    "desc": "on/offline event tests",
+    "url": "offline-events",
+    "notes": "Opera &amp; Firefox - requires \"Work Offline\"",
+    "tags": "offline events",
+    "support": {
+      "live": "firefox opera chrome safari"
+    }
+  },
+  {
+    "desc": "offline application using the manifest",
+    "url": "offlineapp",
+    "note": "FF 3.6 is still buggy - doesn't request manifest after initial load",
+    "tags": "offline manifest",
+    "support": {
+      "live": "firefox safari chrome opera"
+    },
+    "test": "Modernizr.applicationcache"
+  },
+  {
+    "desc": "Storage",
+    "url": "storage",
+    "tags": "storage",
+    "support": {
+      "live": "ie firefox opera safari chrome"
+    },
+    "test": "Modernizr.sessionstorage && Modernizr.localstorage"
+  },
+  {
+    "desc": "Web SQL Database Storage",
+    "url": "database",
+    "tags": "sql-database",
+    "support": {
+      "live": "safari chrome opera"
+    },
+    "test": "Modernizr.websqldatabase"
+  },
+  {
+    "desc": "Web SQL Database - rollback test",
+    "url": "database-rollback",
+    "tags": "sql-database",
+    "support": {
+      "live": "safari chrome opera"
+    },
+    "test": "Modernizr.websqldatabase"
+  },
+  {
+    "desc": "Web Workers",
+    "url": "worker",
+    "tags": "workers",
+    "note": "watch out - uses a lot of CPU! <a href=\"non-worker\">example without - will hang your browser</a>",
+    "support": {
+      "live": "safari chrome firefox opera"
+    },
+    "test": "Modernizr.webworkers"
+  },
+  {
+    "desc": "SVG clock animation",
+    "url": "svg-clock",
+    "tags": "svg",
+    "note": "SVG inline clock with animation.",
+    "support": {
+      "live": "ie firefox opera safari chrome"
+    }
+  }
+]
