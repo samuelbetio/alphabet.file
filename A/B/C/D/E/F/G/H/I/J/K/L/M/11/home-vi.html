@@ -41,15 +41,19 @@
         <!-- CSS Slider -->
         <link rel="stylesheet" href="css/slider-thumbnails.css" type="text/css" media="all" />
         
-        <link rel="stylesheet" type="text/css" media="all" href="css/homes/home.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="css/homes/home-ii.css" />
+        <style type="text/css">
+        	#footer{ background-color: #515150; }
+        </style>
+        <link rel='stylesheet' type='text/css' media='all' href='css/slider-thumbnails.css' />
         
 
         <!-- FONTS -->
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans&amp;subset=latin%2Ccyrillic%2Cgreek&amp;ver=3.4.1" type="text/css" media="all" />
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Shadows+Into+Light&amp;subset=latin%2Ccyrillic%2Cgreek&amp;ver=3.4.1" type="text/css" media="all" />
         <link rel='stylesheet' href='http://yourinspirationweb.com/demo/memento/wp-content/themes/memento/core/includes/css/font-awesome.css?ver=3.4.1' type='text/css' media='all' />
-        <link rel='stylesheet' href='http://yourinspirationweb.com/demo/memento/wp-content/themes/memento/fonts/socialico/stylesheet.css?ver=3.4.1' type='text/css' media='all' />
-        <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed%3A300%7CPlayfair+Display%3A400italic&#038;ver=3.4.1' type='text/css' media='all' />
+		<link rel='stylesheet' href='http://yourinspirationweb.com/demo/memento/wp-content/themes/memento/fonts/socialico/stylesheet.css?ver=3.4.1' type='text/css' media='all' />
+		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed%3A300%7CPlayfair+Display%3A400italic&#038;ver=3.4.1' type='text/css' media='all' />
         
         <!-- JavaScripts -->
         <script type="text/javascript">
@@ -64,7 +68,7 @@
         <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
         <script type="text/javascript" src="js/jquery.flexslider.min.js"></script>
         <script type="text/javascript" src="js/jquery.aw-showcase.js"></script>
-        <script type="text/javascript" src="js/superfish.js"></script>
+        <script type="text/javascript" src="js/superfish.js"></script><!-- menu -->
         <script type='text/javascript' src="js/jquery.eislideshow.js"></script>
         <script type='text/javascript' src="js/swfobject.js"></script>
         <script type='text/javascript' src='js/jquery.cookie.js'></script>
@@ -73,7 +77,7 @@
         <script type='text/javascript' src='js/jquery.quicksand.js'></script>
         
     </head>
-    <body class="no_js responsive boxed-layout chrome ">
+    <body class="no_js responsive stretched-layout chrome ">
         
         <!-- TOPBAR -->
         <div id="topbar">
@@ -211,11 +215,10 @@
             </div>
             <!-- END HEADER -->
         
-            <!-- SLIDER -->
             <!-- START SLIDER -->
-            <div id="slider" class="thumbnails group inner">
-                <div class="showcase group">
-                    
+			<div id="slider" class="thumbnails group inner">
+			    <div class="showcase group">
+			        
                     <div class="showcase-slide">
                         <div class="showcase-content">
                             <!-- If the slide contains multiple elements you should wrap them in a div with the class
@@ -236,7 +239,7 @@
                         </div>
                     </div>
                     
-                    <div class="showcase-slide">
+			        <div class="showcase-slide">
                         <div class="showcase-content">
                             <div class="showcase-content-wrapper">
                                 <img src="images/slider-thumbnails/0022.jpg" width="1920" height="364" alt="Vintage. Sensual." />
@@ -253,7 +256,7 @@
                         </div>
                     </div>
                     
-                    <div class="showcase-slide">
+			        <div class="showcase-slide">
                         <div class="showcase-content">
                             <div class="showcase-content-wrapper">
                                 <img src="images/slider-thumbnails/003.jpg" width="1920" height="380" alt="M&egrave;mento style." />
@@ -304,61 +307,101 @@
                         </div>
                     </div>
                     
-                </div>
-            </div>
-            <!-- END SLIDER -->
-            <script type="text/javascript">      
-	            var 	yiw_slider_type = 'thumbnails',
-	                          yiw_slider_thumbnails_fx = 'fade',
-	            yiw_slider_thumbnails_speed = 500, yiw_slider_thumbnails_timeout = 5000;
-	        </script>
-	        <!-- /SLIDER -->
-            
-            <div class="inner home-row group">
-                
-                <div class="widget-first widget one-third widget-icon-text group">
-                    <h2><img class="icon-img" src="images/icons/smile.png" alt="" /> Meet Meménto</h2>
-                    <p>suitable for business/corporate sites,  creative portfolio and personal sites. </p>
-                </div>
-                
-                <div class="widget one-third widget-icon-text group">
-                    <h2><i class="icon-envelope"></i> Contact the team!</h2>
-                    <p>Feel free to contact us for additional info or for a free quote!</p>
-                </div>
-                
-                <div class="widget-last widget one-third widget-icon-text group">
-                    <h2><i class="icon-heart-empty reverse"></i> You will <span>love us</span>.</h2>
-                    <p>You have only to try Memènto. We are sure: you will love this theme.</p>
-                </div>
-                
-            </div>
-            
-            <div class="inner home-testimonials home-section group">
-                <div class="title">
-                    <h2><img src="images/icons/comment.png" alt="icon-adjust" /> People <span>love Memènto</span></h2>
-                    <p>feedback from our customers</p>
-                </div>
-                <ul class="list-testimonials" style="float: left;">
-                    <li>
-                        <p>I already given a 5-star rating, but I also wanted to provide my two cents in case anyone is unsure about purchasing this theme. Not only is the theme itself very versatile and easy to manipulate, but the support we get in the forum is amazing - <strong>Joy Mergot</strong> -</p>
-                    </li>
-                    <li>
-                        <p>I am absolutely thrilled with this theme! I have never built a website before but your instructions and design make it both fun and easy to do - <strong>Elisa Meis</strong> -</p>
-                    </li>
-                    <li>
-                        <p>Bookmark this theme as one of your “Must Haves for 2012” This theme is without a doubt one of our Top 5 Purchases. - <strong>Ricardo Mori</strong> -</p>
-                    </li>
-                    <li>
-                        <p>I purchased this theme and I really like it. The theme authors have been very helpful in the support area of their website. - <strong>Erica Evans</strong> -</p>
-                    </li>
-                </ul>
-                <script type="text/javascript" src="js/testimonials.js"></script>	      
-            </div>
-            
-            <div class="clear"></div>
-            
-        </div>
-        <!-- END WRAPPER -->
+			    </div>
+			</div>
+			<!-- END SLIDER -->
+			<script type="text/javascript">      
+				var		yiw_slider_type = 'thumbnails',
+		        		yiw_slider_thumbnails_fx = 'fade',
+						yiw_slider_thumbnails_speed = 500,
+						yiw_slider_thumbnails_timeout = 5000;
+			</script>
+			<!-- /SLIDER -->
+			
+			<div id="primary" class="layout-sidebar-right home-section">
+			    <div class="inner group">
+			        <!-- START CONTENT -->
+			        <div id="content" class="group">
+			            <div class="page type-page status-publish hentry group">
+			                <h1>Welcome to Mèmento</h1>
+			                <p>am dignissim molestie libero, ac sodales nulla congue a. Nulla egestas imperdiet nibh, sit amet euismod erat porttitor id. In non pulvinar sapien. Ut in tristique leo. Morbi vitae sollicitudin orci. Suspendisse potenti. In hac habitasse platea dictumst. Nam rhoncus euismod nibh vitae vehicula.</p>
+			                <h5>&#8230;another corporate home page for your site</h5>
+			                <p>In lobortis urna sed ante vehicula faucibus. Aliquam interdum interdum nulla, nec dictum dui sodales vel. Fusce elementum dictum dolor, quis luctus lorem lobortis vitae. <a href="#">Integer et risus</a> luctus sapien egestas dignissim in ut ante. Curabitur egestas egestas dui eu laoreet.</p>
+			            </div>
+			        </div>
+			        <!-- END CONTENT -->  
+			        <!-- START LATEST NEWS -->
+			        <div id="sidebar" class="group one-fourth last">
+			            <div class="widget-first widget-last widget testimonial-widget">
+			                <h3>Our <span>customer</span> say..</h3>
+			                <div class="testimonial-text">
+			                    <ul>
+			                        <li>
+			                            <blockquote>
+			                                <p>I already given a 5-star rating, but I also wanted to provide my two cents in case anyone is unsure about purchasing this theme. Not only is the theme itself very versatile and easy to manipulate, but the support we get in the forum is amazing<br /> - <strong>Joy Mergot</strong> -</p>
+			                            </blockquote>
+			                        </li>
+			                        <li>
+			                            <blockquote>
+			                                <p>I am absolutely thrilled with this theme! I have never built a website before but your instructions and design make it both fun and easy to do<br /> - <strong>Elisa Meis</strong> -</p>
+			                            </blockquote>
+			                        </li>
+			                        <li>
+			                            <blockquote>
+			                                <p>Bookmark this theme as one of your “Must Haves for 2012” This theme is without a doubt one of our Top 5 Purchases.<br /> - <strong>Ricardo Mori</strong> -</p>
+			                            </blockquote>
+			                        </li>
+			                    </ul>
+			                </div>
+			                <script type="text/javascript">
+			                    jQuery(document).ready(function($){
+			                        $('.testimonial-widget ul').cycle({
+			                            fx:'scrollLeft',
+			                            
+			                            timeout:8000,
+			                            speed:300, 
+			                            pager:'.p-testimonial'
+			                        });
+			                    });
+			                </script>
+			            </div>
+			        </div>
+			        <!-- END LATEST NEWS -->   
+			    </div>
+			</div>
+			
+			<div class="inner home-services home-section group">
+			    <h2>Our <span>services</span></h2>
+			    <div class="hentry-post group first">
+			        <div class="thumb-img"><a href="service.html"><img width="217" height="100" src="images/services/socialmarketing-217x100.jpg" class="attachment-thumb-home-section wp-post-image" alt="socialmarketing" title="socialmarketing" /></a></div>
+			        <h3><a href="service.html" title="Social Marketing" class="title">Social Marketing</a></h3>
+			        <p>Pellentesque tincidunt, sem in auctor fringilla, dui diam aliquam felis, nec rhoncus libero magna in nisi.</p>
+			        <p> <a href="service.html" class="more-link">// read more ></a></p>
+			    </div>
+			    <div class="hentry-post group">
+			        <div class="thumb-img"><a href="service.html"><img width="217" height="100" src="images/services/blogging-217x100.jpg" class="attachment-thumb-home-section wp-post-image" alt="blogging" title="blogging" /></a></div>
+			        <h3><a href="service.html" title="Professional Blogging" class="title">Professional Blogging</a></h3>
+			        <p>Pellentesque tincidunt, sem in auctor fringilla, dui diam aliquam felis, nec rhoncus libero magna in nisi.</p>
+			        <p> <a href="service.html" class="more-link">// read more ></a></p>
+			    </div>
+			    <div class="hentry-post group">
+			        <div class="thumb-img"><a href="service.html"><img width="217" height="100" src="images/services/webdevelopment-217x100.jpg" class="attachment-thumb-home-section wp-post-image" alt="webdevelopment" title="webdevelopment" /></a></div>
+			        <h3><a href="service.html" title="Web design &amp; development" class="title">Web design &#038; development</a></h3>
+			        <p>Pellentesque tincidunt, sem in auctor fringilla, dui diam aliquam felis, nec rhoncus libero magna in nisi.</p>
+			        <p> <a href="service.html" class="more-link">// read more ></a></p>
+			    </div>
+			    <div class="hentry-post group last">
+			        <div class="thumb-img"><a href="service.html"><img width="217" height="100" src="images/services/socialbusiness-217x100.jpg" class="attachment-thumb-home-section wp-post-image" alt="socialbusiness" title="socialbusiness" /></a></div>
+			        <h3><a href="service.html" title="Social Business" class="title">Social Business</a></h3>
+			        <p>Pellentesque tincidunt, sem in auctor fringilla, dui diam aliquam felis, nec rhoncus libero magna in nisi.</p>
+			        <p> <a href="service.html" class="more-link">// read more ></a></p>
+			    </div>
+			</div>
+			
+			<div class="clear"></div>
+			</div>     
+			<!-- END WRAPPER -->
+
         
         <div id="footer" class="sidebar-right">
             <div class="group inner footer_row_1 footer_cols_3">

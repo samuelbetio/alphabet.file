@@ -42,6 +42,7 @@
         <link rel="stylesheet" href="css/slider-thumbnails.css" type="text/css" media="all" />
         
         <link rel="stylesheet" type="text/css" media="all" href="css/homes/home.css" />
+        <link rel='stylesheet' href='css/layerslider.css' type='text/css' media='all' />
         
 
         <!-- FONTS -->
@@ -212,110 +213,45 @@
             <!-- END HEADER -->
         
             <!-- SLIDER -->
-            <!-- START SLIDER -->
-            <div id="slider" class="thumbnails group inner">
-                <div class="showcase group">
-                    
-                    <div class="showcase-slide">
-                        <div class="showcase-content">
-                            <!-- If the slide contains multiple elements you should wrap them in a div with the class
-                                .showcase-content-wrapper. We usually wrap even if there is only one element,
-                                because it looks better. -->
-                            <div class="showcase-content-wrapper">
-                                <img src="images/slider-thumbnails/001.jpg" width="1920" height="380" alt="A fresh &amp; clean design" />
-                            </div>
-                        </div>
-                        <div class="showcase-thumbnail">
-                            <img src="images/slider-thumbnails/001-228x100.jpg" />
-                        </div>
-                        <div class="showcase-text">
-                            <h2>A fresh & clean design</h2>
-                            <p>
-                            <p>another nice WordPress Theme designed by YIW</p>
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="showcase-slide">
-                        <div class="showcase-content">
-                            <div class="showcase-content-wrapper">
-                                <img src="images/slider-thumbnails/0022.jpg" width="1920" height="364" alt="Vintage. Sensual." />
-                            </div>
-                        </div>
-                        <div class="showcase-thumbnail">
-                            <img src="images/slider-thumbnails/0022-228x100.jpg" />
-                        </div>
-                        <div class="showcase-text">
-                            <h2>Vintage. Sensual.</h2>
-                            <p>
-                            <p>a great slider for your content</p>
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="showcase-slide">
-                        <div class="showcase-content">
-                            <div class="showcase-content-wrapper">
-                                <img src="images/slider-thumbnails/003.jpg" width="1920" height="380" alt="M&egrave;mento style." />
-                            </div>
-                        </div>
-                        <div class="showcase-thumbnail">
-                            <img src="images/slider-thumbnails/003-228x100.jpg" />
-                        </div>
-                        <div class="showcase-text">
-                            <h2>Mèmento style.</h2>
-                            <p>
-                            <p>Love this fresh wordpress theme</p>
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="showcase-slide">
-                        <div class="showcase-content">
-                            <div class="showcase-content-wrapper">
-                                <img src="images/slider-thumbnails/02.jpg" width="1920" height="380" alt="Lovely Theme" />
-                            </div>
-                        </div>
-                        <div class="showcase-thumbnail">
-                            <img src="images/slider-thumbnails/02-228x100.jpg" />
-                        </div>
-                        <div class="showcase-text">
-                            <h2>Lovely Theme</h2>
-                            <p>
-                            <p>a sensual feminine image</p>
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="showcase-slide">
-                        <div class="showcase-content">
-                            <div class="showcase-content-wrapper">
-                                <img src="images/slider-thumbnails/01.jpg" width="1920" height="380" alt="Wow. Love it." />
-                            </div>
-                        </div>
-                        <div class="showcase-thumbnail">
-                            <img src="images/slider-thumbnails/01-228x100.jpg" />
-                        </div>
-                        <div class="showcase-text">
-                            <h2>Wow. Love it.</h2>
-                            <p>
-                            <p>a creative corporate theme</p>
-                            </p>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            <!-- END SLIDER -->
-            <script type="text/javascript">      
-	            var 	yiw_slider_type = 'thumbnails',
-	                          yiw_slider_thumbnails_fx = 'fade',
-	            yiw_slider_thumbnails_speed = 500, yiw_slider_thumbnails_timeout = 5000;
-	        </script>
-	        <!-- /SLIDER -->
+			<!-- START SLIDER -->
+			<div id="slider" class="layers-slider">
+			    <div class="shadowWrapper">
+			        <div id="layerslider_1" style="margin: 0px auto; width: 1000px; height: 380px; ">
+			            <div class="ls-layer" style="background-image: url(images/slider-parallax/bg.jpg );slidedirection: right; slidedelay: 4000; durationin: 1500; durationout: 1500; easingin: easeInOutQuint; easingout: easeInOutQuint; delayin: 0; delayout: 0;">
+			            	<img class="ls-s1" src="images/slider-parallax/023.png" alt="sublayer" style="position: absolute; top: 180px; left: 60px; slidedirection : left; slideoutdirection : left; parallaxin : .45; parallaxout : .45; durationin : 2000; durationout : 1500; easingin : easeOutBounce; easingout : easeInOutQuint; delayin : 100; delayout : 0;" />
+			            	<a href="#" target="_self" class="ls-s3" style="position: absolute; top: 330px; left:128px; slidedirection : left; slideoutdirection : left; parallaxin : .45; parallaxout : .45; durationin : 2000; durationout : 1500; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 150; delayout : 0;"><img src="images/slider-parallax/033.png" alt="sublayer" /></a>
+			            	<img class="ls-s4" src="images/slider-parallax/012.png" alt="sublayer" style="position: absolute; top: 60px; left: 500px; slidedirection : right; slideoutdirection : left; parallaxin : .45; parallaxout : .45; durationin : 1000; durationout : 1500; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 400; delayout : 0;" />
+			            </div>
+			            <div class="ls-layer" style="background-image: url(images/slider-parallax/bg2.jpg );slidedirection: right; slidedelay: 4000; durationin: 1500; durationout: 1500; easingin: easeInOutQuint; easingout: easeInOutQuint; delayin: 0; delayout: 0;">
+			            	<img class="ls-s2" src="images/slider-parallax/013.png" alt="sublayer" style="position: absolute; top: 40px; left: 60px; slidedirection : left; slideoutdirection : left; parallaxin : .45; parallaxout : .45; durationin : 2500; durationout : 1500; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 0; delayout : 0;" />
+			            	<img class="ls-s3" src="images/slider-parallax/024.png" alt="sublayer" style="position: absolute; top: 100px; left: 530px; slidedirection : bottom; slideoutdirection : bottom; parallaxin : .45; parallaxout : .45; durationin : 300; durationout : 1500; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 800; delayout : 0;" />
+			            	<img class="ls-s5" src="images/slider-parallax/034.png" alt="sublayer" style="position: absolute; top: 186px; left: 650px; slidedirection : bottom; slideoutdirection : bottom; parallaxin : .45; parallaxout : .45; durationin : 300; durationout : 1500; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 850; delayout : 0;" />
+			            	<a href="#" target="_self" class="ls-s1" style="position: absolute; top: 240px; left:530px; slidedirection : bottom; slideoutdirection : bottom; parallaxin : .45; parallaxout : .45; durationin : 300; durationout : 1500; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 900; delayout : 0;"><img src="images/slider-parallax/042.png" alt="sublayer" /></a>
+			            </div>
+			            <div class="ls-layer" style="background-image: url(images/slider-parallax/l3.jpg );slidedirection: right; slidedelay: 4000; durationin: 1500; durationout: 1500; easingin: easeInOutQuint; easingout: easeInOutQuint; delayin: 0; delayout: 0;">
+			            	<img class="ls-s1" src="images/slider-parallax/l31.png" alt="sublayer" style="position: absolute; top: 0px; left: 0px; slidedirection : right; slideoutdirection : left; parallaxin : .45; parallaxout : .45; durationin : 5800; durationout : 1500; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 0; delayout : 0;" />
+			            	<img class="ls-s3" src="images/slider-parallax/l32.png" alt="sublayer" style="position: absolute; top: 0px; left: 0px; slidedirection : right; slideoutdirection : left; parallaxin : .45; parallaxout : .45; durationin : 5600; durationout : 1500; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 0; delayout : 0;" />
+			            	<img class="ls-s5" src="images/slider-parallax/l33.png" alt="sublayer" style="position: absolute; top: -20px; left: -32px; slidedirection : right; slideoutdirection : left; parallaxin : .45; parallaxout : .45; durationin : 1200; durationout : 1500; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 0; delayout : 0;" />
+			            	<img class="ls-s7" src="images/slider-parallax/l34.png" alt="sublayer" style="position: absolute; top: -53px; left: 12px; slidedirection : right; slideoutdirection : left; parallaxin : .45; parallaxout : .45; durationin : 1350; durationout : 1500; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 0; delayout : 0;" />
+			            	<img class="ls-s9" src="images/slider-parallax/l36.png" alt="sublayer" style="position: absolute; top: -69px; left: 14px; slidedirection : right; slideoutdirection : left; parallaxin : .45; parallaxout : .45; durationin : 4000; durationout : 800; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 0; delayout : 50;" />
+			            	<img class="ls-s11" src="images/slider-parallax/l35.png" alt="sublayer" style="position: absolute; top: 0px; left: 0px; slidedirection : right; slideoutdirection : left; parallaxin : .45; parallaxout : .45; durationin : 5000; durationout : 1500; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 0; delayout : 100;" />
+			            	<img class="ls-s13" src="images/slider-parallax/l37.png" alt="sublayer" style="position: absolute; top: -114px; left: -56px; slidedirection : right; slideoutdirection : left; parallaxin : .45; parallaxout : .45; durationin : 1500; durationout : 1500; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 0; delayout : 0;" />
+			            	<img class="ls-s15" src="images/slider-parallax/l38.png" alt="sublayer" style="position: absolute; top: -124px; left: -55px; slidedirection : right; slideoutdirection : left; parallaxin : .45; parallaxout : .45; durationin : 1500; durationout : 1500; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 0; delayout : 0;" />
+			            	<img class="ls-s17" src="images/slider-parallax/l39.png" alt="sublayer" style="position: absolute; top: -132px; left: -55px; slidedirection : right; slideoutdirection : left; parallaxin : .45; parallaxout : .45; durationin : 1500; durationout : 1500; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 0; delayout : 0;" />
+			            	<img class="ls-s19" src="images/slider-parallax/l310.png" alt="sublayer" style="position: absolute; top: -110px; left: -15px; slidedirection : right; slideoutdirection : left; parallaxin : .45; parallaxout : .45; durationin : 1500; durationout : 1500; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 0; delayout : 0;" />
+			            	<img class="ls-s21" src="images/slider-parallax/l311.png" alt="sublayer" style="position: absolute; top: -113px; left: -15px; slidedirection : right; slideoutdirection : left; parallaxin : .45; parallaxout : .45; durationin : 1500; durationout : 1500; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 0; delayout : 0;" />
+			            </div>
+			        </div>
+			        <div class="shadow-left"></div>
+			        <div class="shadow-right"></div>
+			    </div>
+			</div>
+			<!-- END SLIDER -->
+			<script type="text/javascript" src="js/layer-slider.js"></script>
+			<!-- /SLIDER -->
             
             <div class="inner home-row group">
-                
+			    
                 <div class="widget-first widget one-third widget-icon-text group">
                     <h2><img class="icon-img" src="images/icons/smile.png" alt="" /> Meet Meménto</h2>
                     <p>suitable for business/corporate sites,  creative portfolio and personal sites. </p>
@@ -331,34 +267,39 @@
                     <p>You have only to try Memènto. We are sure: you will love this theme.</p>
                 </div>
                 
-            </div>
-            
-            <div class="inner home-testimonials home-section group">
-                <div class="title">
-                    <h2><img src="images/icons/comment.png" alt="icon-adjust" /> People <span>love Memènto</span></h2>
-                    <p>feedback from our customers</p>
-                </div>
-                <ul class="list-testimonials" style="float: left;">
-                    <li>
-                        <p>I already given a 5-star rating, but I also wanted to provide my two cents in case anyone is unsure about purchasing this theme. Not only is the theme itself very versatile and easy to manipulate, but the support we get in the forum is amazing - <strong>Joy Mergot</strong> -</p>
-                    </li>
-                    <li>
-                        <p>I am absolutely thrilled with this theme! I have never built a website before but your instructions and design make it both fun and easy to do - <strong>Elisa Meis</strong> -</p>
-                    </li>
-                    <li>
-                        <p>Bookmark this theme as one of your “Must Haves for 2012” This theme is without a doubt one of our Top 5 Purchases. - <strong>Ricardo Mori</strong> -</p>
-                    </li>
-                    <li>
-                        <p>I purchased this theme and I really like it. The theme authors have been very helpful in the support area of their website. - <strong>Erica Evans</strong> -</p>
-                    </li>
-                </ul>
-                <script type="text/javascript" src="js/testimonials.js"></script>	      
-            </div>
-            
-            <div class="clear"></div>
-            
-        </div>
-        <!-- END WRAPPER -->
+			</div>
+			<div class="inner home-testimonials home-section group">
+			    <div class="title">
+			        <h2><img src="images/icons/comment.png" alt="icon-adjust" /> People <span>love Memènto</span></h2>
+			        <p>feedback from our customers</p>
+			    </div>
+			    <ul class="list-testimonials" style="float: left;">
+			        <li>
+			            <p>I already given a 5-star rating, but I also wanted to provide my two cents in case anyone is unsure about purchasing this theme. Not only is the theme itself very versatile and easy to manipulate, but the support we get in the forum is amazing - <strong>Joy Mergot</strong> -</p>
+			        </li>
+			        <li>
+			            <p>I am absolutely thrilled with this theme! I have never built a website before but your instructions and design make it both fun and easy to do - <strong>Elisa Meis</strong> -</p>
+			        </li>
+			        <li>
+			            <p>Bookmark this theme as one of your “Must Haves for 2012” This theme is without a doubt one of our Top 5 Purchases. - <strong>Ricardo Mori</strong> -</p>
+			        </li>
+			        <li>
+			            <p>I purchased this theme and I really like it. The theme authors have been very helpful in the support area of their website. - <strong>Erica Evans</strong> -</p>
+			        </li>
+			    </ul>
+			    <script type="text/javascript">
+			        jQuery(function($){
+			            $('.home-testimonials ul').width( 920 - $('.home-testimonials .title').outerWidth() - 20 );
+			            $('.home-testimonials ul').cycle({
+			                fx: 'scrollHorz',
+			                speed: 600,
+			                timeout: 8000            });
+			        });
+			    </script>	      
+			</div>
+			<div class="clear"></div>
+		</div>     
+		<!-- END WRAPPER -->
         
         <div id="footer" class="sidebar-right">
             <div class="group inner footer_row_1 footer_cols_3">
