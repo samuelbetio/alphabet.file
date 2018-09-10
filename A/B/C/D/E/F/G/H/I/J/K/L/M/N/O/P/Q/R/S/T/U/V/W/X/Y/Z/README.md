@@ -7,4 +7,3 @@ You can use the [editor on GitHub](https://github.com/samuelbetio/alphabet.file/
 
 - ## **Back** to file [Y](../)
 [LICENSE](LICENSE)
-
