@@ -1,0 +1,22 @@
+#slider { position:relative; overflow:hidden; width:1000px; height:338px; font-family: "Droid Sans", serif; }
+#slider ul { list-style:none; position:absolute; margin:0; height:338px; }
+#slider ul li { float:left; position:relative; width:1000px; height:338px; overflow:hidden; }
+#slider ul li .video-container iframe, #slider ul li .video-container object, #slider ul li .video-container embed { width:100% !important; height:338px !important; }
+
+/* captions style */
+#slider ul li .slider-caption { background:#000; background:rgba(0,0,0,0.8); position:absolute; }
+#slider ul li .slider-caption h2, #slider ul li .slider-caption p { color:#fff; }
+#slider ul li .slider-caption h2 { margin:0 0 0.7em; font-weight: normal; letter-spacing:0; }
+#slider ul li .slider-caption p { font-size: 12px; }
+
+/* captions position */
+#slider ul li .caption-right, #slider ul li .caption-left { top:0; }
+#slider ul li .caption-top, #slider ul li .caption-bottom { left:0; }
+#slider ul li .caption-top      { top:-457px; }
+#slider ul li .caption-right    { right:-360px; }
+#slider ul li .caption-bottom   { bottom:-457px; }
+#slider ul li .caption-left     { left:-360px; }
+
+/* caption right */
+#slider ul li .caption-right, #slider ul li .caption-left { width:300px; height:100%; padding:40px 30px; }
+#slider ul li .caption-top, #slider ul li .caption-bottom { width:940px; height:auto; padding:20px 30px; }

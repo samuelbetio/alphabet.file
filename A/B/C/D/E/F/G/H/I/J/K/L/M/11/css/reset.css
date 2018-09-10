@@ -1,0 +1,25 @@
+/***********************************************************************
+******************* reset.css ******************************************
+************************************************************************/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+body {line-height:1.5;}
+table {border-collapse:separate; border-spacing:0;}
+caption, th, td {text-align:left;font-weight:normal;}
+table, td, th {vertical-align:middle;}
+th {color:#757475;line-height:40px;min-height:40px;text-align:center;padding:10px;font-weight:bold;}
+blockquote:before, blockquote:after, q:before, q:after { content:""; }
+blockquote, q { quotes:"" ""; }
+a img {border:none;}
+.clearer {height:0px;overflow:hidden;margin:0px;clear:both;}
+.center {text-align:center;}                                       
+
+/* self-clear floats */
+.group:after { content:"."; display:block; height:0; clear:both; visibility:hidden; overflow: hidden; } 
+/* ie.css */
+* html .group { /* IE6 */
+    height:1%;
+}
+*:first-child+html .group { /* IE7 */
+    min-height:1%;
+}  
+/***********************************************************************/  

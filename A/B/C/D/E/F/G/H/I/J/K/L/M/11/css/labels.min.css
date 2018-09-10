@@ -1,0 +1,21 @@
+/*!
+ * Bootstrap v2.0.2
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+.twitter_label{padding:1px 4px 2px;font-size:10.998px;font-weight:bold;line-height:13px;color:#ffffff;vertical-align:middle;white-space:nowrap;text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);background-color:#999999;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
+.twitter_label:hover{color:#ffffff;text-decoration:none;}
+.twitter_label-red{background-color:#b94a48;}
+.twitter_label-red:hover{background-color:#953b39;}
+.twitter_label-orange{background-color:#f89406;}
+.twitter_label-orange:hover{background-color:#c67605;}
+.twitter_label-green{background-color:#468847;}
+.twitter_label-green:hover{background-color:#356635;}
+.twitter_label-lightblue{background-color:#3a87ad;}
+.twitter_label-lightblue:hover{background-color:#2d6987;}
+.twitter_label-black{background-color:#333333;}
+.twitter_label-black:hover{background-color:#1a1a1a;}

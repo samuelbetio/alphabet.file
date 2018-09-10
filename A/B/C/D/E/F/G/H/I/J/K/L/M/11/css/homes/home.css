@@ -1,0 +1,35 @@
+<style type="text/css">#topbar .topbar-right .topbar-level-1 li a:hover, #topbar .topbar-right .topbar-level-1 li.login_link:hover i { color:#fff; }
+    #nav > ul a, #nav > .menu > ul a { background-color:#232323; }
+    #nav > ul ul a, #nav > .menu > ul ul a { border-top-color:#3D3D3D; }
+    #nav > ul ul a, #nav > .menu > ul ul a { border-bottom-color:#0A0A0A; }
+    h1 { color:#030303; }
+    h2, .post_title h2 { color:#030303; }
+    h3 { color:#030303; }
+    h4 { color:#030303; }
+    h5 { color:#030303; }
+    h6 { color:#030303; }
+    h1 span, h2 span, h3 span, h4 span, h5 span, h6 span { color:#D48303; }
+    .hentry-post .post-title a { color:#2B2828; }
+    .hentry-post .post-title { font-size:22px; }
+    .ei-slider {height:400px;}body { background:#fff url('../../images/backgrounds/032.jpg') repeat top center fixed; }
+    body { background-color:#fff; }
+    #header { background:; }    .wrapper-content { width:640px; }
+    .es-carousel ul li a img { width:65px;height:65px; }#portfolio li img, #portfolio li .thumb,  { width:280px;height:143px; }.portfolio-slider li a img, .portfolio-slider li a, .portfolio-slider li { width:205px;height:118px; }#portfolio-bigimage img { width:617px;height:295px; }.gallery-wrap li img, .gallery-wrap .internal_page_item { width:208px;height:168px; }#topbar, #topbar p, #topbar a, #topbar ul li a { font-family: 'Droid Sans', sans-serif !important; }
+    p, #footer .recent-posts p.meta .comments a, #footer .popular-posts p.meta .comments a { font-family: 'Droid Sans', sans-serif !important; }
+    .testimonial .testimonial-name .name { font-family: 'Shadows Into Light', sans-serif !important; }
+    .special-font { font-family: 'Shadows Into Light', sans-serif !important; }
+    .hentry-post .meta .date, .hentry-post .meta .author, .hentry-post .meta .categories, .hentry-post .meta .comments { font-family: 'Droid Sans', sans-serif !important; }
+    #header .inner #logo h1 a.logo-text { font-family: Arial, Helvetica, sans-serif !important; }
+    #header .inner #logo h1 a.logo-text span { font-family: Arial, Helvetica, sans-serif !important; }
+    #header .inner #logo p { font-family: Arial, Helvetica, sans-serif !important; }
+    #nav ul li a { font-family: Arial, Helvetica, sans-serif !important; }
+    h1 { font-family: Arial, Helvetica, sans-serif !important; }
+    h2 { font-family: Arial, Helvetica, sans-serif !important; }
+    h3 { font-family: Arial, Helvetica, sans-serif !important; }
+    h4 { font-family: Arial, Helvetica, sans-serif !important; }
+    h5 { font-family: Arial, Helvetica, sans-serif !important; }
+    h6 { font-family: Arial, Helvetica, sans-serif !important; }
+    #slogan h2 { font-family: Arial, Helvetica, sans-serif !important; }
+    #sidebar .widget h2, #sidebar .widget h3, #footer .widget h2, #footer .widget h3 { font-family: Arial, Helvetica, sans-serif !important; }
+    .blog-memento .date-left .month, .blog-memento .date-left .day { font-family: Arial, Helvetica, sans-serif !important; }
+</style>

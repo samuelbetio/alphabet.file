@@ -1,0 +1,215 @@
+.wrapper, .boxed-layout .wrapper{ width: 100% !important; min-width: 100% !important; }
+
+#header { margin-bottom: 10px !important; }
+
+
+#slider {display:none !important;}
+#slider.elastic {display:block !important;}   
+#slider.not-for-mobile {display:none !important;}
+#slider.mobile {display:block !important;height:auto;width:auto;}
+.slider-mobile, .slider-mobile #slider {display:block !important;}
+
+
+
+html{
+    width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+
+body{
+    width: 100% !important;
+    height: auto !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    min-width: 0px !important;
+}
+
+.stretched-layout .wrapper{ background: white !important; padding-bottom: 20px !important; }
+
+body .last-row {margin-bottom:20px;}
+.box-sections, .one-fourth, .one-third, .two-fourth, .two-third {width:100%;clear:both;}         
+.footer_cols_5 .widget, .footer_cols_4 .widget { width: 100%; clear:both; }
+.style-picker{ display: none !important; }
+table td, table th{ padding: 5px 10px !important; }
+.inner{ width: 96% !important; padding: 0px !important; margin: 0 auto !important;}
+
+
+/* HEADER */
+
+#logo{
+    width: 100%;
+    max-width: none !important;
+    text-align: center;
+}
+
+#header .inner #logo{
+    text-align: center !important;
+}
+
+.topbar-left{
+    display: none;
+}
+
+#crumbs{ display: none; }
+
+/* NAVIGATION */
+
+#nav > ul{
+    margin-bottom: 10px !important;
+    border: 0px !important;
+}
+
+#nav > ul > li{
+    width: 50% !important;   
+}
+
+#nav > ul > li > a{
+    min-height: 0px !important;
+    padding-top: 0px !important;
+	border: 0px !important;
+	line-height: 30px !important; 
+	height: 30px !important;
+}
+
+#nav > ul > li > a i{
+    width: auto !important;
+    display: inline !important;
+    font-size: 12px !important;
+    padding-right: 4px !important;
+}
+
+#nav > ul ul{ top: 30px !important; }
+
+#topbar .topbar-right .topbar-level-1 > li > a{ font-size: 10px !important; }
+
+.sf-sub-indicator{
+    top: 32% !important;   
+}
+
+
+/* HOME */
+
+.home-row .widget{
+    width: 94% !important;
+    float: none !important;
+    margin-right: 0px !important;
+}
+
+.home-row .widget.one-third{
+    width: 96% !important;
+}
+
+.home-blog .hentry-post, .home-services .hentry-post{
+    float: none !important;
+    width: 96% !important;
+}
+
+.home-testimonials ul{
+    width: 100% !important;
+}
+
+/* CONTENT */
+#sidebar{
+    display: none;
+}
+
+#content{
+    width: 96% !important;
+}
+
+.hentry{
+	margin: 0 auto !important;
+}
+
+#primary{
+    padding-top: 0px !important;
+    
+}
+#page_meta{ padding-bottom: 0px !important; }
+#page_meta h2.page-title, #page_meta #slogan{ margin: 10px !important;}
+
+/* PORTFOLIO */
+#portfolio li .thumb{ width: 100% !important; height: auto !important; border: 0px !important; padding: 0px !important; }
+.portfolio-post .portfolio_header img{ width: 100% !important; height: auto !important; }
+#portfolio li.hentry{ width: 96% !important;  height: auto !important; padding: 10px !important; }
+#portfolio li img{ width: 100% !important; height: auto !important; margin-bottom: 0px !important;}
+#portfolio-bigimage .work-thumbnail, #portfolio-bigimage .work-description{ float: none !important; width: 98% !important; margin-left: 0px !important; }
+#portfolio-bigimage img{ width: 96% !important; }
+#portfolio-gallery ul.gallery-wrap{ margin-left: 10px !important; }
+.gallery-filters{ margin-left: 10px !important; }
+.portfolio-post .work-skillsdate{ float: none !important; width: 96% !important;  }
+.portfolio-post p{ margin-left: 10px !important;}
+.portfolio-slider .jcarousel-clip {
+    width: 60% !important;
+    margin-left: 20% !important;
+}
+
+/* FAQ */
+.call-to-action{ display: none !important; }
+
+/* CONTACT PAGE */
+#content .contact-form li{ float: none !important; width: 96% !important;}
+.header-map #map-wrap{ width: 100% !important; }
+
+/* ---------- TESTIMONIALS ---------- */
+
+.testimonials-list .thumb-testimonial {float:none;margin:0 auto;}
+.testimonials-list .the-post {margin:0;}
+.testimonials-list .thumb-testimonial p {text-align:center;}
+.home-testimonials .title{ padding: 0px !important; margin: 0px !important; border: 0px !important; }
+
+/* ---------- SHORTCODES ---------- */
+#content .tabs-container ul.tabs li a{ font-size: 12px !important; }
+
+
+/* ---------- FEATURE TAB ---------- */
+.hentry .features-tab-container{ width: 100% !important; background: #FFF; }
+#content .hentry .features-tab-container .features-tab-labels{ width: 100%; float: none; }
+.hentry .features-tab-container .features-tab-labels li{ width: 92%; }
+.hentry .features-tab-container .features-tab-wrapper{ float: none; width: 92% !important; }
+.hentry .features-tab-container .features-tab-labels li.current-feature{ background: #D4D4D4 !important; border-radius: 0px !important; }
+
+
+/* ---------- BLOG ---------- */
+.blog-big .meta{ display: none; }
+.blog-big .thumbnail, .blog-big .withoutthumbnail, .blog-big .the-content{ float: none !important; width: 100% !important; }
+.blog-big .image-wrap img{ width: 96% !important; }
+
+.blog-small{ width: 94% !important; }
+.blog-small .thumbnail{ width: 40% !important; margin-left: 10px !important;}
+.blog-small .thumbnail img{ width: 100% !important; height: auto !important; }
+.blog-small .post-title{ margin-left: 10px !important; }
+
+#portfolio-bigimage .work-skillsdate{ 
+    position: absolute !important;
+    top: 0px !important;
+    bottom: auto !important;
+}
+
+.blog-memento .post-title{ clear: both !important; padding-top: 5px !important; }
+#about-the-author .author-description{ width: 100% !important; }
+
+/* -- comments */
+#comments{ width: 96% !important; margin: 0 auto !important;}
+li.comment ul.children {margin-left:2.5em !important;}
+.commentNumber {display:none !important;}
+#comments img.avatar {margin-left:8px !important;}                                 
+.comment-author {margin-right:5px !important; width: 100% !important; padding-top: 3px !important; }
+.comment-meta {margin-left:105px !important; width: 100% !important;}
+.comment-body p{ font-size: 12px !important; }
+.comment-form-comment textarea{ width: 92% !important; }
+.comment-meta{ width: 100% !important; }
+
+.comment-meta {margin-left:0 !important;border:0 !important;padding:0 !important;}
+#comments .sphere {display:none !important;}
+.comment-author {float:none !important;margin:0 !important;width:auto !important;}
+#comments .fn {display:inline !important;}
+.comment-container {padding:20px 20px 10px !important;}
+
+/* ---------- FOOTER ---------- */
+#footer .inner{ width: 96% !important; margin: 0 auto !important; }
+.contact-form { margin: 0px !important; width: 96% !important; }
+#footer .footer_cols_3 .widget, #footer .footer_cols_3 .widget:last-child{ width: 96% !important; margin: 0 auto !important; }
+#footer .quick-contact li input[type="text"], #footer .quick-contact li textarea { width: 96% !important; }
+
