@@ -1,0 +1,12 @@
+.my-calc .row{
+  padding-bottom: 5px;
+}
+
+.my-calc .display{
+  width: 215px;
+}
+
+.my-calc button{
+  width: 40px;
+  height: 40px;
+}

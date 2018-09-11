@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="CalcApp" ng-controller="calc">
+  <head>
+    <title>Simple Calc&trade;</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.11/angular.min.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="text-center">Simple Calc&trade;</h2>
+      <div class="row">
+        <div class="col-sm-4 col-sm-offset-4 my-calc">
+          <div class="row">
+            <input type="text" class="form-control display center-block text-right" ng-model="display" readonly>
+          </div>
+          <div class="row text-center">
+            <button class="btn btn-default" ng-click='numFunct(7)'>7</button>
+            <button class="btn btn-default" ng-click='numFunct(8)'>8</button>
+            <button class="btn btn-default" ng-click='numFunct(9)'>9</button>
+            <button class="btn btn-primary" ng-click='opFunct("/")'>&divide;</button>
+            <button class="btn btn-primary" ng-click='opFunct("*")'>&times;</button>
+          </div>
+          <div class="row text-center">
+            <button class="btn btn-default" ng-click='numFunct(4)'>4</button>
+            <button class="btn btn-default" ng-click='numFunct(5)'>5</button>
+            <button class="btn btn-default" ng-click='numFunct(6)'>6</button>
+            <button class="btn btn-primary" ng-click='opFunct("+")'>&plus;</button>
+            <button class="btn btn-primary" ng-click='opFunct("-")'>&minus;</button>
+          </div>
+          <div class="row text-center">
+            <button class="btn btn-default" ng-click='numFunct(1)'>1</button>
+            <button class="btn btn-default" ng-click='numFunct(2)'>2</button>
+            <button class="btn btn-default" ng-click='numFunct(3)'>3</button>
+            <button class="btn btn-success" ng-click='equalFunct()'>&equals;</button>
+            <button class="btn btn-danger" ng-click='clearAll()'>c</button>
+          </div>
+          <div class="row text-center">
+            <button class="btn btn-default"></button>
+            <button class="btn btn-default" ng-click='numFunct(0)'>0</button>
+            <button class="btn btn-default"></button>
+            <button class="btn btn-default"></button>
+            <button class="btn btn-default"></button>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
